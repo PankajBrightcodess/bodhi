@@ -4,15 +4,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Home extends CI_Controller {
 	function __construct(){
 		parent::__construct();
+		$this->load->helper('upload');
 	}
 	
 	public function index(){
+		
 		$data['title']="Home";
 		$this->template->load('pages','home',$data);
 	}
 
 	public function sidebar(){
-		//checklogin();
+		checklogin();
 		//validateurl_withrole('1');
 		$data['title'] = "Sidebar Entry";
 		$data['breadcrumb'] = array('admin/' => 'Dashboard');
@@ -121,4 +123,107 @@ class Home extends CI_Controller {
 		$this->load->library('alldata');
 		$this->alldata->updatedata();
 	}
+	public function dashboard(){
+		
+		$data['title'] = "Dashboard";
+		
+		$data['datatable'] = true;
+		// $data['result']=$this->Account_model->getmenus();
+		
+		$this->template->load('pages/admin','dashboard',$data);
+	}
+
+	public function createmenu(){
+		
+		$data['title'] = "Add Menu";
+		
+		$data['datatable'] = true;
+		$data['result']=$this->Account_model->getmenus();
+		
+		$this->template->load('pages/admin','createmenu',$data);
+	}
+	public function createsubmenu(){
+		$data['title'] = "Create Submenu";
+		$data['datatable'] = true;
+		$data['result1']=$this->Account_model->getmenus();
+		$data['result']=$this->Account_model->getsubmenus();
+		$this->template->load('pages/admin','createsubmenu',$data);
+	}
+
+	public function savemenu(){
+		// checklogin();
+		$data=$this->input->post();
+		$run=$this->Account_model->savemenus($data);
+		if($run){
+			$this->session->set_flashdata("msg","Menu Added Successfully!!");
+		}else{
+			$this->session->set_flashdata("err_msg",$run);
+		}
+		redirect('home/createmenu');
+	}
+
+	public function savesubmenu(){
+		// checklogin();
+		$data=$this->input->post();
+		$run=$this->Account_model->savesubmenus($data);
+		if($run){
+			$this->session->set_flashdata("msg","Submenu Added Successfully!!");
+		}else{
+			$this->session->set_flashdata("err_msg",$run);
+		}
+		redirect('home/createsubmenu');
+	}
+	public function addnews(){
+		
+		$data['title'] = "Add news";
+		$data['datatable'] = true;
+		$data['ckeditor'] = true;
+		$data['result1']=$this->Account_model->getmenus();
+		$data['result2']=$this->Account_model->getsubmenus();
+		$data['result']=$this->Account_model->getnews();
+		
+		$this->template->load('pages/admin','addnews',$data);
+	}
+	public function market(){
+		
+		$data['title'] = "Add Market Details";
+		$data['datatable'] = true;
+		$data['result']=$this->Account_model->getmarket();
+		$this->template->load('pages/admin','market',$data);
+	}
+	public function savemarket(){
+		// checklogin();
+		$data=$this->input->post();
+		$run=$this->Account_model->savemarket($data);
+		if($run){
+			$this->session->set_flashdata("msg","Details Added Successfully!!");
+		}else{
+			$this->session->set_flashdata("err_msg",$run);
+		}
+		redirect('home/market');
+	}
+	public function savenews(){
+		// checklogin();
+		$data=$this->input->post();
+		unset($data['save_news']);
+		$upload_path = './assets/newsimagedb';
+		$allowed_types = 'gif|jpg|jpeg|png|pdf|GIF|JPG|JPEG|PNG|PDF';
+  if($_FILES['image']['name'] !=''){
+	  $image = upload_file("image", $upload_path, $allowed_types, time());
+	  if ($image !='') {
+		  $data['image'] = $image['path'];
+		
+	  }
+  }
+		$run=$this->Account_model->savenews($data);
+		if($run){
+			$this->session->set_flashdata("msg","News Added Successfully!!");
+		}else{
+			$this->session->set_flashdata("err_msg",$run);
+		}
+		redirect('home/addnews');
+	}
+
+	
+	
 }

@@ -86,7 +86,7 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 
 ///////////////////////////////////////////////
 $curyear = date('Y',strtotime(date('Y-m-d'))); 
-defined('PROJECT_NAME')        OR define('PROJECT_NAME','Admin Template'); 
+defined('PROJECT_NAME')        OR define('PROJECT_NAME','Bodhiwire'); 
 defined('OUR_BRAND')       	   OR define('OUR_BRAND',"Brightcode Software Services Pvt Ltd.");
 defined('SESSION_YEAR')        OR define('SESSION_YEAR',"$curyear");
 defined('SITE_SALT')           OR define('SITE_SALT',"Admin Template");
@@ -97,20 +97,22 @@ defined('NTYPE')                 OR define('NTYPE',"toastr"); //Notification Typ
 /*--------------Template Colors-------------*/
 //////////////////////////////////////////////
 defined('ACCENT_COLOR')        OR define('ACCENT_COLOR',"accent-danger");
-defined('NAVBAR_COLOR')        OR define('NAVBAR_COLOR',"navbar-light navbar-warning");
-defined('BRAND_COLOR')         OR define('BRAND_COLOR',"navbar-light");
+defined('NAVBAR_COLOR')        OR define('NAVBAR_COLOR',"navbar-light navbar-info");
+defined('BRAND_COLOR')         OR define('BRAND_COLOR',"navbar-info");
 defined('SIDEBAR_COLOR')       OR define('SIDEBAR_COLOR',"sidebar-dark-warning");
 //////////////////////////////////////////////
+// navbar-light navbar-warning
 
 if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST']=='localhost'){
+
 	defined('DB_HOST')		? null : define('DB_HOST','localhost');
 	defined('DB_USER')		? null : define('DB_USER', 'root');
 	defined('DB_PASSWORD')	? null : define('DB_PASSWORD','');
-	defined('DB_NAME')		? null : define('DB_NAME','db_admintemplate');
+	defined('DB_NAME')		? null : define('DB_NAME','db_bodhiwire');	
 }
 else{
 	defined('DB_HOST')      ? null : define('DB_HOST', 'localhost');
-	defined('DB_USER')      ? null : define('DB_USER', 'root');
-	defined('DB_PASSWORD')  ? null : define('DB_PASSWORD', '');
-	defined('DB_NAME')      ? null : define('DB_NAME', '');
+	defined('DB_USER')      ? null : define('DB_USER', 'softwarebss_bodhi');
+	defined('DB_PASSWORD')  ? null : define('DB_PASSWORD', 'Bodhi@2021');
+	defined('DB_NAME')      ? null : define('DB_NAME', 'softwarebss_bodhi');
 }

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title style="margin-left: 30%;">Bodhiwire</title>
+    <!-- plugins -->
+    <link href="<?php echo base_url('assets/website/css/vendors.css')?>" rel="stylesheet">
+    <!--icons-->
+    <link href="<?php echo base_url('assets/website/plugins/ionicons4/css/ionicons.min.css')?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/website/plugins/construction-fonts/flaticon.css')?>" rel="stylesheet">
+    <!--master slider-->
+    <link rel="stylesheet" href="<?php echo base_url('assets/website/plugins/masterslider/style/masterslider.css')?>" />
+       
+    <link href="<?php echo base_url('assets/website/plugins/masterslider/skins/default/style.css')?>" rel='stylesheet' type='text/css'>
+    <link href="<?php echo base_url('assets/website/plugins/cubeportfolio/css/cubeportfolio.min.css')?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/website/css/style.css')?>" rel="stylesheet">
+    <link href="    https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.6.3/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link href="<?php echo base_url('assets/website/css/lightbox.css')?>" rel="stylesheet" />
+    
+       <!--  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+        
+        <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+          <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.6.3/css/ionicons.min.css" rel="stylesheet"> -->
+
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+
+    
+
+
+
+
+
+</style>
+<style type="text/css">
+/*a{
+   text-decoration: none; 
+}*/
+    a.hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a.hover:hover {
+    text-decoration: none;
+}
+</style>
+
+
+</head>
+   
+

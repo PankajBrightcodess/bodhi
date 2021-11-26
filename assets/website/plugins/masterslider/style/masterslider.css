@@ -1,0 +1,172 @@
+/**
+ *  Master Slider
+ * 	Core css file
+ */
+
+.master-slider{
+	position: relative;
+	visibility: hidden;
+}
+
+
+
+.master-slider.ms-fullheight{height: 100%;}
+
+
+
+
+
+.ms-loading-container{
+	position:absolute;
+	width:100%;
+	top:0;
+}
+
+.ms-slide-auto-height { display: table; }
+
+
+
+.ms-view {
+	margin:0px auto;
+	overflow:hidden;
+	background:black;
+	position:relative;
+	-webkit-perspective: 2000px;
+	-moz-perspective: 2000px;
+	-ms-perspective: 2000px;
+	perspective: 2000px;
+}
+
+.ms-view .ms-slide-container{position:relative;}
+
+.ms-slide {
+	position:absolute;
+	height:100%;
+}
+
+.ms-slide.selected {}
+
+.ms-inner-controls-cont, .ms-container {position: relative; margin:0 auto;}
+.ms-slide .ms-slide-bgcont img , .ms-container , .ms-inner-controls-cont{
+	/*-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;*/
+}
+
+.ms-slide .ms-layer,
+.ms-fixed-layers .ms-layer,
+.ms-overlay-layers .ms-layer {
+    position:absolute;
+    pointer-events: auto;
+}
+
+.ms-layer-mask {
+    position: absolute;
+    overflow: hidden;
+}
+
+.ms-layer-mask .ms-layer{
+    position: relative;
+}
+
+.ms-slide .ms-slide-layers,
+.ms-overlay-layers .ms-slide-layers,
+.ms-fixed-layers {
+	position: absolute;
+	overflow:hidden;
+	width:100%;
+	height: 100%;
+	z-index: 109;
+	top:0px;
+	pointer-events: none;
+}
+
+.ms-parallax-layer {
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.ms-scroll-parallax-cont{
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+/* Overlayer layers */
+.ms-overlay-layers {
+    position: absolute;
+    top: 0;
+    z-index: 120;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/*-----------------------------------------------------------*/
+.ms-action-layer{cursor: pointer;}
+.ms-btn-container{position: absolute;}
+.ms-btn {
+	text-decoration: none;
+	display: inline-block;
+	color:black;
+	position: relative;
+	padding: 8px 15px;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.ms-default-btn{
+	background: #0074A2;
+	border-radius: 5px;
+	color: #FFF;
+}
+.ms-default-btn:hover{background-color: #0098D5;}
+.ms-default-btn:active{top:1px;}
+
+
+.ms-btn-s{
+    padding: 14px 17px;
+    font-size: 80%;
+    line-height: 0;
+}
+
+.ms-btn-m{
+    padding: 12px 40px;
+}
+
+.ms-btn-n{
+    padding: 8px 25px;
+    font-size: 95%;
+}
+
+.ms-btn-l{
+    padding: 17px 50px;
+    font-size: 120%;
+}
+
+.ms-btn-box{}
+.ms-btn-round{border-radius: 5px;}
+.ms-btn-circle{border-radius: 100px;}
+.ms-btn-outline-box{}
+.ms-btn-outline-round{border-radius: 5px;}
+.ms-btn-outline-circle{border-radius: 100px;}
+/*-----------------------------------------------------------*/
+
+
+
+
+
+.ms-slide .ms-slide-vcbtn{
+	position:absolute;
+	cursor: pointer;
+	z-index: 113;
+}
+
+
+/*'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
+
