@@ -25,6 +25,9 @@
 				  	</div>
 				  	<div class="col-md-5">
 				  		<div class="row">
+				  			<div class="col-md-12"><img src="https://tpc.googlesyndication.com/simgad/6739417430419784616" border="0" width="300" height="600" alt="" class="img_ad"></div>
+				  			<div class="col-md-12"><img src="<?php echo base_url('assets/website/news_image/367188368275824930.jpg'); ?>" style="margin-top: 5px;"  border="0" width="300" height="600" alt="" class="img_ad"></div>
+				  			<div class="col-md-12"></div>
 				  			<!-- <div class="col-md-7 mb-3" style="text-align:justify;"><p>Omar Abdullah, Mehbooba Mufti demand impartial probe in Hyderpora encounterOmar Abdullah, </p></div> -->
 				  			<!-- <div class="col-md-5 mb-3"><img src="<php echo base_url('assets/website/news_image/image43.jpg');?>" class="img-fluid"></div>
 
