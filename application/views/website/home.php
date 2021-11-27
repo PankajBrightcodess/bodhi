@@ -62,6 +62,8 @@
 						<video width="300" height="250" controls>
 						  <source src="<?php echo base_url('assets/website/news_image/start_en.mp4'); ?>" type="video/mp4">
 						</video>
+						<img src="<?php echo base_url('assets/website/news_image/8724268316456981339.jpg'); ?>" class="img-fluid">
+
 					</div>
 				</div>
 			</div>

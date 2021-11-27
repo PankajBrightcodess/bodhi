@@ -3,10 +3,10 @@
     <div class="top-bar sticky-top" style="background-color:white;">
         <div class="container">
             <div class="row ">
-                <div class="col-md-2 col-sm-12">
+                <div class="col-md-2 col-sm-6">
                      <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.jpg') ?>" height="100px" width="100px" style="float:center;"></a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6">
                     <a href="<?php echo base_url('/')?>" style="text-decoration: none;"><h2 style="font-family: 'Cinzel', serif; text-align: center; margin-top:30px;color: rgb(35 97 138);"> Bodhiwire</h2></a>
                 </div>
                 <div class="col-md-4 mb-3">

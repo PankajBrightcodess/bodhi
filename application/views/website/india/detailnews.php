@@ -21,7 +21,7 @@
 				  	<div class="col-md-7" >
 				  		<img src="<?php echo base_url();?><?= $result->image ?>" class="img-fluid"><hr>
 				  		<p><?= $result->tittle ?></p>
-                          <p><?= $result->news ?></p>
+                          <p style="text-align: justify;"><?= $result->news ?></p>
 				  	</div>
 				  	<div class="col-md-5">
 				  		<div class="row">
