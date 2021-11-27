@@ -33,7 +33,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="card mb-3">
-							  <img src="<?php echo base_url('assets/website/news_image/image2.png'); ?>" class="card-img-top" alt="...">
+							  <img src="<?php echo base_url('assets/website/news_image/post-drive-with-space-cushion.jpg'); ?>" class="card-img-top" alt="...">
 							  <div class="card-body">
 							    <h5 class="card-title"><strong><a href="" style="color:black;"> What India's EV road looks like,
 										</a></strong></h5>
@@ -45,7 +45,7 @@
 					</div>
 					<div class="row">
 						<!-- <img src="https://tpc.googlesyndication.com/simgad/14973722761020579337" border="0" width="300" height="250" alt="" class="img_ad"> -->
-						<video width="300" height="200" controls>
+						<video width="300" height="250" controls>
 						  <source src="<?php echo base_url('assets/website/news_image/start_en.mp4'); ?>" type="video/mp4">
 						</video>
 					</div>
@@ -54,7 +54,7 @@
 		</div>
 		<div class="col-md-3 mb-3">
 			<div class="text-center">
-				<h4>Market</h4>
+				<h4>News</h4>
 				<hr>
 				<div class="row">
 					<?php $i = 0;

@@ -22,13 +22,12 @@ class Website extends CI_Controller {
 			$this->load->view('website/template',$d);
 		}
 		
-	public function india($id){
+	public function india($id,$menu_name){
 		// print_r($id);die;
 	   $d['v'] = 'website/india/india';
+	    $d['menu']=$menu_name;
 	   $d['result4']=$this->Account_model->getmenus();
 	   $d['result']=$this->Account_model->indianews($id);
-	   // echo PRE;
-	   // print_r($d['result']);die;
 		$this->load->view('website/template',$d);	
 	}
 	// '''''''''''India Sub Menu'''''''''''''''''''''''''

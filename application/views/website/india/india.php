@@ -7,7 +7,7 @@
 		</div> -->
         <div class="col-md-12 mb-3" ></div>
         <div class="col-md-12">
-        	<h4 style="font-family: 'Cinzel', serif; float: left; margin-top:0px;color: rgb(35 97 138);"> India</h4>
+        	<h4 style="font-family: 'Cinzel', serif; float: left; margin-top:0px;color: rgb(35 97 138);"><?php echo $menu;?></h4>
         	
         </div>
         <div class="col-md-12">
