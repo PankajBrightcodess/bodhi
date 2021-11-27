@@ -52,7 +52,7 @@
                     <p>All Right Reserved,2021 <a href="#">Bodhiwire</a></p>        
                 </div>
                 <div class="col-md-6">
-                    <p>Designed By <a href="https://www.brightcodess.com/">Brightcode Software Services Pvt Ltd.</a></p>        
+                    <p>Designed By <a href="https://www.brightcodess.com/website-designing-and-web-development.php">Brightcode Software Services Pvt Ltd.</a></p>        
                 </div>
             </div>
             

@@ -4,12 +4,12 @@
         <div class="container">
             <div class="row ">
                 <div class="col-md-2 col-sm-12">
-                     <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.jpg') ?>" height="100px" width="100px" style="float:center"></a>
+                     <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.jpg') ?>" height="100px" width="100px" style="float:center;"></a>
                 </div>
                 <div class="col-md-6">
                     <a href="<?php echo base_url('/')?>" style="text-decoration: none;"><h2 style="font-family: 'Cinzel', serif; text-align: center; margin-top:30px;color: rgb(35 97 138);"> Bodhiwire</h2></a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-3">
                     <div class="input-group rounded">
                       <input type="search" class="form-control rounded" style="margin-top:30px;" placeholder="Search" aria-label="Search"
                       aria-describedby="search-addon" />
