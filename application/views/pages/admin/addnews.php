@@ -66,6 +66,12 @@
                                         <?php echo form_input(array('type'=>'file','name'=>'image','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Submenu name','required'=>'required'));?>
                                     </div>                                    
                                 </div>
+                                 <div class="form-group row">
+                                    <div class="col-sm-12">
+                                    <lable>Top News :</lable>
+                                        <?php echo form_input(array('type'=>'checkbox','name'=>'top_news_status','id'=>'activate_not','value'=>'1'));?>
+                                    </div>                                    
+                                </div>
                                 <script> 
                 // Replace the <textarea id="editor1"> with a CKEditor 
                 // instance, using default configuration. 

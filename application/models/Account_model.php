@@ -957,7 +957,9 @@ class Account_model extends Slugs{
 				// print_r($udetails);die;
 				return $udetails;
 			}
+
 			public function savenews($data){
+
 				// unset($data['saveuserdetails']);
 				if(!empty($data['image'])){
 					$final['image']=$data['image'];
@@ -987,7 +989,11 @@ class Account_model extends Slugs{
 				$final['submenu_id']=$data['submenu_id'];
 				$final['tittle']=$data['tittle'];
 				$final['slug']=$slug;
-				$final['news']=$data['news'];
+        $final['news']=$data['news'];
+        $final['date']=date('Y-m-d');
+        if(!empty($data['top_news_status'])){
+          $final['top_news_status']=$data['top_news_status'];
+        }
 				$qry = $this->db->insert('news',$final);
 				if($qry==true){
 					return true;
@@ -1040,6 +1046,18 @@ class Account_model extends Slugs{
 					$udetails = $query->result_array();
 					return $udetails;
 				}
+
+        public function fetchtopnews(){
+          $this->db->select('*');
+          $this->db->from('news');
+          $this->db->where(['top_news_status'=>1,'date'=>date('Y-m-d')]);
+          $this->db->order_by('id','desc');
+          $this->db->limit(5);
+
+          $query = $this->db->get();
+          $topnewsdetails = $query->result_array();
+          return $topnewsdetails;
+        }
 
         public function indianews($id){
           $this->db->select('*');

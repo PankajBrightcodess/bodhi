@@ -7,7 +7,7 @@ class Login extends CI_Controller {
 	}
 	
 	public function index(){
-		loginredirect();
+		// loginredirect();
 		$this->session->unset_userdata("username");
 		$data['title']="Login";
 		$data['body_class']="login-page";

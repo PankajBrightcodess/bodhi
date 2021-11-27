@@ -14,13 +14,17 @@ class Website extends CI_Controller {
 	public function index(){
 			$d['v'] = 'website/home';
 			$d['result4']=$this->Account_model->getmenus();
-			// echo PRE;
-			// print_r($d['result4']);die;
 			$d['result']=$this->Account_model->getnews();
+
 			$d['result1']=$this->Account_model->getmarket();
+			$d['gettopnews']=$this->Account_model->fetchtopnews();
+			$d['businesstopnews']=$this->Website_model->topbusinessnews();
+			$d['lifestyletopnews']=$this->Website_model->toplifestyle();
 			
 			$this->load->view('website/template',$d);
 		}
+
+
 		
 	public function india($id,$menu_name){
 		// print_r($id);die;

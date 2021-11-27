@@ -30,4 +30,36 @@ class Website_model extends CI_Model{
 		$udetails = $query->result_array();
 		return $udetails;
 	}
+
+	// '''''''''''''''''''''''''''''''''Top News'''''''''''''''''''''''''''''''''''''''
+	public function topbusinessnews(){
+		 $this->db->select('*');
+          $this->db->from('news');
+          $this->db->where(['top_news_status'=>1,'date'=>date('Y-m-d'),'menu_id'=>5]);
+          $this->db->limit(8);
+          $query = $this->db->get();
+          $topbusinessdetails = $query->result_array();
+          return $topbusinessdetails;
+	}
+
+	public function toplifestyle(){
+		  $this->db->select('*');
+	      $this->db->from('news');
+	      $this->db->where(['date'=>date('Y-m-d'),'menu_id'=>9]);
+	      $this->db->limit(8);
+	      $query = $this->db->get();
+	      $toplifestyledetails = $query->result_array();
+	      return $toplifestyledetails;
+
+	}
+
+	public function tech(){
+		$this->db->select('*');
+	      $this->db->from('news');
+	      $this->db->where(['date'=>date('Y-m-d'),'menu_id'=>6]);
+	      $this->db->limit(8);
+	      $query = $this->db->get();
+	      $details = $query->result_array();
+	      return $toplifestyledetails;
+	}
 }
