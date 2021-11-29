@@ -1050,7 +1050,7 @@ class Account_model extends Slugs{
         public function fetchtopnews(){
           $this->db->select('*');
           $this->db->from('news');
-          $this->db->where(['top_news_status'=>1,'date'=>date('Y-m-d')]);
+          $this->db->where(['top_news_status'=>1]);
           $this->db->order_by('id','desc');
           $this->db->limit(5);
 
