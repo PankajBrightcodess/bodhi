@@ -35,8 +35,9 @@ class Website_model extends CI_Model{
 	public function topbusinessnews(){
 		 $this->db->select('*');
           $this->db->from('news');
-          $this->db->where(['top_news_status'=>1,'date'=>date('Y-m-d'),'menu_id'=>5]);
+          $this->db->where(['top_news_status'=>1,'menu_id'=>5]);
           $this->db->limit(8);
+           $this->db->order_by('id','desc');
           $query = $this->db->get();
           $topbusinessdetails = $query->result_array();
           return $topbusinessdetails;
@@ -45,8 +46,9 @@ class Website_model extends CI_Model{
 	public function toplifestyle(){
 		  $this->db->select('*');
 	      $this->db->from('news');
-	      $this->db->where(['date'=>date('Y-m-d'),'menu_id'=>9]);
+	      $this->db->where(['menu_id'=>9]);
 	      $this->db->limit(8);
+	       $this->db->order_by('id','desc');
 	      $query = $this->db->get();
 	      $toplifestyledetails = $query->result_array();
 	      return $toplifestyledetails;
