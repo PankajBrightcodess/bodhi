@@ -265,6 +265,17 @@ class Website extends CI_Controller {
 	   $d['result4']=$this->Account_model->getmenus();
 		$this->load->view('website/template',$d);	
 	}
+
+	public function signin(){
+		$this->load->view('website/inc/top-header.php');
+        $this->load->view('website/signin');	
+	}
+	public function signup(){
+		$this->load->view('website/inc/top-header.php');
+        $this->load->view('website/signup');	
+	}
+
+
 	
 	
 

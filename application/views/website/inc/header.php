@@ -4,9 +4,9 @@
         <div class="container">
             <div class="row ">
                 <div class="col-md-2 col-4">
-                     <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.jpg') ?>" height="100px" width="100px" style="float:center;"></a>
+                     <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.jpg') ?>" height="120px" width="120px" style="float:center;" style="margin:0px;"></a>
                 </div>
-                <div class="col-md-6 col-6">
+                <div class="col-md-6 col-8">
                     <a href="<?php echo base_url('/')?>" style="text-decoration: none;"><h2 style="font-family: 'Cinzel', serif; text-align: center; margin-top:30px;color: rgb(35 97 138);"> Bodhiwire</h2></a>
                 </div>
                 <div class="col-md-4 mb-3">
@@ -17,8 +17,10 @@
                       <span class="input-group-text border-0" style="margin-top:10px; margin-right: 7px;" id="search-addon">
                         <i class="fas fa-search"></i>
                       </span>
-                      <button type="button" class="btn btn-sm btn-space btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:10px; margin-right: 7px;">Sign In</button>
-                    <button type="button"  style="float:right;margin-top:10px;" class="btn btn-sm btn-dark ">Register</button>
+                      <!-- <button type="button" class="btn btn-sm btn-space btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:10px; margin-right: 7px;">Sign In</button> -->
+                      <a href="<?php echo base_url('website/signin')?>" class="btn btn-sm btn-space btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:10px; margin-right: 7px;">Sign In</a>
+                      <a href="<?php echo base_url('website/signup')?>" style="float:right;margin-top:10px;" class="btn btn-sm btn-dark ">Register</a>
+                    <!-- <button type="button"  style="float:right;margin-top:10px;" class="btn btn-sm btn-dark ">Register</button> -->
                     </div>
                    
                     
@@ -27,7 +29,7 @@
         </div>
 
     <!-- =========================================== -->
-    <nav class="navbar navbar-expand-lg" style="background-color:rgb(35 97 138);">
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color:rgb(35 97 138);">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color:white;" aria-hidden="true"></i></span>
