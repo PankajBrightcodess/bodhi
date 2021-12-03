@@ -15,11 +15,17 @@ class Website extends CI_Controller {
 			$d['v'] = 'website/home';
 			$d['result4']=$this->Account_model->getmenus();
 			$d['result']=$this->Account_model->getnews();
-
 			$d['result1']=$this->Account_model->getmarket();
 			$d['gettopnews']=$this->Account_model->fetchtopnews();
 			$d['businesstopnews']=$this->Website_model->topbusinessnews();
 			$d['lifestyletopnews']=$this->Website_model->toplifestyle();
+			$d['indianews']=$this->Website_model->topindianews();
+			$d['southasianews']=$this->Website_model->topsouthasianews();
+			$d['worldnews']=$this->Website_model->topworldnews();
+			$d['technews']=$this->Website_model->toptechnews();
+			$d['climatenews']=$this->Website_model->topclimatenews();
+			$d['sportnews']=$this->Website_model->topsportnews();
+			$d['openionnews']=$this->Website_model->topopenionnews();
 			
 			$this->load->view('website/template',$d);
 		}
