@@ -1219,7 +1219,7 @@ Projects
   pointer-events: painted;  
 }
 .btn-search:focus ~ .input-search{
-  width: 250px;
+  width: 350px;
   border-radius: 0px;
   background-color: rgb(35 97 138);
    border-radius: 25px;
@@ -1227,7 +1227,7 @@ Projects
   transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
 }
 .input-search:focus{
-  width: 260px;
+  width: 360px;
   border-radius: 0px;
   background-color: rgb(35 97 138);
   color: white;
