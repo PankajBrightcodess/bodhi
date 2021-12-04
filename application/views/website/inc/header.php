@@ -9,13 +9,13 @@
                 <div class="col-md-6 col-8">
                     <a href="<?php echo base_url('/')?>" style="text-decoration: none;"><h2 style="font-family: 'Cinzel', serif; text-align: center; margin-top:30px;color: rgb(35 97 138);"> Bodhiwire</h2></a>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <a href="<?php echo base_url('/')?>" style="text-decoration: none;"><p style="font-family: 'Cinzel', serif; text-align: center; margin-top:10px;color: rgb(35 97 138);"> A Vanman Communications Initiative</p></a>
+                <div class="col-md-4 mb-3" style="float:right;">
+                    <a href="<?php echo base_url('/')?>" style="text-decoration: none;"><p style="font-family: 'Cinzel', serif; float: left; margin-top:10px;color: rgb(35 97 138);"> A Vanman Communications Initiative</p></a>
                     <!-- '''''''''''''''''''''''''search''''''''''''''''''''''''' -->
 
 
                     <!-- '''''''''''''''''''''''end search''''''''''''''''''''''' -->
-                    <div class="input-group rounded">
+                    <div class="input-group rounded" >
                      <!--  <input type="search" class="form-control rounded" style="margin-top:10px;" placeholder="Search" aria-label="Search"
                       aria-describedby="search-addon" />
                       <span class="input-group-text border-0" style="margin-top:10px; margin-right: 7px;" id="search-addon">
@@ -25,11 +25,9 @@
                         <button class="btn-search btn-space"><i class="fas fa-search"></i></button>
                         <input type="text" class="input-search"  placeholder="Type to Search...">
                       </div>
-                      <!-- <button type="button" class="btn btn-sm btn-space btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:10px; margin-right: 7px;">Sign In</button> -->
                       <a href="<?php echo base_url('website/signin')?>" class="btn btn-sm btn-space btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:10px; margin-right: 7px;">Sign In</a>
-                      <a href="<?php echo base_url('website/signup')?>" style="float:right;margin-top:10px;" class="btn btn-sm btn-dark ">Register</a>
-                    <!-- <button type="button"  style="float:right;margin-top:10px;" class="btn btn-sm btn-dark ">Register</button> -->
-                    </div>
+                      <a href="<?php echo base_url('website/signup')?>" style="float:right;margin-top:10px;" class="btn btn-sm btn-dark ">Register</a>                   
+                  </div>
                    
                     
                 </div>
