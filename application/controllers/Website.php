@@ -38,6 +38,7 @@ class Website extends CI_Controller {
 	    $d['menu']=$menu_name;
 	   $d['result4']=$this->Account_model->getmenus();
 	   $d['result']=$this->Account_model->indianews($id);
+	   
 		$this->load->view('website/template',$d);	
 	}
 	// '''''''''''India Sub Menu'''''''''''''''''''''''''

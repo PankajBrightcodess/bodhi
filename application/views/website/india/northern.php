@@ -29,6 +29,10 @@
 						  <?php if(!empty($result)){
                               $i=0;
                               foreach($result as $val){ $i++;if($i>1 && $i<6){ ?>
+                      <div class="col-md-12">
+													<label style="float:left; color: #5E6563; font-weight: 500; font-size:10px; margin-top: 3px;"><?php if(!empty($val['submenu'])){
+												echo $val['submenu'];}else{echo $val['menu_name'];}?></label>
+							       </div>
 				  			<div class="col-md-7 mb-3" style="text-align:justify;"><p><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;"><?= $val['tittle'] ?></a></p></div>
 				  			<div class="col-md-5 mb-3"><img src="<?php echo base_url();?><?php echo $val['image'] ?>" class="img-fluid"></div>
                              <?php } }}?>
@@ -43,7 +47,13 @@
 				  		<div class="card" style=" height: 20rem;">
 						  <img class="card-img-top" src="<?php echo base_url();?><?php echo $val['image'] ?>" alt="Card image cap">
 						  <div class="card-body">
-						    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;"><?= $val['tittle'] ?></a></p>
+						  	<div class="row">
+						  		<div class="col-md-12">
+								<label style="float:left; color: #5E6563; font-weight: 500; font-size:10px; margin-top: 3px;"><?php if(!empty($val['submenu'])){
+												echo $val['submenu'];}else{echo $val['menu_name'];}?></label>
+							</div>
+							<div class="col-md-12">
+						    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;"><?= $val['tittle'] ?></a></p></div></div>
 						  </div>
 						</div>
 				  	</div>
