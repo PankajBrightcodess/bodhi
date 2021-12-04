@@ -4,13 +4,13 @@
         <div class="container">
             <div class="row ">
                 <div class="col-md-2 col-4">
-                     <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.jpg') ?>" height="120px" width="120px" style="float:center;" style="margin:0px;"></a>
+                     <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.png') ?>" height="90%" width="100%" style="float:center;" style="margin:0px;"></a>
                 </div>
                 <div class="col-md-6 col-8">
-                    <a href="<?php echo base_url('/')?>" style="text-decoration: none;"><h2 style="font-family: 'Cinzel', serif; text-align: center; margin-top:30px;color: rgb(35 97 138);"> Bodhiwire</h2><h5 style="font-family: 'Cinzel', serif; text-align: center; margin-bottom:10px;color: rgb(35 97 138);">INTERNATIONAL NEWS AGENCY</h5>   </a>
+                    <a href="<?php echo base_url('/')?>" style="text-decoration: none;"><h3 style="font-family: 'Heebo', sans-serif;, serif; text-align: center; margin-top:30px;color: rgb(35 97 138); font-weight: 1000;"> <strong>BODHI <span style="color:#569EEA">WIRE</span></strong></h3><h5 style="font-family: 'Abel', sans-serif; text-align: center; margin-bottom:10px;color: rgb(35 97 138);">INTERNATIONAL NEWS AGENCY</h5>   </a>
                 </div>
                 <div class="col-md-4 mb-3" style="float:right;">
-                    <a href="<?php echo base_url('/')?>" style="text-decoration: none;"><p style="font-family: 'Cinzel', serif; float: left; margin-top:10px;color: rgb(35 97 138);"> A Vanman Communications Initiative</p></a>
+                    <a href="<?php echo base_url('/')?>" style="text-decoration: none;"><p style="font-family: 'Arvo', serif;float: left; margin-top:10px;color: rgb(35 97 138);"> A Vanman Communications Initiative</p></a>
                     <!-- '''''''''''''''''''''''''search''''''''''''''''''''''''' -->
 
 
