@@ -3,6 +3,9 @@
 <html lang="en">
 
 <head>
+     <meta name="theme-color" content="#23618a">
+
+    <link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/images/logo.png') ?>">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
