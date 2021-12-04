@@ -946,21 +946,25 @@ Projects
     border: none;
 }
 
-#menu li:hover {
+/*#menu li:hover {
   border: 1px solid #777777;
   padding: 4px 9px 4px 9px;
-  
-  /* Background color and gradients */
-  
   background: #F4F4F4;
   background: -moz-linear-gradient(top, #F4F4F4, #EEEEEE);
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F4F4F4), to(#EEEEEE));
-  
-  /* Rounded corners */
-  
   -moz-border-radius: 5px 5px 0px 0px;
   -webkit-border-radius: 5px 5px 0px 0px;
   border-radius: 5px 5px 0px 0px;
+}*/
+#menu li:hover {
+    /* border: 1px solid #777777; */
+   /* padding: 4px 9px 4px 9px;*/
+    background: #F4F4F4;
+    background: -moz-linear-gradient(top, #F4F4F4, #EEEEEE);
+    /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F4F4F4), to(#EEEEEE)); */
+   /* -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;*/
+    /* border-radius: 5px 5px 0px 0px; */
 }
 
 #menu li a {
