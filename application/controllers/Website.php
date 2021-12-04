@@ -38,7 +38,7 @@ class Website extends CI_Controller {
 	    $d['menu']=$menu_name;
 	   $d['result4']=$this->Account_model->getmenus();
 	   $d['result']=$this->Account_model->indianews($id);
-	   
+
 		$this->load->view('website/template',$d);	
 	}
 	// '''''''''''India Sub Menu'''''''''''''''''''''''''
@@ -55,7 +55,11 @@ class Website extends CI_Controller {
 	public function detailnewsview($slug)
     {
 		// echo $slug;die;
-      $d['result'] = $this->db->get_where('news', array('slug' => $slug))->row();
+      // $d['result'] = $this->db->get_where('news', array('slug' => $slug))->row();
+      // echo PRE;
+      // print_r($d['result']);
+         $d['result'] = $this->Account_model->getslugresult($slug);
+      // print_r($d['result1']);die;
 	//   echo $this->db->last_query();die;
         // $data['res'] = $this->db->get_where('register', array('token' => $s->token))->row();
         // $this->template->load('pages/website', 'detailnews', $data);.

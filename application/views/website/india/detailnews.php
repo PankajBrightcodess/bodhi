@@ -3,7 +3,7 @@
         
         <div class="col-md-12 mb-3" ></div>
         <div class="col-md-12">
-        	<h4 style="font-family: 'Cinzel', serif; float: left; margin-top:0px;color: rgb(35 97 138);"> HEADLINE : <?= $result->tittle ?> </h4>
+        	<h4 style="font-family: 'Cinzel', serif; float: left; margin-top:0px;color: rgb(35 97 138);"> HEADLINE : <?= $result['tittle'] ?> </h4>
         	
         </div>
         <div class="col-md-12">
@@ -18,10 +18,19 @@
 		<div id="Economy" class="tabcontent" style="border:0px;display:inline;">
 				<!--   <h3>Economy</h3> -->
 				  <div class="row">
+				  	
 				  	<div class="col-md-7" >
-				  		<img src="<?php echo base_url();?><?= $result->image ?>" class="img-fluid"><hr>
-				  		<p><?= $result->tittle ?></p>
-                          <p style="text-align: justify;"><?= $result->news ?></p>
+				  		<div class="row">
+				  			<div class="col-md-12">
+				  		   <img  src="<?php echo base_url();?><?php echo $result['image'] ?>" class="img-fluid">
+				  		 </div> 
+				  		 <div class="col-md-12">
+										<label style="float:left; color: #5E6563; font-weight: 500; font-size:10px; margin-top: 3px;"><?php if(!empty($result['submenu'])){
+									echo $result['submenu'];}else{echo $result['menu_name'];}?></label><hr>
+		            </div>
+				  		            <div class="col-md-12"><p><?= $result['tittle'] ?></p></div>
+                         <div class="col-md-12" style="text-align: justify;"><p ><?= $result['news'] ?></p></div>
+              </div>
 				  	</div>
 				  	<div class="col-md-5">
 				  		<div class="row">

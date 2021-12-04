@@ -1043,6 +1043,20 @@ class Account_model extends Slugs{
 					// echo $this->db->last_query();die;
 					return $udetails;
 				}
+
+        public function getslugresult($slug){
+          $this->db->select('t1.*,t2.menu_name,t3.submenu');
+          $this->db->from('news t1');
+          $this->db->join('tmp_menu t2','t1.menu_id=t2.id','left');
+          $this->db->join('tmp_submenu t3','t1.submenu_id=t3.id','left');
+          $this->db->where('t1.slug',$slug);
+          $this->db->order_by('t1.id','desc');
+          $query = $this->db->get();
+          $slugdetails = $query->row_array();
+          // echo $this->db->last_query();die;
+          return $slugdetails;
+
+        }
         
 
 
