@@ -3,7 +3,7 @@
     <div class="top-bar sticky-top" style="background-color: white; position: fixed; width: 100%;">  <!-- style="background-color:white; z-index: 99; position: fixed; overflow: hidden; width: 100%;" -->
         <div class="container">
             <div class="row ">
-                <div class="col-md-2 col-4">
+                <div class="col-md-2 col-sm-4 col-4">
                      <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.png') ?>" height="90%" width="100%" style="float:center;" style="margin:0px;"></a>
                 </div>
                 <div class="col-md-6 col-8">
