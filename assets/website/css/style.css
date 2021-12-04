@@ -962,8 +962,8 @@ Projects
     background: #F4F4F4;
     background: -moz-linear-gradient(top, #F4F4F4, #EEEEEE);
     /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F4F4F4), to(#EEEEEE)); */
-   /* -moz-border-radius: 5px 5px 0px 0px;
-    -webkit-border-radius: 5px 5px 0px 0px;*/
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
     /* border-radius: 5px 5px 0px 0px; */
 }
 
@@ -1170,6 +1170,69 @@ Projects
   border:1px solid #aaaaaa;
   padding:4px 6px 4px 6px;
   margin:0px 0px 4px 0px;
+}
+
+/*'''''''''''''''''''''''''''''''''''''''''''''''''''search button''''''''''''''''''''''''''''''''''''''''''''*/
+.search-box{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search{
+  height: 30px;
+  width: 30px;
+    margin-right: 5px;
+  /*border-style: none;*/
+  margin-top: 10px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: rgb(35 97 138);
+  padding-right: 30px;
+  color:white;
+}
+.input-search::placeholder{
+  color:white;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+
+
+  padding: 5px;
+}
+.btn-search{
+  width: 30px;
+  height: 30px;
+  /*border-style: none;*/
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 5px;
+  color:#ffffff ;
+  background-color:rgb(35 97 138);
+  pointer-events: painted;  
+}
+.btn-search:focus ~ .input-search{
+  width: 250px;
+  border-radius: 0px;
+  background-color: rgb(35 97 138);
+   border-radius: 25px;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 260px;
+  border-radius: 0px;
+  background-color: rgb(35 97 138);
+  color: white;
+  border-bottom:1px solid rgb(35 97 138);;
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
 }
 
 
