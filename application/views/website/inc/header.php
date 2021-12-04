@@ -7,7 +7,7 @@
                      <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.jpg') ?>" height="120px" width="120px" style="float:center;" style="margin:0px;"></a>
                 </div>
                 <div class="col-md-6 col-8">
-                    <a href="<?php echo base_url('/')?>" style="text-decoration: none;"><h2 style="font-family: 'Cinzel', serif; text-align: center; margin-top:30px;color: rgb(35 97 138);"> Bodhiwire</h2></a>
+                    <a href="<?php echo base_url('/')?>" style="text-decoration: none;"><h2 style="font-family: 'Cinzel', serif; text-align: center; margin-top:30px;color: rgb(35 97 138);"> Bodhiwire</h2><h5 style="font-family: 'Cinzel', serif; text-align: center; margin-bottom:10px;color: rgb(35 97 138);">INTERNATIONAL NEWS AGENCY</h5>   </a>
                 </div>
                 <div class="col-md-4 mb-3" style="float:right;">
                     <a href="<?php echo base_url('/')?>" style="text-decoration: none;"><p style="font-family: 'Cinzel', serif; float: left; margin-top:10px;color: rgb(35 97 138);"> A Vanman Communications Initiative</p></a>
