@@ -1224,7 +1224,7 @@ Projects
   background-color: rgb(35 97 138);
    border-radius: 25px;
   border-bottom:1px solid rgba(255,255,255,.5);
-  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  transition: all 600ms cubic-bezier(0, 0.110, 0.35, 2);
 }
 .input-search:focus{
   width: 340px;
@@ -1232,7 +1232,7 @@ Projects
   background-color: rgb(35 97 138);
   color: white;
   border-bottom:1px solid rgb(35 97 138);;
-  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  transition: all 600ms cubic-bezier(0, 0.110, 0.35, 2);
 }
 
 
