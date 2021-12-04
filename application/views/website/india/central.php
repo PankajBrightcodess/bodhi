@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row text-center">
+    <div class="row text-center" style="margin-top: 18rem; overflow: hidden;">
         <!-- <div class="col-lg-12 mb-3" style="margin-top: 10px;">
         <div class="card text-center" style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); color: #E0B899;">
         <div class="col-md-12"><h2>Advertisement</h2></div> 
