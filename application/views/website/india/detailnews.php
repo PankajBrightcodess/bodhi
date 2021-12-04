@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row text-center" style="margin-top: 13rem; overflow: hidden;">
+    <div class="row text-center" style="margin-top: 15rem; overflow: hidden;">
         
         <div class="col-md-12 mb-3" ></div>
         <div class="col-md-12">
