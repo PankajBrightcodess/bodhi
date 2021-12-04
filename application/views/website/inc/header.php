@@ -15,7 +15,7 @@
 
 
                     <!-- '''''''''''''''''''''''end search''''''''''''''''''''''' -->
-                    <div class="input-group rounded" >
+                    <div class="input-group btn-group rounded" >
                      <!--  <input type="search" class="form-control rounded" style="margin-top:10px;" placeholder="Search" aria-label="Search"
                       aria-describedby="search-addon" />
                       <span class="input-group-text border-0" style="margin-top:10px; margin-right: 7px;" id="search-addon">
@@ -25,8 +25,10 @@
                         <button class="btn-search btn-space"><i class="fas fa-search"></i></button>
                         <input type="text" class="input-search"  placeholder="Type to Search...">
                       </div>
-                      <a href="<?php echo base_url('website/signin')?>" class="btn btn-sm btn-space btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:10px; margin-right: 7px;">Sign In</a>
-                      <a href="<?php echo base_url('website/signup')?>" style="float:right;margin-top:10px;" class="btn btn-sm btn-dark ">Register</a>                   
+                      <div class="btn-toolbar">
+                      <a href="<?php echo base_url('website/signin')?>" class="btn btn-sm mr-2 btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:10px;">Sign In</a>
+                      <a href="<?php echo base_url('website/signup')?>" style="float:right;margin-top:10px;" class="btn mr-2 btn-sm btn-dark btn-space">Register</a>  
+                      </div>                 
                   </div>
                    
                     
