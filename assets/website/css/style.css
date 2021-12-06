@@ -1,25 +1,11 @@
-/*
 
-* Bpress - Construction & Architecture Template
-* Version - 1.2.0
-* Author - design_mylife
-* support - mylifedesign143@gmail.com
-* File - Main style css file of Bpress template (Always put it on just before end of <head> tag)
-* Copyright 2019 . All Right Reserved
-*/
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,600|Open+Sans:300,300i,400,400i,600,700,800");
-/*
-Template variables
-*/
-/* 
-    Basics
-*/
+
 html, body {
   height: 100%; }
 
 body {
-  /*font-family: "Open Sans", sans-serif;*/
-  font-family: 'Abel', sans-serif;
+  font-family:  'myGabriola',Arial,sans-serif;
   font-size: 15px;
   line-height: 28px;
   margin: 0;
@@ -36,6 +22,12 @@ body {
   border: 1px solid #ccc;
   background-color: #ffca00;
 }
+
+@font-face {
+font-family: "myGabriola";
+src: url("knowledge-medium.woff.ttf"); 
+}
+
 
 /* Style the buttons inside the tab */
 .tab button {
@@ -1259,15 +1251,19 @@ Projects
 .top-news{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 20px;
-  font-weight: 900;
-  font-family: 'Abel', sans-serif;
+  font-weight: 200;
+  font-family: myGabriola,Arial,sans-serif;
    color: black;
 }
 .top-news .main-topnews{
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 font-family: 'Abel', sans-serif;
   border-radius: 20px 0px 0px 20px;
-  font-weight: 900;
+  font-weight: 200;
+}
+
+.top-news .main-topnews h2{
+  float: left;
 }
 
 .main-topnews h4{
@@ -1276,11 +1272,11 @@ font-family: 'Abel', sans-serif;
   margin-top: 15px;
   margin-bottom: 15px;
   margin-left: 5px;
-  font-weight: 900;
- font-family: 'Abel', sans-serif;
+  font-weight: 600;
+ font-family:  'myGabriola',Arial,sans-serif;
 }
 .main-topnews .slug{
-   font-weight: 700; 
+   font-weight: 200; 
   font-size:10px;
   margin-top: 20px;
   color: black;
@@ -1292,7 +1288,7 @@ font-family: 'Abel', sans-serif;
 .other-topnews{
   margin-top: 10px;
   margin-left: 10px;
- font-family: 'Abel', sans-serif;
+ font-family: myGabriola,Arial,sans-serif;
   color: black;
 }
 .other-topnews .text-slug p{
@@ -1303,7 +1299,7 @@ font-family: 'Abel', sans-serif;
   color: black;
 }
 .other-topnews .slug{
-  font-weight: 900; 
+  font-weight: 200; 
   font-size:10px;
   color: black;
 }
@@ -1325,13 +1321,13 @@ font-family: 'Abel', sans-serif;
   padding: 10px;
   padding-right: 20px;
   padding-left: 20px;
-  font-weight: 900;
+  font-weight: 500;
 
- font-family: 'Abel', sans-serif;
+ font-family: myGabriola,Arial,sans-serif;
 
 }
 .recent-news .slug{
-  font-weight: 900; 
+  font-weight: 200; 
   font-size:10px;
   color: black;
 }
@@ -1353,19 +1349,19 @@ font-family: 'Abel', sans-serif;
   /*float: left;*/
   margin-top: 5px;
   margin-left: 5px;
-  font-weight: 900;
- font-family: 'Abel', sans-serif;
+  font-weight: 600;
+ font-family: myGabriola,Arial,sans-serif;
 }
 .home-india{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 20px;
   padding: 10px;
-  font-weight: 700;
+  font-weight: 200;
   margin-left: margin-left: calc(0.5 * var(--bs-gutter-x));
-      font-family: knowledge-medium,Arial,sans-serif;
+      font-family: myGabriola,Arial,sans-serif;
 }
 .home-india .slug{
-  font-weight: 700; 
+  font-weight: 200; 
   font-size:10px;
   color: black;
 }
@@ -1390,8 +1386,8 @@ font-family: 'Abel', sans-serif;
   float: left;
   margin-top: 5px;
   margin-left: 5px;
-  font-weight: 700;
- font-family: 'Abel', sans-serif;
+  font-weight: 600;
+ font-family: myGabriola,Arial,sans-serif;
   margin-bottom: 30px;
 }
 

@@ -48,9 +48,9 @@
 																		echo $val['submenu'];}else{echo $val['menu_name'];}?>
 												        </label>
 												</div>
-												 <div class="card-body">
-												    <!-- <p style="text-align:justify; font-size: 14px;"> --><h2 class="card-title"><strong><a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><?php echo $val['tittle'] ?></a> <!-- </p> -->
-													<hr style="color:black;"></strong></h2>
+												 <div class="card-body text-slug">
+												 	<h2 class="card-title"><strong><a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><?php echo $val['tittle'] ?></a></strong>
+													<hr style="color:black;"></h2>
 												  </div>
 									<?php }
 										}
