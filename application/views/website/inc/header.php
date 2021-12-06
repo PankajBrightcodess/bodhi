@@ -1,6 +1,6 @@
 <body>
 
-    <div class="top-bar sticky-top" style="background-color: white; position: fixed; width: 100%;">  <!-- style="background-color:white; z-index: 99; position: fixed; overflow: hidden; width: 100%;" -->
+    <div class="top-bar abcd sticky-top">  <!-- style="background-color:white; z-index: 99; position: fixed; overflow: hidden; width: 100%;" -->
         <div class="container">
             <div class="row ">
                 <div class="col-md-2 col-sm-4 col-4">
@@ -10,7 +10,7 @@
                     <a href="<?php echo base_url('/')?>" style="text-decoration: none;"><h3 style="font-family: 'Heebo', sans-serif;, serif; text-align: center; margin-top:30px;color: rgb(35 97 138); font-weight: 1000;"> <strong>BODHI <span style="color:#569EEA">WIRE</span></strong></h3><h5 style="font-family: 'Abel', sans-serif; text-align: center; margin-bottom:10px;color: rgb(35 97 138);">INTERNATIONAL NEWS AGENCY</h5>   </a>
                 </div>
                 <div class="col-md-4 mb-3" style="float:right;">
-                    <a href="<?php echo base_url('/')?>" style="text-decoration: none;"><p style="font-family: 'Arvo', serif;float: left; margin-top:10px;color: rgb(35 97 138);"> A Vanman Communications Initiative</p></a>
+                    <!-- <a href="<?php echo base_url('/')?>" style="text-decoration: none;"><p style="font-family: 'Arvo', serif;float: left; margin-top:10px;color: rgb(35 97 138);"> A Vanman Communications Initiative</p></a> -->
                     <!-- '''''''''''''''''''''''''search''''''''''''''''''''''''' -->
 
 
