@@ -70,8 +70,9 @@
 						<img src="<?php echo base_url('assets/website/news_image/8724268316456981339.jpg'); ?>" style="margin-top: 10px;" class="img-fluid">
 						 <video width="300" height="250" controls>
 						  <source src="<?php echo base_url('assets/website/news_image/start_en.mp4'); ?>" type="video/mp4">
-						</video> 
+						</video>
 						<img src="<?php echo base_url('assets/website/news_image/healthimage.jpg'); ?>" style="margin-top: 10px;" class="img-fluid">
+						<img src="<?php echo base_url('assets/website/news_image/tractor.jpg'); ?>" style="margin-top: 10px;" class="img-fluid">
 						
 
 					</div>
@@ -188,7 +189,7 @@
         				if($i>2 || $i<5){
         				?>
         				
-        				<div class="col-md-6 mb-5">
+        				<div class="col-md-6 mb-3">
         					<div class="container">
         					<div class="row home-india">
         					<div class="col-md-12 slug">
@@ -257,7 +258,7 @@
         				if($i>2 || $i<5){
         				?>
         				
-        				<div class="col-md-6 mb-5">
+        				<div class="col-md-6 mb-3">
         					<div class="container">
         					<div class="row home-india">
         						<div class="col-md-12 slug">
@@ -323,7 +324,7 @@
         				if($i>2 || $i<5){
         				?>
         				
-        				<div class="col-md-6 mb-5">
+        				<div class="col-md-6 mb-3">
         					<div class="container">
         					<div class="row home-india">
         						<div class="col-md-12 slug">
@@ -392,7 +393,7 @@
         				if($i>2 || $i<5){
         				?>
         				
-        				<div class="col-md-6 mb-5">
+        				<div class="col-md-6 mb-3">
         					<div class="container">
         					<div class="row home-india">
         						<div class="col-md-12 slug">
@@ -459,7 +460,7 @@
         				if($i>2 || $i<5){
         				?>
         				
-        				<div class="col-md-6 mb-5">
+        				<div class="col-md-6 mb-3">
         					<div class="container">
         					<div class="row home-india">
         						<div class="col-md-12 slug">
@@ -583,7 +584,7 @@
         				if($i>2 || $i<5){
         				?>
         				
-        				<div class="col-md-6 mb-5">
+        				<div class="col-md-6 mb-3">
         					<div class="container">
         					<div class="row home-india">
         						<div class="col-md-12 slug">
@@ -656,7 +657,7 @@
         				if($i>2 || $i<5){
         				?>
         				
-        				<div class="col-md-6 mb-5">
+        				<div class="col-md-6 mb-3">
         					<div class="container">
         					<div class="row home-india">
         						<div class="col-md-12 slug">
@@ -724,7 +725,7 @@
         				if($i>2 || $i<5){
         				?>
         				
-        				<div class="col-md-6 mb-5">
+        				<div class="col-md-6 mb-3">
         					<div class="container">
         					<div class="row home-india">
         						<div class="col-md-12 slug">
@@ -793,7 +794,7 @@
         				if($i>2 || $i<5){
         				?>
         				
-        				<div class="col-md-6 mb-5">
+        				<div class="col-md-6 mb-3">
         					<div class="container">
         					<div class="row home-india">
         						<div class="col-md-12 slug">
