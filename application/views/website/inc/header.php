@@ -1,6 +1,6 @@
 <body>
 
-    <div class="top-bar abcd sticky-top">  <!-- style="background-color:white; z-index: 99; position: fixed; overflow: hidden; width: 100%;" -->
+    <div class="top-bar abcd">  <!-- style="background-color:white; z-index: 99; position: fixed; overflow: hidden; width: 100%;" -->
         <div class="container">
             <div class="row ">
                 <div class="col-md-2 col-sm-4 col-4">
@@ -37,14 +37,14 @@
         </div>
 
     <!-- =========================================== -->
-    <nav class="navbar navbar-expand-lg " style="background-color:rgb(35 97 138);">
+    <nav class="navbar navbar-expand-lg bg-light" style="background: #23618a !important;">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color:white;" aria-hidden="true"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav  me-auto mb-2 mb-lg-0" id="menu" >
-                    <li class="nav-item"> <!--  -->
+                    <li class="nav-item"> 
                         <a href="<?php echo base_url("website/") ?>" style="color: white;" class="nav-link active">HOME </a>
                     </li>
                     <?php if (!empty($result4)) {
@@ -92,3 +92,4 @@
     </nav>
   
 </div>
+<div class="header-gap"></div>

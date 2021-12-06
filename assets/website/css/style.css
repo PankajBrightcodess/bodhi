@@ -1237,10 +1237,17 @@ Projects
 
 
 .abcd{
-  background-color: white;
-  position: fixed;
-  width: 100%;
-  overflow: hidden;
+ background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+.header-gap{
+  padding: 105px 0;
+}
+.bg-light {
+    background: #23618a !important;
 }
 .PQR{
   margin-top: 20rem;

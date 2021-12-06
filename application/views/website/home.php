@@ -260,7 +260,7 @@
         </div>
         <div class="row">
         	<div class="col-md-5">
-        		<div class="home-india" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        		<div class="home-india " style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
         		<div class="row">
         			<div class="col-md-12">
         				<img class="card-img-top" src="<?php echo base_url();?><?php echo $worldnews[2]['image'] ?>" alt="Card image cap">
@@ -431,7 +431,7 @@
 
 
        <!-- ''''''''''''''''''''''''''''''''''''''''''''World'''''''''''''''''''''''''''''''''''''''' -->
-       <div class="col-md-12 " ></div>
+      <!--  <div class="col-md-12 " ></div>
 	 <div class="col-md-12"><hr style="color:black;"></div>
 	     <div class="col-md-12 mb-3">
         	<div class="text-center  india-heading" >
@@ -481,7 +481,7 @@
         	</div>
 
         </div>
-       </div>
+       </div> -->
 
 
 
@@ -489,25 +489,32 @@
 		<div class="col-md-12 mb-3" ></div>
 		<div class="col-md-12"><hr style="color:black;"></div>
         <div class="col-md-12 mb-3">
-        	<div class="text-center" >
-            	<h2 style="float:left;">Climate</h2>
+        	<div class="col-md-12 mb-3">
+        	<div class="text-center  india-heading" >
+            	<h2>Climate</h2>
             </div>
         </div>
+        </div>
         <div class="row">
-        	<div class="col-md-6">
-        		<div class="card mb-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-        		<div class="row">
+        	<div class="col-md-5">
+        		<div class="home-india mb-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        		<div class="row ">
         			<div class="col-md-12">
         				<img class="card-img-top" src="<?php echo base_url();?><?php echo $climatenews[2]['image'] ?>" alt="Card image cap">
         			</div>
-        			<div class="col-md-12">
-        				<a href="<?php echo base_url('website/detailnewsview/' . $climatenews[2]['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $climatenews[2]['tittle']?></a>
+        			<div class="col-md-12 slug">
+					<label ><?php if(!empty($value['submenu'])){
+									echo $value['submenu'];} else{echo $value['menu_name'];}?>
+			        </label>
+					</div>
+        			<div class="col-md-12 text-slug">
+        				<h2><strong><a href="<?php echo base_url('website/detailnewsview/' . $climatenews[2]['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $climatenews[2]['tittle']?></a></strong></h2>
         			   
         		    </div>
         		</div>
         	</div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-7">
         	<div class="row">
         		<?php
         		if(!empty($climatenews)){
