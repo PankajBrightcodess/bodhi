@@ -195,7 +195,7 @@
 
 
 
-	 <div class="col-md-12 " ></div>
+	 <!-- <div class="col-md-12 " ></div> -->
 	 <div class="col-md-12"><hr style="color:black;"></div>
         <div class="col-md-12 india-heading">
             	<h2>South Asia</h2>
@@ -253,7 +253,7 @@
 
 
        <!-- ''''''''''''''''''''''''''''''''''''''''''''World'''''''''''''''''''''''''''''''''''''''' -->
-       <div class="col-md-12 " ></div>
+       <!-- <div class="col-md-12 " ></div> -->
 	 <div class="col-md-12"><hr style="color:black;"></div>
         <div class="col-md-12 india-heading">
             	<h2 >World</h2>
@@ -312,7 +312,7 @@
 
 
 		<!-- '''''''''''''''''''''''''''''''''''''''''''''Business''''''''''''''''''''''''''''''''''''''''''''' -->
-		<div class="col-md-12 mb-3" ></div>
+		<!-- <div class="col-md-12 mb-3" ></div> -->
 		<div class="col-md-12"><hr style="color:black;"></div>
         <div class="col-md-12 mb-3">
         	<div class="text-center  india-heading" >
@@ -331,7 +331,7 @@
 									echo $businesstopnews[4]['submenu'];}else{echo $businesstopnews[4]['menu_name'];}?></label>
 					</div>
         			<div class="col-md-12 text-slug">
-        				<h2><strong><a href="<?php echo base_url('website/detailnewsview/' . $businesstopnews[4]['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $businesstopnews[4]['tittle']?></a></strong></h2>
+        				<h2><strong><a href="<?php echo base_url('website/detailnewsview/' . $businesstopnews[4]['slug']); ?>"><?php echo $businesstopnews[4]['tittle']?></a></strong></h2>
         			   
         		    </div>
         		</div>
@@ -354,7 +354,7 @@
 												echo $value['submenu'];} else{echo $value['menu_name'];}?>
 						        </label>
 								</div>
-		        			<div class="col-md-7 text-slug" style="text-align: justify;"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $value['tittle']?></a></div>
+		        			<div class="col-md-7 text-slug"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>"><?php echo $value['tittle']?></a></div>
 		        			<div class="col-md-5"><img class="card-img-top" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></div>
 		        		</div>
 		        	   </div>
@@ -371,7 +371,7 @@
         <!-- <div class="col-md-12"><hr style="color:black;"></div> -->
        </div>
        <!-- '''''''''''''''''''''''''''''''''''''''''''Tech'''''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
-       <div class="col-md-12 " ></div>
+       <!-- <div class="col-md-12 " ></div> -->
 	 <div class="col-md-12"><hr style="color:black;"></div>
 	 <div class="col-md-12 mb-3">
         	<div class="text-center  india-heading" >
@@ -486,7 +486,7 @@
 
 
 		<!-- '''''''''''''''''''''''''''''''''''''''''''''Climate''''''''''''''''''''''''''''''''''''''''''''' -->
-		<div class="col-md-12 mb-3" ></div>
+		<!-- <div class="col-md-12 mb-3" ></div> -->
 		<div class="col-md-12"><hr style="color:black;"></div>
         <div class="col-md-12 mb-3">
         	<div class="text-center  india-heading" >
@@ -506,7 +506,7 @@
 			        </label>
 					</div>
         			<div class="col-md-12 text-slug">
-        				<h2><strong><a href="<?php echo base_url('website/detailnewsview/' . $climatenews[2]['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $climatenews[2]['tittle']?></a></strong></h2>
+        				<h2><strong><a href="<?php echo base_url('website/detailnewsview/' . $climatenews[2]['slug']); ?>"><?php echo $climatenews[2]['tittle']?></a></strong></h2>
         			   
         		    </div>
         		</div>
@@ -529,7 +529,7 @@
 												echo $value['submenu'];} else{echo $value['menu_name'];}?>
 						        </label>
 								</div>
-		        			<div class="col-md-7 text-slug" style="text-align: justify;"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $value['tittle']?></a></div>
+		        			<div class="col-md-7 text-slug"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>"><?php echo $value['tittle']?></a></div>
 		        			<div class="col-md-5"><img class="card-img-top" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></div>
 		        		</div>
 		        	  </div>
@@ -551,7 +551,7 @@
 
        <!-- ''''''''''''''''''''''''''''''''''''''''''''''Lifestyle''''''''''''''''''''''''''''''''''''''''' -->
 
-        <div class="col-md-12 " ></div>
+        <!-- <div class="col-md-12 " ></div> -->
          <div class="col-md-12"><hr style="color:black;"></div>
          <div class="col-md-12 mb-3">
         	<div class="text-center  india-heading" >
@@ -571,7 +571,7 @@
 			        </label>
 					</div>
         			<div class="col-md-12 text-slug">
-        				<h2><strong><a href="<?php echo base_url('website/detailnewsview/' . $lifestyletopnews[0]['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $lifestyletopnews[0]['tittle']?></a></strong></h2>
+        				<h2><strong><a href="<?php echo base_url('website/detailnewsview/' . $lifestyletopnews[0]['slug']); ?>"><?php echo $lifestyletopnews[0]['tittle']?></a></strong></h2>
         			   
         		    </div>
         		</div>
@@ -611,7 +611,7 @@
         <!-- <div class="col-md-12"><hr style="color:black;"></div> -->
        </div>
        <!-- ''''''''''''''''''''''''''''''''''''''''Sport''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
-       <div class="col-md-12 " ></div>
+       <!-- <div class="col-md-12 " ></div> -->
          <div class="col-md-12"><hr style="color:black;"></div>
          <div class="col-md-12 mb-3">
         	<div class="text-center  india-heading" >
@@ -671,7 +671,7 @@
        </div>
 
        <!-- '''''''''''''''''''''''''''''''''''''''''''''''Openion''''''''''''''''''''''''''''''''''''''''''''''''''' -->
-       <div class="col-md-12 " ></div>
+       <!-- <div class="col-md-12 " ></div> -->
          <div class="col-md-12"><hr style="color:black;"></div>
          <div class="col-md-12 mb-5">
         	<div class="text-center  india-heading" >
