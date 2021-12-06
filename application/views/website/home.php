@@ -489,11 +489,9 @@
 		<div class="col-md-12 mb-3" ></div>
 		<div class="col-md-12"><hr style="color:black;"></div>
         <div class="col-md-12 mb-3">
-        	<div class="col-md-12 mb-3">
         	<div class="text-center  india-heading" >
             	<h2>Climate</h2>
             </div>
-        </div>
         </div>
         <div class="row">
         	<div class="col-md-5">
@@ -524,15 +522,17 @@
         				?>
         				
         				<div class="col-md-6 mb-5">
-        					<div class="row">
-        						<div class="col-md-12">
-								<label style="float:left; color: #5E6563; font-weight: 500; font-size:10px;"><?php if(!empty($value['submenu'])){
+        					<div class="container">
+        					<div class="row home-india">
+        						<div class="col-md-12 slug">
+								<label><?php if(!empty($value['submenu'])){
 												echo $value['submenu'];} else{echo $value['menu_name'];}?>
 						        </label>
 								</div>
-		        			<div class="col-md-7" style="text-align: justify;"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $value['tittle']?></a></div>
+		        			<div class="col-md-7 text-slug" style="text-align: justify;"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $value['tittle']?></a></div>
 		        			<div class="col-md-5"><img class="card-img-top" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></div>
 		        		</div>
+		        	  </div>
         		       </div>
         				<?php
         			}
@@ -553,24 +553,31 @@
 
         <div class="col-md-12 " ></div>
          <div class="col-md-12"><hr style="color:black;"></div>
-        <div class="col-md-12">
-            	<h2 style="margin-bottom: 30px; float: left;">Lifestyle</h2>
+         <div class="col-md-12 mb-3">
+        	<div class="text-center  india-heading" >
+            	<h2>Lifestyle</h2>
+            </div>
         </div>
         <div class="row">
-        	<div class="col-md-6">
-        		<div class="card mb-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        	<div class="col-md-5">
+        		<div class="home-india mb-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
         		<div class="row">
         			<div class="col-md-12">
         				<img class="card-img-top" src="<?php echo base_url();?><?php echo $lifestyletopnews[0]['image'] ?>" alt="Card image cap">
         			</div>
-        			<div class="col-md-12">
-        				<a href="<?php echo base_url('website/detailnewsview/' . $lifestyletopnews[0]['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $lifestyletopnews[0]['tittle']?></a>
+        			<div class="col-md-12 slug">
+					<label ><?php if(!empty($value['submenu'])){
+									echo $value['submenu'];} else{echo $value['menu_name'];}?>
+			        </label>
+					</div>
+        			<div class="col-md-12 text-slug">
+        				<h2><strong><a href="<?php echo base_url('website/detailnewsview/' . $lifestyletopnews[0]['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $lifestyletopnews[0]['tittle']?></a></strong></h2>
         			   
         		    </div>
         		</div>
         	</div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-7">
         	<div class="row">
         		<?php
         		if(!empty($lifestyletopnews)){
@@ -580,15 +587,17 @@
         				?>
         				
         				<div class="col-md-6 mb-5">
-        					<div class="row">
-        						<div class="col-md-12">
-								<label style="float:left; color: #5E6563; font-weight: 500; font-size:10px;"><?php if(!empty($value['submenu'])){
+        					<div class="container">
+        					<div class="row home-india">
+        						<div class="col-md-12 slug">
+								<label><?php if(!empty($value['submenu'])){
 												echo $value['submenu'];} else{echo $value['menu_name'];}?>
 						        </label>
 								</div>
-		        			<div class="col-md-7" style="text-align: justify;"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $value['tittle']?></a></div>
+		        			<div class="col-md-7 text-slug"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>"><?php echo $value['tittle']?></a></div>
 		        			<div class="col-md-5"><img class="card-img-top" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></div>
 		        		</div>
+		        	   </div>
         		       </div>
         				<?php
         			}
@@ -604,24 +613,31 @@
        <!-- ''''''''''''''''''''''''''''''''''''''''Sport''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
        <div class="col-md-12 " ></div>
          <div class="col-md-12"><hr style="color:black;"></div>
-        <div class="col-md-12">
-            	<h2 style="margin-bottom: 30px; float: left;">Sport</h2>
+         <div class="col-md-12 mb-3">
+        	<div class="text-center  india-heading" >
+            	<h2>Sport</h2>
+            </div>
         </div>
         <div class="row">
-        	<div class="col-md-6">
-        		<div class="card mb-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        	<div class="col-md-5">
+        		<div class="home-india mb-3">
         		<div class="row">
         			<div class="col-md-12">
         				<img class="card-img-top" src="<?php echo base_url();?><?php echo $sportnews[0]['image'] ?>" alt="Card image cap">
         			</div>
-        			<div class="col-md-12">
-        				<a href="<?php echo base_url('website/detailnewsview/' . $sportnews[0]['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $sportnews[0]['tittle']?></a>
+        			<div class="col-md-12 slug">
+					  <label ><?php if(!empty($value['submenu'])){
+									echo $value['submenu'];} else{echo $value['menu_name'];}?>
+			        </label>
+					</div>
+        			<div class="col-md-12 text-slug">
+        				<h2><strong><a href="<?php echo base_url('website/detailnewsview/' . $sportnews[0]['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $sportnews[0]['tittle']?></a></strong></h2>
         			   
         		    </div>
         		</div>
         	</div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-7">
         	<div class="row">
         		<?php
         		if(!empty($sportnews)){
@@ -631,15 +647,17 @@
         				?>
         				
         				<div class="col-md-6 mb-5">
-        					<div class="row">
-        						<div class="col-md-12">
-								<label style="float:left; color: #5E6563; font-weight: 500; font-size:10px;"><?php if(!empty($value['submenu'])){
+        					<div class="container">
+        					<div class="row home-india">
+        						<div class="col-md-12 slug">
+								<label><?php if(!empty($value['submenu'])){
 												echo $value['submenu'];} else{echo $value['menu_name'];}?>
 						        </label>
 								</div>
-		        			<div class="col-md-7" style="text-align: justify;"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $value['tittle']?></a></div>
+		        			<div class="col-md-7 text-slug" ><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>"><?php echo $value['tittle']?></a></div>
 		        			<div class="col-md-5"><img class="card-img-top" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></div>
 		        		</div>
+		        	</div>
         		       </div>
         				<?php
         			}
@@ -655,24 +673,32 @@
        <!-- '''''''''''''''''''''''''''''''''''''''''''''''Openion''''''''''''''''''''''''''''''''''''''''''''''''''' -->
        <div class="col-md-12 " ></div>
          <div class="col-md-12"><hr style="color:black;"></div>
-        <div class="col-md-12">
-            	<h2 style="margin-bottom: 30px; float: left;">Openion</h2>
+         <div class="col-md-12 mb-3">
+        	<div class="text-center  india-heading" >
+            	<h2>Openion</h2>
+            </div>
         </div>
         <div class="row">
-        	<div class="col-md-6">
-        		<div class="card mb-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        	<div class="col-md-5">
+        		<div class="home-india mb-3">
         		<div class="row">
         			<div class="col-md-12">
         				<img class="card-img-top" src="<?php echo base_url();?><?php echo $openionnews[0]['image'] ?>" alt="Card image cap">
         			</div>
-        			<div class="col-md-12">
-        				<a href="<?php echo base_url('website/detailnewsview/' . $openionnews[0]['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $openionnews[0]['tittle']?></a>
+        			<div class="col-md-12 slug">
+					  <label ><?php if(!empty($value['submenu'])){
+									echo $value['submenu'];} else{echo $value['menu_name'];}?>
+			        </label>
+					</div>
+
+        			<div class="col-md-12 text-slug">
+        				<h2><strong><a href="<?php echo base_url('website/detailnewsview/' . $openionnews[0]['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $openionnews[0]['tittle']?></a></strong></h2>
         			   
         		    </div>
         		</div>
         	</div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-7">
         	<div class="row">
         		<?php
         		if(!empty($openionnews)){
@@ -682,15 +708,17 @@
         				?>
         				
         				<div class="col-md-6 mb-5">
-        					<div class="row">
-        						<div class="col-md-12">
-								<label style="float:left; color: #5E6563; font-weight: 500; font-size:10px;"><?php if(!empty($value['submenu'])){
+        					<div class="container">
+        					<div class="row home-india">
+        						<div class="col-md-12 slug">
+								<label><?php if(!empty($value['submenu'])){
 												echo $value['submenu'];} else{echo $value['menu_name'];}?>
 						        </label>
 								</div>
-		        			<div class="col-md-7" style="text-align: justify;"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $value['tittle']?></a></div>
+		        			<div class="col-md-7 text-slug"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>"><?php echo $value['tittle']?></a></div>
 		        			<div class="col-md-5"><img class="card-img-top" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></div>
 		        		</div>
+		          	</div>
         		       </div>
         				<?php
         			}
