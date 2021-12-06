@@ -1276,14 +1276,14 @@ font-family: 'Abel', sans-serif;
  font-family:  'myGabriola',Arial,sans-serif;
 }
 .main-topnews .slug{
-   font-weight: 200; 
+   font-weight: 500; 
   font-size:10px;
   margin-top: 20px;
-  color: black;
+  color: #23618a;
 }
 .main-topnews .slug label{
   float:left;
-   color: black;
+   color: #23618a;
 }
 .other-topnews{
   margin-top: 10px;
@@ -1305,7 +1305,7 @@ font-family: 'Abel', sans-serif;
 }
 .other-topnews .slug label{
    float:left;
-   color: black;
+   color: #23618a;
 }
 
 .other-topnews .text-slug{
@@ -1327,13 +1327,13 @@ font-family: 'Abel', sans-serif;
 
 }
 .recent-news .slug{
-  font-weight: 200; 
+  font-weight: 500; 
   font-size:10px;
-  color: black;
+  color: #23618a;
 }
 .recent-news .slug label{
    float:left;
-   color: black;
+   color: #23618a;
 }
 .recent-news .text-slug p{
   text-align:left;
@@ -1361,13 +1361,13 @@ font-family: 'Abel', sans-serif;
       font-family: myGabriola,Arial,sans-serif;
 }
 .home-india .slug{
-  font-weight: 200; 
-  font-size:10px;
-  color: black;
+  font-weight: 500; 
+  font-size:12px;
+  color: #23618a;
 }
 .home-india .slug label{
    float:left;
-   color: black;
+   color: #23618a;
 }
 .home-india .text-slug{
   text-align: left;
@@ -1378,6 +1378,14 @@ font-family: 'Abel', sans-serif;
 }
 .home-india .text-slug a{
   color: black;
+}
+.slug-time{
+  font-weight: 500; 
+  font-size:12px;
+  color: black;
+  text-align: left;
+  font-family: myGabriola,Arial,sans-serif;
+  color: #569EEA;
 }
 
 
