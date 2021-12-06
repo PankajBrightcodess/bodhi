@@ -204,7 +204,7 @@
         	<div class="col-md-5">
         		<div class="home-india">
         		<div class="row">
-        			<div class="col-md-12 mb-3">
+        			<div class="col-md-12 mb-5">
         				<img class="card-img-top" src="<?php echo base_url();?><?php echo $southasianews[2]['image'] ?>" alt="Card image cap">
         			</div>
         			<div class="col-md-12 slug">
@@ -260,9 +260,9 @@
         </div>
         <div class="row">
         	<div class="col-md-5">
-        		<div class="home-india " style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        		<div class="home-india ">
         		<div class="row">
-        			<div class="col-md-12">
+        			<div class="col-md-12 mb-5">
         				<img class="card-img-top" src="<?php echo base_url();?><?php echo $worldnews[2]['image'] ?>" alt="Card image cap">
         			</div>
         			<div class="col-md-12 slug">
@@ -321,9 +321,9 @@
         </div>
         <div class="row">
         	<div class="col-md-5">
-        		<div class="home-india mb-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        		<div class="home-india mb-3">
         		<div class="row">
-        			<div class="col-md-12">
+        			<div class="col-md-12 mb-5">
         				<img class="card-img-top" src="<?php echo base_url();?><?php echo $businesstopnews[4]['image'] ?>" alt="Card image cap">
         			</div>
         			<div class="col-md-12 slug">
@@ -382,7 +382,7 @@
         	<div class="col-md-5">
         		<div class="home-india mb-3">
         		<div class="row">
-        			<div class="col-md-12">
+        			<div class="col-md-12 mb-5">
         				<img class="card-img-top" src="<?php echo base_url();?><?php echo $technews[2]['image'] ?>" alt="Card image cap">
         			</div>
         			<div class="col-md-12 slug">
@@ -495,9 +495,9 @@
         </div>
         <div class="row">
         	<div class="col-md-5">
-        		<div class="home-india mb-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        		<div class="home-india mb-5">
         		<div class="row ">
-        			<div class="col-md-12">
+        			<div class="col-md-12 mb-5">
         				<img class="card-img-top" src="<?php echo base_url();?><?php echo $climatenews[2]['image'] ?>" alt="Card image cap">
         			</div>
         			<div class="col-md-12 slug">
@@ -560,9 +560,9 @@
         </div>
         <div class="row">
         	<div class="col-md-5">
-        		<div class="home-india mb-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        		<div class="home-india mb-3">
         		<div class="row">
-        			<div class="col-md-12">
+        			<div class="col-md-12 mb-5">
         				<img class="card-img-top" src="<?php echo base_url();?><?php echo $lifestyletopnews[0]['image'] ?>" alt="Card image cap">
         			</div>
         			<div class="col-md-12 slug">
@@ -622,7 +622,7 @@
         	<div class="col-md-5">
         		<div class="home-india mb-3">
         		<div class="row">
-        			<div class="col-md-12">
+        			<div class="col-md-12 mb-5">
         				<img class="card-img-top" src="<?php echo base_url();?><?php echo $sportnews[0]['image'] ?>" alt="Card image cap">
         			</div>
         			<div class="col-md-12 slug">
@@ -673,7 +673,7 @@
        <!-- '''''''''''''''''''''''''''''''''''''''''''''''Openion''''''''''''''''''''''''''''''''''''''''''''''''''' -->
        <div class="col-md-12 " ></div>
          <div class="col-md-12"><hr style="color:black;"></div>
-         <div class="col-md-12 mb-3">
+         <div class="col-md-12 mb-5">
         	<div class="text-center  india-heading" >
             	<h2>Openion</h2>
             </div>
@@ -682,7 +682,7 @@
         	<div class="col-md-5">
         		<div class="home-india mb-3">
         		<div class="row">
-        			<div class="col-md-12">
+        			<div class="col-md-12 mb-5">
         				<img class="card-img-top" src="<?php echo base_url();?><?php echo $openionnews[0]['image'] ?>" alt="Card image cap">
         			</div>
         			<div class="col-md-12 slug">
