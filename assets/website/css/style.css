@@ -18,7 +18,8 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
+  font-family: 'Abel', sans-serif;
   font-size: 15px;
   line-height: 28px;
   margin: 0;
@@ -1258,15 +1259,15 @@ Projects
 .top-news{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 20px;
-  font-weight: 700;
-   font-family: 'Abel', sans-serif;
+  font-weight: 900;
+  font-family: 'Abel', sans-serif;
    color: black;
 }
 .top-news .main-topnews{
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- font-family: 'Abel', sans-serif;
+font-family: 'Abel', sans-serif;
   border-radius: 20px 0px 0px 20px;
-  font-weight: 500;
+  font-weight: 900;
 }
 
 .main-topnews h4{
@@ -1275,8 +1276,8 @@ Projects
   margin-top: 15px;
   margin-bottom: 15px;
   margin-left: 5px;
-  font-weight: 700;
-  font-family: 'Abel', sans-serif;
+  font-weight: 900;
+ font-family: 'Abel', sans-serif;
 }
 .main-topnews .slug{
    font-weight: 700; 
@@ -1291,7 +1292,7 @@ Projects
 .other-topnews{
   margin-top: 10px;
   margin-left: 10px;
-  font-family: 'Abel', sans-serif;
+ font-family: 'Abel', sans-serif;
   color: black;
 }
 .other-topnews .text-slug p{
@@ -1302,7 +1303,7 @@ Projects
   color: black;
 }
 .other-topnews .slug{
-  font-weight: 700; 
+  font-weight: 900; 
   font-size:10px;
   color: black;
 }
@@ -1313,7 +1314,7 @@ Projects
 
 .other-topnews .text-slug{
   text-align:left;
-  font-size: 14px;
+ 
   color: black;
   text-decoration: none;
 }
@@ -1324,13 +1325,13 @@ Projects
   padding: 10px;
   padding-right: 20px;
   padding-left: 20px;
-  font-weight: 700;
+  font-weight: 900;
 
-  font-family: 'Abel', sans-serif;
+ font-family: 'Abel', sans-serif;
 
 }
 .recent-news .slug{
-  font-weight: 700; 
+  font-weight: 900; 
   font-size:10px;
   color: black;
 }
@@ -1340,7 +1341,7 @@ Projects
 }
 .recent-news .text-slug p{
   text-align:left;
-  font-size: 14px;
+  
 }
 .recent-news .text-slug a{
   color: black; 
@@ -1352,8 +1353,8 @@ Projects
   /*float: left;*/
   margin-top: 5px;
   margin-left: 5px;
-  font-weight: 700;
-  font-family: 'Abel', sans-serif;
+  font-weight: 900;
+ font-family: 'Abel', sans-serif;
 }
 .home-india{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -1390,7 +1391,7 @@ Projects
   margin-top: 5px;
   margin-left: 5px;
   font-weight: 700;
-  font-family: 'Abel', sans-serif;
+ font-family: 'Abel', sans-serif;
   margin-bottom: 30px;
 }
 
