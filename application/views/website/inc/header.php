@@ -57,12 +57,13 @@
                                     </div>
                                     <div class="col_1">
                                         <ul>
+                                            
                                         </ul>
                                     </div>
                                     <div class="col_1">
                                         <ul>
                                             <li>
-                                                <h5>BROWSE <?= $val['menu_name'] ?></h5>
+                                                <h5><?= $val['menu_name'] ?></h5>
                                                 <hr>
                                             </li>
                                         </ul>
