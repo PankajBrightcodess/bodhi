@@ -922,6 +922,7 @@ Projects
     /* background: #014464; */
     background: -moz-linear-gradient(top, #0272a7, #013953);
 
+
     /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0272a7), to(#013953)); */
     /* border: 1px solid #002232; */
     /*-moz-box-shadow: inset 0px 0px 1px #edf9ff;*/
@@ -938,6 +939,7 @@ Projects
     /* margin-right: 30px; */
     /* margin-top: 7px; */
     border: none;
+
 }
 
 /*#menu li:hover {
@@ -959,6 +961,7 @@ Projects
     -moz-border-radius: 5px 5px 0px 0px;
     -webkit-border-radius: 5px 5px 0px 0px;
     /* border-radius: 5px 5px 0px 0px; */
+    transition: 1s;
 }
 
 #menu li a {
@@ -989,7 +992,7 @@ Projects
   margin:10px auto;
   float:left;
   position:absolute;
-  left:-200em; /* Hides the drop down */
+  top:-200em; /* Hides the drop down */
   text-align:left;
   padding:10px 5px 10px 5px;
   /*border:1px solid #777777;*/
@@ -999,6 +1002,8 @@ Projects
   /* Gradient background */
   background: #71828F;
   overflow: hidden;
+  transition: 3s;
+
 
  
   background: -moz-linear-gradient(top, #EEEEEE, #BBBBBB);
