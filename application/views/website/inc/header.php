@@ -50,38 +50,47 @@
                                 <?php if ($val['menu_name']=='INDIA' ||  $val['menu_name']=='WORLD'|| $val['menu_name']=='BUSINESS' ||  $val['menu_name']=='MORE') {
                                     ?>
                                     <div class="dropdown_4columns container">
+                                        <div class="row">
+                                      <div class="col-md-3 news-list">
                                     <!-- Begin 4 columns container -->
-                                    <div class="col_1">
-                                        <ul>
-                                        </ul>
+                                            <div class="col_1">
+                                                <ul>
+                                                </ul>
+                                            </div>
+                                            <div class="col_1">
+                                                <ul>
+                                                    <li>
+                                                        <h5><?= $val['menu_name'] ?></h5>
+                                                        <hr>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <?php $result = $this->Account_model->getsubmenuslist(array('menu' => $val['menu_name'])) ?>
+                                                    <?php if (!empty($result)) {
+                                                        foreach ($result as $val) {  ?>
+                                                            <li><a href="<?php echo base_url('website/north/' . $val['id'] . '/' . $m . '/' . $val['submenu']) ?>"><?= $val['submenu'] ?></a></li>
+                                                    <?php }
+                                                    } ?>
+                                                </ul>
+                                            </div>
+                                  </div>
+                                  <div class="col-md-9">
+                                     <div class="row ">
+                                            <div class="col-md-6"><h2>Hello</h2></div>
+                                            <div class="col-md-6"><h2>Hello</h2></div>
+                                            <div class="col-md-6"><h2>Hello</h2></div>
+                                            <div class="col-md-6"><h2>Hello</div>
+                                           
+                                        </div>
                                     </div>
-                                    <div class="col_1">
-                                        <ul>
-                                            
-                                        </ul>
-                                    </div>
-                                    <div class="col_1">
-                                        <ul>
-                                            <li>
-                                                <h5><?= $val['menu_name'] ?></h5>
-                                                <hr>
-                                            </li>
-                                        </ul>
-                                        <ul>
-                                            <?php $result = $this->Account_model->getsubmenuslist(array('menu' => $val['menu_name'])) ?>
-                                            <?php if (!empty($result)) {
-                                                foreach ($result as $val) {  ?>
-                                                    <li><a href="<?php echo base_url('website/north/' . $val['id'] . '/' . $m . '/' . $val['submenu']) ?>"><?= $val['submenu'] ?></a></li>
-                                            <?php }
-                                            } ?>
-                                        </ul>
-                                    </div> 
+                                </div>
                                 </div>
                                     <?php
                                 }?>
                          </li> <?php }
                      } ?>
                 </ul>
+
                  
             </div>
         </div>
