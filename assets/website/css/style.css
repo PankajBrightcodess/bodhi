@@ -1401,6 +1401,28 @@ font-family: 'Abel', sans-serif;
 
 
 
+/*'''''''''sub page'''''''''''''*/
+.sub-news h4{
+   font-family: myGabriola,Arial,sans-serif;
+   float: left; 
+   margin-top:0px;
+   color: rgb(35 97 138);
+}
+
+.economy {
+  font-family: myGabriola,Arial,sans-serif;
+}
+
+.india-economy .top-news{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  font-weight: 200;
+  font-family: myGabriola,Arial,sans-serif;
+   color: black;
+   margin-top: 10px;
+}
+
+
 /*...........................................................Sign In................................................*/
  .bb-login {
      margin-top: 100px;
