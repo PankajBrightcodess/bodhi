@@ -1236,6 +1236,29 @@ Projects
     width: 100%;
     z-index: 9;
 }
+.abcd .main-heading h2{
+  font-family: sans-serif, Helvetica Neue, Lucida Grande, Arial; 
+  text-align: center;
+  margin-top:15px;
+  color: rgb(35 97 138);
+  font-stretch: extra-expanded; 
+  font-weight: 1000;
+  font-size:50px;
+  letter-spacing: 9px;
+  word-spacing: 13px;
+}
+.abcd .main-heading span{
+  color:#569EEA;
+}
+.abcd .main-heading h5{
+  /*font-family: 'Abel', sans-serif; */
+  text-align: center; 
+  margin-bottom:10px;
+  color: rgb(35 97 138);
+  font-weight: 500;
+  font-size: 20px;
+  word-spacing: 10;
+}
 .header-gap{
   padding: 115px 0;
 }

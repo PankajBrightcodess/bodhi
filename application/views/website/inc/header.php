@@ -1,26 +1,21 @@
 <body>
 
-    <div class="top-bar abcd">  <!-- style="background-color:white; z-index: 99; position: fixed; overflow: hidden; width: 100%;" -->
+    <div class="top-bar abcd"> 
         <div class="container">
             <div class="row ">
                 <div class="col-md-2 col-sm-4 col-4">
                      <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.png') ?>" height="90%" width="95%" style="float:center;" style="margin:0px;"></a>
                 </div>
-                <div class="col-md-6 col-8">
-                    <a href="<?php echo base_url('/')?>" style="text-decoration: none;"><h3 style="font-family: 'Heebo', sans-serif;, serif; text-align: center; margin-top:30px;color: rgb(35 97 138); font-weight: 1000;"> <strong>BODHI <span style="color:#569EEA">WIRE</span></strong></h3><h5 style="font-family: 'Abel', sans-serif; text-align: center; margin-bottom:10px;color: rgb(35 97 138);">INTERNATIONAL NEWS AGENCY</h5>   </a>
+                <div class="col-md-6 col-8 main-heading">
+                    <a href="<?php echo base_url('/')?>"><h2> <strong >BODHI <span >WIRE</span></strong></h2><h5>INTERNATIONAL NEWS AGENCY</h5>   </a>
+                    <!-- <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/website/news_image/bodhi.png') ?>" style="float:center; margin-top: 10px;" width="100%" ></a> -->
                 </div>
                 <div class="col-md-4 mb-3" style="float:right;">
-                    <!-- <a href="<?php echo base_url('/')?>" style="text-decoration: none;"><p style="font-family: 'Arvo', serif;float: left; margin-top:10px;color: rgb(35 97 138);"> A Vanman Communications Initiative</p></a> -->
                     <!-- '''''''''''''''''''''''''search''''''''''''''''''''''''' -->
 
 
                     <!-- '''''''''''''''''''''''end search''''''''''''''''''''''' -->
                     <div class="input-group btn-group rounded" >
-                     <!--  <input type="search" class="form-control rounded" style="margin-top:10px;" placeholder="Search" aria-label="Search"
-                      aria-describedby="search-addon" />
-                      <span class="input-group-text border-0" style="margin-top:10px; margin-right: 7px;" id="search-addon">
-                        <i class="fas fa-search"></i>
-                      </span> -->
                        <div class="search-box btn-space">
                         <button class="btn-search btn-space"><i class="fas fa-search"></i></button>
                         <input type="text" class="input-search"  placeholder="Type to Search...">
