@@ -68,10 +68,7 @@
 								<label><?php if(!empty($val['submenu'])){
 												echo $val['submenu'];}else{echo $val['menu_name'];}?></label>
 							</div>
-							<div class="col-md-12 slug-time">
-								<label><?php echo date('h:i A',strtotime($val['entrydate']));?></label>
-						        <hr style="color:black;"></h2>
-						  </div>
+							
 							<div class="col-md-12 text-slug">
 						    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;"><?= $val['tittle'] ?></a></p></div>
 						    <div class="col-md-12 slug-time" style="margin-top:20px;">
