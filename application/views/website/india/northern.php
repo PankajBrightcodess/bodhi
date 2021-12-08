@@ -27,7 +27,7 @@
 					        </label>
 					       </div>
 					    <div class="card-body text-slug">
-					 	      <h2 class="card-title"><strong><a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black;"><?= $val['tittle'] ?></a></strong></h2>
+					 	      <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black;"><h2 class="card-title"><strong><?= $val['tittle'] ?></strong></h2></a>
 						  </div>
 						  <div class="col-md-12 slug-time">
 								<label><?php echo date('h:i A',strtotime($val['entrydate']));?></label>
