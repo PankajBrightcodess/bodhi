@@ -31,7 +31,7 @@
 				  		 </div> 
 				  		 <div class="col-md-12 slug" style="margin-top:10px; ">
 								<label><?php if(!empty($result['submenu'])){
-												echo $result['submenu'];}else{echo $result['menu_name'];}?></label>
+												echo $result['menu_name'].' | '.$result['submenu'];}else{echo $result['menu_name'];}?></label>
 							</div>
 							<div class="col-md-12 slug-time">
 								<label><?php echo date('h:i A',strtotime($result['entrydate']));?></label>

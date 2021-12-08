@@ -20,7 +20,7 @@
 				  		   </div>
 				  		   <div class="col-md-12 slug">
 							<label><?php if(!empty($val['submenu'])){
-								echo $val['submenu'];}else{echo $val['menu_name'];}?>
+								echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?>
 					        </label>
 					       </div>
 					       <div class="card-body text-slug">
@@ -57,7 +57,7 @@
                           foreach($result as $val){ $i++;if($i>1 && $i<5){ ?>
                           <div class="col-md-12 slug">
 								<label><?php if(!empty($val['submenu'])){
-												echo $val['submenu'];}else{echo $val['menu_name'];}?></label>
+												echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?></label>
 							</div>
 			  			<div class="col-md-7 mb-3 text-slug"><p><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;"><?= $val['tittle'] ?></a></p></div>
 			  			<div class="col-md-5 mb-3"><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;"><img src="<?php echo base_url();?><?php echo $val['image'] ?>" class="img-fluid"></a></div>
@@ -80,7 +80,7 @@
 						  	<div class="row">
 						  	<div class="col-md-12 slug">
 								<label><?php if(!empty($val['submenu'])){
-												echo $val['submenu'];}else{echo $val['menu_name'];}?></label>
+												echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?></label>
 							</div>
 						  	<div class="col-md-12 text-slug">
 						    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;"><?= $val['tittle'] ?></a></p>

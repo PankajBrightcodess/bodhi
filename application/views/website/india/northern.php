@@ -23,7 +23,7 @@
 				  		<img src="<?php echo base_url();?><?php echo $val['image'] ?>" style="margin-top: 10px;" class="img-fluid"><hr>
 				  		<div class="col-md-12 slug">
 							<label><?php if(!empty($val['submenu'])){
-								echo $val['submenu'];}else{echo $val['menu_name'];}?>
+								echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?>
 					        </label>
 					       </div>
 					    <div class="card-body text-slug">
@@ -56,7 +56,7 @@
                               foreach($result as $val){ $i++;if($i>1 && $i<6){ ?>
                       <div class="col-md-12">
 													<label style="float:left; color: #5E6563; font-weight: 500; font-size:10px; margin-top: 3px;"><?php if(!empty($val['submenu'])){
-												echo $val['submenu'];}else{echo $val['menu_name'];}?></label>
+												echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?></label>
 							       </div>
 				  			<div class="col-md-7 mb-3" style="text-align:justify;"><p><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;"><?= $val['tittle'] ?></a></p></div>
 				  			<div class="col-md-5 mb-3"><img src="<?php echo base_url();?><?php echo $val['image'] ?>" class="img-fluid"></div>
@@ -79,7 +79,7 @@
 						  	<div class="row">
 						  		<div class="col-md-12 slug">
 								<label><?php if(!empty($val['submenu'])){
-												echo $val['submenu'];}else{echo $val['menu_name'];}?></label>
+												echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?></label>
 							</div>
 							
 							<div class="col-md-12 text-slug">
