@@ -29,7 +29,7 @@
 				  			<div class="col-md-12">
 				  		   <img  src="<?php echo base_url();?><?php echo $result['image'] ?>" class="img-fluid">
 				  		 </div> 
-				  		 <div class="col-md-12 slug" style="margin-top:10px;">
+				  		 <div class="col-md-12 slug" style="margin-top:10px; ">
 								<label><?php if(!empty($result['submenu'])){
 												echo $result['submenu'];}else{echo $result['menu_name'];}?></label>
 							</div>
@@ -38,7 +38,7 @@
 						        <hr style="color:black;">
 						  </div>
 				  		            <div class="col-md-12"><h3><?= $result['tittle'] ?></h3></div>
-                         <div class="col-md-12" style="text-align: justify;"><p ><?= $result['news'] ?></p></div>
+                         <div class="col-md-12" style="text-align: justify; padding: 25px;"><p ><?= $result['news'] ?></p></div>
                           <div class="col-md-12">
                                <div class="footer-social-icons" >
 								    <!-- <h4 class="_14">Follow us on</h4> -->
