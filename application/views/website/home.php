@@ -46,7 +46,7 @@
 												<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><img src="<?php echo base_url();?><?php echo $val['image'] ?>" class="card-img-top" alt="Card image cap"></a>
 												<div class="col-md-12 slug">
 														<label><?php if(!empty($val['submenu'])){
-																		echo $val['submenu'];}else{echo $val['menu_name'];}?>
+																		echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?>
 												        </label>
 												</div>
 												   <div class="card-body text-slug">
@@ -107,7 +107,7 @@
 							if ($i>1 && $i<7) { ?>
 								<div class="col-md-12 slug ">
 									<label><?php if(!empty($val['submenu'])){
-													echo $val['submenu'];}else{echo $val['menu_name'];}?></label>
+													echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?></label>
 								</div>
 								<div class="col-md-8 text-slug">
 
@@ -147,7 +147,7 @@
 						if ($i < 10) { ?>
 							<div class="col-md-12 slug">
 								<label><?php if(!empty($val['submenu'])){
-												echo $val['submenu'];}else{echo $val['menu_name'];}?></label>
+												echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?></label>
 							</div>
 							<div class="col-md-12 text-slug">
 								<p><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']); ?>"><?php echo $val['tittle'] ?></a></p>
@@ -180,8 +180,8 @@
         				<a href="<?php echo base_url('website/detailnewsview/' . $indianews[0]['slug']); ?>"><img class="img-fluid" src="<?php echo base_url();?><?php echo $indianews[0]['image'] ?>" alt="Card image cap img-fluid"></a>
         			</div>
         			<div class="col-md-12 slug">
-					   <label><?php if(!empty($val['submenu'])){
-									echo $val['submenu'];}else{echo $val['menu_name'];}?></label>
+					   <label><?php if(!empty($indianews[0]['submenu'])){
+									echo $indianews[0]['menu_name'].' | '.$indianews[0]['submenu'];}else{echo $indianews[0]['menu_name'];}?></label>
 					</div>
         			<div class="col-md-12 mb-5 text-slug">
         				<h2 class="card-title"><strong><a href="<?php echo base_url('website/detailnewsview/' . $indianews[0]['slug']); ?>"><?php echo $indianews[0]['tittle']?></a></strong></h2>
@@ -210,7 +210,7 @@
         					<div class="row home-india">
         					<div class="col-md-12 slug">
 								<label><?php if(!empty($value['submenu'])){
-												echo $value['submenu'];} else{echo $value['menu_name'];}?>
+												echo $value['menu_name'].' | '.$value['submenu'];} else{echo $value['menu_name'];}?>
 						        </label>
 							 </div>
 		        			<div class="col-md-7 text-slug"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>" ><?php echo $value['tittle']?></a></div>
@@ -252,7 +252,7 @@
         			</div>
         			<div class="col-md-12 slug">
 					   <label><?php if(!empty($southasianews[2]['submenu'])){
-									echo $southasianews[2]['submenu'];}else{echo $southasianews[2]['menu_name'];}?></label>
+									echo $southasianews[2]['menu_name'].' | '.$southasianews[2]['submenu'];}else{echo $southasianews[2]['menu_name'];}?></label>
 					</div>
         			<div class="col-md-12 text-slug">
         				<h2 class="card-title"><strong><a href="<?php echo base_url('website/detailnewsview/' . $southasianews[2]['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $southasianews[2]['tittle']?></a></strong></h2>
@@ -279,7 +279,7 @@
         					<div class="row home-india">
         						<div class="col-md-12 slug">
 								<label ><?php if(!empty($value['submenu'])){
-												echo $value['submenu'];} else{echo $value['menu_name'];}?>
+												echo $value['menu_name'].' | '.$value['submenu'];} else{echo $value['menu_name'];}?>
 						        </label>
 								</div>
 		        			<div class="col-md-7 text-slug"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>" ><?php echo $value['tittle']?></a></div>
@@ -318,7 +318,7 @@
         			</div>
         			<div class="col-md-12 slug">
 					   <label><?php if(!empty($worldnews[2]['submenu'])){
-									echo $worldnews[2]['submenu'];}else{echo $worldnews[2]['menu_name'];}?></label>
+									echo  $worldnews[2]['menu_name'].' | '.$worldnews[2]['submenu'];}else{echo $worldnews[2]['menu_name'];}?></label>
 					</div>
         			<div class="col-md-12 text-slug">
         				<h2 class="card-title"><strong><a href="<?php echo base_url('website/detailnewsview/' . $worldnews[2]['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $worldnews[2]['tittle']?></a></strong></h2>
@@ -345,7 +345,7 @@
         					<div class="row home-india">
         						<div class="col-md-12 slug">
 								<label><?php if(!empty($value['submenu'])){
-												echo $value['submenu'];} else{echo $value['menu_name'];}?>
+												echo $value['menu_name'].' | '.$value['submenu'];} else{echo $value['menu_name'];}?>
 						        </label>
 								</div>
 		        			<div class="col-md-7 text-slug"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>" ><?php echo $value['tittle']?></a></div>
@@ -387,7 +387,7 @@
         			</div>
         			<div class="col-md-12 slug">
 					   <label><?php if(!empty($businesstopnews[4]['submenu'])){
-									echo $businesstopnews[4]['submenu'];}else{echo $businesstopnews[4]['menu_name'];}?></label>
+									echo $businesstopnews[4]['menu_name'].' | '.$businesstopnews[4]['submenu'];}else{echo $businesstopnews[4]['menu_name'];}?></label>
 					</div>
         			<div class="col-md-12 text-slug">
         				<h2><strong><a href="<?php echo base_url('website/detailnewsview/' . $businesstopnews[4]['slug']); ?>"><?php echo $businesstopnews[4]['tittle']?></a></strong></h2>
@@ -414,7 +414,7 @@
         					<div class="row home-india">
         						<div class="col-md-12 slug">
 								<label><?php if(!empty($value['submenu'])){
-												echo $value['submenu'];} else{echo $value['menu_name'];}?>
+												echo $value['menu_name'].' | '.$value['submenu'];} else{echo $value['menu_name'];}?>
 						        </label>
 								</div>
 		        			<div class="col-md-7 text-slug"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>"><?php echo $value['tittle']?></a></div>
@@ -454,7 +454,7 @@
         			</div>
         			<div class="col-md-12 slug">
 					   <label><?php if(!empty($businesstopnews[4]['submenu'])){
-									echo $businesstopnews[4]['submenu'];}else{echo $businesstopnews[4]['menu_name'];}?></label>
+									echo $businesstopnews[4]['menu_name'].' | '.$businesstopnews[4]['submenu'];}else{echo $businesstopnews[4]['menu_name'];}?></label>
 					</div>
         			<div class="col-md-12 text-slug">
         				<h2><strong><a href="<?php echo base_url('website/detailnewsview/' . $technews[2]['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $technews[2]['tittle']?></a></strong></h2>
@@ -481,7 +481,7 @@
         					<div class="row home-india">
         						<div class="col-md-12 slug">
 								<label ><?php if(!empty($value['submenu'])){
-												echo $value['submenu'];} else{echo $value['menu_name'];}?>
+												echo $value['menu_name'].' | '.$value['submenu'];} else{echo $value['menu_name'];}?>
 						        </label>
 								</div>
 		        			<div class="col-md-7 text-slug"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>" style="color: black; text-decoration: none;"><?php echo $value['tittle']?></a></div>
@@ -577,7 +577,7 @@
         			</div>
         			<div class="col-md-12 slug">
 					<label ><?php if(!empty($value['submenu'])){
-									echo $value['submenu'];} else{echo $value['menu_name'];}?>
+									echo $climatenews[2]['menu_name'].' | '.$climatenews[2]['submenu'];} else{echo $value['menu_name'];}?>
 			        </label>
 					</div>
         			<div class="col-md-12 text-slug">
@@ -605,7 +605,7 @@
         					<div class="row home-india">
         						<div class="col-md-12 slug">
 								<label><?php if(!empty($value['submenu'])){
-												echo $value['submenu'];} else{echo $value['menu_name'];}?>
+												echo $value['menu_name'].' | '.$value['submenu'];} else{echo $value['menu_name'];}?>
 						        </label>
 								</div>
 		        			<div class="col-md-7 text-slug"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>"><?php echo $value['tittle']?></a></div>
@@ -650,7 +650,7 @@
         			</div>
         			<div class="col-md-12 slug">
 					<label ><?php if(!empty($value['submenu'])){
-									echo $value['submenu'];} else{echo $value['menu_name'];}?>
+									echo $lifestyletopnews[0]['menu_name'].' | '.$lifestyletopnews[0]['submenu'];} else{echo $value['menu_name'];}?>
 			        </label>
 					</div>
         			<div class="col-md-12 text-slug">
@@ -678,7 +678,7 @@
         					<div class="row home-india">
         						<div class="col-md-12 slug">
 								<label><?php if(!empty($value['submenu'])){
-												echo $value['submenu'];} else{echo $value['menu_name'];}?>
+												echo $value['menu_name'].' | '.$value['submenu'];} else{echo $value['menu_name'];}?>
 						        </label>
 								</div>
 		        			<div class="col-md-7 text-slug"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>"><?php echo $value['tittle']?></a></div>
@@ -717,8 +717,8 @@
         				<a href="<?php echo base_url('website/detailnewsview/' . $sportnews[0]['slug']); ?>" style="color: black; text-decoration: none;"><img class="card-img-top" src="<?php echo base_url();?><?php echo $sportnews[0]['image'] ?>" alt="Card image cap"></a>
         			</div>
         			<div class="col-md-12 slug">
-					  <label ><?php if(!empty($value['submenu'])){
-									echo $value['submenu'];} else{echo $value['menu_name'];}?>
+					  <label ><?php if(!empty($sportnews[0]['submenu'])){
+									echo $sportnews[0]['menu_name'].' | '.$sportnews[0]['submenu'];} else{echo $sportnews[0]['menu_name'];}?>
 			        </label>
 					</div>
         			<div class="col-md-12 text-slug">
@@ -746,7 +746,7 @@
         					<div class="row home-india">
         						<div class="col-md-12 slug">
 								<label><?php if(!empty($value['submenu'])){
-												echo $value['submenu'];} else{echo $value['menu_name'];}?>
+												echo $value['menu_name'].' | '.$value['submenu'];} else{echo $value['menu_name'];}?>
 						        </label>
 								</div>
 		        			<div class="col-md-7 text-slug" ><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>"><?php echo $value['tittle']?></a></div>
@@ -785,8 +785,8 @@
         				<a href="<?php echo base_url('website/detailnewsview/' . $openionnews[0]['slug']); ?>"><img class="card-img-top" src="<?php echo base_url();?><?php echo $openionnews[0]['image'] ?>" alt="Card image cap"></a>
         			</div>
         			<div class="col-md-12 slug">
-					  <label ><?php if(!empty($value['submenu'])){
-									echo $value['submenu'];} else{echo $value['menu_name'];}?>
+					  <label ><?php if(!empty($openionnews[0]['submenu'])){
+									echo $openionnews[0]['menu_name'].' | '.$openionnews[0]['submenu'];} else{echo $openionnews[0]['menu_name'];}?>
 			        </label>
 					</div>
 
@@ -815,7 +815,7 @@
         					<div class="row home-india">
         						<div class="col-md-12 slug">
 								<label><?php if(!empty($value['submenu'])){
-												echo $value['submenu'];} else{echo $value['menu_name'];}?>
+												echo $value['menu_name'].' | '.$value['submenu'];} else{echo $value['menu_name'];}?>
 						        </label>
 								</div>
 		        			<div class="col-md-7 text-slug"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']); ?>"><?php echo $value['tittle']?></a></div>
