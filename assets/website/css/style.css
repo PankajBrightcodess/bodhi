@@ -1419,7 +1419,7 @@ ul.social-icons {
   word-spacing: 10;
 }
 .header-gap{
-  padding: 125px 0;
+  padding: 100px 0;
 }
 .bg-light {
     background: #23618a !important;
@@ -1962,6 +1962,48 @@ font-family: 'Abel', sans-serif;
          padding: 77px 15px 33px 15px
      }
  }
+
+@media screen and (max-width: 920px) {
+  .abcd{
+ background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+.abcd .main-heading h2{
+  font-family: sans-serif, Helvetica Neue, Lucida Grande, Arial; 
+  text-align: center;
+  margin-top:15px;
+  color: rgb(35 97 138);
+  width: 100%;
+  font-weight: 1000;
+  font-size:20px;
+  letter-spacing: 2px;
+  word-spacing: 13px;
+}
+.abcd .main-heading span{
+  color:#569EEA;
+}
+.abcd .main-heading h5{
+  /*font-family: 'Abel', sans-serif; */
+  text-align: center; 
+  margin-bottom:10px;
+  color: rgb(35 97 138);
+  font-weight: 500;
+  font-size: 10px;
+  word-spacing: 10;
+}
+.header-gap{
+  padding: 90px 0;
+}
+}
+
+
+
+
+
+
 
  .validate-input {
      position: relative
