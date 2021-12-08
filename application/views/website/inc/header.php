@@ -32,7 +32,7 @@
         </div>
 
     <!-- =========================================== -->
-    <nav class="navbar navbar-expand-lg bg-light" style="background: #23618a !important;">
+    <nav class="navbar navbar-expand-lg bg-light" style="background: #23618a !important; padding:0px;">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color:white;" aria-hidden="true"></i></span>
@@ -43,8 +43,10 @@
                         <a href="<?php echo base_url("website/") ?>" style="color: white;" class="nav-link active">HOME </a>
                     </li>
                     <?php if (!empty($result4)) {
+
                         foreach ($result4 as $val) {
                             $m = $val['menu_name']; 
+                            $id = $val['id'];
                             ?>
                             <li class="nav-item"><a href="<?php echo base_url('website/india/'. $val['id'].'/'.$val['menu_name'])?>" class="drop nav-link"><?= $val['menu_name'] ?></a>
                                 <?php if ($val['menu_name']=='INDIA' ||  $val['menu_name']=='WORLD'|| $val['menu_name']=='BUSINESS' ||  $val['menu_name']=='MORE') {
@@ -73,21 +75,57 @@
                                                     } ?>
                                                 </ul>
                                             </div>
-                                  </div>
-                                  <div class="col-md-9">
-                                     <div class="row ">
-                                           <?php
-                                           // echo PRE;
-                                           //  print_r($gettopnews);
-                                            
+                                      </div>
+                                  <div class="col-md-9 news-array">
+                                        <?php $result = $this->Website_model->getsubmenuslistbyid(array('menu' => $id));?>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[0]['slug']);?>"><p><?= $result[0]['tittle'] ?></p></a>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                         <a href="<?php echo base_url('website/detailnewsview/'.$result[0]['slug']);?>"><img src="<?php echo base_url();?><?php echo $result[0]['image'] ?>" class="card-img-top" style="margin-top: 10px;" alt="Card image cap"></a>
+                                                    </div>
+                                                </div>        
 
-
-
-
-                                           ?>
-                                           
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[1]['slug']);?>"><?= $result[1]['tittle'] ?></a>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[1]['slug']);?>"><img src="<?php echo base_url();?><?php echo $result[1]['image'] ?>" class="card-img-top" style="margin-top: 10px;" alt="Card image cap"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <hr>    
+                                            </div>
+                                             <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[2]['slug']);?>"><?= $result[2]['tittle'] ?></a>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[2]['slug']);?>" ><img src="<?php echo base_url();?><?php echo $result[2]['image'] ?>" class="card-img-top" style="margin-top: 10px;" alt="Card image cap"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[3]['slug']);?>"><?= $result[3]['tittle'] ?></a>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[3]['slug']);?>"><img src="<?php echo base_url();?><?php echo $result[3]['image'] ?>" class="card-img-top" style="margin-top: 10px;" alt="Card image cap"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
+                                      
+                                  </div>
                                 </div>
                                 </div>
                                     <?php
