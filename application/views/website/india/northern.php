@@ -20,7 +20,7 @@
 				  	<div class="col-md-7 main-topnews" >
 					  <?php $j=0; if(!empty($result)){                  
                          foreach($result as $val){  $j++;if($j==1){?>
-				  		<img src="<?php echo base_url();?><?php echo $val['image'] ?>" style="margin-top: 10px;" class="img-fluid"><hr>
+				  		<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black;"><img src="<?php echo base_url();?><?php echo $val['image'] ?>" style="margin-top: 10px;" class="img-fluid"></a><hr>
 				  		<div class="col-md-12 slug">
 							<label><?php if(!empty($val['submenu'])){
 								echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?>
