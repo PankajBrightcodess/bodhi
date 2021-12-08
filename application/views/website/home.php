@@ -50,7 +50,7 @@
 												        </label>
 												</div>
 												   <div class="card-body text-slug">
-												 	  <h2 class="card-title"><strong><a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><?php echo $val['tittle'] ?></a></strong>
+												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><h2 class="card-title"><strong><?php echo $val['tittle'] ?></strong></h2></a>
 													
 												  </div>
 												  <div class="col-md-12 slug-time">
