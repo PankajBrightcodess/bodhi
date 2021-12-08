@@ -16,7 +16,7 @@
 				  		<?php $j=0; if(!empty($result)){                  
                            foreach($result as $val){  $j++;if($j==1){?>
                            	<div class="col-md-12">
-				  		       <img src="<?php echo base_url();?><?php echo $val['image'] ?>" class="card-img-top" style="margin-top: 10px;" alt="Card image cap"><hr>
+				  		       <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black;"><img src="<?php echo base_url();?><?php echo $val['image'] ?>" class="card-img-top" style="margin-top: 10px;" alt="Card image cap"></a><hr>
 				  		   </div>
 				  		   <div class="col-md-12 slug">
 							<label><?php if(!empty($val['submenu'])){
