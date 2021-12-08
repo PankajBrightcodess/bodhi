@@ -76,10 +76,15 @@
                                   </div>
                                   <div class="col-md-9">
                                      <div class="row ">
-                                            <!-- <div class="col-md-6"><h2>Hello</h2></div>
-                                            <div class="col-md-6"><h2>Hello</h2></div>
-                                            <div class="col-md-6"><h2>Hello</h2></div>
-                                            <div class="col-md-6"><h2>Hello</div> -->
+                                           <?php
+                                           // echo PRE;
+                                           //  print_r($gettopnews);
+                                            
+
+
+
+
+                                           ?>
                                            
                                         </div>
                                     </div>
