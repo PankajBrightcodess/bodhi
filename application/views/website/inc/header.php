@@ -33,12 +33,12 @@
         </div>
 
     <!-- =========================================== -->
-    <nav class="navbar navbar-expand-lg bg-light" style="background: #23618a !important; padding:15px; ">
+    <nav class="navbar navbar-expand-lg bg-light" style="background: #23618a !important; padding:0px; ">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color:white;" aria-hidden="true"></i></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left:10px;">
                 <ul class="navbar-nav  me-auto mb-2 mb-lg-0" id="menu" >
                     <li class="nav-item"> 
                         <a href="<?php echo base_url("website/") ?>" style="color: white;" class="nav-link active">HOME </a>
