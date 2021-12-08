@@ -27,12 +27,25 @@
 					        </label>
 					       </div>
 					    <div class="card-body text-slug">
-					 	      <h2 class="card-title"><strong><a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black;"><?= $val['tittle'] ?></a></strong>
+					 	      <h2 class="card-title"><strong><a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black;"><?= $val['tittle'] ?></a></strong></h2>
 						  </div>
 						  <div class="col-md-12 slug-time">
 								<label><?php echo date('h:i A',strtotime($val['entrydate']));?></label>
-						        <hr style="color:black;"></h2>
+						        
 						  </div>
+						  <div class="col-md-12">
+                               <div class="footer-social-icons" >
+								    <!-- <h4 class="_14">Follow us on</h4> -->
+								    <ul class="social-icons">
+								        <li><a href="" class="social-icon"><i class="fa fa-facebook"></i></a></li>
+								        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+								        <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+								        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+								        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+								        <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+								    </ul>
+								</div> 
+						</div>
 				  	<?php }} }?>
 					</div>
 				  	<div class="col-md-5">

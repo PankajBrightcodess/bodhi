@@ -35,10 +35,23 @@
 							</div>
 							<div class="col-md-12 slug-time">
 								<label><?php echo date('h:i A',strtotime($result['entrydate']));?></label>
-						        <hr style="color:black;"></h2>
+						        <hr style="color:black;">
 						  </div>
 				  		            <div class="col-md-12"><h3><?= $result['tittle'] ?></h3></div>
                          <div class="col-md-12" style="text-align: justify;"><p ><?= $result['news'] ?></p></div>
+                          <div class="col-md-12">
+                               <div class="footer-social-icons" >
+								    <!-- <h4 class="_14">Follow us on</h4> -->
+										    <ul class="social-icons">
+										        <li><a href="" class="social-icon"><i class="fa fa-facebook"></i></a></li>
+										        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+										        <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+										        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+										        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+										        <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+										    </ul>
+								</div> 
+						</div>
               </div>
 				  	</div>
 				  	<div class="col-md-5">

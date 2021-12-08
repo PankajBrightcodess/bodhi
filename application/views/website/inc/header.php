@@ -2,12 +2,12 @@
 
     <div class="top-bar abcd"> 
         <div class="container">
-            <div class="row ">
+            <div class="row">
                 <div class="col-md-2 col-sm-4 col-4">
                      <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.png') ?>" height="90%" width="95%" style="float:center;" style="margin:0px;"></a>
                 </div>
                 <div class="col-md-6 col-8 main-heading">
-                    <a href="<?php echo base_url('/')?>"><h2> <strong >BODHI <span >WIRE</span></strong></h2><h5>INTERNATIONAL NEWS AGENCY</h5>   </a>
+                    <a href="<?php echo base_url('/')?>"><h2><strong >BODHI <span >WIRE</span></strong></h2><h5>INTERNATIONAL NEWS AGENCY</h5>   </a>
                     <!-- <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/website/news_image/bodhi.png') ?>" style="float:center; margin-top: 10px;" width="100%" ></a> -->
                 </div>
                 <div class="col-md-4 mb-3" style="float:right;">
@@ -16,6 +16,7 @@
 
                     <!-- '''''''''''''''''''''''end search''''''''''''''''''''''' -->
                     <div class="input-group btn-group rounded" >
+                        
                        <div class="search-box btn-space">
                         <button class="btn-search btn-space"><i class="fas fa-search"></i></button>
                         <input type="text" class="input-search"  placeholder="Type to Search...">
@@ -123,6 +124,11 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <!-- '''''''''''''''''''''''''share'''''''''''''''''''''' -->
+                                           
+                                            
+                                            
+                                            <!-- '''''''''''''''''''''''''share end'''''''''''''''''''' -->
                                         </div>
                                       
                                   </div>

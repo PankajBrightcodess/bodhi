@@ -37,6 +37,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arvo&family=Cinzel:wght@500&family=Heebo:wght@100;300;400;800&family=Holtwood+One+SC&family=M+PLUS+1p:wght@900&family=Readex+Pro:wght@500;600&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
           <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
          <!--  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arvo&family=Cinzel:wght@500&family=Heebo:wght@100;300;400;800&family=M+PLUS+1p:wght@900&family=Readex+Pro:wght@500;600&display=swap" rel="stylesheet"> -->
