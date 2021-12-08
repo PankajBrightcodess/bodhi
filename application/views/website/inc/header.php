@@ -93,7 +93,7 @@
                                             <div class="col-md-6">
                                                 <div class="row">
                                                     <div class="col-md-8">
-                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[1]['slug']);?>"><?= $result[1]['tittle'] ?></a>
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[1]['slug']);?>"><p> <?= $result[1]['tittle'] ?></p></a>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <a href="<?php echo base_url('website/detailnewsview/'.$result[1]['slug']);?>"><img src="<?php echo base_url();?><?php echo $result[1]['image'] ?>" class="card-img-top" style="margin-top: 10px;" alt="Card image cap"></a>
@@ -106,7 +106,7 @@
                                              <div class="col-md-6">
                                                 <div class="row">
                                                     <div class="col-md-8">
-                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[2]['slug']);?>"><?= $result[2]['tittle'] ?></a>
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[2]['slug']);?>"><p><?= $result[2]['tittle'] ?></p></a>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <a href="<?php echo base_url('website/detailnewsview/'.$result[2]['slug']);?>" ><img src="<?php echo base_url();?><?php echo $result[2]['image'] ?>" class="card-img-top" style="margin-top: 10px;" alt="Card image cap"></a>
@@ -116,7 +116,7 @@
                                             <div class="col-md-6">
                                                 <div class="row">
                                                     <div class="col-md-8">
-                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[3]['slug']);?>"><?= $result[3]['tittle'] ?></a>
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[3]['slug']);?>"><p><?= $result[3]['tittle'] ?></p></a>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <a href="<?php echo base_url('website/detailnewsview/'.$result[3]['slug']);?>"><img src="<?php echo base_url();?><?php echo $result[3]['image'] ?>" class="card-img-top" style="margin-top: 10px;" alt="Card image cap"></a>

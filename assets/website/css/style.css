@@ -1065,10 +1065,10 @@ Projects
    text-decoration: none;
 
 }
-#menu .nav-item .news-array a{
-  font-size: 13px;
+#menu .nav-item .news-array p{
+  font-size: 15px;
   color: white;
-      /*font-family: myGabriola,Arial,sans-serif;*/
+      font-family: myGabriola,Arial,sans-serif;
   text-decoration: none;
   word-spacing: 5px;
 }
@@ -1097,7 +1097,7 @@ Projects
 #menu p, #menu h2, #menu h3, #menu ul li {
   font-family:Arial, Helvetica, sans-serif;
   line-height:21px;
-  font-size:12px;
+  font-size:15px;
   text-align:left;
   /*text-shadow: 5px 5px 5px #FFFFFF;*/
 }
