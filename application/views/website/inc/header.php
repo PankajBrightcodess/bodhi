@@ -86,7 +86,7 @@
                                                         <a href="<?php echo base_url('website/detailnewsview/'.$result[0]['slug']);?>"><p><?= $result[0]['tittle'] ?></p></a>
                                                     </div>
                                                     <div class="col-md-4">
-                                                         <a href="<?php echo base_url('website/detailnewsview/'.$result[0]['slug']);?>"><img src="<?php echo base_url();?><?php echo $result[0]['image'] ?>" class="card-img-top" style="margin-top: 10px;" alt="Card image cap"></a>
+                                                         <a href="<?php echo base_url('website/detailnewsview/'.$result[0]['slug']);?>"><img src="<?php echo base_url();?><?php echo $result[0]['image'] ?>" class="card-img-top" alt="Card image cap"></a>
                                                     </div>
                                                 </div>        
 
@@ -97,7 +97,7 @@
                                                         <a href="<?php echo base_url('website/detailnewsview/'.$result[1]['slug']);?>"><p> <?= $result[1]['tittle'] ?></p></a>
                                                     </div>
                                                     <div class="col-md-4">
-                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[1]['slug']);?>"><img src="<?php echo base_url();?><?php echo $result[1]['image'] ?>" class="card-img-top" style="margin-top: 10px;" alt="Card image cap"></a>
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[1]['slug']);?>"><img src="<?php echo base_url();?><?php echo $result[1]['image'] ?>" class="card-img-top" alt="Card image cap"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -110,7 +110,7 @@
                                                         <a href="<?php echo base_url('website/detailnewsview/'.$result[2]['slug']);?>"><p><?= $result[2]['tittle'] ?></p></a>
                                                     </div>
                                                     <div class="col-md-4">
-                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[2]['slug']);?>" ><img src="<?php echo base_url();?><?php echo $result[2]['image'] ?>" class="card-img-top" style="margin-top: 10px;" alt="Card image cap"></a>
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[2]['slug']);?>" ><img src="<?php echo base_url();?><?php echo $result[2]['image'] ?>" class="card-img-top" alt="Card image cap"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -120,7 +120,7 @@
                                                         <a href="<?php echo base_url('website/detailnewsview/'.$result[3]['slug']);?>"><p><?= $result[3]['tittle'] ?></p></a>
                                                     </div>
                                                     <div class="col-md-4">
-                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[3]['slug']);?>"><img src="<?php echo base_url();?><?php echo $result[3]['image'] ?>" class="card-img-top" style="margin-top: 10px;" alt="Card image cap"></a>
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[3]['slug']);?>"><img src="<?php echo base_url();?><?php echo $result[3]['image'] ?>" class="card-img-top" alt="Card image cap"></a>
                                                     </div>
                                                 </div>
                                             </div>
