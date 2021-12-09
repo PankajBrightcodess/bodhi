@@ -43,7 +43,7 @@
 												<!--  <div class="col-md-12"> -->
 				                                      <h4>Top News</h4>
 			                                     <!-- </div> -->
-												<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><img src="<?php echo base_url();?><?php echo $val['image'] ?>" class="card-img-top" alt="Card image cap"></a>
+												<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><img src="<?php echo base_url();?><?php echo $val['image'] ?>"  class="img-fluid" alt="Card image cap"></a>
 												<div class="col-md-12 slug">
 														<label><?php if(!empty($val['submenu'])){
 																		echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?>
@@ -78,7 +78,7 @@
 								</div> 
 						</div>
 						<div class="col-md-12">
-							<hr style="color:black;"></h2>
+							<hr style="color:black;">
 						</div>
 					</div>
 					<div class="row">
@@ -144,18 +144,18 @@
 				if (!empty($result)) {
 					foreach ($result as $val) {
 						$i++;
-						if ($i < 10) { ?>
-							<div class="col-md-12 slug">
+						if ($i < 12) { ?>
+							<!-- <div class="col-md-12 slug">
 								<label><?php if(!empty($val['submenu'])){
 												echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?></label>
-							</div>
+							</div> -->
 							<div class="col-md-12 text-slug">
 								<p><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']); ?>"><?php echo $val['tittle'] ?></a></p>
 							</div>
-							<div class="col-md-12 slug-time">
+							<!-- <div class="col-md-12 slug-time">
 										<label><?php echo date('h:i A',strtotime($val['entrydate']));?>
 								        </label> 
-								</div>
+								</div> -->
 								<div class="col-md-12">
 								  <hr style="color:black;">
 							  </div>
@@ -173,7 +173,7 @@
             	<h2>India</h2>
         </div>
         <div class="row">
-        	<div class="col-md-5 ">
+        <!-- 	<div class="col-md-5 ">
         		<div class="home-india">
         		<div class="row">
         			<div class="col-md-12  mb-5">
@@ -190,22 +190,22 @@
         		    <div class="col-md-12 slug-time">
 										<label><?php echo date('h:i A',strtotime($indianews[0]['entrydate']));?>
 								        </label>
-								        <!-- <hr style="color:black;"> -->
+								        
 								</div>
         		</div>
         	</div>
-        </div>
-        <div class="col-md-7">
+        </div> -->
+        <div class="col-md-12">
         	
         	<div class="row">
         		<?php
         		if(!empty($indianews)){
         			$i = 0;
         			foreach ($indianews as $key => $value) { $i++;
-        				if($i>2 || $i<5){
+        				if($i<5){
         				?>
         				
-        				<div class="col-md-6 mb-3">
+        			<!-- 	<div class="col-md-6 mb-3">
         					<div class="container">
         					<div class="row home-india">
         					<div class="col-md-12 slug">
@@ -221,7 +221,28 @@
 								</div>
 		        		</div>
 		        		</div>
-        		       </div>
+        		       </div> -->
+        		       <div class="col-md-3 mb-3">
+					  		<div class="card home-india" style=" height: 25rem;">
+							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><img style="height: 10rem; width:100%;" class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
+							  
+							  <div class="card-body">
+							  	<div class="row">
+							  	<div class="col-md-12 slug">
+									<label><?php if(!empty($value['submenu'])){
+													echo $value['menu_name'].' | '.$value['submenu'];}else{echo $value['menu_name'];}?></label>
+								</div>
+							  	<div class="col-md-12 text-slug">
+							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
+							   </div>
+							   <div class="col-md-12 slug-time">
+								  <label><?php echo date('h:i A',strtotime($value['entrydate']));?>
+						        </label>
+						      </div>
+							   </div>
+							  </div>
+							</div>
+				  	</div>
         				<?php
         			}
         			}
@@ -244,7 +265,7 @@
             	<h2>South Asia</h2>
         </div>
         <div class="row">
-        	<div class="col-md-5">
+        <!-- 	<div class="col-md-5">
         		<div class="home-india">
         		<div class="row">
         			<div class="col-md-12 mb-5">
@@ -264,17 +285,17 @@
 					</div>
         		</div>
         	</div>
-        </div>
-        <div class="col-md-7">
+        </div> -->
+        <div class="col-md-12">
         	<div class="row">
         		<?php
         		if(!empty($southasianews)){
         			$i = 0;
         			foreach ($southasianews as $key => $value) { $i++;
-        				if($i>2 || $i<5){
+        				if($i<5){
         				?>
         				
-        				<div class="col-md-6 mb-3">
+        				<!-- <div class="col-md-6 mb-3">
         					<div class="container">
         					<div class="row home-india">
         						<div class="col-md-12 slug">
@@ -290,7 +311,28 @@
 					     </div>
 		        		</div>
 		        	</div>
-        		       </div>
+        		       </div> -->
+        		       <div class="col-md-3 mb-3">
+					  		<div class="card home-india" style=" height: 25rem;">
+							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><img style="height: 10rem; width:100%;" class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
+							  
+							  <div class="card-body">
+							  	<div class="row">
+							  	<div class="col-md-12 slug">
+									<label><?php if(!empty($value['submenu'])){
+													echo $value['menu_name'].' | '.$value['submenu'];}else{echo $value['menu_name'];}?></label>
+								</div>
+							  	<div class="col-md-12 text-slug">
+							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
+							   </div>
+							   <div class="col-md-12 slug-time">
+								  <label><?php echo date('h:i A',strtotime($value['entrydate']));?>
+						        </label>
+						      </div>
+							   </div>
+							  </div>
+							</div>
+				  	</div>
         				<?php
         			}
         			}
@@ -310,7 +352,7 @@
             	<h2 >World</h2>
         </div>
         <div class="row">
-        	<div class="col-md-5">
+       <!--  	<div class="col-md-5">
         		<div class="home-india ">
         		<div class="row">
         			<div class="col-md-12 mb-5">
@@ -330,17 +372,17 @@
 					 </div>
         		</div>
         	</div>
-        </div>
-        <div class="col-md-7">
+        </div> -->
+        <div class="col-md-12">
         	<div class="row">
         		<?php
         		if(!empty($worldnews)){
         			$i = 0;
         			foreach ($worldnews as $key => $value) { $i++;
-        				if($i>2 || $i<5){
+        				if($i<5){
         				?>
         				
-        				<div class="col-md-6 mb-3">
+        			<!-- 	<div class="col-md-6 mb-3">
         					<div class="container">
         					<div class="row home-india">
         						<div class="col-md-12 slug">
@@ -356,7 +398,28 @@
 					     </div>
 		        		</div>
 		        	   </div>
-        		       </div>
+        		       </div> -->
+        		       <div class="col-md-3 mb-3">
+					  		<div class="card home-india" style=" height: 25rem;">
+							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><img style="height: 10rem; width:100%;" class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
+							  
+							  <div class="card-body">
+							  	<div class="row">
+							  	<div class="col-md-12 slug">
+									<label><?php if(!empty($value['submenu'])){
+													echo $value['menu_name'].' | '.$value['submenu'];}else{echo $value['menu_name'];}?></label>
+								</div>
+							  	<div class="col-md-12 text-slug">
+							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
+							   </div>
+							   <div class="col-md-12 slug-time">
+								  <label><?php echo date('h:i A',strtotime($value['entrydate']));?>
+						        </label>
+						      </div>
+							   </div>
+							  </div>
+							</div>
+				  	</div>
         				<?php
         			}
         			}
@@ -379,7 +442,7 @@
             </div>
         </div>
         <div class="row">
-        	<div class="col-md-5">
+        <!-- 	<div class="col-md-5">
         		<div class="home-india mb-3">
         		<div class="row">
         			<div class="col-md-12 mb-5">
@@ -399,17 +462,17 @@
 					     </div>
         		</div>
         	</div>
-        </div>
-        <div class="col-md-7">
+        </div> -->
+        <div class="col-md-12">
         	<div class="row">
         		<?php
         		if(!empty($businesstopnews)){
         			$i = 0;
         			foreach ($businesstopnews as $key => $value) { $i++;
-        				if($i>2 || $i<5){
+        				if($i<5){
         				?>
         				
-        				<div class="col-md-6 mb-3">
+        				<!-- <div class="col-md-6 mb-3">
         					<div class="container">
         					<div class="row home-india">
         						<div class="col-md-12 slug">
@@ -425,7 +488,28 @@
 					     </div>
 		        		</div>
 		        	   </div>
-        		       </div>
+        		       </div> -->
+        		       <div class="col-md-3 mb-3">
+					  		<div class="card home-india" style=" height: 25rem;">
+							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><img style="height: 10rem; width:100%;" class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
+							  
+							  <div class="card-body">
+							  	<div class="row">
+							  	<div class="col-md-12 slug">
+									<label><?php if(!empty($value['submenu'])){
+													echo $value['menu_name'].' | '.$value['submenu'];}else{echo $value['menu_name'];}?></label>
+								</div>
+							  	<div class="col-md-12 text-slug">
+							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
+							   </div>
+							   <div class="col-md-12 slug-time">
+								  <label><?php echo date('h:i A',strtotime($value['entrydate']));?>
+						        </label>
+						      </div>
+							   </div>
+							  </div>
+							</div>
+				  	</div>
         				<?php
         			}
         			}
@@ -446,7 +530,7 @@
             </div>
         </div>
         <div class="row">
-        	<div class="col-md-5">
+        	<!-- <div class="col-md-5">
         		<div class="home-india mb-3">
         		<div class="row">
         			<div class="col-md-12 mb-5">
@@ -466,17 +550,17 @@
 					     </div>
         		</div>
         	</div>
-        </div>
-        <div class="col-md-7">
+        </div> -->
+        <div class="col-md-12">
         	<div class="row">
         		<?php
         		if(!empty($technews)){
         			$i = 0;
         			foreach ($technews as $key => $value) { $i++;
-        				if($i>2 || $i<5){
+        				if($i<5){
         				?>
         				
-        				<div class="col-md-6 mb-3">
+        				<!-- <div class="col-md-6 mb-3">
         					<div class="container">
         					<div class="row home-india">
         						<div class="col-md-12 slug">
@@ -492,7 +576,28 @@
 					     </div>
 		        		</div>
 		        	  </div>
-        		       </div>
+        		       </div> -->
+        		       <div class="col-md-3 mb-3">
+					  		<div class="card home-india" style=" height: 25rem;">
+							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><img style="height: 10rem; width:100%;" class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
+							  
+							  <div class="card-body">
+							  	<div class="row">
+							  	<div class="col-md-12 slug">
+									<label><?php if(!empty($value['submenu'])){
+													echo $value['menu_name'].' | '.$value['submenu'];}else{echo $value['menu_name'];}?></label>
+								</div>
+							  	<div class="col-md-12 text-slug">
+							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
+							   </div>
+							   <div class="col-md-12 slug-time">
+								  <label><?php echo date('h:i A',strtotime($value['entrydate']));?>
+						        </label>
+						      </div>
+							   </div>
+							  </div>
+							</div>
+				  	</div>
         				<?php
         			}
         			}
@@ -569,7 +674,7 @@
             </div>
         </div>
         <div class="row">
-        	<div class="col-md-5">
+       <!--  	<div class="col-md-5">
         		<div class="home-india mb-5">
         		<div class="row ">
         			<div class="col-md-12 mb-5">
@@ -590,17 +695,17 @@
 					     </div>
         		</div>
         	</div>
-        </div>
-        <div class="col-md-7">
+        </div> -->
+        <div class="col-md-12">
         	<div class="row">
         		<?php
         		if(!empty($climatenews)){
         			$i = 0;
         			foreach ($climatenews as $key => $value) { $i++;
-        				if($i>2 || $i<5){
+        				if($i<5){
         				?>
         				
-        				<div class="col-md-6 mb-3">
+        				<!-- <div class="col-md-6 mb-3">
         					<div class="container">
         					<div class="row home-india">
         						<div class="col-md-12 slug">
@@ -616,7 +721,28 @@
 					     </div>
 		        		</div>
 		        	  </div>
-        		       </div>
+        		       </div> -->
+        		       <div class="col-md-3 mb-3">
+					  		<div class="card home-india" style=" height: 25rem;">
+							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><img style="height: 10rem; width:100%;" class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
+							  
+							  <div class="card-body">
+							  	<div class="row">
+							  	<div class="col-md-12 slug">
+									<label><?php if(!empty($value['submenu'])){
+													echo $value['menu_name'].' | '.$value['submenu'];}else{echo $value['menu_name'];}?></label>
+								</div>
+							  	<div class="col-md-12 text-slug">
+							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
+							   </div>
+							   <div class="col-md-12 slug-time">
+								  <label><?php echo date('h:i A',strtotime($value['entrydate']));?>
+						        </label>
+						      </div>
+							   </div>
+							  </div>
+							</div>
+				  	</div>
         				<?php
         			}
         			}
@@ -642,7 +768,7 @@
             </div>
         </div>
         <div class="row">
-        	<div class="col-md-5">
+       <!--  	<div class="col-md-5">
         		<div class="home-india mb-3">
         		<div class="row">
         			<div class="col-md-12 mb-5">
@@ -663,17 +789,17 @@
 					 </div>
         		</div>
         	</div>
-        </div>
-        <div class="col-md-7">
+        </div> -->
+        <div class="col-md-12">
         	<div class="row">
         		<?php
         		if(!empty($lifestyletopnews)){
         			$i = 0;
         			foreach ($lifestyletopnews as $key => $value) { $i++;
-        				if($i>2 || $i<5){
+        				if($i<5){
         				?>
         				
-        				<div class="col-md-6 mb-3">
+        				<!-- <div class="col-md-6 mb-3">
         					<div class="container">
         					<div class="row home-india">
         						<div class="col-md-12 slug">
@@ -689,7 +815,28 @@
 					     </div>
 		        		</div>
 		        	   </div>
-        		       </div>
+        		       </div> -->
+        		       <div class="col-md-3 mb-3">
+					  		<div class="card home-india" style=" height: 25rem;">
+							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><img style="height: 10rem; width:100%;" class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
+							  
+							  <div class="card-body">
+							  	<div class="row">
+							  	<div class="col-md-12 slug">
+									<label><?php if(!empty($value['submenu'])){
+													echo $value['menu_name'].' | '.$value['submenu'];}else{echo $value['menu_name'];}?></label>
+								</div>
+							  	<div class="col-md-12 text-slug">
+							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
+							   </div>
+							   <div class="col-md-12 slug-time">
+								  <label><?php echo date('h:i A',strtotime($value['entrydate']));?>
+						        </label>
+						      </div>
+							   </div>
+							  </div>
+							</div>
+				  	</div>
         				<?php
         			}
         			}
@@ -710,7 +857,7 @@
             </div>
         </div>
         <div class="row">
-        	<div class="col-md-5">
+        <!-- 	<div class="col-md-5">
         		<div class="home-india mb-3">
         		<div class="row">
         			<div class="col-md-12 mb-5">
@@ -731,17 +878,17 @@
 					  </div>
         		</div>
         	</div>
-        </div>
-        <div class="col-md-7">
+        </div> -->
+        <div class="col-md-12">
         	<div class="row">
         		<?php
         		if(!empty($sportnews)){
         			$i = 0;
         			foreach ($sportnews as $key => $value) { $i++;
-        				if($i>2 || $i<5){
+        				if($i<5){
         				?>
         				
-        				<div class="col-md-6 mb-3">
+        				<!-- <div class="col-md-6 mb-3">
         					<div class="container">
         					<div class="row home-india">
         						<div class="col-md-12 slug">
@@ -757,7 +904,28 @@
 					  </div>
 		        		</div>
 		        	</div>
-        		       </div>
+        		       </div> -->
+        		       <div class="col-md-3 mb-3">
+					  		<div class="card home-india" style=" height: 25rem;">
+							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><img style="height: 10rem; width:100%;" class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
+							  
+							  <div class="card-body">
+							  	<div class="row">
+							  	<div class="col-md-12 slug">
+									<label><?php if(!empty($value['submenu'])){
+													echo $value['menu_name'].' | '.$value['submenu'];}else{echo $value['menu_name'];}?></label>
+								</div>
+							  	<div class="col-md-12 text-slug">
+							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
+							   </div>
+							   <div class="col-md-12 slug-time">
+								  <label><?php echo date('h:i A',strtotime($value['entrydate']));?>
+						        </label>
+						      </div>
+							   </div>
+							  </div>
+							</div>
+				  	</div>
         				<?php
         			}
         			}
@@ -778,7 +946,7 @@
             </div>
         </div>
         <div class="row">
-        	<div class="col-md-5">
+        <!-- 	<div class="col-md-5">
         		<div class="home-india mb-3">
         		<div class="row">
         			<div class="col-md-12 mb-5">
@@ -800,17 +968,17 @@
 					  </div>
         		</div>
         	</div>
-        </div>
-        <div class="col-md-7">
+        </div> -->
+        <div class="col-md-12">
         	<div class="row">
         		<?php
         		if(!empty($openionnews)){
         			$i = 0;
         			foreach ($openionnews as $key => $value) { $i++;
-        				if($i>2 || $i<5){
+        				if($i<5){
         				?>
         				
-        				<div class="col-md-6 mb-3">
+        			<!-- 	<div class="col-md-6 mb-3">
         					<div class="container">
         					<div class="row home-india">
         						<div class="col-md-12 slug">
@@ -826,7 +994,28 @@
 					  </div>
 		        		</div>
 		          	</div>
-        		       </div>
+        		       </div> -->
+        		       <div class="col-md-3 mb-3">
+					  		<div class="card home-india" style=" height: 25rem;">
+							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><img style="height: 10rem; width:100%;" class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
+							  
+							  <div class="card-body">
+							  	<div class="row">
+							  	<div class="col-md-12 slug">
+									<label><?php if(!empty($value['submenu'])){
+													echo $value['menu_name'].' | '.$value['submenu'];}else{echo $value['menu_name'];}?></label>
+								</div>
+							  	<div class="col-md-12 text-slug">
+							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
+							   </div>
+							   <div class="col-md-12 slug-time">
+								  <label><?php echo date('h:i A',strtotime($value['entrydate']));?>
+						        </label>
+						      </div>
+							   </div>
+							  </div>
+							</div>
+				  	</div>
         				<?php
         			}
         			}

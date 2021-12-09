@@ -74,7 +74,7 @@
                       foreach($result as $val){ $k++; if($k >= 7){ ?>
 					  <div class="col-md-3 mb-3">
 				  		<div class="card home-india" style=" height: 25rem;">
-						  <a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;"><img style="height: 10rem;" class="img-fluid" src="<?php echo base_url();?><?php echo $val['image'] ?>" alt="Card image cap"></a>
+						  <a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;"><img style="height: 10rem; width:100%;" class="img-fluid" src="<?php echo base_url();?><?php echo $val['image'] ?>" alt="Card image cap"></a>
 						  
 						  <div class="card-body">
 						  	<div class="row">

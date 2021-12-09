@@ -958,6 +958,10 @@ class Account_model extends Slugs{
 				return $udetails;
 			}
 
+      // public function getnewsbymenu{
+        
+      // }
+
 			public function savenews($data){
 
 				// unset($data['saveuserdetails']);
