@@ -19,7 +19,7 @@
 
                        <div class="search-box btn-space">
                         <button class="btn-search btn-space"><i class="fas fa-search"></i></button>
-                        <input type="text" class="input-search"  placeholder="Type to Search...">
+                        <input type="text" class="input-search"  placeholder="Search BW...">
                       </div>
                       <div class="btn-toolbar">
                       <a href="<?php echo base_url('website/signin')?>" class="btn btn-sm mr-2 btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:10px;">Sign In</a>
