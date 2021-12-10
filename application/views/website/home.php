@@ -25,7 +25,7 @@
 				
 			</div>
 		</div>
-		<div class="col-md-9">
+		<div class="col-md-9 col-sm-9">
 		<div class="row top-news">
 			
 		<div class="col-md-8 main-topnews">
@@ -95,7 +95,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4 mb-3">
+		<div class="col-md-4 col-sm-4 mb-3">
 			<div class="text-center other-topnews">
 				
 				<div class="row">
@@ -128,8 +128,8 @@
 						}
 					} ?>
 				</div>
-				<div class="row">
-					<img src="https://tpc.googlesyndication.com/simgad/6739417430419784616" border="0" width="300" height="600" alt="" class="img_ad">
+				<div class="col-md-12 col-sm-12 mb-3 add">
+					<img src="https://tpc.googlesyndication.com/simgad/6739417430419784616" alt="" class="img-fluid">
 				</div>
 			</div>
 		</div>
@@ -139,7 +139,7 @@
 		<div class="text-center recent-news">
 			<h4>Recent News</h4>
 			<hr>
-			<div class="row">
+			<div class="row Re-news">
 				<?php $i = 0;
 				if (!empty($result)) {
 					foreach ($result as $val) {
@@ -165,8 +165,8 @@
 			</div>
 		</div>
 	</div>
-
-
+</div>
+<div class="row">
 	<!--  <div class="col-md-12 " ></div> -->
 	 <div class="col-md-12"><hr style="color:black;"></div>
         <div class="col-md-12 india-heading">

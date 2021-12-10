@@ -1070,9 +1070,11 @@ Projects
 #menu .nav-item .news-array p{
   font-size: 15px;
   color: white;
-      font-family: myGabriola,Arial,sans-serif;
+  font-family: myGabriola,Arial,sans-serif;
   text-decoration: none;
   word-spacing: 5px;
+  text-shadow: 1px 1px 5px #71828F;
+  
 }
 #menu .nav-item .news-array a img{
   height: 5rem;
@@ -1102,13 +1104,13 @@ Projects
   top:auto;
 }
 
-#menu p, #menu h2, #menu h3, #menu ul li {
+/*#menu p, #menu h2, #menu h3, #menu ul li {
   font-family:Arial, Helvetica, sans-serif;
   line-height:21px;
   font-size:15px;
   text-align:left;
-  /*text-shadow: 5px 5px 5px #FFFFFF;*/
-}
+  text-shadow: 5px 5px 5px #FFFFFF;
+}*/
 #menu h2 {
   font-size:21px;
   font-weight:400;
@@ -1241,6 +1243,7 @@ ul {
 }
 ul.social-icons {
     margin-top: 0px;
+    margin-left: 40px;
 }
 .social-icons li {
     vertical-align: top;
@@ -1443,13 +1446,20 @@ ul.social-icons {
   font-family: myGabriola,Arial,sans-serif;
    color: black;
    margin: 10px;
-   height: 1400px;
+   /*height: 1400px;*/
+  
 }
 .top-news .main-topnews{
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 font-family: 'Abel', sans-serif;
   border-radius: 20px 0px 0px 20px;
   font-weight: 200;
+   /*height: 1400px;*/
+}
+
+.add img{
+
+  text-align: center;
 }
 
 .top-news .main-topnews h2{
@@ -1486,6 +1496,7 @@ font-family: 'Abel', sans-serif;
   margin-left: 10px;
  font-family: myGabriola,Arial,sans-serif;
   color: black;
+   /*height: 1400px;*/
 }
 .other-topnews a img{
   height: 4rem;
@@ -1525,6 +1536,13 @@ font-family: 'Abel', sans-serif;
   padding-right: 20px;
   padding-left: 20px;
   font-weight: 500;
+  /*height: 1400px;*/
+
+ font-family: myGabriola,Arial,sans-serif;
+
+}
+.recent-news .re-news{
+ 
   height: 1400px;
 
  font-family: myGabriola,Arial,sans-serif;
@@ -2018,6 +2036,19 @@ font-family: 'Abel', sans-serif;
 }
 .header-gap{
   padding: 90px 0;
+}
+.other-topnews{
+  margin-top: 30px;
+  margin-left: 10px;
+ font-family: myGabriola,Arial,sans-serif;
+  color: black;
+}
+.other-topnews a img{
+  height: 4rem;
+  width: 100%;
+  border-radius: 5px;
+  
+  border-color: #23618a;
 }
 }
 

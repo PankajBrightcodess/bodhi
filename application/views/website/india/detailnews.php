@@ -3,7 +3,7 @@
         
         <div class="col-md-12 mb-3" ></div>
         <div class="col-md-12 sub-news">
-        	<h4><span style="color:#569EEA;">HEADLINE :</span> <?= $result['tittle'] ?></h4>
+        	<h4><?= $result['tittle'] ?></h4>
         	
         </div>
         <!-- <div class="col-md-12">
