@@ -1,7 +1,7 @@
 <body>
 
     <div class="top-bar abcd"> 
-        <div class="container">
+        <div class="container-fluid" style="width:80%">
             <div class="row">
                 <div class="col-md-2 col-sm-4 col-4">
                      <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.png') ?>" height="90%" width="95%" style="float:center;" style="margin:0px;"></a>

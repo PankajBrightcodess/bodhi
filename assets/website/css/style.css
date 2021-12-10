@@ -1074,7 +1074,7 @@ Projects
   text-decoration: none;
   word-spacing: 5px;
   text-shadow: 1px 1px 5px #71828F;
-  
+
 }
 #menu .nav-item .news-array a img{
   height: 5rem;
@@ -2002,6 +2002,37 @@ font-family: 'Abel', sans-serif;
          padding: 77px 15px 33px 15px
      }
  }
+ @media screen and (max-width: 576) {
+  .top-news{
+    width: 100%;
+  }
+  .top-news .main-topnews{
+    width: 100%;
+  }
+  .top-news .other-topnews{
+    width: 100%;
+  }
+  .other-topnews{
+  margin-top: 30px;
+  margin-left: 10px;
+ font-family: myGabriola,Arial,sans-serif;
+  color: black;
+}
+.other-topnews a img{
+  height: 10rem;
+  width: 100%;
+  border-radius: 5px;
+  
+  border-color: #23618a;
+}
+  .recent-news .re-news{
+ 
+      width: 100%;
+ font-family: myGabriola,Arial,sans-serif;
+
+}
+
+ }
 
 @media screen and (max-width: 920px) {
   .abcd{
@@ -2044,7 +2075,7 @@ font-family: 'Abel', sans-serif;
   color: black;
 }
 .other-topnews a img{
-  height: 4rem;
+  height: 5rem;
   width: 100%;
   border-radius: 5px;
   

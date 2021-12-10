@@ -25,7 +25,7 @@
 				
 			</div>
 		</div>
-		<div class="col-md-9 col-sm-9">
+		<div class="col-md-9 col-sm-12">
 		<div class="row top-news">
 			
 		<div class="col-md-8 main-topnews">
@@ -95,7 +95,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4 col-sm-4 mb-3">
+		<div class="col-md-4 col-12 mb-3">
 			<div class="text-center other-topnews">
 				
 				<div class="row">
@@ -128,14 +128,14 @@
 						}
 					} ?>
 				</div>
-				<div class="col-md-12 col-sm-12 mb-3 add">
+				<div class="col-md-12 col-12 mb-3 add">
 					<img src="https://tpc.googlesyndication.com/simgad/6739417430419784616" alt="" class="img-fluid">
 				</div>
 			</div>
 		</div>
 	</div>
 	</div>
-	<div class="col-md-3 mb-3">
+	<div class="col-md-3 col-sm-12 mb-3">
 		<div class="text-center recent-news">
 			<h4>Recent News</h4>
 			<hr>
