@@ -144,7 +144,7 @@
 				if (!empty($result)) {
 					foreach ($result as $val) {
 						$i++;
-						if ($i < 12) { ?>
+						if ($i < 13) { ?>
 							<!-- <div class="col-md-12 slug">
 								<label><?php if(!empty($val['submenu'])){
 												echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?></label>
