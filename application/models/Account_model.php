@@ -1147,6 +1147,18 @@ class Account_model extends Slugs{
 
 				// '''''''''''''''''''''''''''''''''''''''''''''''''''''slug part start'''''''''''''''''''''''''''''''''''''''''''''''''''''
 
+
+      public function delete_menulist($id){
+        $this->db->where('id',$id);
+        $qry = $this->db->delete('tmp_menu');
+          if($qry==true){
+            return true;
+          }
+          else{
+            return false;
+          }
+      }
+
 			
 				
 }

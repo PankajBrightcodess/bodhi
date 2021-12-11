@@ -44,7 +44,7 @@
                                             <td ><?php echo $val['menu_name'] ?></td>
                                             
                                             <td><span class="float-right">
-                                            <a href='<?php echo base_url("home/delete_sidebar/");?>'><button class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
+                                            <button class="btn btn-danger btn-xs delete" value="<?php echo $val['id'];?>"><i class="fa fa-trash"></i></button>   <!-- <?php echo base_url("home/delete_sidebar/");?> -->
                                             <a href="<?php echo base_url("home/edit_sidebar/");?>"><button class="btn btn-success btn-xs"><i class="fa fa-edit"></i></button></a>
                                             <button class="btn btn-info btn-xs duplicate" type="button" data-dupid="<?php ?>"><i class="fa fa-network-wired"></i></button>
                                             </span></td>
@@ -144,4 +144,33 @@
 		});
         $('#parent_id').trigger('change');
     });
+
+
+
+$('.delete').click(function(e){
+    debugger;
+    var id=$(this).closest('tr').find('.delete').val();
+    if(confirm('Are you Sure !')){
+    $.ajax({
+            type:'GET',
+            url:"<?PHP echo base_url('home/delete_menu'); ?>",
+            data: {id:id},
+            success: function(result){
+                console.log(result);
+                location.reload();
+                },
+                error: function(){
+                alert("error");
+                }
+    });
+}
+return false;
+})
+
+
+
+
+
+
+
 </script>

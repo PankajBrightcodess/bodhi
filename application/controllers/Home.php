@@ -208,13 +208,13 @@ class Home extends CI_Controller {
 		unset($data['save_news']);
 		$upload_path = './assets/newsimagedb';
 		$allowed_types = 'gif|jpg|jpeg|png|pdf|GIF|JPG|JPEG|PNG|PDF';
-  if($_FILES['image']['name'] !=''){
-	  $image = upload_file("image", $upload_path, $allowed_types, time());
-	  if ($image !='') {
-		  $data['image'] = $image['path'];
-		
-	  }
-  }
+		  if($_FILES['image']['name'] !=''){
+			  $image = upload_file("image", $upload_path, $allowed_types, time());
+			  if ($image !='') {
+				  $data['image'] = $image['path'];
+				
+			  }
+		  }
 		$run=$this->Account_model->savenews($data);
 		if($run){
 			$this->session->set_flashdata("msg","News Added Successfully!!");
@@ -222,6 +222,17 @@ class Home extends CI_Controller {
 			$this->session->set_flashdata("err_msg",$run);
 		}
 		redirect('home/addnews');
+	}
+	public function delete_menu(){
+		$id = $this->input->get('id');
+		$run=$this->Account_model->delete_menulist($id);
+		if($run){
+			$this->session->set_flashdata("msg","Menu Deleted Successfully!!");
+		}else{
+			$this->session->set_flashdata("err_msg",$run);
+		}
+		redirect('home/createmenu');
+
 	}
 
 	

@@ -16,7 +16,7 @@
 				  		<?php $j=0; if(!empty($result)){                  
                            foreach($result as $val){  $j++;if($j==1){?>
                            	<div class="col-md-12">
-				  		       <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black;"><img src="<?php echo base_url();?><?php echo $val['image'] ?>" class="card-img-top" style="margin-top: 10px;" alt="Card image cap"></a><hr>
+				  		       <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black;" class="img-hover"><img src="<?php echo base_url();?><?php echo $val['image'] ?>" class="card-img-top" style="margin-top: 10px;" alt="Card image cap"></a><hr>
 				  		   </div>
 				  		   <div class="col-md-12 slug">
 							<label><?php if(!empty($val['submenu'])){
@@ -60,7 +60,7 @@
 												echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?></label>
 							</div>
 			  			<div class="col-md-7 mb-3 text-slug"><p><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;"><?= $val['tittle'] ?></a></p></div>
-			  			<div class="col-md-5 mb-3"><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;"><img src="<?php echo base_url();?><?php echo $val['image'] ?>" class="img-fluid"></a></div>
+			  			<div class="col-md-5 mb-3"><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;" class="img-hover"><img src="<?php echo base_url();?><?php echo $val['image'] ?>" class="img-fluid"></a></div>
 			  			<div class="col-md-12 slug-time">
 							<label><?php echo date('h:i A',strtotime($val['entrydate']));?></label><hr style="color:black;">
 					   </div>
@@ -74,7 +74,7 @@
                       foreach($result as $val){ $k++; if($k >= 7){ ?>
 					  <div class="col-md-3 mb-3">
 				  		<div class="card home-india" style=" height: 25rem;">
-						  <a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;"><img style="height: 10rem; width:100%;" class="img-fluid" src="<?php echo base_url();?><?php echo $val['image'] ?>" alt="Card image cap"></a>
+						  <a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;" class="img-hover"><img style="height: 10rem; width:100%;" class="img-fluid" src="<?php echo base_url();?><?php echo $val['image'] ?>" alt="Card image cap"></a>
 						  
 						  <div class="card-body">
 						  	<div class="row">
