@@ -2,7 +2,7 @@
 <div class="container">
     <div class="row text-center" >
         
-        <div class="col-md-12 slug mb-4" style="margin-top:10px;">
+        <div class="col-md-12 slug mb-3" style="margin-top:10px;">
 								<label style="float:left; font-weight:400; color:#23618a !important;">
 									<?php if(!empty($result['submenu']))
 									{

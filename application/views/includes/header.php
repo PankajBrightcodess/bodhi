@@ -98,7 +98,7 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
             <!-- User image -->
-                <li class="user-header " style="color:#23618a !important">
+                <li class="user-header " style="color:#23618a !important;">
                     <img src="<?php echo file_url("includes/dist/img/user2-160x160.jpg"); ?>" class="img-circle elevation-2" alt="User Image">
                     <p>
                         Admin 
