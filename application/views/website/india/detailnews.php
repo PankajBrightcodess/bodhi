@@ -24,7 +24,7 @@
 				<div class="container">
 				  <div class="row">
 				  	
-				  	<div class="col-md-7 home-india" >
+				  	<div class="col-md-9 home-india" >
 				  		<div class="row">
 				  			<div class="col-md-12">
 				  		   <img  src="<?php echo base_url();?><?php echo $result['image'] ?>" class="img-fluid">
@@ -54,7 +54,7 @@
 						</div>
               </div>
 				  	</div>
-				  	<div class="col-md-5">
+				  	<div class="col-md-3">
 				  		<div class="row">
 				  			<div class="col-md-12"><img src="https://tpc.googlesyndication.com/simgad/6739417430419784616" border="0"  alt="" class="img-fluid"></div>
 				  			<div class="col-md-12"><img src="<?php echo base_url('assets/website/news_image/367188368275824930.jpg'); ?>" style="margin-top: 5px;"  border="0"  alt="" class="img-fluid"></div>
