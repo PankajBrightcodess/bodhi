@@ -4,6 +4,8 @@
             <form class="bb-form validate-form"> <span class="bb-form-title p-b-26"> Sign Up </span> <span class="bb-form-title p-b-48"> <img src="<?php echo base_url('assets/images/logo.jpg') ?>" height="150px" width="150px" style="float:center;" style="margin:0px;"></span>
                 <div class="wrap-input100 validate-input" data-validate="Valid email is: a@b.c"> <input class="input100" type="text" name="email"> <span class="bbb-input" data-placeholder="Email"></span> </div>
                 <div class="wrap-input100 validate-input" data-validate="Valid Name is: abc"> <input class="input100" type="text" name="email"> <span class="bbb-input" data-placeholder="Name"></span> </div>
+                <div class="wrap-input100 validate-input" data-validate="Valid City is: ranchi"> <input class="input100" type="text" name="city"> <span class="bbb-input" data-placeholder="City"></span> </div>
+                <div class="wrap-input100 validate-input" data-validate="Valid Country is: country"> <input class="input100" type="text" name="country"> <span class="bbb-input" data-placeholder="Country"></span> </div>
                 <div class="wrap-input100 validate-input" data-validate="Enter password"> <span class="btn-show-pass"> <i class="mdi mdi-eye show_password"></i> </span> <input class="input100" type="password" name="pass"> <span class="bbb-input" data-placeholder="Password"></span> </div>
                 <div class="wrap-input100 validate-input" data-validate="Enter password"> <span class="btn-show-pass"> <i class="mdi mdi-eye show_password"></i> </span> <input class="input100" type="password" name="pass"> <span class="bbb-input" data-placeholder="Confirm Password"></span> </div>
                 <div class="login-container-form-btn">
