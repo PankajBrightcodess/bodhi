@@ -1,9 +1,24 @@
+
 <div class="container">
     <div class="row text-center" >
         
         <div class="col-md-12 slug mb-4" style="margin-top:10px;">
-								<label style="float:left; font-weight:400; color:#23618a !important;"><?php if(!empty($result['submenu'])){
-									?><a href="<?php echo base_url('/')?>" style="color: #23618a !important;"><?php	echo 	'HOME'?></a><?php  echo '  |  '.$result['menu_name'].'  |  '.$result['submenu'];}else{?><a href="<?php echo base_url('/')?>" style="color: #23618a !important;"><?php	echo 	'HOME'?></a><?php  echo'  |  '.$result['menu_name'];}?></label>
+								<label style="float:left; font-weight:400; color:#23618a !important;">
+									<?php if(!empty($result['submenu']))
+									{
+									  ?><a href="<?php echo base_url('/')?>" style="color: #23618a !important;"><?php	echo 	'HOME'?></a><a href="<?php echo base_url('website/india/'.$result['menu_id'].'/'.$result['menu_name'])?>" style="color: #23618a !important;">
+									  	<?php echo '  |  '.$result['menu_name']  ?>
+									  </a>
+									  <a href="<?php echo base_url('website/north/'.$result['submenu_id'].'/'.$result['menu_name'].'/'.$result['submenu'])?>" style="color: #23618a !important;">
+									  <?php echo '  |  '.$result['submenu'];
+
+									  	?></a><?php
+									}else{?>
+									  	<a href="<?php echo base_url('/')?>" style="color: #23618a !important;"><?php	echo 	'HOME'?></a>
+									  	<a href="<?php echo base_url('website/india/'.$result['menu_id'].'/'.$result['menu_name'])?>" style="color: #23618a !important;">
+									  	<?php echo '  |  '.$result['menu_name']  ?>
+									  </a>
+									  	<?php ;}?></label>
 							</div>
         <div class="col-md-12 sub-news">
         	<h4><?= $result['tittle'] ?></h4>
