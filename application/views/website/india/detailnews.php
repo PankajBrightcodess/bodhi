@@ -3,7 +3,7 @@
         
         <div class="col-md-12 slug mb-4" style="margin-top:10px;">
 								<label style="float:left; font-weight:400; color:#23618a !important;"><?php if(!empty($result['submenu'])){
-									?><a href="<?php echo base_url('/')?>" style="color: #23618a !important;"><?php	echo 	'HOME'?></a><?php  echo '  |  '.$result['menu_name'].'  |  '.$result['submenu'];}else{echo 'HOME'.'  |  '.$result['menu_name'];}?></label>
+									?><a href="<?php echo base_url('/')?>" style="color: #23618a !important;"><?php	echo 	'HOME'?></a><?php  echo '  |  '.$result['menu_name'].'  |  '.$result['submenu'];}else{?><a href="<?php echo base_url('/')?>" style="color: #23618a !important;"><?php	echo 	'HOME'?></a><?php  echo'  |  '.$result['menu_name'];}?></label>
 							</div>
         <div class="col-md-12 sub-news">
         	<h4><?= $result['tittle'] ?></h4>
