@@ -2,7 +2,7 @@
 
         <div class="login-box">
             <div class="login-logo">
-                <a href="<?php echo base_url(); ?>"><b><?php echo PROJECT_NAME; ?></b></a>
+                <a href="<?php echo base_url(); ?>" style="color: #23618a;"><b><?php echo PROJECT_NAME; ?></b></a>
             </div>
             <!-- /.login-logo -->
             <div class="card">
