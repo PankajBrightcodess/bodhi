@@ -1,7 +1,10 @@
 <div class="container">
     <div class="row text-center" >
         
-        <div class="col-md-12 mb-3" ></div>
+        <div class="col-md-12 slug mb-4" style="margin-top:10px;">
+								<label style="float:left; font-weight:400; color:#23618a !important;"><?php if(!empty($result['submenu'])){
+									?><a href="<?php echo base_url('/')?>" style="color: #23618a !important;"><?php	echo 	'HOME'?></a><?php  echo '  |  '.$result['menu_name'].'  |  '.$result['submenu'];}else{echo 'HOME'.'  |  '.$result['menu_name'];}?></label>
+							</div>
         <div class="col-md-12 sub-news">
         	<h4><?= $result['tittle'] ?></h4>
         	
@@ -26,6 +29,7 @@
 				  	
 				  	<div class="col-md-9 home-india" >
 				  		<div class="row">
+				  			
 				  			<div class="col-md-12">
 				  		   <img  src="<?php echo base_url();?><?php echo $result['image'] ?>" class="img-fluid">
 				  		 </div> 
