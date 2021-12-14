@@ -9,10 +9,10 @@
                     <!-- /.card-header -->
                     <div class="card-body">
                     <div class="row">
-                        	<div class="col-md-5 col-lg-4">
+                        	<div class="col-md-12 col-lg-12">
                                 <?php echo form_open_multipart('home/savenews');?>
                                 <div class="form-group row">
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-6 col-md-6">
                                         <select <?php echo form_input(array('name' => 'menu_id', 'id' => 'name', 'class' => 'form-control', 'placeholder' => '')); ?>>
                                             <option value="">Select Menu</option>
                                             <?php if (!empty($result1)) {  
@@ -25,9 +25,7 @@
                                             ?>
                                         </select>
                                     </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-6 col-md-6">
                                         <select <?php echo form_input(array('name' => 'submenu_id', 'id' => 'name', 'class' => 'form-control', 'placeholder' => '')); ?>>
                                             <option value="">Select sub Menu</option>
                                             <?php if (!empty($result2)) {  
@@ -41,33 +39,31 @@
                                         </select>
                                     </div>
                                 </div>
+                                <div class="form-group row">
+                                    
+                                </div>
                                 
                                 
                                 <div class="form-group row">
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-12 col-md-12">
                                         <?php echo form_input(array('type'=>'text','name'=>'tittle','id'=>'activate_not','class'=>'form-control','placeholder'=>'News Tittle','required'=>'required'));?>
                                     </div>                                    
                                 </div>
-                                <!-- <div class="form-group row">
-                                    <div class="col-sm-12">
-                                        <php echo form_input(array('type'=>'hidden','name'=>'slag','id'=>'activate_not','class'=>'form-control','placeholder'=>'News Tittle','required'=>'required','onkeyup'=>'return convertToSlug(this);'));?>
-                                    </div>                                    
-                                </div> -->
                                 
-                                <div class="form-group row">
+                                <div class="form-group col-md-12 row">
                                     <div class="col-sm-12">
                                     <lable>News Description</lable>
                                     <textarea class="form-control" name="news" id="editor1" rows="8" col="12"></textarea>
                                     </div>                                    
                                 </div>
                                 <div class="form-group row">
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-12 col-md-12">
                                     <lable>News Image</lable>
                                         <?php echo form_input(array('type'=>'file','name'=>'image','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Submenu name','required'=>'required'));?>
                                     </div>                                    
                                 </div>
                                  <div class="form-group row">
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-12 col-md-12">
                                     <lable>Top News :</lable>
                                         <?php echo form_input(array('type'=>'checkbox','name'=>'top_news_status','id'=>'activate_not','value'=>'1'));?>
                                     </div>                                    
@@ -88,11 +84,13 @@
                                 </div>
                                 <?php echo form_close();?>
                             </div>
-                            <div class="col-md-1"></div>
-                        	<div class="col-md-7 table-responsive">
+                            <div class="col-md-12">
+                                <hr>
+                            </div>
+                        	<div class="col-md-12 table-responsive">
                             	<table class="table data-table stripe hover nowrap table-bordered">
                                     <thead>
-                                        <tr>    
+                                        <tr style="background-color: #23618a !important; color:white;">    
                                             <th>S.no</th>
                                             <th>ENTRY ID</th> 
                                             <th>MENU NAME</th> 
