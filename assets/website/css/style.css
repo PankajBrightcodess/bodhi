@@ -1481,10 +1481,11 @@ font-family: 'Abel', sans-serif;
  font-family:  'myGabriola',Arial,sans-serif;
 }
 .main-topnews .slug{
-   font-weight: 500; 
-  font-size:10px;
+   font-weight: 800; 
+  font-size:11px;
   margin-top: 20px;
   color: #23618a;
+  float: left !important;
 }
 .main-topnews .slug label{
   float:left;

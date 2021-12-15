@@ -46,7 +46,7 @@
 												<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;" class="img-hover"><img src="<?php echo base_url();?><?php echo $val['image'] ?>"  class="img-fluid" alt="Card image cap">
 													<label style="font-size: 10px; font-style: italic; font-weight:400;float: left;"><h5 style="color:black"><?php echo $val['img_caption'] ?></h5></label></a>
 												<div class="col-md-12 slug">
-														<label><?php if(!empty($val['submenu'])){
+														<label style="float:left;"><?php if(!empty($val['submenu'])){
 																		echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?>
 												        </label>
 												</div>
