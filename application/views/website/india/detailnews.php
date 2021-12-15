@@ -1,6 +1,7 @@
 
 <div class="container">
     <div class="row text-center" >
+
         
         <div class="col-md-12 slug mb-3" style="margin-top:10px;">
 								<label style="float:left; font-weight:400; color:#23618a !important;">
@@ -44,23 +45,37 @@
 				  	
 				  	<div class="col-md-9 home-india" >
 				  		<div class="row">
-				  			
 				  			<div class="col-md-12">
-				  		   <img  src="<?php echo base_url();?><?php echo $result['image'] ?>" class="img-fluid">
+				  		   <h5 style="float: left;"><?php echo $result['straplines'] ?></h5>
 				  		 </div> 
-				  		 <div class="col-md-12 slug" style="margin-top:10px; ">
+				  			<div class="col-md-12 mb-3">
+				  		   <img  src="<?php echo base_url();?><?php echo $result['image'] ?>" class="img-fluid">
+				  		   <label style="font-size: 11px; font-style: italic; font-weight:500;float: left;"><h5 style="color:black"><?php echo $result['img_caption'] ?></h5></label>
+				  		 </div> 
+				  		 <div class="col-md-12 mb-0">
+				  		 	<label style="font-style: italic; float:left;">By Line : <?php echo $result['byline']?></label>
+				  		 </div>
+				  		<!--  <div class="col-md-12 slug" style="margin-top:10px; ">
 								<label><?php if(!empty($result['submenu'])){
 												echo $result['menu_name'].' | '.$result['submenu'];}else{echo $result['menu_name'];}?></label>
-							</div>
+							</div> -->
 							<div class="col-md-12 slug-time">
-								<label><?php echo date('h:i A',strtotime($result['entrydate']));?></label>
-						        <hr style="color:black;">
+								<label><?php echo date('d-m-Y',strtotime($result['entrydate'])).',';?></label>
+								<label ><?php echo date('h:i A',strtotime($result['entrydate'])).',';?></label>
+								<?php 
+								 $lastdate = $result['entrydate'];
+								 $current = date('Y-m-d H:i:s');
+									$date1 = new DateTime('2021-12-13 12:30:00');
+									$date2 = new DateTime('2021-12-21 11:30:00');
+									$diff = $date2->diff($date1);
+								?>
+								<label><?php echo 'Updated On ('.$diff->format('%a Day and %h hours').')';?></label>
+						    <hr style="color:black;">
 						  </div>
-				  		            <div class="col-md-12"><h3><?= $result['tittle'] ?></h3></div>
                          <div class="col-md-12" style="text-align: justify; padding: 25px;"><p ><?= $result['news'] ?></p></div>
-                          <div class="col-md-12">
+                       <!--    <div class="col-md-12">
                                <div class="footer-social-icons" >
-								    <!-- <h4 class="_14">Follow us on</h4> -->
+								   
 										    <ul class="social-icons">
 										        <li><a href="" class="social-icon"><i class="fa fa-facebook"></i></a></li>
 										        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
@@ -70,7 +85,7 @@
 										        <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
 										    </ul>
 								</div> 
-						</div>
+						</div> -->
               </div>
 				  	</div>
 				  	<div class="col-md-3">
@@ -88,6 +103,7 @@
 			</div>
      </div><hr style="color:black;">
    </div>
+
 </div>
 <script>
 function openCity(evt, cityName) {

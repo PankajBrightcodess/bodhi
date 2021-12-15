@@ -924,13 +924,14 @@ class Account_model extends Slugs{
 			return $udetails;
 		}
 
-		public function savesubmenus($data){
-			// unset($data['saveuserdetails']);
-			$menu=$data['menu'];
-			$submenu=$data['submenu'];
 
-			$final['menu']=$menu;
-			$final['submenu']=$submenu;
+		public function savesubmenus($data){
+			
+      $menudetails = $data['menu'];
+      $menu = explode(' ',$menudetails);
+      $final['menu_id'] = $menu[0];
+      $final['menu'] = $menu[1];
+			$final['submenu']=$data['submenu'];
 			$qry = $this->db->insert('submenu',$final);
 			if($qry==true){
 				return true;
@@ -946,6 +947,14 @@ class Account_model extends Slugs{
 				$udetails = $query->result_array();
 				return $udetails;
 			}
+        public function getsubmenuslistbyid($id){
+        $this->db->where('menu_id',$id);
+        $this->db->select('*');
+        $this->db->from('submenu');
+        $query = $this->db->get();
+        $udetails = $query->result_array();
+        return $udetails;
+        }
 			public function getsubmenuslist($where=array()){
 				
 				$this->db->select('*');
@@ -992,6 +1001,9 @@ class Account_model extends Slugs{
 				 $final['menu_id']=$data['menu_id'];
 				$final['submenu_id']=$data['submenu_id'];
 				$final['tittle']=$data['tittle'];
+        $final['byline'] = $data['byline'];
+        $final['straplines'] = $data['straplines'];
+        $final['img_caption'] = $data['img_caption'];
 				$final['slug']=$slug;
         $final['news']=$data['news'];
         $final['date']=date('Y-m-d');
@@ -1009,6 +1021,7 @@ class Account_model extends Slugs{
 				
 
 				public function getnews(){
+          $this->db->where('t1.published',1);
 					$this->db->select('t1.*,t2.menu_name,t3.submenu');
           $this->db->from('news t1');
           $this->db->join('tmp_menu t2','t1.menu_id=t2.id','left');
@@ -1036,11 +1049,13 @@ class Account_model extends Slugs{
 				}
 
 				public function fetchnews($id){
+
 					$this->db->select('t1.*,t2.menu_name,t3.submenu');
 					$this->db->from('news t1');
           $this->db->join('tmp_menu t2','t1.menu_id=t2.id','left');
           $this->db->join('tmp_submenu t3','t1.submenu_id=t3.id','left');
 					$this->db->where('t1.submenu_id',$id);
+           $this->db->where('t1.published',1);
           $this->db->order_by('t1.id','desc');
 					$query = $this->db->get();
 					$udetails = $query->result_array();
@@ -1054,6 +1069,7 @@ class Account_model extends Slugs{
           $this->db->join('tmp_menu t2','t1.menu_id=t2.id','left');
           $this->db->join('tmp_submenu t3','t1.submenu_id=t3.id','left');
           $this->db->where('t1.slug',$slug);
+           $this->db->where('t1.published',1);
           $this->db->order_by('t1.id','desc');
           $query = $this->db->get();
           $slugdetails = $query->row_array();
@@ -1061,14 +1077,8 @@ class Account_model extends Slugs{
           return $slugdetails;
 
         }
-        
-
-
-
-
-
-
 				public function fetchnewstwo(){
+           $this->db->where('published',1);
 					$this->db->select('*');
 					$this->db->from('news');
 					$this->db->limit(5);
@@ -1083,6 +1093,7 @@ class Account_model extends Slugs{
           $this->db->join('tmp_menu t2','t1.menu_id=t2.id','left');
           $this->db->join('tmp_submenu t3','t1.submenu_id=t3.id','left');
           $this->db->where(['t1.top_news_status'=>1]);
+           $this->db->where('t1.published',1);
           $this->db->order_by('t1.id','desc');
           $this->db->limit(5);
 
@@ -1097,6 +1108,7 @@ class Account_model extends Slugs{
           $this->db->join('tmp_menu t2','t1.menu_id=t2.id','left');
           $this->db->join('tmp_submenu t3','t1.submenu_id=t3.id','left');
           $this->db->where('t1.menu_id',$id);
+           $this->db->where('t1.published',1);
           $query = $this->db->get();
           $result = $query->result_array();
           return $result;
@@ -1107,6 +1119,7 @@ class Account_model extends Slugs{
 					$this->db->select('*');
 					$this->db->from('news');
 					$this->db->where('id >',5);
+           $this->db->where('published',1);
 					$query = $this->db->get();
 					$udetails = $query->result_array();
 					return $udetails;

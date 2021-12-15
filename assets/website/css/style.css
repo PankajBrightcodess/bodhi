@@ -1609,13 +1609,16 @@ font-family: 'Abel', sans-serif;
   color: black;
 }
 .slug-time{
-  font-weight: 500; 
+  font-weight: 700; 
   font-size:12px;
-  color: black;
+  /*color: black;*/
   text-align: left;
+  float:  left;
   font-family: myGabriola,Arial,sans-serif;
   color: #569EEA;
-  margin-top: 10%;
+}
+.slug-time label{
+  margin-top: 20px;
 }
 
 
@@ -1655,7 +1658,7 @@ font-family: 'Abel', sans-serif;
 
 /*...........................................................Sign In................................................*/
  .bb-login {
-     margin-top: 30px;
+     margin-top: 0px;
      margin-bottom: 300px
  }
 
@@ -2045,6 +2048,10 @@ font-family: 'Abel', sans-serif;
  }
 
 @media screen and (max-width: 920px) {
+  #st-2{
+     hide: true;
+     top: 400px;
+  }
   .abcd{
  background-color: #fff;
     position: fixed;
@@ -2173,3 +2180,171 @@ font-family: 'Abel', sans-serif;
      color: black !important;
      margin-right: 8px
  }
+
+
+ /*...............................share buttons............................................*/
+
+ #st-2.st-left {
+    left: 0px;
+}
+
+#st-2 .st-btn.st-hide-label > span {
+    display: none !important;
+}
+
+
+
+
+
+#st-2 {
+    font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    backface-visibility: hidden;
+    display: block;
+    position: fixed;
+    opacity: 1;
+    text-align: left;
+    top: 300px;
+    z-index: 9;
+}
+
+
+#st-2 .st-total {
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    color: #555;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 18px;
+    margin-right: 0;
+    min-height: 34px;
+    max-width: 80px;
+    opacity: 1;
+    padding: 4px 0;
+    text-align: center;
+    width: 48px;
+}
+
+
+#st-2 > div {
+    clear: left;
+    float: left;
+}
+
+#st-2 .st-total > span {
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 0;
+}
+
+
+
+#st-2 .st-total > span.st-shares {
+    font-size: 11px;
+    line-height: 11px;
+}
+
+#st-2 .st-total > span {
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 0;
+}
+
+
+#st-2 .st-btn[data-network='facebook'] {
+    background-color: #3B5998;
+}
+
+
+#st-2 .st-btn.st-first {
+    border-top-right-radius: 20px;
+}
+
+#st-2 .st-btn {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    display: inline-block;
+    font-size: NaNpx;
+    height: 48px;
+    line-height: 24px;
+    margin-bottom: 0;
+    opacity: 1;
+    overflow: hidden;
+    padding: 12px;
+    position: relative;
+    text-align: left;
+    top: 0;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 48px;
+}
+
+#st-2 .st-btn[data-network='twitter'] {
+    background-color: #55acee;
+}
+
+
+#st-2 .st-btn[data-network='email'] {
+    background-color: #7d7d7d;
+}
+
+#st-2 .st-btn[data-network='sharethis'] {
+    background-color: #95D03A;
+}
+
+#st-2 .st-btn[data-network='linkedin'] {
+    background-color: #0077b5;
+}
+
+#st-2 .st-btn.st-last {
+    border-bottom-right-radius: 20px;
+}
+
+#st-2 .st-toggle {
+    left: -48px;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background: #ccc;
+    border-bottom-right-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 24px;
+    position: relative;
+    text-align: center;
+    width: 48px;
+}
+
+
+
+#st-2 .st-btn:hover {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#st-2 .st-btn.st-hide-label:hover {
+    width: 62px;
+}
+
+#st-2.st-has-labels .st-btn:hover {
+    width: 100px;
+}

@@ -19,7 +19,7 @@
                                                 $i = 0;
                                                 foreach ($result1 as $pside) {
                                                     ?>
-                                                    <option value="<?php echo $pside['menu_name'] ?>"><?php echo $pside['menu_name'] ?></option>
+                                                    <option value="<?php echo $pside['id'].' '.$pside['menu_name'] ?>"><?php echo $pside['menu_name'] ?></option>
                                             <?php }
                                             }
                                             ?>

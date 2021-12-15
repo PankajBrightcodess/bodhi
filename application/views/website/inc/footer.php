@@ -1,3 +1,4 @@
+
 <div class="footer">
     <div class="container">
         <div class="col-md-12">
@@ -65,4 +66,11 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 <script src="<?php echo base_url("assets/website/plugins/masterslider/masterslider.min.js")?>"></script>
-
+<script type="text/javascript">
+window.__sharethis__.init({"ts":1502524256668,"sticky-share-buttons":{"alignment":"left","enabled":true,"labels":"counts","min_count":0,"mobile_breakpoint":1024,"networks":["facebook","twitter","email","sms","sharethis","linkedin","whatsapp"],"num_networks":7,"padding":12,"radius":20,"show_mobile":true,"show_toggle":true,"show_total":true,"size":48,"top":160,"product":"sticky-share-buttons","ts":1502524256658}});
+(function(){window.__sharethis__.cb3({"clicks":{},"other":{},"ourl":"https://hotellerie.digital/articles/article-4","reactions":{},"shares":{"all":1,"facebook":1},"total":1,"update_time":1502524426})})()
+</script>
+<script type="text/javascript">
+window.__sharethis__.init({"ts":1502524256668,"sticky-share-buttons":{"alignment":"left","enabled":true,"labels":"counts","min_count":0,"mobile_breakpoint":1024,"networks":["facebook","twitter","email","sms","sharethis","linkedin","whatsapp"],"num_networks":7,"padding":12,"radius":20,"show_mobile":true,"show_toggle":true,"show_total":true,"size":48,"top":160,"product":"sticky-share-buttons","ts":1502524256658}});
+(function(){window.__sharethis__.cb3({"clicks":{},"other":{},"ourl":"https://hotellerie.digital/articles/article-4","reactions":{},"shares":{"all":1,"facebook":1},"total":1,"update_time":1502524426})})()
+</script>

@@ -165,6 +165,7 @@ class Home extends CI_Controller {
 	public function savesubmenu(){
 		// checklogin();
 		$data=$this->input->post();
+
 		$run=$this->Account_model->savesubmenus($data);
 		if($run){
 			$this->session->set_flashdata("msg","Submenu Added Successfully!!");
@@ -205,6 +206,7 @@ class Home extends CI_Controller {
 	public function savenews(){
 		// checklogin();
 		$data=$this->input->post();
+		
 		unset($data['save_news']);
 		$upload_path = './assets/newsimagedb';
 		$allowed_types = 'gif|jpg|jpeg|png|pdf|GIF|JPG|JPEG|PNG|PDF';
@@ -233,6 +235,14 @@ class Home extends CI_Controller {
 		}
 		redirect('home/createmenu');
 
+	}
+
+
+	public function get_submenulist(){
+		$id = $this->input->post('id');
+		$result =  $this->Account_model->getsubmenuslistbyid($id);
+		$final = json_encode($result);
+		print_r($final);
 	}
 
 	

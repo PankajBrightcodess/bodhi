@@ -54,21 +54,14 @@ class Website extends CI_Controller {
 	}
 	public function detailnewsview($slug)
     {
-		// echo $slug;die;
-      // $d['result'] = $this->db->get_where('news', array('slug' => $slug))->row();
-      // echo PRE;
-      // print_r($d['result']);
-         $d['result'] = $this->Account_model->getslugresult($slug);
-      // print_r($d['result1']);die;
-	//   echo $this->db->last_query();die;
-        // $data['res'] = $this->db->get_where('register', array('token' => $s->token))->row();
-        // $this->template->load('pages/website', 'detailnews', $data);.
+      $d['result'] = $this->Account_model->getslugresult($slug);
 		$d['result4']=$this->Account_model->getmenus();
 		$d['v'] = 'website/india/detailnews';
-		// echo PRE;
-		// print_r($d);die;
+		// $time = $d['result']['entrydate'];
+		// $this->updatetime($time);
 		 $this->load->view('website/template',$d);
     }
+    
 	public function submenu(){
 		// $d['v'] = 'website/inc/header';
 		
