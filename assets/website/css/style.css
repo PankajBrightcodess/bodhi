@@ -2287,13 +2287,13 @@ font-family: 'Abel', sans-serif;
     margin-bottom: 0;
     opacity: 1;
     overflow: hidden;
-    padding: 12px;
+    padding: 5px;
     position: relative;
     text-align: left;
     top: 0;
     vertical-align: top;
     white-space: nowrap;
-    width: 48px;
+    width: 29px;
 }
 
 #st-2 .st-btn[data-network='twitter'] {
