@@ -33,10 +33,8 @@
 								<label><?php echo date('h:i A',strtotime($val['entrydate']));?></label>
 						        
 						  </div>
-						  <div class="col-md-12">
-                               <div class="footer-social-icons" >
-								    <!-- <h4 class="_14">Follow us on</h4> -->
-								    <ul class="social-icons">
+						  <!-- <div class="col-md-12">
+                               <div class="footer-social-icons" >								    <ul class="social-icons">
 								        <li><a href="" class="social-icon"><i class="fa fa-facebook"></i></a></li>
 								        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
 								        <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
@@ -45,7 +43,7 @@
 								        <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
 								    </ul>
 								</div> 
-						</div>
+						</div> -->
 				  	<?php }} }?>
 					</div>
 				  	<div class="col-md-5">

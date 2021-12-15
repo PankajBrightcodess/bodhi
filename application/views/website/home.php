@@ -65,9 +65,8 @@
 							 
 							</div>
 						</div>
-						<div class="col-md-12">
+						<!-- <div class="col-md-12">
                         <div class="footer-social-icons" >
-								    <!-- <h4 class="_14">Follow us on</h4> -->
 								    <ul class="social-icons">
 								        <li><a href="" class="social-icon"><i class="fa fa-facebook"></i></a></li>
 								        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
@@ -77,7 +76,7 @@
 								        <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
 								    </ul>
 								</div> 
-						</div>
+						</div> -->
 						<div class="col-md-12">
 							<hr style="color:black;">
 						</div>
