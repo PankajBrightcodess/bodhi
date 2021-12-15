@@ -43,7 +43,8 @@
 												<!--  <div class="col-md-12"> -->
 				                                      <h4>Top News</h4>
 			                                     <!-- </div> -->
-												<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;" class="img-hover"><img src="<?php echo base_url();?><?php echo $val['image'] ?>"  class="img-fluid" alt="Card image cap"></a>
+												<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;" class="img-hover"><img src="<?php echo base_url();?><?php echo $val['image'] ?>"  class="img-fluid" alt="Card image cap">
+												<label style="font-size: 11px; font-style: italic; font-weight:500;float: left;"><h5 style="color:black"><?php echo $result['img_caption'] ?></h5></label></a>
 												<div class="col-md-12 slug">
 														<label><?php if(!empty($val['submenu'])){
 																		echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?>
