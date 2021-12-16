@@ -18,6 +18,11 @@
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-12">
+                                        <?php echo form_input(array('type'=>'text','name'=>'value','id'=>'activate_menu','class'=>'form-control','placeholder'=>'Enter Value','required'=>'true'));?>
+                                    </div>                                    
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
                                         <?php echo form_input(array('type'=>'text','name'=>'percentage','id'=>'activate_menu','class'=>'form-control','placeholder'=>'Enter Percentage','required'=>'true'));?>
                                     </div>                                    
                                 </div>
@@ -37,6 +42,7 @@
                                         <tr>    
                                             <th>S.no</th>
                                             <th>Name</th>   
+                                            <th>Value</th>   
                                             <th>Percentage</th>                                         
                                                                                         
                                             <th>Action</th>                                            
@@ -49,12 +55,14 @@
                                         <tr>
                                             <td ><?php echo $i ?></td>
                                             <td ><?php echo $val['type'] ?></td>
+                                            <td ><?php echo $val['value'] ?></td>
                                             <td ><?php echo $val['percentage'] ?></td>
                                             
                                             <td><span class="float-right">
-                                            <a href='<?php echo base_url("home/delete_sidebar/");?>'><button class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
-                                            <a href="<?php echo base_url("home/edit_sidebar/");?>"><button class="btn btn-success btn-xs"><i class="fa fa-edit"></i></button></a>
-                                            <button class="btn btn-info btn-xs duplicate" type="button" data-dupid="<?php ?>"><i class="fa fa-network-wired"></i></button>
+                                            <button class="btn btn-danger btn-xs delete" value="<?php echo $val['id'];?>"><i class="fa fa-trash"></i></button> 
+                                           <!--  <a href="<?php echo base_url("home/edit_sidebar/");?>"><button class="btn btn-success btn-xs"><i class="fa fa-edit"></i></button></a> -->
+                                           <button type="button" class="btn btn-success btn-xs updt" data-toggle="modal" data-target="#exampleModal" data-id="<?php echo $val['id'];?>" data-type="<?php echo $val['type'];?>" data-value="<?php echo $val['value'];?>" data-percentage="<?php echo $val['percentage'];?>"><i class="fa fa-edit"></i></button>
+                                            <!-- <button class="btn btn-info btn-xs duplicate" type="button" data-dupid="<?php ?>"><i class="fa fa-network-wired"></i></button> -->
                                             </span></td>
                                         </tr>
                                        
@@ -75,9 +83,112 @@
         </div>
         </div>
     </section>    
+
+    <!-- '''''''''''''''''''''''''''''''model'''''''''''''''''''''''''''''''''''''''' -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+           <?php echo form_open_multipart('home/update_market');?>
+          <div class="modal-body">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                   
+                    <div class="form-group row">
+                        <div class="col-sm-12 col-md-12">
+                            <?php echo form_input(array('type'=>'text','name'=>'type','id'=>'type','class'=>'form-control type','placeholder'=>'Enter  Name','required'=>'true'));?>
+                            <input type="hidden" name="id" id="id">
+                        </div>                                    
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12 col-md-12">
+                            <?php echo form_input(array('type'=>'text','name'=>'value','id'=>'value','class'=>'form-control value','placeholder'=>'Enter Value','required'=>'true'));?>
+                        </div>                                    
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12 col-md-12">
+                            <?php echo form_input(array('type'=>'text','name'=>'percentage','id'=>'percentage','class'=>'form-control percentage','placeholder'=>'Enter Percentage','required'=>'true'));?>
+                        </div>                                    
+                    </div>
+                   <!--  <div class="form-group row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <?php echo form_submit(array('name'=>'update_market','id'=>'save_cat','type'=>'submit','value'=>'Save ','class'=>'form-control btn btn-success'));?>
+                        </div>
+                        <div class="col-md-4"></div>                                    
+                    </div> -->
+                    
+                 </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-success">Update</button>
+          </div>
+          <?php echo form_close();?>
+        </div>
+      </div>
+    </div>
+    <!-- '''''''''''''''''''''''''''''''''model end................................... -->
+    <script type="text/javascript">
+        $('.updt').click(function(e){
+        var id = $(this).data('id');
+        var type = $(this).data('type');
+        var value = $(this).data('value');
+        var percentage = $(this).data('percentage');
+        $('#id').val(id);
+        $('#type').val(type);
+        $('#value').val(value);
+        $('#percentage').val(percentage);
+      
+    });
+
+
+    $('.delete').click(function(e){
+        debugger;
+        var id=$(this).closest('tr').find('.delete').val();
+        if(confirm('Are you Sure !')){
+        $.ajax({
+                type:'GET',
+                url:"<?PHP echo base_url('home/delete_market'); ?>",
+                data: {id:id},
+                success: function(result){
+                    // alert(result);
+                    console.log(result);
+                    location.reload();
+                    },
+                    error: function(){
+                    alert("error");
+                    }
+        });
+    }
+    return false;
+    });
+    </script>
 <script>
+
+
+
 	
 	$(document).ready(function(e) {
+
+      
+
+
+
+
+
+
+
+
+
+
+
         $('.hoverable').mouseenter(function(){
             //$('[data-toggle="popover"]').popover();
             $(this).popover('show');                    

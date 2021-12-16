@@ -66,8 +66,8 @@
                                             
                                             <td><span class="float-right">
                                             <a href='<?php echo base_url("home/delete_sidebar/");?>'><button class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
-                                            <a href="<?php echo base_url("home/edit_sidebar/");?>"><button class="btn btn-success btn-xs"><i class="fa fa-edit"></i></button></a>
-                                            <button class="btn btn-info btn-xs duplicate" type="button" data-dupid="<?php ?>"><i class="fa fa-network-wired"></i></button>
+                                             <button type="button" class="btn btn-success btn-xs updt" data-toggle="modal" data-target="#exampleModal" data-id="<?php echo $val['id'];?>" data-menu="<?php echo $val['menu'];?>" data-menu_id="<?php echo $val['menu_id'];?>" data-submenu="<?php echo $val['submenu'];?>" ><i class="fa fa-edit"></i></button>
+                                            <!-- <button class="btn btn-info btn-xs duplicate" type="button" data-dupid="<?php ?>"><i class="fa fa-network-wired"></i></button> -->
                                             </span></td>
                                         </tr>
                                         <?php } } ?>
@@ -83,7 +83,65 @@
             </div>
         </div>
         </div>
-    </section>    
+    </section>   
+    <!-- '''''''''''''''''''''''''''''''model'''''''''''''''''''''''''''''''''''''''' -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+           <?php echo form_open_multipart('home/update_submenu');?>
+          <div class="modal-body">
+            <div class="row">
+                    <div class="col-sm-12 col-md-12 mb-3" >
+                        <select <?php echo form_input(array('name' => 'menu', 'id' => 'menu', 'class' => 'form-control', 'placeholder' => '')); ?>>
+                            <option value="">Select Menu</option>
+                            <?php if (!empty($result1)) {  
+                                $i = 0;
+                                foreach ($result1 as $pside) {
+                                    ?>
+                                    <option <?php if($this==$pside['id']){echo 'selected="selected"';} ?>  value="<?php echo $pside['id'].' '.$pside['menu_name'] ?>"><?php echo $pside['menu_name'] ?></option>
+                            <?php }
+                            }
+                            ?>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 col-md-12">
+                        <?php echo form_input(array('type'=>'text','name'=>'submenu','id'=>'submenu','class'=>'form-control','placeholder'=>'Enter Submenu name','required'=>'required'));?>
+                    </div> 
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-success">Update</button>
+          </div>
+          <?php echo form_close();?>
+        </div>
+      </div>
+    </div>
+    <!-- '''''''''''''''''''''''''''''''''model end................................... -->  
+
+     <script type="text/javascript">
+        $('.updt').click(function(e){
+        var id = $(this).data('id');
+        var menu = $(this).data('menu');
+        var submenu = $(this).data('submenu');
+        var menu_id = $(this).data('menu_id');
+      
+        $('#id').val(id);
+        $('#menu').val(menu_id);
+        $('#submenu').val(submenu);
+        
+      
+    });
+
+
+  
+    </script> 
 <script>
 	
 	$(document).ready(function(e) {

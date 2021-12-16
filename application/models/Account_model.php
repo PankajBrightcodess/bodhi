@@ -1018,10 +1018,58 @@ class Account_model extends Slugs{
 					return false;
 				}}
 
+
+        public function updatenews_byid($data){
+          $id = $data['id'];
+         if(!empty($data['image'])){
+          $final['image']=$data['image'];
+         }else{
+          $final['image']=$data['Image_path'];
+         }
+        //  ''''''''''''''''''''''''''sulg start''''''''''''''''''''''''''
+         $string=$data['tittle'];
+         
+         $separator = '-';
+        if (is_null($string)) {
+          return "";
+        }
+        $string = trim($string);
+      $string = mb_strtolower($string, "UTF-8");
+      $string = preg_replace("/[^a-z0-9_ोौेैा्ीिीूुंःअआइईउऊएऐओऔकखगघचछजझञटठडढतथदधनपफबभमयरलवसशषहश्रक्षटठडढङणनऋ\s-]/u", "", $string);
+      $newStr = preg_replace("/[\s-]+/", " ", $string);
+      $newStr = preg_replace("/[\s_]/", $separator, $newStr);
+      $slug=mb_strtolower($newStr);
+        //  ''''''''''''''''''''''''''sulg end''''''''''''''''''''''''''
+        //  print_r($final['image']);die;
+        //  $str=$data['tittle'];
+        //  $delimiter = '-';
+        //  $slug = strtolower(trim(preg_replace('/[\s-]+/', $delimiter, preg_replace('/[^A-Za-z0-9-]+/', $delimiter, preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $str))))), $delimiter));
+        // print_r($slug);die;
+         $final['menu_id']=$data['menu_id'];
+        $final['submenu_id']=$data['submenu_id'];
+        $final['tittle']=$data['tittle'];
+        $final['byline'] = $data['byline'];
+        $final['straplines'] = $data['straplines'];
+        $final['img_caption'] = $data['img_caption'];
+        $final['slug']=$slug;
+        $final['news']=$data['news'];
+        $final['date']=date('Y-m-d');
+        if(!empty($data['top_news_status'])){
+          $final['top_news_status']=$data['top_news_status'];
+        }
+               $this->db->where('id',$id);
+        $qry = $this->db->update('tmp_news',$final);
+        if($qry==true){
+          return true;
+        }
+        else{
+          return false;
+        }}
+
 				
 
 				public function getnews(){
-          $this->db->where('t1.published',1);
+          // $this->db->where('t1.published',1);
 					$this->db->select('t1.*,t2.menu_name,t3.submenu');
           $this->db->from('news t1');
           $this->db->join('tmp_menu t2','t1.menu_id=t2.id','left');
@@ -1031,6 +1079,18 @@ class Account_model extends Slugs{
 					$udetails = $query->result_array();
 					return $udetails;
 				}
+        public function getnews_byid($id){
+          $this->db->where('t1.id',$id);
+          $this->db->select('t1.*,t2.menu_name,t3.submenu');
+          $this->db->from('news t1');
+          $this->db->join('tmp_menu t2','t1.menu_id=t2.id','left');
+          $this->db->join('tmp_submenu t3','t1.submenu_id=t3.id','left');
+          $this->db->order_by('t1.id','desc');
+          $query = $this->db->get();
+          $udetails = $query->row_array();
+          return $udetails;
+
+        }
         public function getmenuname($id){
 					$this->db->select('menu_name');
 					$this->db->from('menu');
@@ -1145,9 +1205,11 @@ class Account_model extends Slugs{
 				public function savemarket($data){
 					// unset($data['saveuserdetails']);
 					$type=$data['type'];
+          $value=$data['value'];
 					$percentage=$data['percentage'];
 		
-					$final['type']=$type;
+          $final['type']=$type;
+					$final['value']=$value;
 					$final['percentage']=$percentage;
 					$qry = $this->db->insert('market',$final);
 					if($qry==true){
@@ -1156,6 +1218,33 @@ class Account_model extends Slugs{
 					else{
 						return false;
 					}}
+
+
+          public function updatemarket($data){
+            $id = $data['id'];
+            $final['type']=$data['type'];
+            $final['value']=$data['value'];
+            $final['percentage']=$data['percentage'];
+                   $this->db->where('id',$id);
+            $qry = $this->db->update('market',$final);
+            if($qry==true){
+              return true;
+            }
+            else{
+              return false;
+          }}
+
+          public function updatemenu($data){
+            $id = $data['id'];
+            $final['menu_name']=$data['menu_name'];
+                   $this->db->where('id',$id);
+            $qry = $this->db->update('menu',$final);
+            if($qry==true){
+              return true;
+            }
+            else{
+              return false;
+          }}
 
 
 				// '''''''''''''''''''''''''''''''''''''''''''''''''''''slug part start'''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -1170,6 +1259,58 @@ class Account_model extends Slugs{
           else{
             return false;
           }
+      }
+
+      public function delete_market($id){
+        $this->db->where('id',$id);
+        $qry = $this->db->delete('market');
+          if($qry==true){
+            return true;
+          }
+          else{
+            return false;
+          }
+      }
+
+      public function delete_news($id){
+        $this->db->where('id',$id);
+        $qry = $this->db->delete('tmp_news');
+          if($qry==true){
+            return true;
+          }
+          else{
+            return false;
+          }
+
+      }
+
+      public function published_status_news($id){
+
+        if(!empty($id)){
+          $status = $this->status_check($id);
+          if($status['published']==1){
+            $data['published']=0;
+          }
+          else{
+             $data['published']=1;
+          }
+          $this->db->where('id',$id);
+          $qry = $this->db->update('tmp_news',$data);
+          if($qry==true){
+            return true;
+          }
+          else{
+            return false;
+          }
+        }
+
+      }
+      public function status_check($id){
+        $this->db->where('id',$id);
+        $this->db->select('published');
+        $this->db->from('tmp_news');
+        $result = $this->db->get()->row_array();
+        return $result;
       }
 
 			

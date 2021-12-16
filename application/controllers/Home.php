@@ -185,6 +185,16 @@ class Home extends CI_Controller {
 		
 		$this->template->load('pages/admin','addnews',$data);
 	}
+
+	public function edit_news(){
+		$data['title'] = "Update news";
+		$id = $this->input->get('id');
+		$data['result1']=$this->Account_model->getmenus();
+		$data['result2']=$this->Account_model->getsubmenus();
+		$data['result']=$this->Account_model->getnews_byid($id);
+
+		$this->template->load('pages/admin','edit_updatenews',$data);
+	}
 	public function market(){
 		
 		$data['title'] = "Add Market Details";
@@ -202,6 +212,39 @@ class Home extends CI_Controller {
 			$this->session->set_flashdata("err_msg",$run);
 		}
 		redirect('home/market');
+	}
+
+	public function update_market(){
+		$data=$this->input->post();
+		$run=$this->Account_model->updatemarket($data);
+		if($run){
+			$this->session->set_flashdata("msg","Market Updated Successfully!!");
+		}else{
+			$this->session->set_flashdata("err_msg",$run);
+		}
+		redirect('home/market');
+	}
+
+	public function update_menu(){
+		$data=$this->input->post();
+		$run=$this->Account_model->updatemenu($data);
+		if($run){
+			$this->session->set_flashdata("msg","Menu Updated Successfully!!");
+		}else{
+			$this->session->set_flashdata("err_msg",$run);
+		}
+		redirect('home/createmenu');
+	}
+
+	public function delete_market(){
+		$id = $this->input->get('id');
+		$run=$this->Account_model->delete_market($id);
+		if($run){
+			$this->session->set_flashdata("msg","Market Deleted Successfully!!");
+		}else{
+			$this->session->set_flashdata("err_msg",$run);
+		}
+		redirect('home/addnews');
 	}
 	public function savenews(){
 		// checklogin();
@@ -224,6 +267,52 @@ class Home extends CI_Controller {
 			$this->session->set_flashdata("err_msg",$run);
 		}
 		redirect('home/addnews');
+	}
+
+	public function updatenews(){
+		$data=$this->input->post();
+		echo PRE;
+		
+		
+		if($_FILES['image']['size']!=0){
+			unset($data['save_news']);
+		$upload_path = './assets/newsimagedb';
+		$allowed_types = 'gif|jpg|jpeg|png|pdf|GIF|JPG|JPEG|PNG|PDF';
+		  if($_FILES['image']['name'] !=''){
+			  $image = upload_file("image", $upload_path, $allowed_types, time());
+			  if ($image !='') {
+				  $data['image'] = $image['path'];
+				
+			  }
+		  }
+	   }
+		$run=$this->Account_model->updatenews_byid($data);
+		if($run){
+			$this->session->set_flashdata("msg","News Updated Successfully!!");
+		}else{
+			$this->session->set_flashdata("err_msg",$run);
+		}
+		redirect('home/addnews');
+
+	}
+
+
+	public function delete_news(){
+		$id = $this->input->get('id');
+		$run=$this->Account_model->delete_news($id);
+		if($run){
+			$this->session->set_flashdata("msg","News Deleted Successfully!!");
+		}else{
+			$this->session->set_flashdata("err_msg",$run);
+		}
+		redirect('home/addnews');
+
+	}
+
+	public function published_news(){
+		$id = $this->input->get('id');
+		$run=$this->Account_model->published_status_news($id);
+		print_r($run);
 	}
 	public function delete_menu(){
 		$id = $this->input->get('id');

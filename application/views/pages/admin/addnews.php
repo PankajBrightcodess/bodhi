@@ -28,22 +28,9 @@
                                     </div>
                                     <div class="col-sm-6 col-md-6 mb-2">
                                         <lable style="font-size: 15px; font-weight:600">Sub Menu</lable>
-                                        <!-- <select <?php echo form_input(array('name' => 'submenu_id', 'id' => 'name', 'class' => 'form-control', 'placeholder' => '')); ?>>
-                                            <option value="">Select sub Menu</option>
-                                            <?php if (!empty($result2)) {  
-                                                $i = 0;
-                                                foreach ($result2 as $val) {
-                                                    ?>
-                                                    <option value="<?php echo $val['id'] ?>"><?php echo $val['submenu'] ?></option>
-                                            <?php }
-                                            }
-                                            ?>
-                                        </select> -->
                                          <select class="form-control submenus"   name="submenu_id">
                                                     <option value="">----SELECT----</option>
-
-                                                   
-                                                   </select>
+                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -132,8 +119,8 @@
                         <tr>
                             <td ><?= $i?></td>
                             <td ><?= $val['id']?></td>
-                            <td><?php echo $this->Account_model->getmenuname($val['menu_id']);?></td>
-                            <td><?php echo $this->Account_model->getsubmenuname($val['submenu_id']);?></td>
+                            <td><?php echo $menu = $this->Account_model->getmenuname($val['menu_id']);?></td>
+                            <td><?php echo $submenu = $this->Account_model->getsubmenuname($val['submenu_id']);?></td>
                             <!-- <td ><= $val['menu_id']?></td> -->
                             <!-- <td ><= $val['submenu_id']?></td> -->
                             <td><img src="<?php echo file_url($val['image']); ?>" alt="Image" class="img-thumbnail" style="width: 100px ;height:50px !important" alt="Responsive image"></td>
@@ -141,11 +128,24 @@
                             
                             <!-- <td ><?= $val['slug']?></td> -->
                             <td ><?= $val['byline']?></td>
-                            <td style="text-align: center;"> <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> </td>
+                            <td style="text-align: center;"> <?php
+                                    if($val['published']==1){
+                                        ?><button class="btn btn-info btn-xs published" value="<?php echo $val['id'];?>"><i class="fa fa-check"></i></button><?php
+                                    }else{
+                                        ?><button class="btn btn-warning btn-xs published" value="<?php echo $val['id'];?>"><i class="fa fa-window-close-o" aria-hidden="true"></i></button><?php
+                                    }
+
+
+
+
+
+                        ?> </td>
                             <td><span class="float-right">
-                            <a href='<?php echo base_url("home/delete_sidebar/");?>'><button class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
-                            <a href="<?php echo base_url("home/edit_sidebar/");?>"><button class="btn btn-success btn-xs"><i class="fa fa-edit"></i></button></a>
-                            <button class="btn btn-info btn-xs duplicate" type="button" data-dupid=""><i class="fa fa-network-wired"></i></button>
+                            <button class="btn btn-danger btn-xs delete" value="<?php echo $val['id'];?>"><i class="fa fa-trash"></i></button> 
+                            <a href="<?php echo base_url('home/edit_news/?id='.$val['id'])?>"><button type="button" class="btn btn-success btn-xs"><i class="fa fa-edit"></i></button></a>
+                           <!-- <button type="button" class="btn btn-success btn-xs updt" data-toggle="modal" data-id="<?php echo $val['id'];?>" data-menu="<?php echo $val['menu_id'];?>" data-submenu="<?php echo $val['submenu_id'];?>" data-tittle="<?php echo $val['tittle'];?>" data-byline="<?php echo $val['byline'];?>"  data-straplines="<?php echo $val['straplines'];?>" data-image="<?php echo $val['image'];?>" data-img_caption="<?php echo $val['img_caption'];?>" data-topnews="<?php echo $val['top_news_status'];?>" data-target=".bd-example-modal-lg"><i class="fa fa-edit"></i></button> -->
+
+                           <!--  <button class="btn btn-info btn-xs duplicate" type="button" data-dupid=""><i class="fa fa-network-wired"></i></button> -->
                             </span></td>
                         </tr>
                         <?php } } ?> 
@@ -158,7 +158,93 @@
 </div>
 </div>
 </div>
-</section>  
+</section> 
+<!-- --------------------------------------------Modal----------------------------------------------- -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button> -->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Update News</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="row">
+           <div class="col-md-6 col-6">
+              <div class="row">
+                  <div class="col-md-12">
+                     <lable style="font-size: 15px; font-weight:600">Menu</lable>
+                   <select name="menu_id" onchange="getsubmenulist(this.value)" class="form-control">
+                        <option value="">Select Menu</option>
+                        <?php if (!empty($result1)) {  
+                            $i = 0;
+                            foreach ($result1 as $val) {
+                                ?>
+                                <option value="<?php echo $val['id'] ?>"><?php echo $val['menu_name'] ?></option>
+                        <?php }
+                        }
+                        ?>
+                </select>
+                  </div>
+                  <div class="col-md-12">
+                     <lable style="font-size: 15px; font-weight:600">Sub Menu</lable>
+                       <select class="form-control submenus"   name="submenu_id">
+                        <option value="">----SELECT----</option>
+
+                       
+                       </select>
+                  </div>
+                  <div class="col-md-12">
+                    <lable style="font-size: 15px; font-weight:600">Tittle</lable>
+                    <?php echo form_input(array('type'=>'text','name'=>'tittle','id'=>'tittle','class'=>'form-control','placeholder'=>'News Tittle','required'=>'required'));?>
+                  </div>
+                  <div class="col-md-12">
+                      <lable style="font-size: 15px; font-weight:600">By Line</lable>
+                      <?php echo form_input(array('type'=>'text','name'=>'byline','id'=>'byline','class'=>'form-control','placeholder'=>'By Line'));?>
+                  </div>
+              </div>    
+           </div>
+           <div class="col-md-6 col-6">
+               <div class="row">
+                    <div class="col-md-6"><lable style="font-size: 15px; font-weight:600">News Image</lable>
+                        <?php echo form_input(array('type'=>'file','name'=>'image','id'=>'image','class'=>'form-control','placeholder'=>'Enter Submenu name','required'=>'required'));?></div>
+                  <div class="col-md-6"> <lable style="font-size: 15px; font-weight:600">Image Caption</lable>
+                    <?php echo form_input(array('type'=>'text','name'=>'img_caption','id'=>'img_caption','class'=>'form-control','placeholder'=>'By Line'));?></div>
+               </div>
+           </div>
+           <div class="col-md-12 col-12">
+               <div class="row">
+                   <div class="col-md-6"><lable style="font-size: 15px; font-weight:600">News Description</lable>
+                        <textarea class="form-control" name="news" id="news" rows="6" col="12"></textarea></div>
+                  <div class="col-md-6 mb-3"><lable style="font-size: 15px; font-weight:600">Straplines</lable>
+                        <textarea class="form-control" name="straplines" id="straplines"  rows="5" col="12"></textarea></div>
+                 
+                        
+                  <div class="col-md-12"> <lable style="font-size: 15px; font-weight:600">Top News :</lable>
+                        <?php echo form_input(array('type'=>'checkbox','name'=>'top_news_status','id'=>'top_news_status','value'=>'1'));?></div>
+               </div>
+           </div>
+       </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- --------------------------------------------Modal End------------------------------------------- -->
+
+
+
+
+
+
+
+
     <script type="text/javascript">
          function getsubmenulist(id){
             // debugger;
@@ -181,6 +267,80 @@
         });
         $('.submenus').html(''); 
        } 
+
+
+    $('.delete').click(function(e){
+        debugger;
+        var id=$(this).closest('tr').find('.delete').val();
+        if(confirm('Are you Sure !')){
+        $.ajax({
+                type:'GET',
+                url:"<?PHP echo base_url('home/delete_news'); ?>",
+                data: {id:id},
+                success: function(result){
+                    // alert(result);
+                    console.log(result);
+                    location.reload();
+                    },
+                    error: function(){
+                    alert("error");
+                    }
+        });
+    }
+    return false;
+    });
+
+     $('.published').click(function(e){
+        debugger;
+        var id=$(this).closest('tr').find('.published').val();
+        if(confirm('Are You Want To Change ?')){
+        $.ajax({
+                type:'GET',
+                url:"<?PHP echo base_url('home/published_news'); ?>",
+                data: {id:id},
+                success: function(result){
+                    // alert(result);
+                    console.log(result);
+                    location.reload();
+                    },
+                    error: function(){
+                    alert("error");
+                    }
+        });
+    }
+    return false;
+    });
+
+       $('.updt').click(function(e){
+    var id = $(this).data('id');
+    var menu_id = $(this).data('menu_id');
+    var submenu_id = $(this).data('submenu_id');
+    var tittle = $(this).data('tittle');
+    var byline = $(this).data('byline');
+    var news = $(this).data('news');
+    var straplines = $(this).data('straplines');
+    var image = $(this).data('image');
+    var img_caption = $(this).data('img_caption');
+    var topnews = $(this).data('topnews');
+    $('#id').val(id);
+    $('#menu_id').val(menu_id);
+    $('#submenu_id').val(submenu_id);
+    $('#tittle').val(tittle);
+    $('#byline').val(byline);
+    $('#news').val(news);
+    $('#straplines').val(straplines);
+    $('#image').val(image);
+    $('#img_caption').val(img_caption);
+    $('#topnews').val(topnews);
+
+  
+
+    
+})
+
+
+
+
     </script>  
 <script>
     $(document).ready(function(e) {
