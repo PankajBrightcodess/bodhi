@@ -1246,6 +1246,22 @@ class Account_model extends Slugs{
               return false;
           }}
 
+          public function updatesubmenu($data){
+            $id = $data['id'];
+            if(!empty($data['menu'])){
+              $final['menu']=$data['menu'];
+            }
+            $final['submenu']=$data['submenu'];
+            
+                   $this->db->where('id',$id);
+            $qry = $this->db->update('submenu',$final);
+            if($qry==true){
+              return true;
+            }
+            else{
+              return false;
+          }}
+
 
 				// '''''''''''''''''''''''''''''''''''''''''''''''''''''slug part start'''''''''''''''''''''''''''''''''''''''''''''''''''''
 

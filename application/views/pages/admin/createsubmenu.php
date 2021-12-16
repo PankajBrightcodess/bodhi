@@ -112,6 +112,7 @@
                     </div>
                     <div class="col-sm-12 col-md-12">
                         <?php echo form_input(array('type'=>'text','name'=>'submenu','id'=>'submenu','class'=>'form-control','placeholder'=>'Enter Submenu name','required'=>'required'));?>
+                        <input type="hidden" name="id" id="id">
                     </div> 
             </div>
           </div>

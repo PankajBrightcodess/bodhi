@@ -235,6 +235,17 @@ class Home extends CI_Controller {
 		}
 		redirect('home/createmenu');
 	}
+	public function update_submenu(){
+		$data = $this->input->post();
+		
+		$run=$this->Account_model->updatesubmenu($data);
+		if($run){
+			$this->session->set_flashdata("msg","Menu Updated Successfully!!");
+		}else{
+			$this->session->set_flashdata("err_msg",$run);
+		}
+		redirect('home/createsubmenu');
+	}
 
 	public function delete_market(){
 		$id = $this->input->get('id');
