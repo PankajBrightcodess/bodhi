@@ -65,7 +65,7 @@
 								<?php 
 								 $lastdate = $result['entrydate'];
 								 $current = date('Y-m-d H:i:s');
-									$date1 = new DateTime('2021-12-13 12:30:00');
+									$date1 = new DateTime('2021-12-20 12:30:00');
 									$date2 = new DateTime('2021-12-21 11:30:00');
 									$diff = $date2->diff($date1);
 								?>
