@@ -64,28 +64,28 @@
     <div class="top-bar abcd"> 
         <div class="container">
             <div class="row">
-                <div class="col-md-2 col-sm-4 col-4">
-                     <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.png') ?>" height="90%" width="95%" style="float:center;" style="margin:0px;"></a>
+                <div class="col-md-2 col-3 logo">
+                     <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.png') ?>" ></a>
                 </div>
-                <div class="col-md-6 col-8 main-heading">
+                <div class="col-md-5 col-9 main-heading">
                     <a href="<?php echo base_url('/')?>"><h2>BODHI <span >WIRE</span></h2><h5>INTERNATIONAL NEWS AGENCY</h5>   </a>
                     <!-- <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/website/news_image/bodhi.png') ?>" style="float:center; margin-top: 10px;" width="100%" ></a> -->
                 </div>
-                <div class="col-md-4 mb-3" style="float:right;">
+                <div class="col-md-5 mb-3 col-12 search">
                     <!-- '''''''''''''''''''''''''search''''''''''''''''''''''''' -->
 
 
                     <!-- '''''''''''''''''''''''end search''''''''''''''''''''''' -->
                     <div class="input-group btn-group rounded" >
-
-                       <div class="search-box btn-space">
+                         <div class="btn-toolbar">
+                      <a href="<?php echo base_url('website/signin')?>" class="btn btn-sm mr-2 btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:10px;">Sign In</a>
+                      <a href="<?php echo base_url('website/signup')?>" style="float:right;margin-top:10px;" class="btn mr-2 btn-sm btn-dark btn-space">Register</a>  
+                      </div>
+                       <div class="search-box btn-space ">
                         <button class="btn-search btn-space"><i class="fas fa-search"></i></button>
                         <input type="text" class="input-search"  placeholder="Search BW...">
                       </div>
-                      <div class="btn-toolbar">
-                      <a href="<?php echo base_url('website/signin')?>" class="btn btn-sm mr-2 btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:10px;">Sign In</a>
-                      <a href="<?php echo base_url('website/signup')?>" style="float:right;margin-top:10px;" class="btn mr-2 btn-sm btn-dark btn-space">Register</a>  
-                      </div>                 
+                                      
                   </div>
                    
                     
@@ -209,3 +209,10 @@
 
   
 </div>
+<script type="text/javascript">
+    $(document).ready(function() {
+    $("#btn-search").click(function(){
+  alert("The paragraph was clicked.");
+});
+});
+</script>

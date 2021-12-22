@@ -74,3 +74,5 @@ window.__sharethis__.init({"ts":1502524256668,"sticky-share-buttons":{"alignment
 window.__sharethis__.init({"ts":1502524256668,"sticky-share-buttons":{"alignment":"left","enabled":true,"labels":"counts","min_count":0,"mobile_breakpoint":1024,"networks":["facebook","twitter","email","sms","sharethis","linkedin","whatsapp"],"num_networks":7,"padding":12,"radius":20,"show_mobile":true,"show_toggle":true,"show_total":true,"size":48,"top":160,"product":"sticky-share-buttons","ts":1502524256658}});
 (function(){window.__sharethis__.cb3({"clicks":{},"other":{},"ourl":"https://hotellerie.digital/articles/article-4","reactions":{},"shares":{"all":1,"facebook":1},"total":1,"update_time":1502524426})})()
 </script>
+
+

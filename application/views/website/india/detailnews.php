@@ -50,7 +50,7 @@
 				  		 </div> 
 				  			<div class="col-md-12 mb-3">
 				  		   <img  src="<?php echo base_url();?><?php echo $result['image'] ?>" class="img-fluid">
-				  		   <label style="font-size: 11px; font-style: italic; font-weight:500;float: left;"><h5 style="color:black"><?php echo $result['img_caption'] ?></h5></label>
+				  		   <label style="font-size: 13px; font-style: italic; font-weight:500;float: left;"><span style="color:black"><?php echo $result['img_caption'] ?></span></label>
 				  		 </div> 
 				  		 <div class="col-md-12 mb-0">
 				  		 	<label style="font-style: italic; float:left;">By Line : <?php echo $result['byline']?></label>

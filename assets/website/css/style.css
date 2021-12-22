@@ -7,7 +7,7 @@ html, body {
   height: 100%; }
 
 body {
-  font-family:  'myGabriola',Arial,sans-serif;
+  font-family:  knowledge-medium,Arial,sans-serif;
   font-size: 15px;
   line-height: 28px;
   margin: 0;
@@ -26,7 +26,7 @@ body {
 }
 
 @font-face {
-font-family: "myGabriola";
+font-family: knowledge-medium,Arial,sans-serif;
 src: url("knowledge-medium.woff.ttf"); 
 }
 
@@ -330,7 +330,7 @@ s {
       margin: 0px;
       font-weight: 400;
       font-size: 16px;
-      font-family: "Open Sans", sans-serif;
+      font-family: knowledge-medium,Arial,sans-serif;
       letter-spacing: 0px;
       text-transform: capitalize; }
     .card-list li a:hover {
@@ -967,20 +967,21 @@ Projects
 }
 
 #menu li a {
-  font-family: myGabriola,Arial,sans-serif;
-
+   font-family:knowledge-medium,Arial,sans-serif;
+  /*font-family: myGabriola,Arial,sans-serif;*/
+  font-weight: 700;
   /*font-family:Arial, Helvetica, sans-serif;*/
-  font-size:14px; 
+  font-size:15px; 
   color: #EEEEEE;
   display:block;
   outline:0;
   text-decoration:none;
-  text-shadow: 1px 1px 1px #000;
+  /*text-shadow: 1px 1px 1px #000;*/
 }
 
 #menu li:hover a {
-  color:#161616;
-  text-shadow: 1px 1px 1px #ffffff;
+  color:rgb(35 97 138);
+  /*text-shadow: 1px 1px 1px #ffffff;*/
 }
 
 #menu li .drop {
@@ -1070,7 +1071,7 @@ Projects
 #menu .nav-item .news-array p{
   font-size: 15px;
   color: white;
-  font-family: myGabriola,Arial,sans-serif;
+  font-family:knowledge-medium,Arial,sans-serif;
   text-decoration: none;
   word-spacing: 5px;
   text-shadow: 1px 1px 5px #71828F;
@@ -1380,7 +1381,7 @@ ul.social-icons {
   pointer-events: painted;  
 }
 .btn-search:focus ~ .input-search{
-  width: 200px;
+  width: 250px;
   border-radius: 0px;
   background-color: #DBE1E4;
    border-radius: 25px;
@@ -1388,7 +1389,7 @@ ul.social-icons {
   transition: all 600ms cubic-bezier(0, 0.110, 0.35, 2);
 }
 .input-search:focus{
-  width: 210px;
+  width: 300px;
   border-radius: 0px;
   background-color: #DBE1E4;
   color: black;
@@ -1411,9 +1412,24 @@ ul.social-icons {
   color: rgb(35 97 138);
   width: 100%;
   font-weight: 1000;
-  font-size:50px;
+  font-size:40px;
   letter-spacing: 2px;
   word-spacing: 13px;
+}
+.abcd .logo img{
+  height: 60%;
+  width: 50%;
+  float:center;
+  margin-top:15px;
+}
+.abcd .search {
+  float: right;
+}
+.abcd .search .search-box{
+  margin-top: 15px;
+}
+.abcd .search .btn-toolbar{
+  margin-top: 15px;
 }
 .abcd .main-heading span{
   color:#569EEA;
@@ -1421,10 +1437,10 @@ ul.social-icons {
 .abcd .main-heading h5{
   /*font-family: 'Abel', sans-serif; */
   text-align: center; 
-  margin-bottom:10px;
+  margin-bottom:20px;
   color: rgb(35 97 138);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 17px;
   word-spacing: 10;
 }
 .header-gap{
@@ -1443,7 +1459,7 @@ ul.social-icons {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 20px;
   font-weight: 200;
-  font-family: myGabriola,Arial,sans-serif;
+  font-family: knowledge-medium,Arial,sans-serif;
    color: black;
    margin: 10px;
    /*height: 1400px;*/
@@ -1451,7 +1467,7 @@ ul.social-icons {
 }
 .top-news .main-topnews{
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-font-family: 'Abel', sans-serif;
+font-family: knowledge-medium,Arial,sans-serif;
   border-radius: 20px 0px 0px 20px;
   font-weight: 200;
    /*height: 1400px;*/
@@ -1478,7 +1494,7 @@ font-family: 'Abel', sans-serif;
   margin-bottom: 15px;
   margin-left: 5px;
   font-weight: 600;
- font-family:  'myGabriola',Arial,sans-serif;
+ font-family:  knowledge-medium,Arial,sans-serif;
 }
 .main-topnews .slug{
    font-weight: 800; 
@@ -1497,7 +1513,7 @@ font-family: 'Abel', sans-serif;
 .other-topnews{
   margin-top: 30px;
   margin-left: 10px;
- font-family: myGabriola,Arial,sans-serif;
+ font-family: knowledge-medium,Arial,sans-serif;
   color: black;
    /*height: 1400px;*/
 }
@@ -1546,14 +1562,14 @@ font-family: 'Abel', sans-serif;
   font-weight: 500;
   /*height: 1400px;*/
 
- font-family: myGabriola,Arial,sans-serif;
+ font-family: knowledge-medium,Arial,sans-serif;
 
 }
 .recent-news .re-news{
  
   height: 1400px;
 
- font-family: myGabriola,Arial,sans-serif;
+ font-family: knowledge-medium,Arial,sans-serif;
 
 }
 .recent-news .slug{
@@ -1580,7 +1596,7 @@ font-family: 'Abel', sans-serif;
   margin-top: 5px;
   margin-left: 5px;
   font-weight: 600;
- font-family: myGabriola,Arial,sans-serif;
+ font-family: knowledge-medium,Arial,sans-serif;
 }
 .home-india{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -1588,7 +1604,7 @@ font-family: 'Abel', sans-serif;
   padding: 10px;
   font-weight: 200;
   margin-left: margin-left: calc(0.5 * var(--bs-gutter-x));
-      font-family: myGabriola,Arial,sans-serif;
+      font-family: knowledge-medium,Arial,sans-serif;
 }
 .home-india .slug{
   font-weight: 500; 
@@ -1615,7 +1631,7 @@ font-family: 'Abel', sans-serif;
   /*color: black;*/
   text-align: left;
   float:  left;
-  font-family: myGabriola,Arial,sans-serif;
+  font-family: knowledge-medium,Arial,sans-serif;
   color: #569EEA;
 }
 .slug-time label{
@@ -1629,7 +1645,7 @@ font-family: 'Abel', sans-serif;
   margin-top: 5px;
   margin-left: 5px;
   font-weight: 600;
- font-family: myGabriola,Arial,sans-serif;
+ font-family: knowledge-medium,Arial,sans-serif;
   margin-bottom: 30px;
 }
 
@@ -1637,21 +1653,21 @@ font-family: 'Abel', sans-serif;
 
 /*'''''''''sub page'''''''''''''*/
 .sub-news h4{
-   font-family: myGabriola,Arial,sans-serif;
+   font-family: knowledge-medium,Arial,sans-serif;
    float: left; 
    margin-top:0px;
    color: rgb(35 97 138);
 }
 
 .economy {
-  font-family: myGabriola,Arial,sans-serif;
+  font-family: knowledge-medium,Arial,sans-serif;
 }
 
 .india-economy .top-news{
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 20px;
   font-weight: 200;
-  font-family: myGabriola,Arial,sans-serif;
+  font-family: knowledge-medium,Arial,sans-serif;
    color: black;
    margin-top: 10px;
 }
@@ -1757,14 +1773,14 @@ font-family: 'Abel', sans-serif;
  }
 
  .txt1 {
-     font-family: Poppins-Regular;
+     font-family: knowledge-medium,Arial,sans-serif;
      font-size: 13px;
      color: #666666;
      line-height: 1.5
  }
 
  .txt2 {
-     font-family: Poppins-Regular;
+     font-family: knowledge-medium,Arial,sans-serif;
      font-size: 13px;
      color: #333333;
      line-height: 1.5
@@ -1817,7 +1833,7 @@ font-family: 'Abel', sans-serif;
 
  .bb-form-title {
      display: block;
-     font-family: Poppins-Bold;
+     font-family: knowledge-medium,Arial,sans-serif;
      font-size: 30px;
      color: #333333;
      line-height: 1.2;
@@ -1836,7 +1852,7 @@ font-family: 'Abel', sans-serif;
  }
 
  .input100 {
-     font-family: Poppins-Regular;
+     font-family: knowledge-medium,Arial,sans-serif;
      font-size: 15px;
      color: #555555;
      line-height: 1.2;
@@ -1877,7 +1893,7 @@ font-family: 'Abel', sans-serif;
  }
 
  .bbb-input::after {
-     font-family: Poppins-Regular;
+     font-family: knowledge-medium,Arial,sans-serif;
      font-size: 15px;
      color: #999999;
      line-height: 1.2;
@@ -2013,6 +2029,46 @@ font-family: 'Abel', sans-serif;
          padding: 77px 15px 33px 15px
      }
  }
+  @media (max-width: 1560px) {
+      .col_1 {width:130px; padding-left: 30px;}
+      .col_2 {width:270px;}
+      .col_3 {width:410px;}
+      .col_4 {width:550px;}
+      .col_5 {width:690px;}
+
+      .btn-search{
+  width: 30px;
+  height: 30px;
+  /*border-style: none;*/
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 5px;
+  color:#ffffff ;
+  background-color:rgb(35 97 138);
+  pointer-events: painted;  
+}
+.btn-search:focus ~ .input-search{
+  width: 140px;
+  border-radius: 0px;
+  background-color: #DBE1E4;
+   border-radius: 25px;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 600ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 80px;
+  border-radius: 0px;
+  background-color: #DBE1E4;
+  color: black;
+  border-bottom:1px solid rgb(35 97 138);;
+  transition: all 600ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+ }
  @media screen and (max-width: 576) {
   .top-news{
     width: 100%;
@@ -2099,6 +2155,8 @@ font-family: 'Abel', sans-serif;
   
   border-color: #23618a;
 }
+
+
 }
 
 
