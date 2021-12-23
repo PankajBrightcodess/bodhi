@@ -36,13 +36,13 @@
                     <div class="row">
                         <div class="col-md-3"></div>
                         <div class="col-md-6">
-                            <u><h5>Order Details</h5></u>
+                            <u><h5>Request Details</h5></u>
                                 <div class="form-row">
-                                    <label for="" class="col-6 col-md-6">Order No :</label>
+                                    <label for="" class="col-6 col-md-6">Request No :</label>
                                     <p class='col-6 col-md-6'><?php echo $allrecord['orderno'];?></p>
                                 </div>
                                 <div class="form-row">
-                                    <label for="" class="col-6 col-md-6">Order Total Amount:</label>
+                                    <label for="" class="col-6 col-md-6"> Total Amount:</label>
                                     <p class='col-6 col-md-6 text-danger' style='font-size:20px;font-weight:600'>Rs.<?php echo $allrecord['amount'];?></p>
                                 </div>
                                 <div class="form-row p-2">
