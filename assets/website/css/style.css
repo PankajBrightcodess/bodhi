@@ -1422,10 +1422,10 @@ ul.social-icons {
   word-spacing: 13px;
 }
 .abcd .logo img{
-  height: 60%;
-  width: 50%;
-  float:center;
-  margin-top:15px;
+    height: 77%;
+    width: 100%;
+    float: center;
+    margin-top: 3px;
 }
 .abcd .search {
   float: right;
