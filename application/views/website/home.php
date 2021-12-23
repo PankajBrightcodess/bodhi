@@ -133,7 +133,10 @@
 					if (!empty($gettopnews)) {
 						foreach ($gettopnews as $val) {
 							$i++;
-							if ($i>1 && $i<7) { ?>
+							if ($i>1 && $i<7) {
+									if($val['chargestatus']!=1){
+
+							 ?>
 								<div class="col-md-12 slug ">
 									<label><?php if(!empty($val['submenu'])){
 													echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?></label>
@@ -153,8 +156,32 @@
 								        </label>
 								        <hr style="color:black;">
 								</div>
-					<?php }
+					<?php }else{
+							?>
+							<div class="col-md-12 slug ">
+									<label><?php if(!empty($val['submenu'])){
+													echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?></label>
+								</div>
+								<div class="col-md-8 text-slug">
+
+									<!-- style="text-align:justify; font-size: 14px;" --> <p><a href="<?php echo base_url('website/signin/?slug='.$val['slug'].'&payment='.$val['payment']);?>" ><?php echo $val['tittle'] ?></a></p>
+									
+								</div>
+
+								<div class="col-md-4 img-hover">
+
+									<a href="<?php echo base_url('website/signin/?slug='.$val['slug'].'&payment='.$val['payment']);?>" ><img class=" img-fluid" src="<?php echo base_url();?><?php echo $val['image'] ?>" alt="Card image cap"></a>
+								</div>
+								<div class="col-md-12 slug-time">
+										<label><?php echo date('h:i A',strtotime($val['entrydate']));?>
+								        </label>
+								        <hr style="color:black;">
+								</div>
+
+						<?php
 						}
+					}
+					}
 					} ?>
 				</div>
 				<div class="col-md-12 col-12 mb-3 add">
