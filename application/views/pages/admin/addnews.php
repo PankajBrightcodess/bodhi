@@ -59,15 +59,28 @@
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
-                                    <lable style="font-size: 15px; font-weight:600">News Image</lable>
-                                        <?php echo form_input(array('type'=>'file','name'=>'image','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Submenu name','required'=>'required'));?>
+                                        <lable style="font-size: 15px; font-weight:600">News Image</lable>
+                                        <?php echo form_input(array('type'=>'file','name'=>'image','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Image','required'=>'required'));?>
                                     </div>                                    
                                 </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12 col-md-12 mb-2">
+                                        <lable style="font-size: 15px; font-weight:600">Other Image</lable>
+                                        <?php echo form_input(array('type'=>'file','name'=>'other_image','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Other Image','required'=>'required'));?>
+                                    </div>                                    
+                                </div>
+
 
                                 <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
                                         <lable style="font-size: 15px; font-weight:600">Image Caption</lable>
                                         <?php echo form_input(array('type'=>'text','name'=>'img_caption','id'=>'activate_not','class'=>'form-control','placeholder'=>'By Line'));?>
+                                    </div>                                   
+                                </div>
+                                 <div class="form-group row">
+                                    <div class="col-sm-12 col-md-12 mb-2">
+                                        <lable style="font-size: 15px; font-weight:600">Other Image Caption</lable>
+                                        <?php echo form_input(array('type'=>'text','name'=>'other_img_caption','id'=>'activate_not','class'=>'form-control','placeholder'=>'Other Image By Line'));?>
                                     </div>                                   
                                 </div>
 
@@ -78,13 +91,21 @@
                                         <?php echo form_input(array('type'=>'checkbox','name'=>'top_news_status','id'=>'activate_not','value'=>'1'));?>
                                     </div>                                    
                                 </div>
-                                <script> 
-                // Replace the <textarea id="editor1"> with a CKEditor 
-                // instance, using default configuration. 
+                                <div class="form-group row">
+                                    <div class="col-sm-12 col-md-12 mb-2">
+                                      <lable style="font-size: 15px; font-weight:600">Chargable :</lable>
+                                      <input type="checkbox" name="chargestatus" id="pay" onchange="" value="1">
+
+                                    </div>   
+                                    <div class="col-sm-12 col-md-12 mb-2" >
+                                      <lable style="font-size: 15px; font-weight:600" id="amtlable">Amount :</lable>
+                                      <input type="text" name="payment" class="form-control" id="amount">
+                                    </div>                                 
+                                </div>
+           
+            <script> 
                 CKEDITOR.replace( 'editor1' ); 
-            </script> 
-                               
-                               
+            </script>                
             <div class="form-group row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
@@ -246,6 +267,7 @@
 
 
     <script type="text/javascript">
+
          function getsubmenulist(id){
             // debugger;
     $.ajax({
@@ -337,6 +359,14 @@
 
     
 })
+       $('#amount').hide();
+    $('#amtlable').hide();
+
+ $('#pay').click(function(e){
+    debugger;
+    $('#amount').show();
+    $('#amtlable').show();
+});
 
 
 
@@ -344,7 +374,7 @@
     </script>  
 <script>
     $(document).ready(function(e) {
-
+        $('.amount').hide(true);
     	var table=$('.data-table').DataTable({
 			scrollCollapse: true,
 			autoWidth: false,

@@ -1405,6 +1405,11 @@ ul.social-icons {
     width: 100%;
     z-index: 9;
 }
+.abcd .navbarlist{
+ 
+  background: #23618a !important; 
+  padding:0px; 
+}
 .abcd .main-heading h2{
   font-family: sans-serif, Helvetica Neue, Lucida Grande, Arial; 
   text-align: center;
@@ -2115,6 +2120,10 @@ font-family: knowledge-medium,Arial,sans-serif;
     top: 0px;
     width: 100%;
     z-index: 9;
+}
+.abcd .navbarlist{
+  position: fixed;
+  z-index: 999;
 }
 .abcd .main-heading h2{
   font-family: sans-serif, Helvetica Neue, Lucida Grande, Arial; 

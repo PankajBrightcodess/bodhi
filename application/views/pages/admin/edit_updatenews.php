@@ -80,6 +80,31 @@
                                         <?php echo form_input(array('type'=>'text','name'=>'img_caption','id'=>'activate_not','value'=>''.$result['img_caption'].'','class'=>'form-control','placeholder'=>'Image Caption'));?>
                                     </div>                                   
                                 </div>
+                                <?php if(!empty($result['other_image']))
+                                    {
+                                      ?>
+                                      <div class="form-group row">
+                                        <div class="col-sm-6 col-md-6 mb-2">
+                                           <img src="<?php echo base_url(''.$result['other_image'].'')?>" class="img-fluid" height="200" width="200"> 
+                                        </div>                                    
+                                     </div>
+                                     <div class="form-group row">
+                                    <div class="col-sm-12 col-md-12 mb-2">
+                                        <lable style="font-size: 15px; font-weight:600">Other Image</lable>
+                                        <?php echo form_input(array('type'=>'file','name'=>'other_image','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Other Image'));?>
+                                    </div>                                    
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12 col-md-12 mb-2">
+                                        <lable style="font-size: 15px; font-weight:600">Other Image Caption</lable>
+                                        <?php echo form_input(array('type'=>'text','name'=>'other_img_caption','id'=>'activate_not','class'=>'form-control','value'=>''.$result['other_img_caption'].'','placeholder'=>'Other Image By Line'));?>
+                                    </div>                                   
+                                </div>
+                                      <?php 
+                                    }
+                                ?>
+                                
+                                 
 
 
                                  <div class="form-group row">

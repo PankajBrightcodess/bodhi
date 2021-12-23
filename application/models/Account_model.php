@@ -704,6 +704,77 @@ class Account_model extends Slugs{
        return $return;
     }
 
+    public function addregisteruser($data){
+      $data['added_on']= date('Y-m-d');
+      $email = $data['email'];
+      if(!empty($email)){
+        $this->db->select('*');
+        $this->db->from('tmp_clint_login');
+        $this->db->where('email',$email);
+        $res = $this->db->get()->num_rows();
+        // print_r( $res);die;
+        if($res==0){
+          $qry = $this->db->insert('tmp_clint_login',$data);
+         if($qry==true){
+          return true;
+         }
+         else{
+          return false;
+         }
+        }
+        else{
+          echo "You have Already Registered";
+        }
+      } 
+    }
+
+    public function loginchecked($data,$type="All"){
+      $email = $data['email'];
+      $password = $data['pass'];
+      // $this->db->select('*');
+      // $this->db->from('tmp_clint_login');
+       $query =$this->db->get_where('tmp_clint_login',['email'=>$email,'password'=>$password]);
+        if($type == 'all'){
+           $result = $query->row_array();
+       }else{
+           $return = $query->unbuffered_row('array');
+       }
+       return $return;
+
+    }
+
+    public function insert_paynews($result){
+      $length = 15;
+      $order_no=substr(str_shuffle(str_repeat($x='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz', ceil($length/strlen($x)) )),1,$length);
+      $final['client_id'] = $result['id'];
+      $final['name'] = $result['name'];
+      $final['slug'] = $result['slug'];
+      $final['added_on'] = date('Y-m-d');
+      $final['request_no'] =  $order_no; 
+      $final['amount'] =  $result['amount']; 
+      $qry = $this->db->insert('tmp_newspay',$final);
+       if($qry==true){
+        return $last_id = $this->db->insert_id();
+       }
+       else{
+        return false;
+       }
+    }
+    public function fatchregisteredrecord($id){
+    $table=TP."newspay";
+    
+    $this->db->where(['id'=>$id]);
+    $this->db->select("*");
+    $qry = $this->db->from($table);
+     $final =  $qry->get()->row_array();
+    if(!empty($final)){
+      return $final;
+      }
+      else{
+        return false;
+      }
+  }
+
     public function savesidebar($postdata){
         unset($postdata['save_cat']);
         if(empty($postdata['activate_not'])){
@@ -974,11 +1045,19 @@ class Account_model extends Slugs{
 			public function savenews($data){
 
 				// unset($data['saveuserdetails']);
-				if(!empty($data['image'])){
-					$final['image']=$data['image'];
+				if(!empty($data['other_image'])){
+          $final['other_image']=$data['other_image'];
+					
 				 }else{
-					$final['image']=" ";
+					$final['other_image']="";
 				 }
+
+         if(!empty($data['image'])){
+          $final['image']=$data['image'];
+          
+         }else{
+          $final['image']=" ";
+         }
 				//  ''''''''''''''''''''''''''sulg start''''''''''''''''''''''''''
 				 $string=$data['tittle'];
 				 
@@ -1004,11 +1083,18 @@ class Account_model extends Slugs{
         $final['byline'] = $data['byline'];
         $final['straplines'] = $data['straplines'];
         $final['img_caption'] = $data['img_caption'];
+        $final['other_img_caption'] = $data['other_img_caption'];
 				$final['slug']=$slug;
         $final['news']=$data['news'];
         $final['date']=date('Y-m-d');
         if(!empty($data['top_news_status'])){
           $final['top_news_status']=$data['top_news_status'];
+        }
+        if(!empty($data['chargestatus'])){
+          $final['chargestatus']=$data['chargestatus'];
+        }
+        if(!empty($data['payment'])){
+          $final['payment']=$data['payment'];
         }
 				$qry = $this->db->insert('news',$final);
 				if($qry==true){

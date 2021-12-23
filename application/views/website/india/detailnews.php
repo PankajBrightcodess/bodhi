@@ -65,27 +65,20 @@
 								<?php 
 								 $lastdate = $result['entrydate'];
 								 $current = date('Y-m-d H:i:s');
-									$date1 = new DateTime('2021-12-20 12:30:00');
-									$date2 = new DateTime('2021-12-21 11:30:00');
+								 // print_r($current);
+									$date1 = new DateTime($lastdate);
+									$date2 = new DateTime($current);
 									$diff = $date2->diff($date1);
 								?>
-								<label><?php echo 'Updated On ('.$diff->format('%a Day and %h hours').')';?></label>
+								<label style="color:#23618a;"><?php echo 'Updated On ('.$diff->format('%a Day and %h hours').')';?></label>
 						    <hr style="color:black;">
 						  </div>
-                         <div class="col-md-12" style="text-align: justify; padding: 25px;"><p ><?= $result['news'] ?></p></div>
-                       <!--    <div class="col-md-12">
-                               <div class="footer-social-icons" >
-								   
-										    <ul class="social-icons">
-										        <li><a href="" class="social-icon"><i class="fa fa-facebook"></i></a></li>
-										        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-										        <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
-										        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
-										        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
-										        <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
-										    </ul>
-								</div> 
-						</div> -->
+               <div class="col-md-12" style="text-align: justify; padding: 25px;"><p ><?= $result['news'] ?></p></div>
+               <div class="col-md-12 mb-3">
+				  		   <img  src="<?php echo base_url();?><?php echo $result['other_image'] ?>" class="img-fluid">
+				  		   <label style="font-size: 13px; font-style: italic; font-weight:500;float: left;"><span style="color:black"><?php echo $result['other_img_caption'] ?></span></label>
+				  		 </div> 
+                  
               </div>
 				  	</div>
 				  	<div class="col-md-3">

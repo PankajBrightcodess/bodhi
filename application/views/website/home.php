@@ -39,7 +39,10 @@
 									if (!empty($gettopnews)) {
 										foreach ($gettopnews as $val) {
 											$i++;
-											if ($i <2) { ?>
+											if ($i <2) { 
+														if($val['chargestatus']!=1){
+
+												?>
 												<!--  <div class="col-md-12"> -->
 				                                      <h4>Top News</h4>
 			                                     <!-- </div> -->
@@ -59,6 +62,32 @@
 												        
 												  </div>
 									<?php }
+									else{?>
+
+										<h4>Top News</h4>
+			                                     <!-- </div> -->
+												<a href="<?php echo base_url('website/signin/?slug='.$val['slug'].'&payment='.$val['payment']);?>" style="color: black; text-decoration: none;" class="img-hover"><img src="<?php echo base_url();?><?php echo $val['image'] ?>"  class="img-fluid" alt="Card image cap">
+													<label style="font-size: 13px; font-style: italic; font-weight:400;float: left;"><span style="color:black"><?php echo $val['img_caption'] ?></span></label></a>
+													<div class="col-md-12">
+														<label style="float:right; color:#5C0C00;"><strong>Payble</strong></label>
+												        
+												  </div>
+												<div class="col-md-12 slug">
+														<label style="float:left;"><?php if(!empty($val['submenu'])){
+																		echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?>
+												        </label>
+												</div>
+												   <div class="card-body text-slug">
+												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><h2 class="card-title"><strong><?php echo $val['tittle'] ?></strong></h2></a>
+													
+												  </div>
+												  <div class="col-md-12 slug-time">
+														<label><?php echo date('h:i A',strtotime($val['entrydate']));?></label>
+												        
+												  </div>
+										<?php
+									}
+										}
 										}
 									} ?>
 							  

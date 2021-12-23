@@ -41,6 +41,24 @@ class Website extends CI_Controller {
 
 		$this->load->view('website/template',$d);	
 	}
+
+	public function registeruser(){
+		$data = $this->input->post();
+		 $result['res']=$this->Account_model->addregisteruser($data);
+		 if($result==true){
+		 	$this->load->view('website/inc/top-header.php');
+		 	$this->load->view('website/signin');
+		 }
+		 else{
+		 	$this->load->view('website/inc/top-header.php');
+		 	$this->load->view('website/signup',$result);
+		 }
+		
+	}
+
+	public function loginuser(){
+
+	}
 	// '''''''''''India Sub Menu'''''''''''''''''''''''''
 	public function north($id,$menu_name,$submenu){
 	    $d['v'] = 'website/india/northern';
@@ -271,13 +289,105 @@ class Website extends CI_Controller {
 	}
 
 	public function signin(){
-		$this->load->view('website/inc/top-header.php');
-        $this->load->view('website/signin');	
-	}
+		$data['slugs'] = $this->input->get('slug');
+		$data['payment'] = $this->input->get('payment');
+		
+		if(!empty($data)){
+			$this->load->view('website/inc/top-header.php');
+        $this->load->view('website/signin',$data);
+		}
+		else{
+			$this->load->view('website/inc/top-header.php');
+      $this->load->view('website/signin');	
+	  }
+ }
+
+ public function logincheck(){
+ 	$data = $this->input->post();
+ 	$slug = $data['slug'];
+ 	$payment = $data['payment'];
+ 	$result=$this->Account_model->loginchecked($data);
+ 	$result['slug']=$slug;
+ 	$result['amount']=$payment;
+ 	$record = $this->Account_model->insert_paynews($result);
+
+
+ 	if(!empty($record)){
+              $this->payment_start($record);
+            }
+            else{ 
+              redirect('website/registerpage');
+            }
+ 	
+ }
 	public function signup(){
 		$this->load->view('website/inc/top-header.php');
         $this->load->view('website/signup');	
 	}
+
+	public function payment_start($id){
+        $length = 20;
+        $_SESSION['last_inst_id'] = $id;
+        $row=$this->Account_model->fatchregisteredrecord($id);
+       
+         $content =define("API_KEY","rzp_test_KVV2yNPLssjS3jUvH171bc3x");
+        $someprice = $row['amount'];
+        $paisaprice = $someprice*100;
+        $orderno = $row['request_no'];
+        $custname = $row['name'];
+        $productinfo = 'Payment for Read News';
+        $txnid = time();
+        // $contect = $row['contect'];
+        // $surl = "payment-success.php";
+        // $furl ="payment-success.php" ;
+        $key_id = API_KEY;
+        $currency_code = 'INR';
+        $total = $paisaprice; 
+        $amount = $someprice;
+        $length = 18;
+        $merchant_order_id=substr(str_shuffle(str_repeat($x='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz', ceil($length/strlen($x)) )),1,$length);
+        $card_holder_name = $custname;
+        // $email =  $row['email'];
+        // $phone = $row['mobileno'];
+        $name = "Customer of $custname - $orderno";
+        $payrecord = array();
+        $payrecord['orderno'] = $orderno;
+        $payrecord['name'] = $custname;
+        $payrecord['productinfo'] = $productinfo;
+        $payrecord['currency_code'] = $currency_code;
+        $payrecord['total'] = $total;
+        $payrecord['amount'] = $amount;
+        $payrecord['key_id'] = $key_id;
+        $payrecord['card_holder_name'] = $card_holder_name;
+        $payrecord['merchant_order_id'] = $merchant_order_id;
+        $payrecord['merchant_trans_id'] = $txnid;
+        // $payrecord['phone'] = $contect;
+        $data['allrecord'] =$payrecord;
+        // echo PRE;
+        // print_r($payrecord);die;
+         $this->load->view('website/payment',$data);
+        // echo PRE;
+        // print_r($result);die;
+    }
+
+	 public function payment_success(){
+         if(isset($_POST['razorpay_payment_id'])){
+          $payment_details=json_encode($_POST);
+          $razorpay_payment_id = $_POST['razorpay_payment_id'];
+          // $payment_date = date('Y/m/d');
+          $payment_status = 1;
+          $id = $_SESSION['last_inst_id'];
+          unset($_SESSION['last_inst_id']);
+          $result = $this->Website_model->update_form($id,$payment_status,$payment_details,$razorpay_payment_id);
+          if($result==true){
+            $this->session->set_flashdata("msg","You have registered !!");
+            $this->load->view('website/pages/payment_success');
+          }
+          
+          
+       }
+  }
+   
 
 
 	
@@ -301,4 +411,8 @@ class Website extends CI_Controller {
 		$this->load->library('alldata');
 		$this->alldata->updatedata();
 	}
+
+
+
+
 }?>

@@ -259,8 +259,9 @@ class Home extends CI_Controller {
 	}
 	public function savenews(){
 		// checklogin();
+		// echo PRE;
+		// print_r($_POST);die;
 		$data=$this->input->post();
-		
 		unset($data['save_news']);
 		$upload_path = './assets/newsimagedb';
 		$allowed_types = 'gif|jpg|jpeg|png|pdf|GIF|JPG|JPEG|PNG|PDF';
@@ -268,6 +269,13 @@ class Home extends CI_Controller {
 			  $image = upload_file("image", $upload_path, $allowed_types, time());
 			  if ($image !='') {
 				  $data['image'] = $image['path'];
+				
+			  }
+		  }
+		   if($_FILES['other_image']['name'] !=''){
+			  $image = upload_file("other_image", $upload_path, $allowed_types, time());
+			  if ($image !='') {
+				  $data['other_image'] = $image['path'];
 				
 			  }
 		  }
