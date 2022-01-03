@@ -74,11 +74,25 @@
 						    <hr style="color:black;">
 						  </div>
                <div class="col-md-12" style="text-align: justify; padding: 25px;"><p ><?= $result['news'] ?></p></div>
-               <div class="col-md-12 mb-3">
-				  		   <img  src="<?php echo base_url();?><?php echo $result['other_image'] ?>" class="img-fluid">
-				  		   <label style="font-size: 13px; font-style: italic; font-weight:500;float: left;"><span style="color:black"><?php echo $result['other_img_caption'] ?></span></label>
-				  		 </div> 
-                  
+               <?php
+               			if(!empty($result['other_image'])){
+               				?>
+               					<div class="col-md-6 mb-3">
+							  		     <img  src="<?php echo base_url();?><?php echo $result['other_image'] ?>" class="img-fluid">
+							  		     <label style="font-size: 13px; font-style: italic; font-weight:500;float: left;"><span style="color:black"><?php echo $result['other_img_caption'] ?></span></label>
+							  		    </div>
+               				<?php
+               			}?><?php
+               		if(!empty($result['other_image_one'])){
+
+               			?>
+               				<div class="col-md-6 mb-3">
+							  		   <img  src="<?php echo base_url();?><?php echo $result['other_image_one'] ?>" class="img-fluid">
+							  		   <label style="font-size: 13px; font-style: italic; font-weight:500;float: left;"><span style="color:black"><?php echo $result['other_img_caption_one'] ?></span></label>
+							  		 </div>
+               			<?php
+               		}
+               ?>  
               </div>
 				  	</div>
 				  	<div class="col-md-3">

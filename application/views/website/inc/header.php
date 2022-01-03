@@ -81,10 +81,12 @@
                       <a href="<?php echo base_url('website/signin')?>" class="btn btn-sm mr-2 btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:10px;">Sign In</a>
                       <a href="<?php echo base_url('website/signup')?>" style="float:right;margin-top:10px;" class="btn mr-2 btn-sm btn-dark btn-space">Register</a>  
                       </div>
+                      <form method="post" action="<?php echo base_url('website/search')?>">
                        <div class="search-box btn-space ">
-                        <button class="btn-search btn-space"><i class="fas fa-search"></i></button>
-                        <input type="text" class="input-search"  placeholder="Search BW...">
+                        <button type="submit" class="btn-search btn-space"><i class="fas fa-search"></i></button>
+                        <input type="text" class="input-search" name="search"  placeholder="Search BW...">
                       </div>
+                      </form>
                                       
                   </div>
                    
@@ -94,7 +96,7 @@
         </div>
 
     <!-- =========================================== -->
-    <nav class="navbar navbar-expand-lg navbarlist">
+    <nav class="navbar navbar-expand-lg navbarlist sticky-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color:white;" aria-hidden="true"></i></span>
@@ -205,9 +207,6 @@
             </div>
         </div>
     </nav>
-
-
-  
 </div>
 <script type="text/javascript">
     $(document).ready(function() {

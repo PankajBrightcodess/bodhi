@@ -257,8 +257,9 @@ class Home extends CI_Controller {
 		}
 		redirect('home/addnews');
 	}
+		// checklogin();	
 	public function savenews(){
-		// checklogin();
+
 		// echo PRE;
 		// print_r($_POST);die;
 		$data=$this->input->post();
@@ -276,6 +277,13 @@ class Home extends CI_Controller {
 			  $image = upload_file("other_image", $upload_path, $allowed_types, time());
 			  if ($image !='') {
 				  $data['other_image'] = $image['path'];
+				
+			  }
+		  }
+		   if($_FILES['other_image_one']['name'] !=''){
+			  $image = upload_file("other_image_one", $upload_path, $allowed_types, time());
+			  if ($image !='') {
+				  $data['other_image_one'] = $image['path'];
 				
 			  }
 		  }

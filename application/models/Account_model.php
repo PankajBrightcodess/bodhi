@@ -1045,6 +1045,12 @@ class Account_model extends Slugs{
 			public function savenews($data){
 
 				// unset($data['saveuserdetails']);
+        if(!empty($data['other_image_one'])){
+          $final['other_image_one']=$data['other_image_one'];
+          
+         }else{
+          $final['other_image_one']="";
+         }
 				if(!empty($data['other_image'])){
           $final['other_image']=$data['other_image'];
 					
@@ -1084,6 +1090,7 @@ class Account_model extends Slugs{
         $final['straplines'] = $data['straplines'];
         $final['img_caption'] = $data['img_caption'];
         $final['other_img_caption'] = $data['other_img_caption'];
+        $final['other_img_caption_one'] = $data['other_img_caption_one'];
 				$final['slug']=$slug;
         $final['news']=$data['news'];
         $final['date']=date('Y-m-d');
@@ -1414,7 +1421,19 @@ class Account_model extends Slugs{
         $result = $this->db->get()->row_array();
         return $result;
       }
+      // '''''''''''''''''''''''''''''''''''''''search''''''''''''''''''''''''''''''''''''
 
+      public function searchrecords($key){
+        $this->db->select('t1.*,t2.menu_name,t3.submenu');
+          $this->db->from('news t1');
+          $this->db->join('tmp_menu t2','t1.menu_id=t2.id','left');
+          $this->db->join('tmp_submenu t3','t1.submenu_id=t3.id','left');
+          $this->db->like('t1.tittle', $key);
+          $query = $this->db->get();
+          $result = $query->result_array();
+          return $result;
+      }
+          
 			
 				
 }

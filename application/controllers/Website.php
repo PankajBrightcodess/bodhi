@@ -387,9 +387,15 @@ class Website extends CI_Controller {
           
        }
   }
-   
 
-
+  public function search(){
+  	$key = $_POST['search'];
+  	$d['v'] = 'website/india/search';
+  	$d['result4']=$this->Account_model->getmenus();
+  	$d['searchrecords']=$this->Account_model->searchrecords($key);
+  	$this->load->view('website/template',$d);
+  }
+		
 	
 	
 
