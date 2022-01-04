@@ -1398,29 +1398,33 @@ ul.social-icons {
   border-bottom:1px solid rgb(35 97 138);;
   transition: all 600ms cubic-bezier(0, 0.110, 0.35, 2);
 }
-.sticky {
+.space{
+  margin-top: 190px;
+}
+/*.sticky {
     position: fixed;
     top: 0px;
     width: 100%;
     margin: 0px;
     z-index: 1000000;
-}
+}*/
 .abcd{
     background-color: #fff;
-    /*position: sticky;*/
+    position: fixed;
     top: 0;
     width: 100%;
-    /*z-index: 9;*/
+    z-index: 99;
+    /*overflow: hidden;*/
 }
 .abcd .navbarlist{
  
   background: #23618a !important; 
   padding:0px; 
 }
-.navbar{
+/*.navbar{
   position: fixed;
   top: 0;
-}
+}*/
 .abcd .main-heading h2{
   font-family: sans-serif, Helvetica Neue, Lucida Grande, Arial; 
   text-align: center;
@@ -2132,10 +2136,11 @@ font-family: knowledge-medium,Arial,sans-serif;
     width: 100%;
     z-index: 9;
 }
-.abcd .navbarlist{
+/*.abcd .navbarlist{
   position: fixed;
   z-index: 999;
-}
+  margin-top: 0px;
+}*/
 .abcd .main-heading h2{
   font-family: sans-serif, Helvetica Neue, Lucida Grande, Arial; 
   text-align: center;

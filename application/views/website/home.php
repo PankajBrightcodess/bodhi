@@ -218,31 +218,8 @@
             	<h2>India</h2>
         </div>
         <div class="row">
-        <!-- 	<div class="col-md-5 ">
-        		<div class="home-india">
-        		<div class="row">
-        			<div class="col-md-12  mb-5">
-        				<a href="<?php echo base_url('website/detailnewsview/' . $indianews[0]['slug']); ?>"><img class="img-fluid" src="<?php echo base_url();?><?php echo $indianews[0]['image'] ?>" alt="Card image cap img-fluid"></a>
-        			</div>
-        			<div class="col-md-12 slug">
-					   <label><?php if(!empty($indianews[0]['submenu'])){
-									echo $indianews[0]['menu_name'].' | '.$indianews[0]['submenu'];}else{echo $indianews[0]['menu_name'];}?></label>
-					</div>
-        			<div class="col-md-12 mb-5 text-slug">
-        				<h2 class="card-title"><strong><a href="<?php echo base_url('website/detailnewsview/' . $indianews[0]['slug']); ?>"><?php echo $indianews[0]['tittle']?></a></strong></h2>
-        			   
-        		    </div>
-        		    <div class="col-md-12 slug-time">
-										<label><?php echo date('h:i A',strtotime($indianews[0]['entrydate']));?>
-								        </label>
-								        
-								</div>
-        		</div>
-        	</div>
-        </div> -->
-        <div class="col-md-12">
-        	
-        	<div class="row">
+         <div class="col-md-12">
+        	 <div class="row">
         		<?php
         		if(!empty($indianews)){
         			$i = 0;

@@ -96,7 +96,7 @@
         </div>
 
     <!-- =========================================== -->
-    <nav class="navbar navbar-expand-lg navbarlist sticky-top">
+    <nav class="navbar navbar-expand-lg navbarlist">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color:white;" aria-hidden="true"></i></span>
@@ -208,6 +208,7 @@
         </div>
     </nav>
 </div>
+<div class="space"></div>
 <script type="text/javascript">
     $(document).ready(function() {
     $("#btn-search").click(function(){
