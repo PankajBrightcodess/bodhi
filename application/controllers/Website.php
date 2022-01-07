@@ -26,6 +26,7 @@ class Website extends CI_Controller {
 			$d['climatenews']=$this->Website_model->topclimatenews();
 			$d['sportnews']=$this->Website_model->topsportnews();
 			$d['openionnews']=$this->Website_model->topopenionnews();
+			$d['topmorenews']=$this->Website_model->topmorenews();
 			
 			$this->load->view('website/template',$d);
 		}

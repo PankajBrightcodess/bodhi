@@ -66,14 +66,14 @@
                                 <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
                                         <lable style="font-size: 15px; font-weight:600">Other Image</lable>
-                                        <?php echo form_input(array('type'=>'file','name'=>'other_image','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Other Image','required'=>'required'));?>
+                                        <?php echo form_input(array('type'=>'file','name'=>'other_image','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Other Image'));?>
                                     </div>                                    
                                 </div>
 
                                  <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
                                         <lable style="font-size: 15px; font-weight:600">One More Image</lable>
-                                        <?php echo form_input(array('type'=>'file','name'=>'other_image_one','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Other Image','required'=>'required'));?>
+                                        <?php echo form_input(array('type'=>'file','name'=>'other_image_one','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Other Image'));?>
                                     </div>                                    
                                 </div>
 

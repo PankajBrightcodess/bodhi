@@ -3,8 +3,27 @@
     <div class="row text-center" >
 
         
-        <div class="col-md-12 slug mb-3" style="margin-top:10px;">
-								<label style="float:left; font-weight:400; color:#23618a !important;">
+        
+        
+        <!-- <div class="col-md-12">
+        	<h4 style="font-family: 'Cinzel', serif; float: left; margin-top:0px;color: rgb(35 97 138);"> HEADLINE : <?= $result['tittle'] ?> </h4>
+        	
+        </div> -->
+        
+        <!-- <div class="col-md-12">
+        	<div class="tab" style="background-color: transparent;border: 0px solid #ccc;">
+			  </div> -->
+				
+
+		<div id="Economy" class="tabcontent" style="border:0px;display:inline;">
+				<!--   <h3>Economy</h3> -->
+				<div class="container">
+				  <div class="row">
+				  	
+				  	<div class="col-md-9 home-india" >
+				  		<div class="row">
+				  			<div class="col-md-12 slug mb-3" style="margin-top:10px;">
+								 <label style="float:left; font-weight:400; color:#23618a !important;">
 									<?php if(!empty($result['submenu']))
 									{
 									  ?><a href="<?php echo base_url('/')?>" style="color: #23618a !important;"><?php	echo 	'HOME'?></a><a href="<?php echo base_url('website/india/'.$result['menu_id'].'/'.$result['menu_name'])?>" style="color: #23618a !important;">
@@ -20,59 +39,34 @@
 									  	<?php echo '  |  '.$result['menu_name']  ?>
 									  </a>
 									  	<?php ;}?></label>
-							</div>
-        <div class="col-md-12 sub-news">
-        	<h4><?= $result['tittle'] ?></h4>
-        	
-        </div>
-        <!-- <div class="col-md-12">
-        	<h4 style="font-family: 'Cinzel', serif; float: left; margin-top:0px;color: rgb(35 97 138);"> HEADLINE : <?= $result['tittle'] ?> </h4>
-        	
-        </div> -->
-        <div class="col-md-12">
-        <hr style="color:black;">
-       </div>
-        <div class="col-md-12">
-        	<div class="tab" style="background-color: transparent;border: 0px solid #ccc;">
-        	
-			</div>
-				
-
-		<div id="Economy" class="tabcontent" style="border:0px;display:inline;">
-				<!--   <h3>Economy</h3> -->
-				<div class="container">
-				  <div class="row">
-				  	
-				  	<div class="col-md-9 home-india" >
-				  		<div class="row">
-				  			<div class="col-md-12">
-				  		   <h5 style="float: left;"><?php echo $result['straplines'] ?></h5>
-				  		 </div> 
+				        </div>
+				        <div class="col-md-12 sub-news">
+        	          <h4><?= $result['tittle'] ?></h4>
+        	      </div>
+        	      <div class="col-md-12">
+        						<hr style="color:black;">
+       					</div>
+       					<div class="col-md-12">
+				  		 	  <label style="font-style: italic; float:left;">By : <?php echo $result['byline']?></label>
+				  		 </div>
+				  		 <div class="col-md-12 slug-time">
+								<label><?php echo date('d-m-Y',strtotime($result['entrydate'])).',';?></label>
+								<label ><?php echo date('h:i A',strtotime($result['entrydate'])).',';?></label>
+						  </div>
+				  			 
 				  			<div class="col-md-12 mb-3">
 				  		   <img  src="<?php echo base_url();?><?php echo $result['image'] ?>" class="img-fluid">
 				  		   <label style="font-size: 13px; font-style: italic; font-weight:500;float: left;"><span style="color:black"><?php echo $result['img_caption'] ?></span></label>
 				  		 </div> 
-				  		 <div class="col-md-12 mb-0">
-				  		 	<label style="font-style: italic; float:left;">By Line : <?php echo $result['byline']?></label>
+				  		 <div class="col-md-12">
+				  		   <h5 style="float: left;"><?php echo $result['straplines'] ?></h5>
 				  		 </div>
+				  		 
 				  		<!--  <div class="col-md-12 slug" style="margin-top:10px; ">
 								<label><?php if(!empty($result['submenu'])){
 												echo $result['menu_name'].' | '.$result['submenu'];}else{echo $result['menu_name'];}?></label>
 							</div> -->
-							<div class="col-md-12 slug-time">
-								<label><?php echo date('d-m-Y',strtotime($result['entrydate'])).',';?></label>
-								<label ><?php echo date('h:i A',strtotime($result['entrydate'])).',';?></label>
-								<?php 
-								 $lastdate = $result['entrydate'];
-								 $current = date('Y-m-d H:i:s');
-								 // print_r($current);
-									$date1 = new DateTime($lastdate);
-									$date2 = new DateTime($current);
-									$diff = $date2->diff($date1);
-								?>
-								<label style="color:#23618a;"><?php echo 'Updated On ('.$diff->format('%a Day and %h hours').')';?></label>
-						    <hr style="color:black;">
-						  </div>
+							
                <div class="col-md-12" style="text-align: justify; padding: 25px;"><p ><?= $result['news'] ?></p></div>
                <?php
                			if(!empty($result['other_image'])){

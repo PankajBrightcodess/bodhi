@@ -37,15 +37,25 @@
 							<div class="mb-3" > 
 								<?php $i = 0;
 									if (!empty($gettopnews)) {
+										// print_r($gettopnews[0]);
 										foreach ($gettopnews as $val) {
 											$i++;
 											if ($i <2) { 
 														if($val['chargestatus']!=1){
 
 												?>
-												<!--  <div class="col-md-12"> -->
-				                                      <h4>Top News</h4>
-			                                     <!-- </div> -->
+												 <div class="col-md-12">
+				                              <h4>Top News</h4>
+                                     </div>     
+			                            <div class="card-body text-slug">
+			                               	
+												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><h2 class="card-title"><strong><?php echo $val['tittle'] ?></strong></h2></a>
+													
+												  </div>
+												  <div class="col-md-12 slug-time">
+														<label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?></label>
+												        
+												  </div>
 												<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;" class="img-hover"><img src="<?php echo base_url();?><?php echo $val['image'] ?>"  class="img-fluid" alt="Card image cap">
 													<label style="font-size: 13px; font-style: italic; font-weight:400;float: left;"><span style="color:black"><?php echo $val['img_caption'] ?></span></label></a>
 												<div class="col-md-12 slug">
@@ -53,19 +63,23 @@
 																		echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?>
 												        </label>
 												</div>
+												   
 												   <div class="card-body text-slug">
-												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><h2 class="card-title"><strong><?php echo $val['tittle'] ?></strong></h2></a>
-													
+												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><span class="card-title"><strong><?php echo $val['straplines'] ?></strong></span></a>
 												  </div>
-												  <div class="col-md-12 slug-time">
-														<label><?php echo date('h:i A',strtotime($val['entrydate']));?></label>
-												        
-												  </div>
+												  
 									<?php }
 									else{?>
 
 										<h4>Top News</h4>
 			                                     <!-- </div> -->
+			                           <div class="card-body text-slug">
+											 	  <a href="<?php echo base_url('website/signin/?slug='.$val['slug'].'&payment='.$val['payment']);?>" style="color: black; text-decoration: none;"><h2 class="card-title"><strong><?php echo $val['tittle'] ?></strong></h2></a>
+												
+											  </div>
+											  <div class="col-md-12 slug-time">
+													<label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?></label>  
+											  </div>
 												<a href="<?php echo base_url('website/signin/?slug='.$val['slug'].'&payment='.$val['payment']);?>" style="color: black; text-decoration: none;" class="img-hover"><img src="<?php echo base_url();?><?php echo $val['image'] ?>"  class="img-fluid" alt="Card image cap">
 													<label style="font-size: 13px; font-style: italic; font-weight:400;float: left;"><span style="color:black"><?php echo $val['img_caption'] ?></span></label></a>
 													<div class="col-md-12">
@@ -73,18 +87,14 @@
 												        
 												  </div>
 												<div class="col-md-12 slug">
-														<label style="float:left;"><?php if(!empty($val['submenu'])){
-																		echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?>
-												        </label>
+													<label style="float:left;"><?php if(!empty($val['submenu'])){
+																	echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?>
+											      </label>
 												</div>
-												   <div class="card-body text-slug">
-												 	  <a href="<?php echo base_url('website/signin/?slug='.$val['slug'].'&payment='.$val['payment']);?>" style="color: black; text-decoration: none;"><h2 class="card-title"><strong><?php echo $val['tittle'] ?></strong></h2></a>
-													
+												 <div class="card-body text-slug">
+												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><span class="card-title"><strong><?php echo $val['straplines'] ?></strong></span></a>
 												  </div>
-												  <div class="col-md-12 slug-time">
-														<label><?php echo date('h:i A',strtotime($val['entrydate']));?></label>
-												        
-												  </div>
+											   
 										<?php
 									}
 										}
@@ -141,7 +151,7 @@
 									<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" ><img class=" img-fluid" src="<?php echo base_url();?><?php echo $val['image'] ?>" alt="Card image cap"></a>
 								</div>
 								<div class="col-md-12 slug-time">
-										<label><?php echo date('h:i A',strtotime($val['entrydate']));?>
+										<label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?>
 								        </label>
 								        <hr style="color:black;">
 								</div>
@@ -162,7 +172,7 @@
 									<a href="<?php echo base_url('website/signin/?slug='.$val['slug'].'&payment='.$val['payment']);?>" ><img class=" img-fluid" src="<?php echo base_url();?><?php echo $val['image'] ?>" alt="Card image cap"></a>
 								</div>
 								<div class="col-md-12 slug-time">
-										<label><?php echo date('h:i A',strtotime($val['entrydate']));?>
+										<label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?>
 								        </label>
 								        <hr style="color:black;">
 								</div>
@@ -198,7 +208,7 @@
 								<p><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']); ?>"><?php echo $val['tittle'] ?></a></p>
 							</div>
 							<!-- <div class="col-md-12 slug-time">
-										<label><?php echo date('h:i A',strtotime($val['entrydate']));?>
+										<label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?>
 								        </label> 
 								</div> -->
 								<div class="col-md-12">
@@ -258,7 +268,7 @@
 							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
 							   </div>
 							   <div class="col-md-12 slug-time">
-								  <label><?php echo date('h:i A',strtotime($value['entrydate']));?>
+								  <label><?php echo date('d-m-Y, h:i A',strtotime($value['entrydate']));?>
 						        </label>
 						      </div>
 							   </div>
@@ -311,7 +321,7 @@
 							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
 							   </div>
 							   <div class="col-md-12 slug-time">
-								  <label><?php echo date('h:i A',strtotime($value['entrydate']));?>
+								  <label><?php echo date('d-m-Y, h:i A',strtotime($value['entrydate']));?>
 						        </label>
 						      </div>
 							   </div>
@@ -362,7 +372,7 @@
 							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
 							   </div>
 							   <div class="col-md-12 slug-time">
-								  <label><?php echo date('h:i A',strtotime($value['entrydate']));?>
+								  <label><?php echo date('d-m-Y, h:i A',strtotime($value['entrydate']));?>
 						        </label>
 						      </div>
 							   </div>
@@ -417,7 +427,7 @@
 							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
 							   </div>
 							   <div class="col-md-12 slug-time">
-								  <label><?php echo date('h:i A',strtotime($value['entrydate']));?>
+								  <label><?php echo date('d-m-Y, h:i A',strtotime($value['entrydate']));?>
 						        </label>
 						      </div>
 							   </div>
@@ -469,7 +479,7 @@
 							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
 							   </div>
 							   <div class="col-md-12 slug-time">
-								  <label><?php echo date('h:i A',strtotime($value['entrydate']));?>
+								  <label><?php echo date('d-m-Y, h:i A',strtotime($value['entrydate']));?>
 						        </label>
 						      </div>
 							   </div>
@@ -526,7 +536,7 @@
 							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
 							   </div>
 							   <div class="col-md-12 slug-time">
-								  <label><?php echo date('h:i A',strtotime($value['entrydate']));?>
+								  <label><?php echo date('d-m-Y, h:i A',strtotime($value['entrydate']));?>
 						        </label>
 						      </div>
 							   </div>
@@ -581,7 +591,7 @@
 							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
 							   </div>
 							   <div class="col-md-12 slug-time">
-								  <label><?php echo date('h:i A',strtotime($value['entrydate']));?>
+								  <label><?php echo date('d-m-Y, h:i A',strtotime($value['entrydate']));?>
 						        </label>
 						      </div>
 							   </div>
@@ -632,7 +642,7 @@
 							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
 							   </div>
 							   <div class="col-md-12 slug-time">
-								  <label><?php echo date('h:i A',strtotime($value['entrydate']));?>
+								  <label><?php echo date('d-m-Y, h:i A',strtotime($value['entrydate']));?>
 						        </label>
 						      </div>
 							   </div>
@@ -684,7 +694,7 @@
 							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
 							   </div>
 							   <div class="col-md-12 slug-time">
-								  <label><?php echo date('h:i A',strtotime($value['entrydate']));?>
+								  <label><?php echo date('d-m-Y, h:i A',strtotime($value['entrydate']));?>
 						        </label>
 						      </div>
 							   </div>
@@ -702,6 +712,60 @@
         </div>
         <div class="col-md-12"><hr style="color:black;"></div>
        </div>
+        <!-- '''''''''''''''''''''''''''''''''''''''''''''''More''''''''''''''''''''''''''''''''''''''''''''''''''' -->
+       <!-- <div class="col-md-12 " ></div> -->
+         <div class="col-md-12"></div>
+         <div class="col-md-12 mb-3">
+        	<div class="text-center  india-heading" >
+            	<h2>More</h2>
+            </div>
+        </div>
+        <div class="row">
+        
+        <div class="col-md-12">
+        	<div class="row">
+        		<?php
+        		if(!empty($topmorenews)){
+        			$i = 0;
+        			foreach ($topmorenews as $key => $value) { $i++;
+        				if($i<5){
+        				?>
+        				
+        			
+        		       <div class="col-md-3 mb-3">
+					  		<div class="card home-india" style=" height: 25rem;">
+							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;" class="img-hover"><img style="height: 10rem; width:100%;" class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
+							  
+							  <div class="card-body">
+							  	<div class="row">
+							  	<div class="col-md-12 slug">
+									<label><?php if(!empty($value['submenu'])){
+													echo $value['menu_name'].' | '.$value['submenu'];}else{echo $value['menu_name'];}?></label>
+								</div>
+							  	<div class="col-md-12 text-slug">
+							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
+							   </div>
+							   <div class="col-md-12 slug-time">
+								  <label><?php echo date('d-m-Y, h:i A',strtotime($value['entrydate']));?>
+						        </label>
+						      </div>
+							   </div>
+							  </div>
+							</div>
+				  	</div>
+        				<?php
+        			}
+        			}
+        		}
+        		?>
+        		
+        	</div>
+
+        </div>
+        <div class="col-md-12"><hr style="color:black;"></div>
+       </div>
+
+       <!-- '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
 
        <!-- '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' -->
       
