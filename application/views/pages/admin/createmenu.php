@@ -108,12 +108,7 @@
       
         $('#id').val(id);
         $('#menu_name').val(menu_name);
-        
-      
-    });
-
-
-  
+       });
     </script>
 
 <script>

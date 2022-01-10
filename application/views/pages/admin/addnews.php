@@ -115,10 +115,9 @@
                                       <input type="text" name="payment" class="form-control" id="amount">
                                     </div>                                 
                                 </div>
-           
-            <script> 
-                CKEDITOR.replace( 'editor1' ); 
-            </script>                
+                            <script> 
+                                CKEDITOR.replace( 'editor1'); 
+                            </script>                
             <div class="form-group row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">

@@ -1486,12 +1486,27 @@ ul.social-icons {
    /*height: 1400px;*/
   
 }
+.scrollbar
+{
+  margin-left: 30px;
+  float: left;
+  height: 300px;
+  width: 65px;
+  background: #F5F5F5;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+}
+
+.force-overflow
+{
+  min-height: 450px;
+}
 .top-news .main-topnews{
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 font-family: knowledge-medium,Arial,sans-serif;
   border-radius: 20px 0px 0px 20px;
   font-weight: 200;
-   /*height: 1400px;*/
+   height: 1400px;
 }
 
 .add img{
@@ -1581,17 +1596,15 @@ font-family: knowledge-medium,Arial,sans-serif;
   padding-right: 20px;
   padding-left: 20px;
   font-weight: 500;
-  /*height: 1400px;*/
+  /*overflow: scroll;*/
+  height: 1400px;
 
  font-family: knowledge-medium,Arial,sans-serif;
 
 }
 .recent-news .re-news{
- 
-  height: 1400px;
-
- font-family: knowledge-medium,Arial,sans-serif;
-
+   height: 1400px;
+   font-family: knowledge-medium,Arial,sans-serif;
 }
 .recent-news .slug{
   font-weight: 500; 

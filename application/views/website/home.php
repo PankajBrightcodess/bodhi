@@ -77,15 +77,16 @@
 											 	  <a href="<?php echo base_url('website/signin/?slug='.$val['slug'].'&payment='.$val['payment']);?>" style="color: black; text-decoration: none;"><h2 class="card-title"><strong><?php echo $val['tittle'] ?></strong></h2></a>
 												
 											  </div>
+											  <div class="col-md-12">
+														<label style="float:right; background:rgb(35 97 138); padding: 10px; color:#fff;border-radius: 10px;"><strong>Payble</strong></label>
+												        
+												  </div>
 											  <div class="col-md-12 slug-time">
 													<label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?></label>  
 											  </div>
 												<a href="<?php echo base_url('website/signin/?slug='.$val['slug'].'&payment='.$val['payment']);?>" style="color: black; text-decoration: none;" class="img-hover"><img src="<?php echo base_url();?><?php echo $val['image'] ?>"  class="img-fluid" alt="Card image cap">
 													<label style="font-size: 13px; font-style: italic; font-weight:400;float: left;"><span style="color:black"><?php echo $val['img_caption'] ?></span></label></a>
-													<div class="col-md-12">
-														<label style="float:right; color:#5C0C00;"><strong>Payble</strong></label>
-												        
-												  </div>
+													
 												<div class="col-md-12 slug">
 													<label style="float:left;"><?php if(!empty($val['submenu'])){
 																	echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?>
@@ -116,7 +117,7 @@
 						  <source src="<?php echo base_url('assets/website/news_image/start_en.mp4'); ?>" type="video/mp4">
 						</video>
 						<img src="<?php echo base_url('assets/website/news_image/healthimage.jpg'); ?>" style="margin-top:25px;" class="img-fluid">
-						<img src="<?php echo base_url('assets/website/news_image/tractor.jpg'); ?>" style="margin-top: 25px;" class="img-fluid">
+						<!-- <img src="<?php echo base_url('assets/website/news_image/tractor.jpg'); ?>" style="margin-top: 25px;" class="img-fluid"> -->
 						
 
 					</div>
