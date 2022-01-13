@@ -308,6 +308,7 @@ class Website extends CI_Controller {
  	$slug = $data['slug'];
  	$payment = $data['payment'];
  	$result=$this->Account_model->loginchecked($data);
+
  	$result['slug']=$slug;
  	$result['amount']=$payment;
  	$record = $this->Account_model->insert_paynews($result);

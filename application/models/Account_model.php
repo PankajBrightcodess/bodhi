@@ -734,6 +734,7 @@ class Account_model extends Slugs{
       // $this->db->select('*');
       // $this->db->from('tmp_clint_login');
        $query =$this->db->get_where('tmp_clint_login',['email'=>$email,'password'=>$password]);
+
         if($type == 'all'){
            $result = $query->row_array();
        }else{
@@ -744,6 +745,7 @@ class Account_model extends Slugs{
     }
 
     public function insert_paynews($result){
+        
       $length = 15;
       $order_no=substr(str_shuffle(str_repeat($x='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz', ceil($length/strlen($x)) )),1,$length);
       $final['client_id'] = $result['id'];

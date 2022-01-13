@@ -61,7 +61,7 @@
 </div>
 <!-- ////////////////////////////////////////share//////////////////////////////////////////////// -->
 
-    <div class="top-bar abcd"> 
+    <div class="top-bar abcd" id="navbar" style="position: fixed;transition: top 1s; z-index: 9999;"> 
         <div class="container">
             <div class="row">
                 <div class="col-md-2 col-3 logo">
@@ -69,6 +69,7 @@
                 </div>
                 <div class="col-md-5 col-9 main-heading">
                     <a href="<?php echo base_url('/')?>"><h2>BODHI <span >WIRE</span></h2><h5>INTERNATIONAL NEWS AGENCY</h5>   </a>
+                 
                     <!-- <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/website/news_image/bodhi.png') ?>" style="float:center; margin-top: 10px;" width="100%" ></a> -->
                 </div>
                 <div class="col-md-5 mb-3 col-12 search">
@@ -96,7 +97,7 @@
         </div>
 
     <!-- =========================================== -->
-    <nav class="navbar navbar-expand-lg navbarlist">
+    <nav class="navbar navbar-expand-lg sticky navbarlist"  style="position: relative; z-index: 99;     margin-top: -20px;  height: 38px;  " >
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color:white;" aria-hidden="true"></i></span>
@@ -202,12 +203,12 @@
                          </li> <?php }
                      } ?>
                 </ul>
-
-                 
             </div>
         </div>
     </nav>
+    
 </div>
+
 <div class="space"></div>
 <script type="text/javascript">
     $(document).ready(function() {
@@ -215,4 +216,19 @@
   alert("The paragraph was clicked.");
 });
 });
+</script>
+<script type="text/javascript">
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+ console.log(prevScrollpos+'   ' +currentScrollPos);
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0px";
+    // navbar.classList.add("sticky");
+  }
+  else {
+    document.getElementById("navbar").style.top = "-300px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 </script>

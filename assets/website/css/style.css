@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,600|Open+Sans:300,300i,400,400i,600,700,800");
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
@@ -45,6 +44,7 @@ src: url("knowledge-medium.woff.ttf");
   text-align: center;
   color: white;
 }
+
 
 /* Change background color of buttons on hover */
 .tab button:hover {
@@ -1400,7 +1400,7 @@ ul.social-icons {
   transition: all 600ms cubic-bezier(0, 0.110, 0.35, 2);
 }
 .space{
-  margin-top: 190px;
+  margin-top: 110px;
 }
 /*.sticky {
     position: fixed;
@@ -1411,29 +1411,28 @@ ul.social-icons {
 }*/
 .abcd{
     background-color: #fff;
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
-    z-index: 99;
     /*overflow: hidden;*/
 }
-.abcd .navbarlist{
- 
+.navbar{
   background: #23618a !important; 
   padding:0px; 
-}
-/*.navbar{
   position: fixed;
   top: 0;
-}*/
+  z-index: 99;
+}
 .abcd .main-heading h2{
-  font-family: sans-serif, Helvetica Neue, Lucida Grande, Arial; 
+  /*font-family: sans-serif, Helvetica Neue, Lucida Grande, Arial; */
+  font-family: 'Crimson Pro', serif;
+  font-family: 'Literata', serif;
   text-align: center;
-  margin-top:15px;
+  /*margin-top:15px;*/
   color: rgb(35 97 138);
   width: 100%;
   font-weight: 1000;
-  font-size:40px;
+  font-size:35px;
   letter-spacing: 2px;
   word-spacing: 13px;
 }
@@ -1457,8 +1456,10 @@ ul.social-icons {
 }
 .abcd .main-heading h5{
   /*font-family: 'Abel', sans-serif; */
+  font-family: 'Crimson Pro', serif;
+  font-family: 'Literata', serif;
   text-align: center; 
-  margin-bottom:20px;
+  margin-bottom:27px;
   color: rgb(35 97 138);
   font-weight: 500;
   font-size: 17px;
@@ -2145,16 +2146,16 @@ font-family: knowledge-medium,Arial,sans-serif;
   }
   .abcd{
  background-color: #fff;
-    position: fixed;
+    /*position: fixed;*/
     top: 0px;
     width: 100%;
-    z-index: 9;
+    /*z-index: 9;*/
 }
-/*.abcd .navbarlist{
+.navbarlist{
   position: fixed;
   z-index: 999;
   margin-top: 0px;
-}*/
+}
 .abcd .main-heading h2{
   font-family: sans-serif, Helvetica Neue, Lucida Grande, Arial; 
   text-align: center;
@@ -2445,4 +2446,64 @@ font-family: knowledge-medium,Arial,sans-serif;
 
 #st-2.st-has-labels .st-btn:hover {
     width: 100px;
+}
+
+/*//////////////////////////////social media///////////////////////////////////////*/
+.social-links2{
+  float:right;
+  padding-top:0px;
+}
+
+.social-links-item {
+float:left;
+display: block;
+height: 32px;
+/*margin-left: 13px;*/
+width: 32px;
+}
+a img {
+border: none;
+outline:none;
+}
+.social-links-item img{
+/*display:block;*/
+/*opacity: 0.6;*/
+transition: opacity 300ms ease-out 0s;
+}
+.social-links-item img:hover {
+opacity: 1;
+transition: opacity 300ms ease-out 0s;
+}
+ 
+.social-links{
+float:right;
+}
+.twitter-icon {
+background: url(https://i.imgur.com/SPEABBH.png)no-repeat top center;
+}
+.facebook-icon {
+background: url(https://i.imgur.com/uADHIil.png)no-repeat top center;
+}
+.linkedin-icon {
+background: url(https://i.imgur.com/u1sFrjn.png)no-repeat top center;
+}
+.rss-icon {
+background: url(https://i.imgur.com/LFHi4tq.png)no-repeat top center;
+}
+.mail-icon {
+background: url(https://i.imgur.com/wUsdAkq.png)no-repeat top center;
+}
+.social-links-item {
+display: inline-block;
+height: 32px;
+margin-left: 13px;
+opacity: 0.5;
+text-indent: -99999px;
+transition: opacity 300ms ease-out 0s;
+vertical-align: middle;
+width: 32px;
+}
+.social-links-item:hover {
+opacity: 1;
+transition: opacity 300ms ease-out 0s;
 }

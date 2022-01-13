@@ -44,6 +44,7 @@
                                 <div class="form-row">
                                     <label for="" class="col-6 col-md-6"> Total Amount:</label>
                                     <p class='col-6 col-md-6 text-danger' style='font-size:20px;font-weight:600'>Rs.<?php echo $allrecord['amount'];?></p>
+                                    <!-- <?php echo PRE; print_r($allrecord);?> -->
                                 </div>
                                 <div class="form-row p-2">
                                     <div class="col-1 col-md-2"></div>
@@ -104,6 +105,7 @@ function random_number($l){
 
 ?>
      <script>
+        debugger;
     var razorpay_options = {
         key: "<?php echo $allrecord['key_id']; ?>",
         amount: "<?php echo $allrecord['total']; ?>",
