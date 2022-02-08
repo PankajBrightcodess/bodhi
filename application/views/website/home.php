@@ -9,8 +9,8 @@
 				</button> -->
 				
 			</div>
-			<div class="col-md-12 col-sm-12">
-			   <marquee >  <!-- id="marq" -->
+			<div class="col-md-12 col-sm-12" style="margin-top:20px;">
+			   <marquee style="border: 2px black;">  <!-- id="marq" -->
 			   	<?php 
 			   		if(!empty($result1)){
 			   			?>
@@ -451,7 +451,7 @@
 	 <div class="col-md-12"><hr style="color:black;"></div>
 	 <div class="col-md-12 mb-3">
         	<div class="text-center  india-heading" >
-            	<h2>Tech</h2>
+            	<h2>Technology</h2>
             </div>
         </div>
         <div class="row">
@@ -666,7 +666,7 @@
          <div class="col-md-12"><hr style="color:black;"></div>
          <div class="col-md-12 mb-3">
         	<div class="text-center  india-heading" >
-            	<h2>Openion</h2>
+            	<h2>Opinion</h2>
             </div>
         </div>
         <div class="row">

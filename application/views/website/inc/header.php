@@ -1,6 +1,6 @@
 <body>
     <!-- ////////////////////////////////////////////share///////////////////////////////////////////// -->
-    <div class="container-fluid">
+ <!--    <div class="container-fluid">
   <div id="st-2" class=" st-sticky-share-buttons st-left st-toggleable st-has-labels st-show-total "><div class="st-total st-hidden">
   <span class="st-label"></span>
   
@@ -41,42 +41,22 @@
 </svg>
   <span class="st-label"></span></a>
 </div><div class="st-toggle">
-  <div class="st-left">
-    <svg fill="#fff" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40">
-  <g>
-    <path d="m22 30.7q0 0.3-0.2 0.5l-1.1 1.1q-0.3 0.3-0.6 0.3t-0.5-0.3l-10.4-10.4q-0.2-0.2-0.2-0.5t0.2-0.5l10.4-10.4q0.3-0.2 0.5-0.2t0.6 0.2l1.1 1.1q0.2 0.3 0.2 0.5t-0.2 0.6l-8.8 8.7 8.8 8.8q0.2 0.2 0.2 0.5z m8.6 0q0 0.3-0.3 0.5l-1.1 1.1q-0.2 0.3-0.5 0.3t-0.5-0.3l-10.4-10.4q-0.2-0.2-0.2-0.5t0.2-0.5l10.4-10.4q0.2-0.2 0.5-0.2t0.5 0.2l1.1 1.1q0.3 0.3 0.3 0.5t-0.3 0.6l-8.7 8.7 8.7 8.8q0.3 0.2 0.3 0.5z"></path>
-  </g>
-</svg>
-  </div>
-  <div class="st-right">
-    <svg fill="#fff" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40">
-  <g>
-    <path d="m22.3 21.4q0 0.3-0.2 0.5l-10.4 10.4q-0.3 0.3-0.6 0.3t-0.5-0.3l-1.1-1.1q-0.2-0.2-0.2-0.5t0.2-0.5l8.8-8.8-8.8-8.7q-0.2-0.3-0.2-0.6t0.2-0.5l1.1-1.1q0.3-0.2 0.5-0.2t0.6 0.2l10.4 10.4q0.2 0.2 0.2 0.5z m8.6 0q0 0.3-0.3 0.5l-10.4 10.4q-0.2 0.3-0.5 0.3t-0.5-0.3l-1.1-1.1q-0.2-0.2-0.2-0.5t0.2-0.5l8.8-8.8-8.8-8.7q-0.2-0.3-0.2-0.6t0.2-0.5l1.1-1.1q0.2-0.2 0.5-0.2t0.5 0.2l10.4 10.4q0.3 0.2 0.3 0.5z"></path>
-  </g>
-</svg>
-  </div>
-</div></div>
-  
-  
-</div>
+  <div class="st-left"> -->
+   1
 <!-- ////////////////////////////////////////share//////////////////////////////////////////////// -->
 
     <div class="top-bar abcd" id="navbar" style="position: fixed;transition: top 1s; z-index: 9999;"> 
         <div class="container">
             <div class="row">
-                <div class="col-md-2 col-3 logo">
+                <div class="col-md-1 col-2 logo ">
                      <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.png') ?>" ></a>
                 </div>
-                <div class="col-md-5 col-9 main-heading">
-                    <a href="<?php echo base_url('/')?>"><h2>BODHI <span >WIRE</span></h2><h5>INTERNATIONAL NEWS AGENCY</h5>   </a>
+                <div class="col-md-6 col-10 main-heading">
+                    <a href="<?php echo base_url('/')?>"><h3>BODHIWIRE</h3><h5>INTERNATIONAL NEWS AGENCY</h5></a>
                  
-                    <!-- <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/website/news_image/bodhi.png') ?>" style="float:center; margin-top: 10px;" width="100%" ></a> -->
+                   
                 </div>
                 <div class="col-md-5 mb-3 col-12 search">
-                    <!-- '''''''''''''''''''''''''search''''''''''''''''''''''''' -->
-
-
-                    <!-- '''''''''''''''''''''''end search''''''''''''''''''''''' -->
                     <div class="input-group btn-group rounded" >
                          <div class="btn-toolbar">
                       <a href="<?php echo base_url('website/signin')?>" class="btn btn-sm mr-2 btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:10px;">Sign In</a>

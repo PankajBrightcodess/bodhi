@@ -43,9 +43,9 @@
 				        <div class="col-md-12 sub-news">
         	          <h4><?= $result['tittle'] ?></h4>
         	      </div>
-        	      <div class="col-md-12">
+        	      <!-- <div class="col-md-12">
         						<hr style="color:black;">
-       					</div>
+       					</div> -->
        					<div class="col-md-6">
 				  		 	  <label style="font-style: italic; float:left;">By : <?php echo $result['byline']?></label>
 				  		 </div>
@@ -60,7 +60,7 @@
 				  		 </div>
 				  		 <div class="col-md-12 slug-time">
 								<label><?php echo date('d-m-Y',strtotime($result['entrydate'])).',';?></label>
-								<label ><?php echo date('h:i A',strtotime($result['entrydate'])).',';?></label>
+								<label ><?php echo date('h:i A',strtotime($result['entrydate']));?></label>
 						  </div>
 				  			 
 				  			<div class="col-md-12 mb-3">
@@ -68,7 +68,7 @@
 				  		   <label style="font-size: 13px; font-style: italic; font-weight:500;float: left;"><span style="color:black"><?php echo $result['img_caption'] ?></span></label>
 				  		 </div> 
 				  		 <div class="col-md-12">
-				  		   <h5 style="float: left;"><?php echo $result['straplines'] ?></h5>
+				  		   <span style="float: left;"><span>	<b>*&nbsp;&nbsp;</b></span><i><?php echo $result['straplines'] ?></i></span>
 				  		 </div>
 				  		 
 				  		<!--  <div class="col-md-12 slug" style="margin-top:10px; ">
