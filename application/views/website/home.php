@@ -59,14 +59,15 @@
 												<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;" class="img-hover"><img src="<?php echo base_url();?><?php echo $val['image'] ?>"  class="img-fluid" alt="Card image cap">
 													<label style="font-size: 13px; font-style: italic; font-weight:400;float: left;"><span style="color:black"><?php echo $val['img_caption'] ?></span></label></a>
 												<div class="col-md-12 slug">
-														<label style="float:left;"><?php if(!empty($val['submenu'])){
-																		echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?>
-												        </label>
+													<label style="float:left;"><?php if(!empty($val['submenu'])){
+																	echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?>
+											        </label>
 												</div>
 												   
 												   <div class="card-body text-slug">
 												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><span class="card-title"><strong><?php echo $val['straplines'] ?></strong></span></a>
-												  </div>
+												  </div>  
+
 												  
 									<?php }
 									else{?>

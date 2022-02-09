@@ -53,8 +53,6 @@
                 </div>
                 <div class="col-md-6 col-10 main-heading">
                     <a href="<?php echo base_url('/')?>"><h3>BODHIWIRE</h3><h5>INTERNATIONAL NEWS AGENCY</h5></a>
-                 
-                   
                 </div>
                 <div class="col-md-5 mb-3 col-12 search">
                     <div class="input-group btn-group rounded" >
@@ -85,7 +83,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left:10px;">
                 <ul class="navbar-nav  me-auto mb-2 mb-lg-0" id="menu" >
                     <li class="nav-item"> 
-                        <a href="<?php echo base_url("website/") ?>" style="color: white;" class="nav-link active">HOME </a>
+                        <a href="<?php echo base_url("website/") ?>" style="color: white;" class="nav-link active"><h5 style="font-size: 16px;  color: white;">HOME </h5></a>
                     </li>
                     <?php if (!empty($result4)) {
 
@@ -93,7 +91,7 @@
                             $m = $val['menu_name']; 
                             $id = $val['id'];
                             ?>
-                            <li class="nav-item"><a href="<?php echo base_url('website/india/'. $val['id'].'/'.$val['menu_name'])?>" class="drop nav-link"><?= $val['menu_name'] ?></a>
+                            <li class="nav-item"><a href="<?php echo base_url('website/india/'. $val['id'].'/'.$val['menu_name'])?>" class="drop nav-link"><h5 style="font-size: 16px; color: white;"><?= $val['menu_name'] ?></h5></a>
                                 <?php if ($val['menu_name']=='INDIA' ||  $val['menu_name']=='WORLD'|| $val['menu_name']=='BUSINESS' ||  $val['menu_name']=='MORE') {
                                     ?>
                                     <div class="dropdown_4columns container">
@@ -115,7 +113,7 @@
                                                     <?php $result = $this->Account_model->getsubmenuslist(array('menu' => $val['menu_name'])) ?>
                                                     <?php if (!empty($result)) {
                                                         foreach ($result as $val) {  ?>
-                                                            <li><a href="<?php echo base_url('website/north/' . $val['id'] . '/' . $m . '/' . $val['submenu']) ?>"><?= $val['submenu'] ?></a></li>
+                                                            <li><a href="<?php echo base_url('website/north/' . $val['id'] . '/' . $m . '/' . $val['submenu']) ?>"><h5 style="font-size: 14px;"><?= $val['submenu'] ?></h5></a></li>
                                                     <?php }
                                                     } ?>
                                                 </ul>
@@ -127,7 +125,7 @@
                                             <div class="col-md-6">
                                                 <div class="row">
                                                     <div class="col-md-8">
-                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[0]['slug']);?>"><p><?= $result[0]['tittle'] ?></p></a>
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[0]['slug']);?>"><h5 style="font-size: 14px; color: white;"><?= $result[0]['tittle'] ?></h5></a>
                                                     </div>
                                                     <div class="col-md-4">
                                                          <a href="<?php echo base_url('website/detailnewsview/'.$result[0]['slug']);?>"><img src="<?php echo base_url();?><?php echo $result[0]['image'] ?>" class="card-img-top" alt="Card image cap"></a>
@@ -137,8 +135,8 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="row">
-                                                    <div class="col-md-8">
-                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[1]['slug']);?>"><p> <?= $result[1]['tittle'] ?></p></a>
+                                                    <div class="col-md-8">   <!-- p tage change -->
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[1]['slug']);?>"><h5 style="font-size: 14px; color: white;"> <?= $result[1]['tittle'] ?></h5></a>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <a href="<?php echo base_url('website/detailnewsview/'.$result[1]['slug']);?>"><img src="<?php echo base_url();?><?php echo $result[1]['image'] ?>" class="card-img-top" alt="Card image cap"></a>
@@ -151,7 +149,7 @@
                                              <div class="col-md-6">
                                                 <div class="row">
                                                     <div class="col-md-8">
-                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[2]['slug']);?>"><p><?= $result[2]['tittle'] ?></p></a>
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[2]['slug']);?>"><h5 style="font-size: 14px; color: white;"><?= $result[2]['tittle'] ?></h5></a>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <a href="<?php echo base_url('website/detailnewsview/'.$result[2]['slug']);?>" ><img src="<?php echo base_url();?><?php echo $result[2]['image'] ?>" class="card-img-top" alt="Card image cap"></a>
@@ -161,18 +159,13 @@
                                             <div class="col-md-6">
                                                 <div class="row">
                                                     <div class="col-md-8">
-                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[3]['slug']);?>"><p><?= $result[3]['tittle'] ?></p></a>
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[3]['slug']);?>"><h5 style="font-size: 14px; color: white;"><?= $result[3]['tittle'] ?></h5></a>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <a href="<?php echo base_url('website/detailnewsview/'.$result[3]['slug']);?>"><img src="<?php echo base_url();?><?php echo $result[3]['image'] ?>" class="card-img-top" alt="Card image cap"></a>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- '''''''''''''''''''''''''share'''''''''''''''''''''' -->
-                                           
-                                            
-                                            
-                                            <!-- '''''''''''''''''''''''''share end'''''''''''''''''''' -->
                                         </div>
                                       
                                   </div>

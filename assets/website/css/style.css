@@ -1057,10 +1057,12 @@ Projects
   background-color: #F4F4F4;;
   color: black;
   border-radius:25px 0px 0px 25px;
- margin: -10px;
+ margin: -50px;
+ /*margin-top: 10px;*/
  overflow: hidden;
  z-index: 123;
- padding-top: 10px;
+ /*padding-top: 10px;*/
+ padding: 10px;
 }
 #menu .nav-item .news-array{
   font-size: 20px;
@@ -1423,19 +1425,19 @@ ul.social-icons {
   top: 0;
   z-index: 99;
 }
-.abcd .main-heading h2{
+.abcd .main-heading h3{
   /*font-family: sans-serif, Helvetica Neue, Lucida Grande, Arial; */
- /* font-family: 'Crimson Pro', serif;
-  font-family: 'Literata', serif;*/
-  font-family: 'Abel', sans-serif;
-  font-family: 'Arvo', serif;
-  /*font-family: 'Cinzel', serif;*/
+/*  font-family: 'Crimson Pro', serif;*/
+/*  font-family: 'Literata', serif;*/
+  /*font-family: 'Abel', sans-serif;*/
+  /*font-family: 'Arvo', serif;*/
+  font-family: 'Cinzel', serif;
   font-family: 'Heebo', sans-serif;
   font-family: 'Holtwood One SC', serif;
  font-family: 'IM Fell English SC', serif;
- /*font-family: 'M PLUS 1p', sans-serif;*/
-/*  font-family: 'Playfair Display SC', serif;
-  font-family: 'Readex Pro', sans-serif;*/
+ font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Playfair Display SC', serif;
+  /*font-family: 'Readex Pro', sans-serif;*/
 
   /*text-align: center;*/
   float: left !important;
@@ -1444,14 +1446,14 @@ ul.social-icons {
   color: rgb(35 97 138);
   width: 100%;
   /*font-weight: 1000;*/
-  font-size:35px;
+  /*font-size:35px;*/
   letter-spacing: 2px;
   word-spacing: 13px;
 }
 .abcd .logo img{
-    height: 69%;
-    width: 60%;
-    float: center;
+    /*height: 69%;*/
+    width: 100%;
+   text-align: center;
     margin-top: 3px;
 }
 .abcd .search {
@@ -1473,9 +1475,9 @@ ul.social-icons {
   font-family: 'Abel', sans-serif;
   font-family: 'Arvo', serif;
   font-family: 'Cinzel', serif;
-  font-family: 'Heebo', sans-serif;
-  font-family: 'Holtwood One SC', serif;
-  font-family: 'IM Fell English SC', serif;
+  /*font-family: 'Heebo', sans-serif;*/
+  /*font-family: 'Holtwood One SC', serif;*/
+  /*font-family: 'IM Fell English SC', serif;*/
   font-family: 'M PLUS 1p', sans-serif;
   font-family: 'Playfair Display SC', serif;
   /*font-family: 'Readex Pro', sans-serif;*/
@@ -1483,7 +1485,7 @@ ul.social-icons {
   float: left !important;
   margin-bottom:30px;
   color: rgb(35 97 138);
-  /*font-weight: 500;*/
+  font-weight: 100;
   font-size: 17px;
   word-spacing: 10;
 }
@@ -2181,7 +2183,7 @@ font-family: knowledge-medium,Arial,sans-serif;
 .abcd .main-heading h3{
   font-family: sans-serif, Helvetica Neue, Lucida Grande, Arial; 
   text-align: center;
-  margin-top:20px;
+  margin-top:2px;
   color: rgb(35 97 138);
   width: 100%;
   
