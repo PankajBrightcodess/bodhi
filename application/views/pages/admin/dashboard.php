@@ -15,7 +15,7 @@
 
                                     <div class="inner">
 
-                                        <h3><?php  ?></h3>
+                                        <h3>6</h3>
 
 
 
@@ -40,7 +40,7 @@
 
                                     <div class="inner">
 
-                                        <h3><?php ?></h3>
+                                        <h3>5</h3>
 
 
 
@@ -65,7 +65,7 @@
 
                                     <div class="inner">
 
-                                        <h3><?php ?></h3>
+                                        <h3><?php echo count($total_news) ;?></h3>
 
 
 
@@ -90,12 +90,12 @@
 
                                     <div class="inner">
 
-                                        <h3><?php  ?></h3>
+                                        <h3><?php echo count($reporters); ?></h3>
 
 
 
                                         <a href=" <?= base_url('home/customerlist') ?>">
-                                            <p style="color: #262673; font-weight: bold;">Market</p>
+                                            <p style="color: #262673; font-weight: bold;">Reporters</p>
                                         </a>
 
                                     </div>

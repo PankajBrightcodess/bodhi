@@ -1445,6 +1445,18 @@ class Account_model extends Slugs{
         $result = $this->db->get()->result_array();
         return $result;
       }
+
+       public function getnewsdashboardcount(){
+        $this->db->select('id');
+        $this->db->from('tmp_news');
+        $result = $this->db->get()->result_array();
+        return $result;
+      }
+
+     
+
+
+
           
 			
 				

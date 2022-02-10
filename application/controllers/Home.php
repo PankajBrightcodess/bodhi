@@ -8,6 +8,8 @@ class Home extends CI_Controller {
 	}
 	
 	public function index(){
+		$data['total_news'] = $this->Account_model->getnewsdashboardcount();
+		$data['reporters']= $this->Account_model->getreporterslist();
 		
 		$data['title']="Home";
 		$this->template->load('pages','home',$data);
@@ -124,7 +126,9 @@ class Home extends CI_Controller {
 		$this->alldata->updatedata();
 	}
 	public function dashboard(){
-		
+		$data['total_news'] = $this->Account_model->getnewsdashboardcount();
+		$data['reporters']= $this->Account_model->getreporterslist();
+		// print_r($data['total_news']);die;
 		$data['title'] = "Dashboard";
 		
 		$data['datatable'] = true;
