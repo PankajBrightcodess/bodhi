@@ -255,6 +255,7 @@ class Home extends CI_Controller {
 		$id = $value[0];
 		$record = $value[1];
 		$subrecord = $data['submenu'];
+		
 		$run=$this->Account_model->updatesubmenu($id,$record,$subrecord);
 		if($run){
 			$this->session->set_flashdata("msg","Menu Updated Successfully!!");

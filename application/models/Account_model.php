@@ -1342,23 +1342,21 @@ class Account_model extends Slugs{
           }}
 
           public function updatesubmenu($id,$record,$subrecord){
-
             $id =$id;
             if(!empty($record)){
               $final['menu']=$record;
             }
             $final['submenu']=$subrecord;
-            
-                   $this->db->where('id',$id);
-            $qry = $this->db->update('submenu',$final);
+            // echo $id;
+            // print_r($final);die;
+            $this->db->where('id',$id);
+            $qry = $this->db->update('tmp_submenu',$final);
             if($qry==true){
               return true;
             }
             else{
               return false;
           }}
-
-
 				// '''''''''''''''''''''''''''''''''''''''''''''''''''''slug part start'''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 

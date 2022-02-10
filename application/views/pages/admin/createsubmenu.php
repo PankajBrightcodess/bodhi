@@ -104,7 +104,7 @@
                                 $i = 0;
                                 foreach ($result1 as $pside) {
                                     ?>
-                                    <option <?php if($this==$pside['id']){echo 'selected="selected"';} ?>  value="<?php echo $pside['id'].' '.$pside['menu_name'] ?>"><?php echo $pside['menu_name'] ?></option>
+                                    <option <?php if($this==$pside['id']){echo 'selected="selected"';} ?>  value="<?php echo $pside['id'].' '.$pside['menu_name'];?>"><?php echo $pside['menu_name'] ?></option>
                             <?php }
                             }
                             ?>

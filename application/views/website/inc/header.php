@@ -56,16 +56,16 @@
                 </div>
                 <div class="col-md-5 mb-3 col-12 search">
                     <div class="input-group btn-group rounded" >
-                         <div class="btn-toolbar">
-                      <a href="<?php echo base_url('website/signin')?>" class="btn btn-sm mr-2 btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:10px;">Sign In</a>
-                      <a href="<?php echo base_url('website/signup')?>" style="float:right;margin-top:10px;" class="btn mr-2 btn-sm btn-dark btn-space">Register</a>  
-                      </div>
                       <form method="post" action="<?php echo base_url('website/search')?>">
                        <div class="search-box btn-space ">
                         <button type="submit" class="btn-search btn-space"><i class="fas fa-search"></i></button>
                         <input type="text" class="input-search" name="search"  placeholder="Search BW...">
                       </div>
                       </form>
+                      <div class="btn-toolbar">
+                          <a href="<?php echo base_url('website/signin')?>" class="btn btn-sm mr-2 btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:10px;">Sign In</a>
+                          <a href="<?php echo base_url('website/signup')?>" style="float:right;margin-top:10px;" class="btn mr-2 btn-sm btn-dark btn-space">Register</a>  
+                      </div>
                                       
                   </div>
                    
@@ -80,7 +80,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color:white;" aria-hidden="true"></i></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left:10px; margin-top: 10px;">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left:=5px; margin-top: 10px;">
                 <ul class="navbar-nav  me-auto mb-2 mb-lg-0" id="menu" >
                     <li class="nav-item"> 
                         <a href="<?php echo base_url("website/") ?>" style="color: white;" class="nav-link active"><h5 style="font-size: 16px;  color: white;padding:10px;">HOME </h5></a>
