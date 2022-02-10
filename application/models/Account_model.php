@@ -1435,6 +1435,16 @@ class Account_model extends Slugs{
           $result = $query->result_array();
           return $result;
       }
+
+
+      // ''''''''''''''''''''''reporters list''''''''''''''''''''''''''''''''''
+      public function getreporterslist(){
+        $this->db->where('role','user');
+        $this->db->select('*');
+        $this->db->from('tmp_users');
+        $result = $this->db->get()->result_array();
+        return $result;
+      }
           
 			
 				

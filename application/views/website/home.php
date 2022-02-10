@@ -41,8 +41,7 @@
 										foreach ($gettopnews as $val) {
 											$i++;
 											if ($i <2) { 
-														if($val['chargestatus']!=1){
-
+													if($val['chargestatus']!=1){
 												?>
 												 <div class="col-md-12">
 				                              <h4>Top News</h4>
@@ -66,6 +65,9 @@
 												   
 												   <div class="card-body text-slug">
 												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><span class="card-title"><strong><?php echo $val['straplines'] ?></strong></span></a>
+												  </div>  
+												  <div class="card-body text-slug">
+												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><span class="card-title"><strong><?php echo substr(strip_tags($val['news']), 0, 280);?></strong></span></a>
 												  </div>  
 
 												  

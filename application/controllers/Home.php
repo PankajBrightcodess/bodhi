@@ -202,6 +202,14 @@ class Home extends CI_Controller {
 		$data['result']=$this->Account_model->getmarket();
 		$this->template->load('pages/admin','market',$data);
 	}
+	public function reporterslist(){
+		$data['title'] = "Reporter List";
+		$data['datatable'] = true;
+		$data['result']=$this->Account_model->getreporterslist();
+		// echo '<pre>';
+		// print_r($data['result']);die;
+		$this->template->load('pages/admin','reporterslist',$data);
+	}
 	public function savemarket(){
 		// checklogin();
 		$data=$this->input->post();

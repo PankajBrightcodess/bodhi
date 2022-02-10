@@ -130,8 +130,11 @@
             <div class="col-md-12">
                 <hr>
             </div>
-        	<div class="col-md-12 table-responsive" >
-            	<table class="table data-table stripe hover nowrap table-bordered">
+            <?php 
+                if($_SESSION['role']=='admin'){
+                    ?>
+                    <div class="col-md-12 table-responsive" >
+                <table class="table data-table stripe hover nowrap table-bordered">
                     <thead>
                         <tr style="background-color: #23618a !important; color:white;">    
                             <th>S.no</th>
@@ -167,11 +170,6 @@
                                     }else{
                                         ?><button class="btn btn-warning btn-xs published" value="<?php echo $val['id'];?>"><i class="fa fa-window-close-o" aria-hidden="true"></i></button><?php
                                     }
-
-
-
-
-
                         ?> </td>
                             <td><span class="float-right">
                             <button class="btn btn-danger btn-xs delete" value="<?php echo $val['id'];?>"><i class="fa fa-trash"></i></button> 
@@ -185,6 +183,12 @@
                     </tbody>
                 </table>
             </div>
+                    <?php
+                }
+
+
+            ?>
+        	
         </div>
     </div>
 </div>
