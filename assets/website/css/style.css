@@ -1398,7 +1398,7 @@ ul.social-icons {
   border-radius: 0px;
   background-color: #DBE1E4;
   color: black;
-  border-bottom:1px solid rgb(35 97 138);;
+  border-bottom:1px solid rgb(35 97 138);
   transition: all 600ms cubic-bezier(0, 0.110, 0.35, 2);
 }
 .space{
