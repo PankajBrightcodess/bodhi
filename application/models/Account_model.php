@@ -999,7 +999,7 @@ class Account_model extends Slugs{
 
 
 		public function savesubmenus($data){
-			
+
       $menudetails = $data['menu'];
       $menu = explode(' ',$menudetails);
       $final['menu_id'] = $menu[0];
@@ -1341,12 +1341,13 @@ class Account_model extends Slugs{
               return false;
           }}
 
-          public function updatesubmenu($data){
-            $id = $data['id'];
-            if(!empty($data['menu'])){
-              $final['menu']=$data['menu'];
+          public function updatesubmenu($id,$record,$subrecord){
+
+            $id =$id;
+            if(!empty($record)){
+              $final['menu']=$record;
             }
-            $final['submenu']=$data['submenu'];
+            $final['submenu']=$subrecord;
             
                    $this->db->where('id',$id);
             $qry = $this->db->update('submenu',$final);

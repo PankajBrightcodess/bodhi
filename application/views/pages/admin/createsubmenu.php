@@ -65,7 +65,7 @@
                                             <td ><?= $val['submenu']?></td>
                                             
                                             <td><span class="float-right">
-                                            <a href='<?php echo base_url("home/delete_sidebar/");?>'><button class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
+                                            <a href='<?php echo base_url("home/delete_submenu/?id=".$val['id']);?>'><button class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></button></a>
                                              <button type="button" class="btn btn-success btn-xs updt" data-toggle="modal" data-target="#exampleModal" data-id="<?php echo $val['id'];?>" data-menu="<?php echo $val['menu'];?>" data-menu_id="<?php echo $val['menu_id'];?>" data-submenu="<?php echo $val['submenu'];?>" ><i class="fa fa-edit"></i></button>
                                             <!-- <button class="btn btn-info btn-xs duplicate" type="button" data-dupid="<?php ?>"><i class="fa fa-network-wired"></i></button> -->
                                             </span></td>

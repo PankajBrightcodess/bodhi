@@ -249,8 +249,13 @@ class Home extends CI_Controller {
 	}
 	public function update_submenu(){
 		$data = $this->input->post();
-		
-		$run=$this->Account_model->updatesubmenu($data);
+		// rint_r($data);die;p
+		$menu = $data['menu'];
+		$value = explode(" ", $menu);
+		$id = $value[0];
+		$record = $value[1];
+		$subrecord = $data['submenu'];
+		$run=$this->Account_model->updatesubmenu($id,$record,$subrecord);
 		if($run){
 			$this->session->set_flashdata("msg","Menu Updated Successfully!!");
 		}else{
@@ -269,7 +274,24 @@ class Home extends CI_Controller {
 		}
 		redirect('home/addnews');
 	}
-		// checklogin();	
+
+	public function delete_submenu(){
+		$id = $this->input->get('id');
+		$data  =$this->input->post();
+		print_r($data);die;
+		$menu = $_POST['menu'];
+		$value = explode("5", $menu);
+		// $id = explode(' ',$menu);
+		// print_r($id);
+		print_r($value);die;
+		// $run=$this->Account_model->delete_market($id);
+		// if($run){
+		// 	$this->session->set_flashdata("msg","Market Deleted Successfully!!");
+		// }else{
+		// 	$this->session->set_flashdata("err_msg",$run);
+		// }
+		// redirect('home/addnews');	
+	}
 	public function savenews(){
 
 		// echo PRE;

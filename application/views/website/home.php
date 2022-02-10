@@ -1,16 +1,10 @@
 <div class="container">
 	<div class="row text-center">
 		<div class="col-lg-12 mb-3">
-			<div class="card text-center" >  <!-- style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); color: #E0B899;" -->
-				<div  class="row">  
-			<div class="col-md-1 col-sm-1">
-				<!-- <input type="button" class="form-control" style="background-color:black; color: white;" onclick="toggleMarquee();" value="||" /> -->
-				<!-- <button class="form-control" style="background-color:black; color: white;" onclick="toggleMarquee();">Stop
-				</button> -->
-				
-			</div>
-			<div class="col-md-12 col-sm-12" style="margin-top:20px;">
-			   <marquee style="border: 2px black;">  <!-- id="marq" -->
+			<div class="card" >  <!-- style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); color: #E0B899;" -->
+				<div  class="row text-center">  
+			<div class="col-md-12 col-lg-12 col-sm-12">
+			   <marquee >  <!-- id="marq" -->
 			   	<?php 
 			   		if(!empty($result1)){
 			   			?>
@@ -63,11 +57,11 @@
 											        </label>
 												</div>
 												   
-												   <div class="card-body text-slug">
-												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><span class="card-title"><strong><?php echo $val['straplines'] ?></strong></span></a>
+												   <div class="card-body text-slug mb-5">
+												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none; float: left !important;"><span class="card-title"><strong style="float: left !important;">*&nbsp;<i><?php echo $val['straplines'] ?></i></strong></span></a>
 												  </div>  
 												  <div class="card-body text-slug">
-												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><span class="card-title"><strong><?php echo substr(strip_tags($val['news']), 0, 280);?></strong></span></a>
+												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none; "><span class="card-title"><strong style="float: left !important;"><?php echo substr(strip_tags($val['news']), 0, 280);?></strong></span></a>
 												  </div>  
 
 												  
@@ -269,7 +263,7 @@
 													echo $value['menu_name'].' | '.$value['submenu'];}else{echo $value['menu_name'];}?></label>
 								</div>
 							  	<div class="col-md-12 text-slug">
-							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;"><?= $value['tittle'] ?></a></p>
+							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black; "><?= $value['tittle'] ?></a></p>
 							   </div>
 							   <div class="col-md-12 slug-time">
 								  <label><?php echo date('d-m-Y, h:i A',strtotime($value['entrydate']));?>

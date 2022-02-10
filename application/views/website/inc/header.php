@@ -80,10 +80,10 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color:white;" aria-hidden="true"></i></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left:10px;">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left:10px; margin-top: 10px;">
                 <ul class="navbar-nav  me-auto mb-2 mb-lg-0" id="menu" >
                     <li class="nav-item"> 
-                        <a href="<?php echo base_url("website/") ?>" style="color: white;" class="nav-link active"><h5 style="font-size: 16px;  color: white;">HOME </h5></a>
+                        <a href="<?php echo base_url("website/") ?>" style="color: white;" class="nav-link active"><h5 style="font-size: 16px;  color: white;padding:10px;">HOME </h5></a>
                     </li>
                     <?php if (!empty($result4)) {
 
@@ -91,7 +91,15 @@
                             $m = $val['menu_name']; 
                             $id = $val['id'];
                             ?>
-                            <li class="nav-item"><a href="<?php echo base_url('website/india/'. $val['id'].'/'.$val['menu_name'])?>" class="drop nav-link"><h5 style="font-size: 16px; color: white;"><?= $val['menu_name'] ?></h5></a>
+                            <li class="nav-item"><a href="<?php echo base_url('website/india/'. $val['id'].'/'.$val['menu_name'])?>" class="drop nav-link">
+                                <?php 
+                                  if($val['menu_name']=='OPINION'){?>
+                                    <h5 style="font-size: 16px; color: white; background:#DBA442; padding:9px;"><?= $val['menu_name'] ?></h5><?php
+                                  }
+                                  else{
+                                    ?><h5 style="font-size: 16px; color: white;padding:9px;"><?= $val['menu_name']?></h5><?php
+                                  }
+                                ?></a>
                                 <?php if ($val['menu_name']=='INDIA' ||  $val['menu_name']=='WORLD'|| $val['menu_name']=='BUSINESS' ||  $val['menu_name']=='MORE') {
                                     ?>
                                     <div class="dropdown_4columns container">
@@ -105,8 +113,10 @@
                                             <div class="col_1">
                                                 <ul>
                                                     <li>
-                                                        <h5><?= $val['menu_name'] ?></h5>
-                                                        <hr>
+
+                                                        <!-- <h5><?= $val['menu_name'] ?></h5>
+                                                        <hr> -->
+                                                      <br>  
                                                     </li>
                                                 </ul>
                                                 <ul>
