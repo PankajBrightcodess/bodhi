@@ -52,7 +52,7 @@
                      <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.png') ?>" ></a>
                 </div>
                 <div class="col-md-6 col-10 main-heading">
-                    <a href="<?php echo base_url('/')?>"><h3>BODHIWIRE</h3><h5>INTERNATIONAL NEWS AGENCY</h5></a>
+                    <a href="<?php echo base_url('/')?>"><h3 style="margin-bottom: 0px;">BODHIWIRE</h3><h5 style="font-size:14px;">INTERNATIONAL NEWS AGENCY</h5></a>
                 </div>
                 <div class="col-md-5 mb-3 col-12 search">
                     <div class="input-group btn-group rounded" >
@@ -75,7 +75,7 @@
         </div>
 
     <!-- =========================================== -->
-    <nav class="navbar navbar-expand-lg sticky navbarlist"  style="position: relative; z-index: 99;     margin-top: -20px;  height: 38px;  " >
+    <nav class="navbar navbar-expand-lg sticky navbarlist"  style="position: relative; z-index: 99;     margin-top: -14px;  height: 38px;  " >
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa fa-bars" style="color:white;" aria-hidden="true"></i></span>
@@ -83,7 +83,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left:=5px; margin-top: 10px;">
                 <ul class="navbar-nav  me-auto mb-2 mb-lg-0" id="menu" >
                     <li class="nav-item"> 
-                        <a href="<?php echo base_url("website/") ?>" style="color: white;" class="nav-link active"><h5 style="font-size: 16px;  color: white;padding:10px;">HOME </h5></a>
+                        <a href="<?php echo base_url("website/") ?>" style="color: white;" class="nav-link active"><h5 style="font-size: 14px;  color: white;padding:10px;">HOME </h5></a>
                     </li>
                     <?php if (!empty($result4)) {
 
@@ -94,10 +94,10 @@
                             <li class="nav-item"><a href="<?php echo base_url('website/india/'. $val['id'].'/'.$val['menu_name'])?>" class="drop nav-link">
                                 <?php 
                                   if($val['menu_name']=='OPINION'){?>
-                                    <h5 style="font-size: 16px; color: white; background:#DBA442; padding:9px;"><?= $val['menu_name'] ?></h5><?php
+                                    <h5 style="font-size: 14px; color: white; background:#DBA442; padding:9px;"><?= $val['menu_name'] ?></h5><?php
                                   }
                                   else{
-                                    ?><h5 style="font-size: 16px; color: white;padding:9px;"><?= $val['menu_name']?></h5><?php
+                                    ?><h5 style="font-size: 14px; color: white;padding:9px;"><?= $val['menu_name']?></h5><?php
                                   }
                                 ?></a>
                                 <?php if ($val['menu_name']=='INDIA' ||  $val['menu_name']=='WORLD'|| $val['menu_name']=='BUSINESS' ||  $val['menu_name']=='MORE') {
