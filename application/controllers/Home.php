@@ -299,7 +299,6 @@ class Home extends CI_Controller {
 			  $image = upload_file("image", $upload_path, $allowed_types, time());
 			  if ($image !='') {
 				  $data['image'] = $image['path'];
-				
 			  }
 		  }
 		   if($_FILES['other_image']['name'] !=''){

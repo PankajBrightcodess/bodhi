@@ -48,24 +48,25 @@
     <div class="top-bar abcd" id="navbar" style="position: fixed;transition: top 1s; z-index: 9999;"> 
         <div class="container">
             <div class="row">
-                <div class="col-md-1 col-2 logo ">
-                     <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.png') ?>" ></a>
+                <div class="col-md-1 col-4 logo ">
+                     <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.png') ?>" class="img-fluid"></a>
                 </div>
-                <div class="col-md-6 col-10 main-heading">
-                    <a href="<?php echo base_url('/')?>"><h3 style="margin-bottom: 0px;">BODHIWIRE</h3><h5 style="font-size:14px;">INTERNATIONAL NEWS AGENCY</h5></a>
+                <div class="col-md-6 col-8 main-heading">
+                    <a href="<?php echo base_url('/')?>"><h3 style="margin-bottom: 0px;">WIRE <span>BODHI&nbsp;</span></h3><h5 style="font-size:14px;">INTERNATIONAL NEWS AGENCY</h5></a>
                 </div>
                 <div class="col-md-5 mb-3 col-12 search">
                     <div class="input-group btn-group rounded" >
+                        <div class="btn-toolbar">
+                          <a href="<?php echo base_url('website/signin')?>" class="btn btn-sm mr-2 btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:10px;">Sign In</a>
+                          <a href="<?php echo base_url('website/signup')?>" style="float:right;margin-top:10px;" class="btn mr-2 btn-sm btn-dark btn-space">Register</a>  
+                      </div>
                       <form method="post" action="<?php echo base_url('website/search')?>">
                        <div class="search-box btn-space ">
                         <button type="submit" class="btn-search btn-space"><i class="fas fa-search"></i></button>
                         <input type="text" class="input-search" name="search"  placeholder="Search BW...">
                       </div>
                       </form>
-                      <div class="btn-toolbar">
-                          <a href="<?php echo base_url('website/signin')?>" class="btn btn-sm mr-2 btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:10px;">Sign In</a>
-                          <a href="<?php echo base_url('website/signup')?>" style="float:right;margin-top:10px;" class="btn mr-2 btn-sm btn-dark btn-space">Register</a>  
-                      </div>
+                      
                                       
                   </div>
                    
@@ -94,8 +95,11 @@
                             <li class="nav-item"><a href="<?php echo base_url('website/india/'. $val['id'].'/'.$val['menu_name'])?>" class="drop nav-link">
                                 <?php 
                                   if($val['menu_name']=='OPINION'){?>
-                                    <h5 style="font-size: 14px; color: white; background:#DBA442; padding:9px;"><?= $val['menu_name'] ?></h5><?php
-                                  }
+                                    <h5 style="font-size: 14px; margin-top: 0; margin-bottom: 0.5rem; font-weight: 500; line-height: 1.6; color: white; background:#DBA442; padding:9px;"><?= $val['menu_name'] ?></h5><?php
+                                  }    
+    
+    
+    
                                   else{
                                     ?><h5 style="font-size: 14px; color: white;padding:9px;"><?= $val['menu_name']?></h5><?php
                                   }
@@ -135,7 +139,7 @@
                                             <div class="col-md-6">
                                                 <div class="row">
                                                     <div class="col-md-8">
-                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[0]['slug']);?>"><h5 style="font-size: 14px; color: white;"><?= $result[0]['tittle'] ?></h5></a>
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[0]['slug']);?>"><h5 style="font-size: 16px; font-weight: 100; color: white;"><?= $result[0]['tittle'] ?></h5></a>
                                                     </div>
                                                     <div class="col-md-4">
                                                          <a href="<?php echo base_url('website/detailnewsview/'.$result[0]['slug']);?>"><img src="<?php echo base_url();?><?php echo $result[0]['image'] ?>" class="card-img-top" alt="Card image cap"></a>
@@ -146,7 +150,7 @@
                                             <div class="col-md-6">
                                                 <div class="row">
                                                     <div class="col-md-8">   <!-- p tage change -->
-                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[1]['slug']);?>"><h5 style="font-size: 14px; color: white;"> <?= $result[1]['tittle'] ?></h5></a>
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[1]['slug']);?>"><h5 style="font-size: 16px; font-weight: 100; color: white;"> <?= $result[1]['tittle'] ?></h5></a>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <a href="<?php echo base_url('website/detailnewsview/'.$result[1]['slug']);?>"><img src="<?php echo base_url();?><?php echo $result[1]['image'] ?>" class="card-img-top" alt="Card image cap"></a>
@@ -159,7 +163,7 @@
                                              <div class="col-md-6">
                                                 <div class="row">
                                                     <div class="col-md-8">
-                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[2]['slug']);?>"><h5 style="font-size: 14px; color: white;"><?= $result[2]['tittle'] ?></h5></a>
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[2]['slug']);?>"><h5 style="font-size: 16px; font-weight: 100; color: white;"><?= $result[2]['tittle'] ?></h5></a>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <a href="<?php echo base_url('website/detailnewsview/'.$result[2]['slug']);?>" ><img src="<?php echo base_url();?><?php echo $result[2]['image'] ?>" class="card-img-top" alt="Card image cap"></a>
@@ -169,7 +173,7 @@
                                             <div class="col-md-6">
                                                 <div class="row">
                                                     <div class="col-md-8">
-                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[3]['slug']);?>"><h5 style="font-size: 14px; color: white;"><?= $result[3]['tittle'] ?></h5></a>
+                                                        <a href="<?php echo base_url('website/detailnewsview/'.$result[3]['slug']);?>"><h5 style="font-size: 16px; font-weight: 100; color: white;"><?= $result[3]['tittle'] ?></h5></a>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <a href="<?php echo base_url('website/detailnewsview/'.$result[3]['slug']);?>"><img src="<?php echo base_url();?><?php echo $result[3]['image'] ?>" class="card-img-top" alt="Card image cap"></a>
