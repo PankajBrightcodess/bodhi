@@ -1476,7 +1476,7 @@ ul.social-icons {
     /*height: 69%;*/
     width: 100%;
    text-align: center;
-    margin-top: 7px;
+    margin-top: 21px;
     padding-right: 0px;
 }
 .abcd .search {
@@ -2122,6 +2122,18 @@ font-family: knowledge-medium,Arial,sans-serif;
     padding-right: 0px;
 
   }
+  .abcd .logo img {
+    /* height: 69%; */
+    width: 100%;
+    text-align: center;
+    margin-top: 21px;
+    padding-right: 0px;
+}
+}
+@media (max-width: 768px) {
+  #menu {
+   background: #014464!important;
+  }
 }
 
 
@@ -2130,6 +2142,49 @@ font-family: knowledge-medium,Arial,sans-serif;
 
 
  @media (max-width: 576px) {
+  #menu {
+   background: #014464!important;
+  }
+  .abcd .main-heading h3 {
+    font-family: 'Playfair Display SC', serif!important;
+    float: left!important;
+    color: #236194;
+    width: 100%;
+    letter-spacing: 2px;
+    word-spacing: 13px;
+    padding-top: 25px;
+    text-align: left;
+    margin-left: -85px!important;
+  }
+.abcd .logo img {
+    /* height: 69%; */
+    width: 100%;
+    text-align: center;
+    margin-top: 21px;
+    padding-right: 0px;
+}
+
+
+/*
+  .abcd .main-heading h3 span {
+    
+    font-family: 'Playfair Display SC', serif;
+    float: left !important;
+    font-size: 28 px;
+    color: #236194!important;
+    letter-spacing: 2px;
+    word-spacing: 13px;
+}*/
+
+
+
+
+
+
+
+
+
+
      .bb-login {
          padding: 77px 15px 33px 15px
      }
@@ -2170,6 +2225,7 @@ font-family: knowledge-medium,Arial,sans-serif;
   letter-spacing: 2px;
   word-spacing: 13px;
   padding-top: 25px;
+  margin-top: 31px!important;
 }
 .abcd .main-heading span{
   font-family: 'Cinzel', serif;
@@ -2191,6 +2247,33 @@ font-family: knowledge-medium,Arial,sans-serif;
   word-spacing: 13px;
 }
  }
+
+
+
+
+@media (max-width: 425px){
+.abcd .main-heading h3 {
+    font-family: 'Playfair Display SC', serif!important;
+    float: left!important;
+    color: #236194;
+    width: 100%;
+    letter-spacing: 2px;
+    word-spacing: 13px;
+    padding-top: 10px;
+    text-align: left;
+    margin-left: -60px!important;
+}
+}
+
+
+
+
+
+
+
+
+
+
   @media (max-width: 1560px) {
       .col_1 {width:130px; padding-left: 30px;}
       .col_2 {width:270px;}

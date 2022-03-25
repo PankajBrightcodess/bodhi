@@ -48,11 +48,12 @@
     <div class="top-bar abcd" id="navbar" style="position: fixed;transition: top 1s; z-index: 9999;"> 
         <div class="container">
             <div class="row">
-                <div class="col-md-1 col-4 logo ">
-                     <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.png') ?>" class="img-fluid"></a>
+                <div class="col-md-1 col-3 logo ">
+                     <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.png') ?>"></a>
                 </div>
-                <div class="col-md-6 col-8 main-heading">
-                    <a href="<?php echo base_url('/')?>"><h3 style="margin-bottom: 0px;">WIRE <span>BODHI&nbsp;</span></h3><h5 style="font-size:14px;">INTERNATIONAL NEWS AGENCY</h5></a>
+                <div class="col-md-6 col-9 main-heading">
+                    <a href="<?php echo base_url('/')?>"><h3>BODHI WIRE</h3>
+                        <h5 style="font-size:14px;">INTERNATIONAL NEWS AGENCY</h5></a>
                 </div>
                 <div class="col-md-5 mb-3 col-12 search">
                     <div class="input-group btn-group rounded" >
@@ -95,7 +96,7 @@
                             <li class="nav-item"><a href="<?php echo base_url('website/india/'. $val['id'].'/'.$val['menu_name'])?>" class="drop nav-link">
                                 <?php 
                                   if($val['menu_name']=='OPINION'){?>
-                                    <h5 style="font-size: 14px; margin-top: 0; margin-bottom: 0.5rem; font-weight: 500; line-height: 1.6; color: white; background:#DBA442; padding:9px;"><?= $val['menu_name'] ?></h5><?php
+                                    <h5 style="font-size: 14px; margin-top: 6px; margin-bottom: 0.5rem; font-weight: 500; line-height: 1.6; color: white; background:#DBA442; padding:7.9px;"><?= $val['menu_name'] ?></h5><?php
                                   }    
     
     
