@@ -59,7 +59,7 @@
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
-                                        <lable style="font-size: 15px; font-weight:600">News Image</lable>
+                                        <lable style="font-size: 15px; font-weight:600">News Image</lable><span style="color:red;">Meximum Height: 14cm, Menimum Height 7cm</span>
                                         <?php echo form_input(array('type'=>'file','name'=>'image','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Image','required'=>'required'));?>
                                     </div>                                    
                                 </div>
