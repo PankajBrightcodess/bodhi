@@ -1591,6 +1591,10 @@ font-family: knowledge-medium,Arial,sans-serif;
   float:left;
    color: #23618a;
 }
+.main-topnews .text-slug .card-title{
+  margin-left: -125px;
+   
+}
 
 
 
@@ -2181,7 +2185,7 @@ font-family: knowledge-medium,Arial,sans-serif;
     font-family: 'Playfair Display SC', serif!important;
     float: left!important;
     color: #236194;
-    width: 100%;
+    width: 40%;
     letter-spacing: 2px;
     word-spacing: 13px;
     padding-top: 25px;
@@ -2464,11 +2468,11 @@ font-family: knowledge-medium,Arial,sans-serif;
   margin-top:2px;
   color: rgb(35 97 138);
   width: 100%;
-  
   font-weight: 1000;
   font-size:20px;
   letter-spacing: 4px;
   word-spacing: 13px;
+  padding-top: 34px;
 }
 .abcd .main-heading span{
   color:#569EEA;
@@ -2480,6 +2484,7 @@ font-family: knowledge-medium,Arial,sans-serif;
   color: rgb(35 97 138);
   font-weight: 500;
   font-size: 8px;
+  margin-left: -15px;
 
   word-spacing: 0px;
 }
