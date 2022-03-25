@@ -2171,6 +2171,52 @@ font-family: knowledge-medium,Arial,sans-serif;
   #menu {
    background: #014464!important;
   }
+  @media (max-width: 1024px) {
+#menu li .drop {
+    padding-right: 0px;
+
+  }
+  .abcd .logo img {
+    /* height: 69%; */
+    width: 100%;
+    text-align: center;
+    margin-top: 32px;
+    padding-right: 0px;
+
+}
+      .btn-search{
+  width: 30px;
+  height: 30px;
+  /*border-style: none;*/
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 5px;
+  color:#ffffff ;
+  background-color:rgb(35 97 138);
+  pointer-events: painted;  
+}
+.btn-search:focus ~ .input-search{
+  width: 200px;
+  border-radius: 0px;
+  background-color: #DBE1E4;
+   border-radius: 25px;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 600ms cubic-bezier(.33,.34,.33,.35);
+}
+.input-search:focus{
+  width: 200px;
+  border-radius: 0px;
+  background-color: #DBE1E4;
+  color: black;
+  border-bottom:1px solid rgb(35 97 138);;
+  transition: all 600ms cubic-bezier(.33,.34,.33,.35);
+}
+}
 }
 
 
@@ -2300,6 +2346,16 @@ font-family: knowledge-medium,Arial,sans-serif;
 
 
 @media (max-width: 425px){
+  .abcd .main-heading h5 {
+    /* font-family: 'Abel', sans-serif; */
+    text-align: center;
+    margin-bottom: 17px;
+    color: rgb(35 97 138);
+    font-weight: 500;
+    font-size: 8px;
+    margin-left: -78px;
+    word-spacing: 0px;
+}
 .abcd .main-heading h3 {
     font-family: 'Playfair Display SC', serif!important;
     float: left!important;
@@ -2309,7 +2365,15 @@ font-family: knowledge-medium,Arial,sans-serif;
     word-spacing: 13px;
     padding-top: 10px;
     text-align: left;
-    margin-left: -60px!important;
+    margin-left: -110px!important;
+}
+
+.abcd .logo img {
+    /* height: 69%; */
+    width: 56%;
+    text-align: center;
+    margin-top: 38px;
+    padding-right: 0px;
 }
 }
 
@@ -2362,6 +2426,16 @@ font-family: knowledge-medium,Arial,sans-serif;
   color: black;
   border-bottom:1px solid rgb(35 97 138);;
   transition: all 600ms cubic-bezier(.33,.34,.33,.35);
+}
+ }
+  @media (min-width: 1440px) {
+     .abcd .logo img {
+    /* height: 69%; */
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    padding-right: 0px;
+
 }
  }
  @media screen and (max-width: 576) {
@@ -2496,7 +2570,7 @@ font-family: knowledge-medium,Arial,sans-serif;
   color: rgb(35 97 138);
   font-weight: 500;
   font-size: 8px;
-  margin-left: -78px;
+  margin-left: -64px;
 
   word-spacing: 0px;
 }

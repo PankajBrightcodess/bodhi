@@ -52,7 +52,7 @@
                      <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/logo.png') ?>"></a>
                 </div>
                 <div class="col-md-6 col-8 main-heading">
-                    <a href="<?php echo base_url('/')?>"><h3>BODHIWIRE</h3>
+                    <a href="<?php echo base_url('/')?>"><h3>BODHI WIRE</h3>
                         <h5 style="font-size:14px;">INTERNATIONAL NEWS AGENCY</h5></a>
                 </div>
                 <div class="col-md-5 mb-3 col-12 search">
