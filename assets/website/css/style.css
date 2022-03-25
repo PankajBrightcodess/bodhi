@@ -2190,11 +2190,22 @@ font-family: knowledge-medium,Arial,sans-serif;
     word-spacing: 13px;
     padding-top: 25px;
     text-align: left;
-    margin-left: -85px!important;
+    margin-left: -161px!important;
+    padding-top: 15px!important;
   }
+  .abcd .main-heading h5 {
+    /* font-family: 'Abel', sans-serif; */
+    text-align: center;
+    margin-bottom: 17px;
+    color: rgb(35 97 138);
+    font-weight: 500;
+    font-size: 8px;
+    margin-left: -78px;
+    word-spacing: 0px;
+}
 .abcd .logo img {
     /* height: 69%; */
-    width: 100%;
+    width: 56%;
     text-align: center;
     margin-top: 21px;
     padding-right: 0px;
@@ -2484,7 +2495,7 @@ font-family: knowledge-medium,Arial,sans-serif;
   color: rgb(35 97 138);
   font-weight: 500;
   font-size: 8px;
-  margin-left: -15px;
+  margin-left: -78px;
 
   word-spacing: 0px;
 }
