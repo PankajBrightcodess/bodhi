@@ -2151,7 +2151,7 @@ font-family: knowledge-medium,Arial,sans-serif;
   pointer-events: painted;  
 }
 .btn-search:focus ~ .input-search{
-  width: 200px;
+  width: 180px;
   border-radius: 0px;
   background-color: #DBE1E4;
    border-radius: 25px;
@@ -2159,7 +2159,7 @@ font-family: knowledge-medium,Arial,sans-serif;
   transition: all 600ms cubic-bezier(.33,.34,.33,.35);
 }
 .input-search:focus{
-  width: 200px;
+  width: 180px;
   border-radius: 0px;
   background-color: #DBE1E4;
   color: black;
@@ -2171,6 +2171,36 @@ font-family: knowledge-medium,Arial,sans-serif;
   #menu {
    background: #014464!important;
   }
+  .abcd .main-heading h3 {
+    font-family: 'Playfair Display SC', serif!important;
+    float: left!important;
+    color: #236194;
+    width: 40%;
+    letter-spacing: 2px;
+    word-spacing: 13px;
+    padding-top: 25px;
+    text-align: left;
+    margin-left: -90px!important;
+    padding-top: 15px!important;
+  }
+  .abcd .main-heading h5 {
+    /* font-family: 'Abel', sans-serif; */
+    text-align: center;
+    margin-bottom: 17px;
+    color: rgb(35 97 138);
+    font-weight: 500;
+    font-size: 8px;
+    margin-left: 0px!important;
+    word-spacing: 0px;
+}
+.abcd .logo img {
+    /* height: 69%; */
+    width: 100%;
+    text-align: center;
+    margin-top: 21px;
+    padding-right: 0px;
+}
+}
   @media (max-width: 1024px) {
 #menu li .drop {
     padding-right: 0px;
@@ -2353,7 +2383,7 @@ font-family: knowledge-medium,Arial,sans-serif;
     color: rgb(35 97 138);
     font-weight: 500;
     font-size: 8px;
-    margin-left: -78px;
+    margin-left: -66px!important;
     word-spacing: 0px;
 }
 .abcd .main-heading h3 {
@@ -2372,7 +2402,69 @@ font-family: knowledge-medium,Arial,sans-serif;
     /* height: 69%; */
     width: 56%;
     text-align: center;
-    margin-top: 38px;
+    margin-top: 10px;
+    padding-right: 0px;
+}
+}
+@media (max-width: 375px){
+  .abcd .main-heading h5 {
+    /* font-family: 'Abel', sans-serif; */
+    text-align: center;
+    margin-bottom: 17px;
+    color: rgb(35 97 138);
+    font-weight: 500;
+    font-size: 8px;
+    margin-left: -63px!important;
+    word-spacing: 0px;
+}
+.abcd .main-heading h3 {
+    font-family: 'Playfair Display SC', serif!important;
+    float: left!important;
+    color: #236194;
+    width: 100%;
+    letter-spacing: 2px;
+    word-spacing: 13px;
+    padding-top: 10px;
+    text-align: left;
+    margin-left: -91px!important;
+}
+
+.abcd .logo img {
+    /* height: 69%; */
+    width: 56%;
+    text-align: center;
+    margin-top: 16px;
+    padding-right: 0px;
+}
+}
+@media (max-width: 320px){
+  .abcd .main-heading h5 {
+    /* font-family: 'Abel', sans-serif; */
+    text-align: center;
+    margin-bottom: 17px;
+    color: rgb(35 97 138);
+    font-weight: 500;
+    font-size: 11px!important;
+    margin-left: -59px!important;
+    word-spacing: 0px;
+}
+.abcd .main-heading h3 {
+    font-family: 'Playfair Display SC', serif!important;
+    float: left!important;
+    color: #236194;
+    width: 100%;
+    letter-spacing: 2px;
+    word-spacing: 13px;
+    padding-top: 10px;
+    text-align: left;
+    margin-left: -69px!important;
+}
+
+.abcd .logo img {
+    /* height: 69%; */
+    width: 56%;
+    text-align: center;
+    margin-top: 21px;
     padding-right: 0px;
 }
 }
@@ -2410,7 +2502,7 @@ font-family: knowledge-medium,Arial,sans-serif;
         pointer-events: painted;  
       }
 .btn-search:focus ~ .input-search{
-  width: 220px;
+  width: 301px;
   border-radius: 0px;
   background-color: #DBE1E4;
    border-radius: 25px;
@@ -2420,7 +2512,7 @@ font-family: knowledge-medium,Arial,sans-serif;
   
 }
 .input-search:focus{
-  width: 220px;
+  width: 301px;
   border-radius: 0px;
   background-color: #DBE1E4;
   color: black;
