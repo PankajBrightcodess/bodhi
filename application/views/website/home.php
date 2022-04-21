@@ -141,13 +141,13 @@
 									<label><?php if(!empty($val['submenu'])){
 													echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?></label>
 								</div>
-								<div class="col-md-8 text-slug">
+								<div class="col-md-5 text-slug">
 
 									<!-- style="text-align:justify; font-size: 14px;" --> <p><a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" ><?php echo $val['tittle'] ?></a></p>
 									
 								</div>
 
-								<div class="col-md-4 img-hover">
+								<div class="col-md-7 img-hover">
 
 									<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" ><img class=" img-fluid" src="<?php echo base_url();?><?php echo $val['image'] ?>" alt="Card image cap"></a>
 								</div>
@@ -162,13 +162,13 @@
 									<label><?php if(!empty($val['submenu'])){
 													echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?></label>
 								</div>
-								<div class="col-md-8 text-slug">
+								<div class="col-md-5 text-slug">
 
 									<!-- style="text-align:justify; font-size: 14px;" --> <p><a href="<?php echo base_url('website/signin/?slug='.$val['slug'].'&payment='.$val['payment']);?>" ><?php echo $val['tittle'] ?></a></p>
 									
 								</div>
 
-								<div class="col-md-4 img-hover">
+								<div class="col-md-7 img-hover">
 
 									<a href="<?php echo base_url('website/signin/?slug='.$val['slug'].'&payment='.$val['payment']);?>" ><img class=" img-fluid" src="<?php echo base_url();?><?php echo $val['image'] ?>" alt="Card image cap"></a>
 								</div>
