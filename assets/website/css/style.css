@@ -1472,12 +1472,13 @@ ul.social-icons {
   letter-spacing: 2px;
   word-spacing: 13px;
 }
-.abcd .logo img{
-    /*height: 69%;*/
+.abcd .logo img {
+    /* height: 69%; */
     width: 100%;
-   text-align: center;
-    margin-top: 21px;
+    text-align: center;
+    margin-top: 9px;
     padding-right: 0px;
+    margin-bottom: 24px;
 }
 .abcd .search {
   float: right;
@@ -1606,7 +1607,7 @@ font-family: knowledge-medium,Arial,sans-serif;
    /*height: 1400px;*/
 }
 .top-news .other-topnews a img{
-  height: 4rem;
+ /* height: 4rem;*/
   width: 100%;
   border-radius: 5px;
   
@@ -2121,184 +2122,6 @@ font-family: knowledge-medium,Arial,sans-serif;
  }
 
 
-@media (max-width: 1024px) {
-#menu li .drop {
-    padding-right: 0px;
-
-  }
-  .abcd .logo img {
-    /* height: 69%; */
-    width: 100%;
-    text-align: center;
-    margin-top: 32px;
-    padding-right: 0px;
-
-}
-      .btn-search{
-  width: 30px;
-  height: 30px;
-  /*border-style: none;*/
-  font-size: 15px;
-  font-weight: bold;
-  margin-top: 10px;
-  outline: none;
-  cursor: pointer;
-  border-radius: 50%;
-  position: absolute;
-  right: 5px;
-  color:#ffffff ;
-  background-color:rgb(35 97 138);
-  pointer-events: painted;  
-}
-.btn-search:focus ~ .input-search{
-  width: 180px;
-  border-radius: 0px;
-  background-color: #DBE1E4;
-   border-radius: 25px;
-  border-bottom:1px solid rgba(255,255,255,.5);
-  transition: all 600ms cubic-bezier(.33,.34,.33,.35);
-}
-.input-search:focus{
-  width: 180px;
-  border-radius: 0px;
-  background-color: #DBE1E4;
-  color: black;
-  border-bottom:1px solid rgb(35 97 138);;
-  transition: all 600ms cubic-bezier(.33,.34,.33,.35);
-}
-}
-@media (max-width: 768px) {
-  #menu {
-   background: #014464!important;
-  }
-  .abcd .main-heading h3 {
-    font-family: 'Playfair Display SC', serif!important;
-    float: left!important;
-    color: #236194;
-    width: 40%;
-    letter-spacing: 2px;
-    word-spacing: 13px;
-    padding-top: 25px;
-    text-align: left;
-    margin-left: -90px!important;
-    padding-top: 15px!important;
-  }
-  .abcd .main-heading h5 {
-    /* font-family: 'Abel', sans-serif; */
-    text-align: center;
-    margin-bottom: 17px;
-    color: rgb(35 97 138);
-    font-weight: 500;
-    font-size: 8px;
-    margin-left: 0px!important;
-    word-spacing: 0px;
-}
-.abcd .logo img {
-    /* height: 69%; */
-    width: 100%;
-    text-align: center;
-    margin-top: 21px;
-    padding-right: 0px;
-}
-}
-  @media (max-width: 1024px) {
-#menu li .drop {
-    padding-right: 0px;
-
-  }
-  .abcd .logo img {
-    /* height: 69%; */
-    width: 100%;
-    text-align: center;
-    margin-top: 32px;
-    padding-right: 0px;
-
-}
-      .btn-search{
-  width: 30px;
-  height: 30px;
-  /*border-style: none;*/
-  font-size: 15px;
-  font-weight: bold;
-  margin-top: 10px;
-  outline: none;
-  cursor: pointer;
-  border-radius: 50%;
-  position: absolute;
-  right: 5px;
-  color:#ffffff ;
-  background-color:rgb(35 97 138);
-  pointer-events: painted;  
-}
-.btn-search:focus ~ .input-search{
-  width: 200px;
-  border-radius: 0px;
-  background-color: #DBE1E4;
-   border-radius: 25px;
-  border-bottom:1px solid rgba(255,255,255,.5);
-  transition: all 600ms cubic-bezier(.33,.34,.33,.35);
-}
-.input-search:focus{
-  width: 200px;
-  border-radius: 0px;
-  background-color: #DBE1E4;
-  color: black;
-  border-bottom:1px solid rgb(35 97 138);;
-  transition: all 600ms cubic-bezier(.33,.34,.33,.35);
-}
-}
-}
-
-
-
-
-
-
- @media (max-width: 576px) {
-  #menu {
-   background: #014464!important;
-  }
-  .abcd .main-heading h3 {
-    font-family: 'Playfair Display SC', serif!important;
-    float: left!important;
-    color: #236194;
-    width: 40%;
-    letter-spacing: 2px;
-    word-spacing: 13px;
-    padding-top: 25px;
-    text-align: left;
-    margin-left: -161px!important;
-    padding-top: 15px!important;
-  }
-  .abcd .main-heading h5 {
-    /* font-family: 'Abel', sans-serif; */
-    text-align: center;
-    margin-bottom: 17px;
-    color: rgb(35 97 138);
-    font-weight: 500;
-    font-size: 8px;
-    margin-left: -78px;
-    word-spacing: 0px;
-}
-.abcd .logo img {
-    /* height: 69%; */
-    width: 56%;
-    text-align: center;
-    margin-top: 21px;
-    padding-right: 0px;
-}
-
-
-/*
-  .abcd .main-heading h3 span {
-    
-    font-family: 'Playfair Display SC', serif;
-    float: left !important;
-    font-size: 28 px;
-    color: #236194!important;
-    letter-spacing: 2px;
-    word-spacing: 13px;
-}*/
 
 
 
@@ -2308,386 +2131,29 @@ font-family: knowledge-medium,Arial,sans-serif;
 
 
 
-
-     .bb-login {
-         padding: 77px 15px 33px 15px
-     }
-     .home-india img{
-          height: 20rem;
-           width:100%;
-      }
-      .top-news .other-topnews a img{
-         height: 10rem;
-         width: 100%;
-          border-radius: 5px;
-  
-          border-color: #23618a;
-        }
-        .abcd .main-heading h3{
-  /*font-family: sans-serif, Helvetica Neue, Lucida Grande, Arial; */
-/*  font-family: 'Crimson Pro', serif;*/
-/*  font-family: 'Literata', serif;*/
-  /*font-family: 'Abel', sans-serif;*/
-  /*font-family: 'Arvo', serif;*/
-  font-family: 'Cinzel', serif;
-  font-family: 'Heebo', sans-serif;
-  font-family: 'Holtwood One SC', serif;
- font-family: 'IM Fell English SC', serif;
- font-family: 'M PLUS 1p', sans-serif;
-  font-family: 'Playfair Display SC', serif;
-  /*font-family: 'Readex Pro', sans-serif;*/
-
-  /*text-align: center;*/
-  float: left !important;
-
-  /*margin-top:15px;*/
-  /*color: rgb(35 97 138);*/
-  color: #236194;
-  width: 100%;
-  /*font-weight: 1000;*/
-  /*font-size:35px;*/
-  letter-spacing: 2px;
-  word-spacing: 13px;
-  padding-top: 25px;
-  margin-top: 31px!important;
-}
-.abcd .main-heading span{
-  font-family: 'Cinzel', serif;
-  font-family: 'Heebo', sans-serif;
-  font-family: 'Holtwood One SC', serif;
- font-family: 'IM Fell English SC', serif;
- font-family: 'M PLUS 1p', sans-serif;
-  font-family: 'Playfair Display SC', serif;
-  float: left !important;
-  font-size: 28 px;
-  /*margin-top:15px;*/
-  /*color: #73D4E6;*/
-  /*color: rgb(35 97 138);*/
-      color: #236194!important;
-  /*width: 100%;*/
-  /*font-weight: 1000;*/
-  /*font-size:35px;*/
-  letter-spacing: 2px;
-  word-spacing: 13px;
-}
- }
-
-
-
-
-@media (max-width: 425px){
-  .abcd .main-heading h5 {
-    /* font-family: 'Abel', sans-serif; */
-    text-align: center;
-    margin-bottom: 17px;
-    color: rgb(35 97 138);
-    font-weight: 500;
-    font-size: 8px;
-    margin-left: -66px!important;
-    word-spacing: 0px;
-}
-.abcd .main-heading h3 {
-    font-family: 'Playfair Display SC', serif!important;
-    float: left!important;
-    color: #236194;
-    width: 100%;
-    letter-spacing: 2px;
-    word-spacing: 13px;
-    padding-top: 10px;
-    text-align: left;
-    margin-left: -110px!important;
-}
-
-.abcd .logo img {
-    /* height: 69%; */
-    width: 56%;
-    text-align: center;
-    margin-top: 10px;
-    padding-right: 0px;
-}
-}
-@media (max-width: 375px){
-  .abcd .main-heading h5 {
-    /* font-family: 'Abel', sans-serif; */
-    text-align: center;
-    margin-bottom: 17px;
-    color: rgb(35 97 138);
-    font-weight: 500;
-    font-size: 8px;
-    margin-left: -63px!important;
-    word-spacing: 0px;
-}
-.abcd .main-heading h3 {
-    font-family: 'Playfair Display SC', serif!important;
-    float: left!important;
-    color: #236194;
-    width: 100%;
-    letter-spacing: 2px;
-    word-spacing: 13px;
-    padding-top: 10px;
-    text-align: left;
-    margin-left: -91px!important;
-}
-
-.abcd .logo img {
-    /* height: 69%; */
-    width: 56%;
-    text-align: center;
-    margin-top: 16px;
-    padding-right: 0px;
-}
-}
-@media (max-width: 320px){
-  .abcd .main-heading h5 {
-    /* font-family: 'Abel', sans-serif; */
-    text-align: center;
-    margin-bottom: 17px;
-    color: rgb(35 97 138);
-    font-weight: 500;
-    font-size: 11px!important;
-    margin-left: -59px!important;
-    word-spacing: 0px;
-}
-.abcd .main-heading h3 {
-    font-family: 'Playfair Display SC', serif!important;
-    float: left!important;
-    color: #236194;
-    width: 100%;
-    letter-spacing: 2px;
-    word-spacing: 13px;
-    padding-top: 10px;
-    text-align: left;
-    margin-left: -69px!important;
-}
-
-.abcd .logo img {
-    /* height: 69%; */
-    width: 56%;
-    text-align: center;
-    margin-top: 21px;
-    padding-right: 0px;
-}
-}
-
-
-
-
-
-
-
-
-
-
-  @media (max-width: 1560px) {
-      .col_1 {width:130px; padding-left: 30px;}
-      .col_2 {width:270px;}
-      .col_3 {width:410px;}
-      .col_4 {width:550px;}
-      .col_5 {width:690px;}
-
-      .btn-search{
-        width: 30px;
-        height: 30px;
-        /*border-style: none;*/
-        font-size: 15px;
-        font-weight: bold;
-        margin-top: 10px;
-        outline: none;
-        cursor: pointer;
-        border-radius: 50%;
-        position: absolute;
-        right: 5px;
-        color:#ffffff ;
-        background-color:rgb(35 97 138);
-        pointer-events: painted;  
-      }
-.btn-search:focus ~ .input-search{
-  width: 301px;
-  border-radius: 0px;
-  background-color: #DBE1E4;
-   border-radius: 25px;
-  border-bottom:1px solid rgba(255,255,255,.5);
-  transition: all 600ms cubic-bezier(.33,.34,.33,.35);
-  /*cubic-bezier(0, 0.110, 0.35, 2)*/
-  
-}
-.input-search:focus{
-  width: 301px;
-  border-radius: 0px;
-  background-color: #DBE1E4;
-  color: black;
-  border-bottom:1px solid rgb(35 97 138);;
-  transition: all 600ms cubic-bezier(.33,.34,.33,.35);
-}
- }
-  @media (min-width: 1440px) {
-     .abcd .logo img {
-    /* height: 69%; */
-    width: 100%;
-    text-align: center;
-    margin-top: 15px;
-    padding-right: 0px;
-
-}
- }
- @media screen and (max-width: 576) {
-  .top-news{
-    width: 100%;
-  }
-  .top-news .other-topnews a img{
-     height: 4rem;
-     width: 100%;
-     border-radius: 5px;
-  
-      border-color: #23618a;
-    }
-  .home-india img{
-    height: 20rem;
-   width:100%;
-  }
-  .top-news .main-topnews{
-    width: 100%; 
-    text-align: justify;
-  }
-  .top-news .other-topnews{
-    width: 100%;
-  }
-  .other-topnews{
-  margin-top: 30px;
-  margin-left: 10px;
- font-family: myGabriola,Arial,sans-serif;
-  color: black;
-}
-.top-news .other-topnews a img{
-  height: 10rem;
-  width: 100%;
-  border-radius: 5px;
-  
-  border-color: #23618a;
-}
-.other-topnews:hover img {
-  opacity: 0.3;
-}
-.recent-news .re-news{
  
-      width: 100%;
- font-family: myGabriola,Arial,sans-serif;
 
-}
-.abcd .main-heading h3{
-  /*font-family: sans-serif, Helvetica Neue, Lucida Grande, Arial; */
-/*  font-family: 'Crimson Pro', serif;*/
-/*  font-family: 'Literata', serif;*/
-  /*font-family: 'Abel', sans-serif;*/
-  /*font-family: 'Arvo', serif;*/
-  font-family: 'Cinzel', serif;
-  font-family: 'Heebo', sans-serif;
-  font-family: 'Holtwood One SC', serif;
- font-family: 'IM Fell English SC', serif;
- font-family: 'M PLUS 1p', sans-serif;
-  font-family: 'Playfair Display SC', serif;
-  /*font-family: 'Readex Pro', sans-serif;*/
 
-  /*text-align: center;*/
-  float: left !important;
 
-  /*margin-top:15px;*/
-  /*color: rgb(35 97 138);*/
-  color: #236194;
-  width: 100%;
-  /*font-weight: 1000;*/
-  /*font-size:35px;*/
-  letter-spacing: 2px;
-  word-spacing: 13px;
-  padding-top: 25px;
-}
-.abcd .main-heading span{
-  font-family: 'Cinzel', serif;
-  font-family: 'Heebo', sans-serif;
-  font-family: 'Holtwood One SC', serif;
- font-family: 'IM Fell English SC', serif;
- font-family: 'M PLUS 1p', sans-serif;
-  font-family: 'Playfair Display SC', serif;
-  float: left !important;
-  font-size: 28 px;
-  /*margin-top:15px;*/
-  /*color: #73D4E6;*/
-  /*color: rgb(35 97 138);*/
-      color: #236194!important;
-  /*width: 100%;*/
-  /*font-weight: 1000;*/
-  /*font-size:35px;*/
-  letter-spacing: 2px;
-  word-spacing: 13px;
-}
 
- }
 
-@media screen and (max-width: 920px) {
-  #st-2{
-     hide: true;
-     top: 400px;
-  }
-  .abcd{
- background-color: #fff;
-    /*position: fixed;*/
-    top: 0px;
-    width: 100%;
-    /*z-index: 9;*/
-}
-.navbarlist{
-  position: fixed;
-  z-index: 999;
-  margin-top: 0px;
-}
-.abcd .main-heading h3{
-  font-family: sans-serif, Helvetica Neue, Lucida Grande, Arial; 
-  text-align: center;
-  margin-top:2px;
-  color: rgb(35 97 138);
-  width: 100%;
-  font-weight: 1000;
-  font-size:20px;
-  letter-spacing: 4px;
-  word-spacing: 13px;
-  padding-top: 34px;
-}
-.abcd .main-heading span{
-  color:#569EEA;
-}
-.abcd .main-heading h5{
-  /*font-family: 'Abel', sans-serif; */
-  text-align: center; 
-  margin-bottom:17px;
-  color: rgb(35 97 138);
-  font-weight: 500;
-  font-size: 8px;
-  margin-left: -64px;
 
-  word-spacing: 0px;
-}
-.header-gap{
-  padding: 90px 0;
-}
-.other-topnews{
-  margin-top: 30px;
-  margin-left: 10px;
- font-family: myGabriola,Arial,sans-serif;
-  color: black;
-}
-.other-topnews a img{
-  height: 5rem;
-  width: 100%;
-  border-radius: 5px;
+
+
+
+
+
+
+
+
+
+
+
   
-  border-color: #23618a;
-}
 
 
-}
-@media screen and (max-width: 320px) {
-  
-}
+
+
 
 
 
@@ -2750,12 +2216,7 @@ font-family: knowledge-medium,Arial,sans-serif;
      opacity: 1
  }
 
- @media (max-width: 992px) {
-     .alert-validate::before {
-         visibility: visible;
-         opacity: 1
-     }
- }
+ 
 
  a {
      text-decoration: none !important
@@ -3000,3 +2461,514 @@ width: 32px;
 opacity: 1;
 transition: opacity 300ms ease-out 0s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------- RESPONSIVE START ---------------------------------------------------------- */
+@media (max-width: 2560px) { 
+
+}
+@media (max-width: 1560px) {
+  .col_1 {width:130px; padding-left: 30px;}
+  .col_2 {width:270px;}
+  .col_3 {width:410px;}
+  .col_4 {width:550px;}
+  .col_5 {width:690px;}
+  .btn-search{
+    width: 30px;
+    height: 30px;
+    /*border-style: none;*/
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    color:#ffffff ;
+    background-color:rgb(35 97 138);
+    pointer-events: painted;  
+  }
+  .btn-search:focus ~ .input-search{
+    width: 301px;
+    border-radius: 0px;
+    background-color: #DBE1E4;
+    border-radius: 25px;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 600ms cubic-bezier(.33,.34,.33,.35);
+    /*cubic-bezier(0, 0.110, 0.35, 2)*/
+  }
+  .input-search:focus{
+    width: 301px;
+    border-radius: 0px;
+    background-color: #DBE1E4;
+    color: black;
+    border-bottom:1px solid rgb(35 97 138);;
+    transition: all 600ms cubic-bezier(.33,.34,.33,.35);
+  }
+}
+@media (min-width: 1440px) {
+  .abcd .logo img {
+    /* height: 69%; */
+    width: 100%;
+    text-align: center;
+    /* margin-top: 15px; */
+    padding-right: 0px;
+  }
+}
+/*@media (max-width: 1024px) {
+  #menu li .drop {
+    padding-right: 0px;
+  }
+  .abcd .logo img {*/
+    /* height: 69%; */
+    /*width: 100%;
+    text-align: center;
+    margin-top: 32px;
+    padding-right: 0px;
+  }
+  .btn-search{
+    width: 30px;
+    height: 30px;*/
+    /*border-style: none;*/
+    /*font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    color:#ffffff ;
+    background-color:rgb(35 97 138);
+    pointer-events: painted;  
+  }
+  .btn-search:focus ~ .input-search{
+    width: 200px;
+    border-radius: 0px;
+    background-color: #DBE1E4;
+    border-radius: 25px;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 600ms cubic-bezier(.33,.34,.33,.35);
+  }
+  .input-search:focus{
+    width: 200px;
+    border-radius: 0px;
+    background-color: #DBE1E4;
+    color: black;
+    border-bottom:1px solid rgb(35 97 138);;
+    transition: all 600ms cubic-bezier(.33,.34,.33,.35);
+  }
+}*/
+@media (max-width: 1024px) {
+  #menu li .drop {
+    padding-right: 0px;
+  }
+  .abcd .logo img {
+    /* height: 69%; */
+    width: 100%;
+    text-align: center;
+    margin-top: 32px;
+    padding-right: 0px;
+  }
+  .btn-search{
+    width: 30px;
+    height: 30px;
+    /*border-style: none;*/
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    color:#ffffff ;
+    background-color:rgb(35 97 138);
+    pointer-events: painted;  
+  }
+  .btn-search:focus ~ .input-search{
+    width: 180px;
+    border-radius: 0px;
+    background-color: #DBE1E4;
+    border-radius: 25px;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 600ms cubic-bezier(.33,.34,.33,.35);
+  }
+  .input-search:focus{
+    width: 180px;
+    border-radius: 0px;
+    background-color: #DBE1E4;
+    color: black;
+    border-bottom:1px solid rgb(35 97 138);;
+    transition: all 600ms cubic-bezier(.33,.34,.33,.35);
+  }
+}
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1
+  }
+}
+@media screen and (max-width: 920px) {
+  #st-2{
+    hide: true;
+    top: 400px;
+  }
+  .abcd{
+    background-color: #fff;
+    /*position: fixed;*/
+    top: 0px;
+    width: 100%;
+    /*z-index: 9;*/
+  }
+  .navbarlist{
+    position: fixed;
+    z-index: 999;
+    margin-top: 0px;
+  }
+  .abcd .main-heading h3{
+    font-family: sans-serif, Helvetica Neue, Lucida Grande, Arial; 
+    text-align: center;
+    margin-top:2px;
+    color: rgb(35 97 138);
+    width: 100%;
+    font-weight: 1000;
+    font-size:20px;
+    letter-spacing: 4px;
+    word-spacing: 13px;
+    padding-top: 34px;
+  }
+  .abcd .main-heading span{
+    color:#569EEA;
+  }
+  .abcd .main-heading h5{
+    /*font-family: 'Abel', sans-serif; */
+    text-align: center; 
+    margin-bottom:17px;
+    color: rgb(35 97 138);
+    font-weight: 500;
+    font-size: 8px;
+    margin-left: -64px;
+    word-spacing: 0px;
+  }
+  .header-gap{
+    padding: 90px 0;
+  }
+  .other-topnews{
+    margin-top: 30px;
+    margin-left: 10px;
+    font-family: myGabriola,Arial,sans-serif;
+    color: black;
+  }
+  .other-topnews a img{
+    /*height: 5rem;*/
+    width: 100%;
+    border-radius: 5px;
+    border-color: #23618a;
+  }
+}
+@media (max-width: 768px) {
+  #menu {
+   background: #014464!important;
+  }
+  .abcd .main-heading h3 {
+    font-family: 'Playfair Display SC', serif!important;
+    float: left!important;
+    color: #236194;
+    width: 40%;
+    letter-spacing: 2px;
+    word-spacing: 13px;
+    padding-top: 25px;
+    text-align: left;
+    margin-left: -90px!important;
+    padding-top: 15px!important;
+  }
+  .abcd .main-heading h5 {
+    /* font-family: 'Abel', sans-serif; */
+    text-align: center;
+    margin-bottom: 17px;
+    color: rgb(35 97 138);
+    font-weight: 500;
+    font-size: 8px;
+    margin-left: 0px!important;
+    word-spacing: 0px;
+  }
+  .abcd .logo img {
+    /* height: 69%; */
+    width: 100%;
+    text-align: center;
+    margin-top: 21px;
+    padding-right: 0px;
+  }
+}
+/*@media screen and (max-width: 576) {
+  .top-news{
+    width: 100%;
+  }
+  .top-news .other-topnews a img{
+    height: 4rem;
+    width: 100%;
+    border-radius: 5px;
+    border-color: #23618a;
+  }
+  .home-india img{
+    height: 20rem;
+    width:100%;
+  }
+  .top-news .main-topnews{
+    width: 100%; 
+    text-align: justify;
+  }
+  .top-news .other-topnews{
+    width: 100%;
+  }
+  .other-topnews{
+    margin-top: 30px;
+    margin-left: 10px;
+    font-family: myGabriola,Arial,sans-serif;
+    color: black;
+  }
+  .top-news .other-topnews a img{
+    height: 10rem;
+    width: 100%;
+    border-radius: 5px;
+    border-color: #23618a;
+  }
+  .other-topnews:hover img {
+    opacity: 0.3;
+  }
+  .recent-news .re-news{
+    width: 100%;
+    font-family: myGabriola,Arial,sans-serif;
+  }
+  .abcd .main-heading h3{
+    
+    font-family: 'Cinzel', serif;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Holtwood One SC', serif;
+    font-family: 'IM Fell English SC', serif;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Playfair Display SC', serif;
+    float: left !important;
+    color: #236194;
+    width: 100%;
+    letter-spacing: 2px;
+    word-spacing: 13px;
+    padding-top: 25px;
+  }
+  .abcd .main-heading span{
+    font-family: 'Cinzel', serif;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Holtwood One SC', serif;
+    font-family: 'IM Fell English SC', serif;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Playfair Display SC', serif;
+    float: left !important;
+    font-size: 28 px;
+    color: #236194!important;
+    letter-spacing: 2px;
+    word-spacing: 13px;
+  }
+}*/
+@media (max-width: 576px) {
+  #menu {
+   background: #014464!important;
+  }
+  .abcd .main-heading h3 {
+    font-family: 'Playfair Display SC', serif!important;
+    float: left!important;
+    color: #236194;
+    width: 40%;
+    letter-spacing: 2px;
+    word-spacing: 13px;
+    padding-top: 25px;
+    text-align: left;
+    margin-left: -161px!important;
+    padding-top: 15px!important;
+  }
+  .abcd .main-heading h5 {
+    /* font-family: 'Abel', sans-serif; */
+    text-align: center;
+    margin-bottom: 17px;
+    color: rgb(35 97 138);
+    font-weight: 500;
+    font-size: 8px;
+    margin-left: -78px;
+    word-spacing: 0px;
+  }
+  .abcd .logo img {
+    /* height: 69%; */
+    width: 56%;
+    text-align: center;
+    margin-top: 21px;
+    padding-right: 0px;
+  }
+  .bb-login {
+    padding: 77px 15px 33px 15px
+  }
+  .home-india img{
+    height: 20rem;
+    width:100%;
+  }
+  .top-news .other-topnews a img{
+    /*height: 10rem;*/
+    width: 100%;
+    border-radius: 5px;
+    border-color: #23618a;
+  }
+  .abcd .main-heading h3{
+    font-family: 'Cinzel', serif;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Holtwood One SC', serif;
+    font-family: 'IM Fell English SC', serif;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Playfair Display SC', serif;
+    float: left !important;
+    color: #236194;
+    width: 100%;
+    letter-spacing: 2px;
+    word-spacing: 13px;
+    padding-top: 25px;
+    margin-top: 31px!important;
+  }
+  .abcd .main-heading span{
+    font-family: 'Cinzel', serif;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Holtwood One SC', serif;
+    font-family: 'IM Fell English SC', serif;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Playfair Display SC', serif;
+    float: left !important;
+    font-size: 28 px;
+    color: #236194!important;
+    letter-spacing: 2px;
+    word-spacing: 13px;
+  }
+}
+@media (max-width: 425px){
+  .abcd .main-heading h5 {
+    text-align: center;
+    margin-bottom: 17px;
+    color: rgb(35 97 138);
+    font-weight: 500;
+    font-size: 8px;
+    margin-left: -66px!important;
+    word-spacing: 0px;
+  }
+  .abcd .main-heading h3 {
+    font-family: 'Playfair Display SC', serif!important;
+    float: left!important;
+    color: #236194;
+    width: 100%;
+    letter-spacing: 2px;
+    word-spacing: 13px;
+    padding-top: 10px;
+    text-align: left;
+    margin-left: -110px!important;
+  }
+  .abcd .logo img {
+    width: 56%;
+    text-align: center;
+    margin-top: 10px;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 375px){
+  .abcd .main-heading h5 {
+    text-align: center;
+    margin-bottom: 17px;
+    color: rgb(35 97 138);
+    font-weight: 500;
+    font-size: 8px;
+    margin-left: -63px!important;
+    word-spacing: 0px;
+  }
+  .abcd .main-heading h3 {
+    font-family: 'Playfair Display SC', serif!important;
+    float: left!important;
+    color: #236194;
+    width: 100%;
+    letter-spacing: 2px;
+    word-spacing: 13px;
+    padding-top: 10px;
+    text-align: left;
+    margin-left: -91px!important;
+  }
+  .abcd .logo img {
+    /* height: 69%; */
+    width: 56%;
+    text-align: center;
+    margin-top: 16px;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 320px){
+  .abcd .main-heading h5 {
+    /* font-family: 'Abel', sans-serif; */
+    text-align: center;
+    margin-bottom: 17px;
+    color: rgb(35 97 138);
+    font-weight: 500;
+    font-size: 11px!important;
+    margin-left: -59px!important;
+    word-spacing: 0px;
+  }
+  .abcd .main-heading h3 {
+    font-family: 'Playfair Display SC', serif!important;
+    float: left!important;
+    color: #236194;
+    width: 100%;
+    letter-spacing: 2px;
+    word-spacing: 13px;
+    padding-top: 10px;
+    text-align: left;
+    margin-left: -69px!important;
+  }
+  .abcd .logo img {
+    /* height: 69%; */
+    width: 56%;
+    text-align: center;
+    margin-top: 21px;
+    padding-right: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
