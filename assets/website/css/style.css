@@ -1621,7 +1621,7 @@ font-family: knowledge-medium,Arial,sans-serif;
 .other-topnews .text-slug p{
   color: black;
   /*text-align: left;*/
-  text-align: justify !important;
+  /*text-align: justify !important;*/
   /*float: left !important;*/
 }
 .other-topnews .text-slug a{
