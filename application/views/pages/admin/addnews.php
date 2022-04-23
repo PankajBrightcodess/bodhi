@@ -159,7 +159,7 @@
                             <td><?php echo $submenu = $this->Account_model->getsubmenuname($val['submenu_id']);?></td>
                             <!-- <td ><= $val['menu_id']?></td> -->
                             <!-- <td ><= $val['submenu_id']?></td> -->
-                            <td><img src="<?php echo file_url($val['image']); ?>" alt="Image" class="img-thumbnail" style="width: 200px ;height:150px !important" alt="Responsive image"></td>
+                            <td><img src="<?php echo file_url($val['image']); ?>" alt="Image" class="img-thumbnail" alt="Responsive image"></td>
                             <td width="20%"><?= $val['tittle']?></td>
                             
                             <!-- <td ><?= $val['slug']?></td> -->

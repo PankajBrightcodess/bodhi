@@ -26,9 +26,9 @@
 		        		</div>
 		        		</div>
         		       </div> -->
-        		       <div class="col-md-3 mb-3">
-					  		<div class="card home-india" style=" height: 25rem;">
-							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;" class="img-hover"><img style="height: 10rem; width:100%;" class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
+        		       <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+					  		<div class="card home-india">
+							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;" class="img-hover"><img style="/*height: 10rem;*/ width:100%;" class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
 							  
 							  <div class="card-body">
 							  	<div class="row">

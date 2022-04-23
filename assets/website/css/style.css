@@ -1478,7 +1478,7 @@ ul.social-icons {
     text-align: center;
     margin-top: 9px;
     padding-right: 0px;
-    margin-bottom: 24px;
+    /*margin-bottom: 24px;*/
 }
 .abcd .search {
   float: right;
@@ -2493,7 +2493,15 @@ transition: opacity 300ms ease-out 0s;
 
 
 /*-------------------------------------------------- RESPONSIVE START ---------------------------------------------------------- */
-@media (max-width: 2560px) { 
+@media (max-width: 2560px) {
+.abcd .logo img {
+    /* height: 69%; */
+    width: 100%;
+    text-align: center;
+    margin-top: 9px;
+    padding-right: 0px;
+    margin-bottom: 24px;
+} 
 
 }
 @media (max-width: 1560px) {
@@ -2725,10 +2733,10 @@ transition: opacity 300ms ease-out 0s;
   }
   .abcd .logo img {
     /* height: 69%; */
-    width: 100%;
+    /*width: 100%;
     text-align: center;
     margin-top: 21px;
-    padding-right: 0px;
+    padding-right: 0px;*/
   }
 }
 /*@media screen and (max-width: 576) {
@@ -2801,6 +2809,15 @@ transition: opacity 300ms ease-out 0s;
   }
 }*/
 @media (max-width: 576px) {
+  .abcd .logo img {
+    /* height: 69%; */
+    width: 100%;
+    text-align: center;
+    margin-top: 9px;
+    padding-right: 0px;
+    margin-bottom: 24px;
+} 
+ /* .disnon{display: none!important;}*/
   #menu {
    background: #014464!important;
   }
@@ -2828,10 +2845,10 @@ transition: opacity 300ms ease-out 0s;
   }
   .abcd .logo img {
     /* height: 69%; */
-    width: 56%;
+    /*width: 56%;
     text-align: center;
     margin-top: 21px;
-    padding-right: 0px;
+    padding-right: 0px;*/
   }
   .bb-login {
     padding: 77px 15px 33px 15px
@@ -2897,10 +2914,10 @@ transition: opacity 300ms ease-out 0s;
     margin-left: -110px!important;
   }
   .abcd .logo img {
-    width: 56%;
+    /*width: 56%;
     text-align: center;
     margin-top: 10px;
-    padding-right: 0px;
+    padding-right: 0px;*/
   }
 }
 @media (max-width: 375px){
@@ -2926,10 +2943,10 @@ transition: opacity 300ms ease-out 0s;
   }
   .abcd .logo img {
     /* height: 69%; */
-    width: 56%;
+    /*width: 56%;
     text-align: center;
     margin-top: 16px;
-    padding-right: 0px;
+    padding-right: 0px;*/
   }
 }
 @media (max-width: 320px){
@@ -2956,9 +2973,9 @@ transition: opacity 300ms ease-out 0s;
   }
   .abcd .logo img {
     /* height: 69%; */
-    width: 56%;
+    width: 100%;
     text-align: center;
-    margin-top: 21px;
+    /*margin-top: 21px;*/
     padding-right: 0px;
   }
 }
