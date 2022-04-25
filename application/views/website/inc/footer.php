@@ -22,8 +22,8 @@
                 <div class="col-md-3">
                     <div class="footer-contact">
                         <h2>Our Address</h2>
-                        <p><i class="fa fa-map-marker-alt"></i>Bodhiwire, Near Bank Of India, Tagore Hill Road, Morabadi, Ranchi.</p>
-                        <p><i class="fa fa-phone-alt"></i>+91-9977869876</p>
+                        <p><i class="fas fa-map-marker-alt"></i>Bodhiwire, Near Bank Of India, Tagore Hill Road, Morabadi, Ranchi.</p>
+                        <p><i class="fas fa-phone"></i>+91-9977869876</p>
                         <p><i class="fa fa-envelope"></i>bodhiwire@gmail.com</p>
                     </div>
                 </div>
