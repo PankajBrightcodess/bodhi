@@ -4,7 +4,7 @@
 			<div class="card" >  <!-- style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); color: #E0B899;" -->
 				<div  class="row text-center">  
 			<div class="col-md-12 col-lg-12 col-sm-12">
-			   <marquee >  <!-- id="marq" -->
+			   <marquee class="mar1">  <!-- id="marq" -->
 			   	<?php 
 			   		if(!empty($result1)){
 			   			?>
