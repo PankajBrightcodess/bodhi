@@ -61,8 +61,8 @@
                 <div class="col-5 col-md-4 mb-3 col-lg-4 search mx-auto">
                     <div class="input-group btn-group rounded" >
                         <div class="btn-toolbar">
-                          <a href="<?php echo base_url('website/signin')?>" class="btn btn-sm mr-2 btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:10px;">Sign In</a>
-                          <a href="<?php echo base_url('website/signup')?>" style="float:right;margin-top:10px;" class="btn mr-2 btn-sm btn-dark btn-space">Register</a>  
+                          <a href="<?php echo base_url('website/signin')?>" class="btn btn-sm mr-2 btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:5px;">Sign In</a>
+                          <a href="<?php echo base_url('website/signup')?>" style="float:right;margin-top:5px;" class="btn mr-2 btn-sm btn-dark btn-space">Register</a>  
                       </div>
                       <form method="post" action="<?php echo base_url('website/search')?>">
                        <div class="search-box btn-space ">
