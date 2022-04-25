@@ -14,7 +14,12 @@ body {
   color: #5c6771;
   font-weight: 300;
   -webkit-font-smoothing: antialiased !important; }
-
+ .navbar .hh5{
+  font-size: 14px;
+  color: white;
+  background: #DBA442;
+  padding: 9px;
+ }
   /* --------- SATYA CODE START ------------*/
   /*style for tab start in home page */
   /* Style the tab */
@@ -2597,6 +2602,13 @@ transition: opacity 300ms ease-out 0s;
   }
 }*/
 @media (max-width: 1024px) {
+  .navbar .hh5 {
+    font-size: 14px;
+    color: white;
+    background: #DBA442;
+    padding: 9px;
+    margin-top: 8px;
+}
   #menu li .drop {
     padding-right: 0px;
   }
