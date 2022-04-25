@@ -59,20 +59,20 @@
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
-                                        <lable style="font-size: 15px; font-weight:600">News Image</lable><span style="color:red;"> (Maximum Height: 52913 pixels, Minimum Height 7cm)</span>
+                                        <lable style="font-size: 15px; font-weight:600">News Image</lable><span style="color:red;"> (Max Width: 1200px, Max Height: 600px, Min Width: 320px,Min Height: 180px)</span>
                                         <?php echo form_input(array('type'=>'file','name'=>'image','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Image','required'=>'required'));?>
                                     </div>                                    
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
-                                        <lable style="font-size: 15px; font-weight:600">Other Image</lable>
+                                        <lable style="font-size: 15px; font-weight:600">Vertical Image</lable><span style="color:red;"> (Max Width: 300px, Max Height: 600px, Min Width: 248px,Min Height: 496px)</span>
                                         <?php echo form_input(array('type'=>'file','name'=>'other_image','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Other Image'));?>
                                     </div>                                    
                                 </div>
 
                                  <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
-                                        <lable style="font-size: 15px; font-weight:600">One More Image</lable>
+                                        <lable style="font-size: 15px; font-weight:600">Horizontal Image</lable><span style="color:red;"> (Max Width: 930px, Max Height: 535px, Min Width: 248px,Min Height: 120px)</span>
                                         <?php echo form_input(array('type'=>'file','name'=>'other_image_one','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Other Image'));?>
                                     </div>                                    
                                 </div>
@@ -86,13 +86,13 @@
                                 </div>
                                  <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
-                                        <lable style="font-size: 15px; font-weight:600">Other Image Caption</lable>
+                                        <lable style="font-size: 15px; font-weight:600">Vertical Image Caption</lable>
                                         <?php echo form_input(array('type'=>'text','name'=>'other_img_caption','id'=>'activate_not','class'=>'form-control','placeholder'=>'Other Image By Line'));?>
                                     </div>                                   
                                 </div>
                                   <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
-                                        <lable style="font-size: 15px; font-weight:600">One More Image Caption</lable>
+                                        <lable style="font-size: 15px; font-weight:600">Horizontal Image Caption</lable>
                                         <?php echo form_input(array('type'=>'text','name'=>'other_img_caption_one','id'=>'activate_not','class'=>'form-control','placeholder'=>'Other Image By Line'));?>
                                     </div>                                   
                                 </div>

@@ -2602,6 +2602,9 @@ transition: opacity 300ms ease-out 0s;
   }
 }*/
 @media (max-width: 1024px) {
+  .space {
+    margin-top: 93px!important;
+  }
   .navbar .hh5 {
     font-size: 14px;
     color: white;
@@ -2616,7 +2619,7 @@ transition: opacity 300ms ease-out 0s;
     /* height: 69%; */
     width: 100%;
     text-align: center;
-    margin-top: 32px;
+    margin-top: 6px;
     padding-right: 0px;
   }
   .btn-search{
@@ -2717,6 +2720,16 @@ transition: opacity 300ms ease-out 0s;
   }
 }
 @media (max-width: 768px) {
+  .abcd .logo img {
+    /* height: 69%; */
+    width: 100%;
+    text-align: center;
+    margin-top: 12px;
+    padding-right: 0px;
+}
+  .space {
+    margin-top: 86px!important;
+  }
   #menu {
    background: #014464!important;
   }
@@ -2820,6 +2833,9 @@ transition: opacity 300ms ease-out 0s;
   }
 }*/
 @media (max-width: 576px) {
+  .space {
+    margin-top: 102px!important;
+  }
   .abcd .logo img {
     /* height: 69%; */
     width: 100%;
@@ -2904,6 +2920,9 @@ transition: opacity 300ms ease-out 0s;
   }
 }
 @media (max-width: 425px){
+  .space {
+    margin-top: 85px!important;
+  }
   .search-box{ display: none; }
   marquee .mar1{
     margin-top: 90px!important;
@@ -2936,6 +2955,12 @@ transition: opacity 300ms ease-out 0s;
   }
 }
 @media (max-width: 375px){
+  .abcd .logo img {
+    margin-top: 30px;
+  }
+  .space {
+    margin-top: 120px!important;
+  }
   .abcd .main-heading h5 {
     text-align: center;
     margin-bottom: 17px;
