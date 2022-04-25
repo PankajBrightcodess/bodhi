@@ -12,11 +12,11 @@
                 <div class="col-md-3">
                     <div class="footer-link">
                         <h2>Quick Links</h2>
-                        <a href="index.php">Home</a>
-                        <a href="index.php">India</a>
-                        <a href="index.php">Asia</a>
-                        <a href="index.php">America</a>
-                        <a href="index.php">Europe</a>
+                        <a href="website">Home</a>
+                        <a href="website">India</a>
+                        <a href="website">Asia</a>
+                        <a href="website">America</a>
+                        <a href="website">Europe</a>
                     </div>
                 </div>
                 <div class="col-md-3">
