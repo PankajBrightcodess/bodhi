@@ -2904,6 +2904,10 @@ transition: opacity 300ms ease-out 0s;
   }
 }
 @media (max-width: 425px){
+  .search-box{ display: none; }
+  marquee .mar1{
+    margin-top: 90px!important;
+  }
   .abcd .main-heading h5 {
     text-align: center;
     margin-bottom: 17px;

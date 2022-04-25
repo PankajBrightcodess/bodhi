@@ -48,7 +48,7 @@
     <div class="top-bar abcd" id="navbar" style="position: fixed;transition: top 1s; z-index: 9999;"> 
         <div class="container">
             <div class="row">
-                <div class="col-6 col-md-3 col-lg-3 logo ">
+                <div class="col-6 col-sm-12 col-md-3 col-lg-3 logo ">
                      <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/bodhi_2.svg') ?>" class="img-fluid"></a>
                 </div>
                 
@@ -58,7 +58,7 @@
                     </div>    
               
                 
-                <div class="col-5 col-md-4 mb-3 col-lg-4 search mx-auto">
+                <div class="col-5 col-sm-12 col-md-4 mb-3 col-lg-4 search mx-auto">
                     <div class="input-group btn-group rounded" >
                         <div class="btn-toolbar">
                           <a href="<?php echo base_url('website/signin')?>" class="btn btn-sm mr-2 btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:10px;">Sign In</a>
