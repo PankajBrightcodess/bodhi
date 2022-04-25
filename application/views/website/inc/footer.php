@@ -13,10 +13,10 @@
                     <div class="footer-link">
                         <h2>Quick Links</h2>
                         <a href="index.php">Home</a>
-                        <a href="index.php#fmcg">India</a>
-                        <a href="team.php">Asia</a>
-                        <a href="about.php">America</a>
-                        <a href="contact.php">Europe</a>
+                        <a href="index.php">India</a>
+                        <a href="index.php">Asia</a>
+                        <a href="index.php">America</a>
+                        <a href="index.php">Europe</a>
                     </div>
                 </div>
                 <div class="col-md-3">
