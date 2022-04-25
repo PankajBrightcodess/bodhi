@@ -256,7 +256,7 @@
 		        		</div>
         		       </div> -->
         		       <div class="col-md-3 mb-3">
-					  		<div class="card home-india" style=" height: 25rem;">
+					  		<div class="card home-india">
 							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;" class="img-hover"><img  class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
 							  
 							  <div class="card-body">
@@ -309,7 +309,7 @@
         				?>
         			
         		       <div class="col-md-3 mb-3">
-					  		<div class="card home-india" style=" height: 25rem;">
+					  		<div class="card home-india">
 							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;" class="img-hover"><img  class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>  <!-- style="height: 10rem; width:100%;" -->
 							  
 							  <div class="card-body">
@@ -360,7 +360,7 @@
         				
         		
         		       <div class="col-md-3 mb-3">
-					  		<div class="card home-india" style=" height: 25rem;">
+					  		<div class="card home-india">
 							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;" class="img-hover"><img  class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
 							  
 							  <div class="card-body">
@@ -414,7 +414,7 @@
         				
         			
         		       <div class="col-md-3 mb-3">
-					  		<div class="card home-india" style=" height: 25rem;">
+					  		<div class="card home-india">
 							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;" cla
 							  	="img-hover"><img  class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
 							  
@@ -467,7 +467,7 @@
         				
         			
         		       <div class="col-md-3 mb-3">
-					  		<div class="card home-india" style=" height: 25rem;">
+					  		<div class="card home-india">
 							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;" class="img-hover"><img  class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
 							  
 							  <div class="card-body">
@@ -524,7 +524,7 @@
         				?>
         			
         		       <div class="col-md-3 mb-3">
-					  		<div class="card home-india" style=" height: 25rem;">
+					  		<div class="card home-india">
 							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;" class="img-hover"><img  class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
 							  
 							  <div class="card-body">
@@ -579,7 +579,7 @@
         				if($i<5){
         				?>
         		       <div class="col-md-3 mb-3">
-					  		<div class="card home-india" style=" height: 25rem;">
+					  		<div class="card home-india">
 							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;" class="img-hover"><img  class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
 							  
 							  <div class="card-body">
@@ -630,7 +630,7 @@
         				?>
         				
         		       <div class="col-md-3 mb-3">
-					  		<div class="card home-india" style=" height: 25rem;">
+					  		<div class="card home-india">
 							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;" class="img-hover"><img  class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
 							  
 							  <div class="card-body">
@@ -682,7 +682,7 @@
         				
         			
         		       <div class="col-md-3 mb-3">
-					  		<div class="card home-india" style=" height: 25rem;">
+					  		<div class="card home-india">
 							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;" class="img-hover"><img  class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
 							  
 							  <div class="card-body">
@@ -734,7 +734,7 @@
         				
         			
         		       <div class="col-md-3 mb-3">
-					  		<div class="card home-india" style=" height: 25rem;">
+					  		<div class="card home-india">
 							  <a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;" class="img-hover"><img  class="img-fluid" src="<?php echo base_url();?><?php echo $value['image'] ?>" alt="Card image cap"></a>
 							  
 							  <div class="card-body">
