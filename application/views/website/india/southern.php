@@ -60,7 +60,7 @@
 				  </div><hr>
 				  <div class="row">
 				  	<div class="col-md-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image184.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Mere smell of alcohol cannot be construed to mean that person is intoxicated,</p>
@@ -68,7 +68,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image185.gif');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Air India sale, Tatas' EV arm keep deal street busy in October with USD 9.2 billion fund flows</p>
@@ -76,7 +76,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image186.jpeg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Omar Abdullah, Mehbooba Mufti demand impartial probe in Hyderpora encounterOmar Abdullah,</p>
@@ -84,7 +84,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image187.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -93,7 +93,7 @@
 				  	</div>
 
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image188.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Strategic Compass': EU sets dates for new military force</p>
@@ -101,7 +101,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image189.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Top EU court lashes Hungary over 'Stop Soros' migrant lawTop EU court lashes Hungary over 'Stop Soros'</p>
@@ -109,7 +109,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image189.png');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -117,7 +117,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image190.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -151,7 +151,7 @@
 				  </div><hr>
 				  <div class="row">
 				  	<div class="col-md-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image61.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Mere smell of alcohol cannot be construed to mean that person is intoxicated,</p>
@@ -159,7 +159,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image62.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Air India sale, Tatas' EV arm keep deal street busy in October with USD 9.2 billion fund flows</p>
@@ -167,7 +167,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image63.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Omar Abdullah, Mehbooba Mufti demand impartial probe in Hyderpora encounterOmar Abdullah,</p>
@@ -175,7 +175,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image64.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -184,7 +184,7 @@
 				  	</div>
 
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image65.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Strategic Compass': EU sets dates for new military force</p>
@@ -192,7 +192,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image66.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Top EU court lashes Hungary over 'Stop Soros' migrant lawTop EU court lashes Hungary over 'Stop Soros'</p>
@@ -200,7 +200,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image67.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -208,7 +208,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image68.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -241,7 +241,7 @@
 				  </div><hr>
 				  <div class="row">
 				  	<div class="col-md-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image72.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Mere smell of alcohol cannot be construed to mean that person is intoxicated,</p>
@@ -249,7 +249,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image73.jpeg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Air India sale, Tatas' EV arm keep deal street busy in October with USD 9.2 billion fund flows</p>
@@ -257,7 +257,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image74.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Nardendra Modi demand impartial probe in Hyderpora encounterOmar Abdullah,</p>
@@ -265,7 +265,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image75.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -274,7 +274,7 @@
 				  	</div>
 
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image76.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Strategic Compass': EU sets dates for new military force</p>
@@ -282,7 +282,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image79.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Top EU court lashes Hungary over 'Stop Soros' migrant lawTop EU court lashes Hungary over 'Stop Soros'</p>
@@ -290,7 +290,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image78.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -298,7 +298,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image77.png');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -331,7 +331,7 @@
 				  </div><hr>
 				  <div class="row">
 				  	<div class="col-md-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image83.jpg');?>" height="170px" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Mere smell of alcohol cannot be construed to mean that person is intoxicated,</p>
@@ -339,7 +339,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image84.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Air India sale, Tatas' EV arm keep deal street busy in October with USD 9.2 billion fund flows</p>
@@ -347,7 +347,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image86.jpg');?>" alt="Card image cap" height="170px">
 						  <div class="card-body">
 						    <p class="card-text">Omar Abdullah, Mehbooba Mufti demand impartial probe in Hyderpora encounterOmar Abdullah,</p>
@@ -355,7 +355,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image87.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -364,7 +364,7 @@
 				  	</div>
 
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image88.jpeg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Strategic Compass': EU sets dates for new military force</p>
@@ -372,7 +372,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" height="170px" src="<?php echo base_url('assets/website/news_image/image88.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Top EU court lashes Hungary over 'Stop Soros' migrant lawTop EU court lashes Hungary over 'Stop Soros'</p>
@@ -380,7 +380,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image89.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -388,7 +388,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image50.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -421,7 +421,7 @@
 				  </div><hr>
 				  <div class="row">
 				  	<div class="col-md-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image93.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Mere smell of alcohol cannot be construed to mean that person is intoxicated,</p>
@@ -429,7 +429,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" height="170px" src="<?php echo base_url('assets/website/news_image/image94.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Air India sale, Tatas' EV arm keep deal street busy in October with USD 9.2 billion fund flows</p>
@@ -437,7 +437,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" height="170px" src="<?php echo base_url('assets/website/news_image/image95.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Omar Abdullah, Mehbooba Mufti demand impartial probe in Hyderpora encounterOmar Abdullah,</p>
@@ -445,7 +445,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image96.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -454,7 +454,7 @@
 				  	</div>
 
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image97.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Strategic Compass': EU sets dates for new military force</p>
@@ -462,7 +462,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image98.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Top EU court lashes Hungary over 'Stop Soros' migrant lawTop EU court lashes Hungary over 'Stop Soros'</p>
@@ -470,7 +470,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" height="170px" src="<?php echo base_url('assets/website/news_image/image99.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -478,7 +478,7 @@
 						</div>
 				  	</div>
 				  	<div class="col-md-3 mb-3">
-				  		<div class="card" style=" height: 20rem;">
+				  		<div class="card">
 						  <img class="card-img-top" src="<?php echo base_url('assets/website/news_image/image50.jpg');?>" alt="Card image cap">
 						  <div class="card-body">
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
