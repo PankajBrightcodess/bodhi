@@ -2,7 +2,7 @@
     <div class="row text-center " >
         <div class="col-md-12 mb-3" ></div>
         <div class="col-md-12 sub-news">
-        	<h4><?php echo $menu;?></h4>
+        	<h4><?php echo str_replace('%20', ' ', $menu);?></h4>
         	
         </div>
         <div class="col-md-12">

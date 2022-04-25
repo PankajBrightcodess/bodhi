@@ -1382,6 +1382,18 @@ class Account_model extends Slugs{
           }
       }
 
+      public function delete_submenu($id){
+        $this->db->where('id',$id);
+        $qry = $this->db->delete('submenu');
+        // echo $this->db->last_query();die;
+        if($qry==true){
+          return true;
+        }
+        else{
+          return false;
+        }
+      }
+
       public function delete_news($id){
         $this->db->where('id',$id);
         $qry = $this->db->delete('tmp_news');
