@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row text-center">
 		<div class="col-lg-12 mb-3">
-			<div class="#" >  <!-- style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); color: #E0B899;" -->
+			<div class="" >  <!-- style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); color: #E0B899;" -->
 				<div  class="row text-center">  
 			<div class="col-md-12 col-lg-12 col-sm-12">
 			   <marquee class="mar1">  <!-- id="marq" -->
