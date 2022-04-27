@@ -99,7 +99,7 @@
                             <li class="nav-item"><a href="<?php echo base_url('website/india/'. $val['id'].'/'.$val['menu_name'])?>" class="drop nav-link">
                                 <?php 
                                   if($val['menu_name']=='OPINION'){?>
-                                    <h5 class="hh5"><?= $val['menu_name'] ?></h5><?php
+                                    <h5 class="hh5" style="line-height: 14px!important;"><?= $val['menu_name'] ?></h5><?php
                                   }    
     
     

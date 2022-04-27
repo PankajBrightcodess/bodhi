@@ -26,12 +26,13 @@ body {
   color: #5c6771;
   font-weight: 300;
   -webkit-font-smoothing: antialiased !important; }
- .navbar .hh5{
-  font-size: 14px;
-  color: white;
-  background: #DBA442;
-  padding: 9px;
- }
+.navbar .hh5 {
+    font-size: 14px;
+    color: white;
+    background: #DBA442;
+    padding: 12px;
+    margin-bottom: 11px;
+}
   /* --------- SATYA CODE START ------------*/
   /*style for tab start in home page */
   /* Style the tab */
@@ -1501,10 +1502,10 @@ ul.social-icons {
   float: right;
 }
 .abcd .search .search-box{
-  margin-top: 15px;
+  margin-top: 43px;
 }
 .abcd .search .btn-toolbar{
-  margin-top: 15px;
+  margin-top:49px;
 }
 .abcd .main-heading span{
   color:#569EEA;
@@ -2621,8 +2622,8 @@ transition: opacity 300ms ease-out 0s;
     font-size: 14px;
     color: white;
     background: #DBA442;
-    padding: 9px;
-    margin-top: 8px;
+    padding: 12px;
+    margin-top: 6px;
 }
   #menu li .drop {
     padding-right: 0px;
