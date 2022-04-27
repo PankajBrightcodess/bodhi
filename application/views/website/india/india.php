@@ -56,7 +56,7 @@
 				  <div class="row">
 				  	 <?php $k=0; if(!empty($result)){
                       foreach($result as $val){ $k++; if($k >= 7){ ?>
-					  <div class="col-md-4 mb-3">
+					  <div class="col-md-3 mb-3">
 				  		<div class="card home-india">
 						  <a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;" class="img-hover"><img style="width:100%;" class="img-fluid" src="<?php echo base_url();?><?php echo $val['image'] ?>" alt="Card image cap"></a>
 						  
