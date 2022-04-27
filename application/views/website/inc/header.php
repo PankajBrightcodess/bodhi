@@ -66,7 +66,7 @@
                       </div>
                       <form method="post" action="<?php echo base_url('website/search')?>">
                        <div class="search-box btn-space ">
-                        <button type="submit" class="btn-search btn-space"><i class="fas fa-search"></i></button>
+                        <button type="button" class="btn-search btn-space"><i class="fas fa-search"></i></button>
                         <input type="text" class="input-search" name="search"  placeholder="Search BW...">
                       </div>
                       </form>
@@ -201,13 +201,13 @@
 </div>
 
 <div class="space"></div>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     $(document).ready(function() {
     $("#btn-search").click(function(){
   alert("The paragraph was clicked.");
 });
 });
-</script>
+</script> -->
 <script type="text/javascript">
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
