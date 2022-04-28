@@ -52,17 +52,14 @@
                      <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/bodhi_2.svg') ?>" class="img-fluid"></a>
                 </div>
                 
-                    <div class="col-1 col-md-3 col-lg-3 disnon">
-                        <!-- <a href="<?php echo base_url('/')?>"><h3>BODHI WIRE</h3>
-                        <h5 style="font-size:14px;">INTERNATIONAL NEWS AGENCY</h5></a>  -->
-                    </div>    
+                        
               
                 
-                <div class="col-5 col-md-6 mb-3 col-lg-6 search mx-auto">
+                <div class="col-6 col-md-7 mb-3 col-lg-7 search mx-auto">
                     <div class="input-group btn-group rounded" >
                         <div class="btn-toolbar">
-                          <a href="<?php echo base_url('website/signin')?>" class="btn btn-sm mr-2 btn-outline-dark " data-mdb-ripple-color="dark" style="float:right;margin-top:5px;">Sign In</a>
-                          <a href="<?php echo base_url('website/signup')?>" style="float:right;margin-top:5px;" class="btn mr-2 btn-sm btn-dark btn-space">Register</a>  
+                          <a href="<?php echo base_url('website/signin')?>" class="btn" data-mdb-ripple-color="dark"><span style="border:2px solid #23618a;padding: 3px;border-radius: 5px;">Sign In</span></a>
+                          <a href="<?php echo base_url('website/signup')?>"class="btn"><span style="border:2px solid #23618a;padding: 3px;border-radius: 5px;">Register</span></a>  
                       </div>
                       <form method="post" action="<?php echo base_url('website/search')?>">
                        <div class="search-box btn-space ">
