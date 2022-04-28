@@ -2635,7 +2635,7 @@ transition: opacity 300ms ease-out 0s;
     color: white;
     background: #DBA442;
     padding: 12px;
-    margin-top: 6px;
+    margin-top: 0px;
 }
   #menu li .drop {
     padding-right: 0px;
