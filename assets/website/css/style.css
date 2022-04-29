@@ -835,7 +835,7 @@ Projects
     height: 2px;
     bottom: 0;
     left: 90px;
-    background: red;
+    background: #69c9ff;
 }
 
 .footer .footer-link a {
@@ -852,7 +852,7 @@ Projects
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 6px;
-    color: red;
+    color: #69c9ff;
 }
 
 .footer .footer-link a:hover {
@@ -862,7 +862,7 @@ Projects
 
 .footer .footer-contact p i {
         width: 28px;
-    color: red;
+    color: #69c9ff;
 }
 
 .footer .footer-social {
