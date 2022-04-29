@@ -5,11 +5,11 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="footer-newsletter">
-                        <h2>Bodhiwire</h2>
+                        <h2>About Bodhi Wire</h2>
                         <p style="text-align:justify">Bodhi Wire, the media division of Vanman Communications, is a global multi-media news provider covering events that are shaping the world and affecting our daily lives. Bodhi Wire provides business, financial, national and international news to media organizations in several countries and directly to consumers.</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <div class="footer-link">
                         <h2>Quick Links</h2>
                         <a href="website">Home</a>
@@ -22,17 +22,17 @@
                 <div class="col-md-3">
                     <div class="footer-contact">
                         <h2>Our Address</h2>
-                        <p style="text-align:left;"><i class="fas fa-map-marker-alt"></i>Bodhi Wire
-                            c/o Vanman Communications Pvt Ltd
-                            D-202, Vaishnavi Hills, Waxpol Road,
-                            Booty More, Ranchi - 835217
-                            Jharkhand, India.
+                        <p style="text-align:left;"><i class="fas fa-map-marker-alt"></i>Bodhi Wire<br>
+                            <span class="ml-4">c/o Vanman Communications Pvt Ltd</span><br>
+                            <span class="ml-4">D-202, Vaishnavi Hills, Waxpol Road,</span><br>
+                            <span class="ml-4">Booty More, Ranchi - 835217</span><br>
+                            <span class="ml-4">Jharkhand, India</span>
                         </p>
                         <p style="text-align:left;"><i class="fas fa-phone"></i>+91-8969508881</p>
                         <p style="text-align:left;"><i class="fa fa-envelope"></i>office@bodhiwire.com</p>
                     </div>
                 </div>
-                <div class="col-md-3 footer-newsletter">
+                <div class="col-md-4 footer-newsletter">
                     <h2>Social Links</h2>
                     <div class="footer-social" style="margin-bottom: 10px;margin-left: 26px;">
                         <a href=""><i class="fa fa-twitter"></i></a>
@@ -55,10 +55,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>All Right Reserved,2021 <a href="#">Bodhiwire</a></p>        
+                    <p>All Right Reserved, 2021 <a href="#">Bodhi Wire</a></p>        
                 </div>
                 <div class="col-md-6">
-                    <p>Designed By <a href="https://www.brightcodess.com/website-designing-and-web-development.php">Brightcode Software Services Pvt Ltd.</a></p>        
+                    <p>Designed By <a href="https://www.brightcodess.com/website-designing-and-web-development.php">Brightcode Software Services Pvt Ltd</a></p>        
                 </div>
             </div>
             
