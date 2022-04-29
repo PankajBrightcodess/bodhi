@@ -54,8 +54,8 @@
                 
                         
               
-                
-                <div class="col-6 col-md-7 mb-3 col-lg-7 search mx-auto">
+                <div class="col-md-3 col-lg-5"></div>
+                <div class="col-12 col-md-6 mb-3 col-lg-4 search">
                     <div class="input-group btn-group rounded" >
                         <div class="btn-toolbar">
                           <a href="<?php echo base_url('website/signin')?>" class="btn" data-mdb-ripple-color="dark"><span style="border:2px solid #23618a;padding: 3px;border-radius: 5px;">Sign In</span></a>

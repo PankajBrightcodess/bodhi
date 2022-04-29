@@ -3,7 +3,7 @@
         <div class="col-md-12 mb-3" ></div>
         <div class="col-md-12 sub-news">
         	<h4> 
-        	<?= $menu ;?> | <?=$submenu ;?></h4>
+        	<?= $menu ;?> | <?= str_replace('%20', ' ', $submenu); ?></h4>
         	
         </div><div class="col-md-12">
         <hr style="color:black;">
@@ -30,7 +30,7 @@
 					 	      <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black;"><h2 class="card-title"><strong><?= $val['tittle'] ?></strong></h2></a>
 						  </div>
 						  <div class="col-md-12 slug-time">
-								<label><?php echo date('h:i A',strtotime($val['entrydate']));?></label>
+								<label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?></label>
 						        
 						  </div>
 						  <!-- <div class="col-md-12">
@@ -59,7 +59,7 @@
 				  			<div class="col-md-7 mb-3" style="text-align:justify;"><p><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;"><?= $val['tittle'] ?></a></p></div>
 				  			<div class="col-md-5 mb-3"><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;" class="img-hover"><img src="<?php echo base_url();?><?php echo $val['image'] ?>" class="img-fluid"></a></div>
 				  			<div class="col-md-12 slug-time">
-							    <label><?php echo date('h:i A',strtotime($val['entrydate']));?></label><hr style="color:black;">
+							    <label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?></label><hr style="color:black;">
 					     </div>
                              <?php } }}?>
 				  			
@@ -71,7 +71,7 @@
 					  <?php $k=0; if(!empty($result)){
                       foreach($result as $val){ $k++; if($k >= 6){ ?>
 					  <div class="col-md-4 col-lg-3 mb-3">
-				  		<div class="card  home-india">
+				  		<div class="card  home-india cardsec">
 						  <a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;" class="img-hover"><img class="card-img-top" src="<?php echo base_url();?><?php echo $val['image'] ?>" alt="Card image cap"></a>
 						  <div class="card-body">
 						  	<div class="row">
@@ -81,9 +81,16 @@
 							</div>
 							
 							<div class="col-md-12 text-slug">
-						    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;"><?= $val['tittle'] ?></a></p></div>
+						    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;">
+						    	
+						    		<?php echo substr(strip_tags($val['tittle']), 0, 100); 
+												if (strlen($val['tittle']) > 100) {
+                            				echo '...'; 
+                            			}
+                            	?>
+						    	</a></p></div>
 						    <div class="col-md-12 slug-time" style="margin-top:20px;">
-							  <label><?php echo date('h:i A',strtotime($val['entrydate']));?>
+							  <label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?>
 					        </label>
 					      </div>
 
