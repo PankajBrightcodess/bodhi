@@ -90,6 +90,124 @@
                 searchPlaceholder: "Search"
             },
         }); 
+        let editor;
+        ClassicEditor
+        .create(document.querySelector('#editor1'), {
+
+        })
+        .then(newEditor => {
+            editor = newEditor;
+            //console.log(editor.config._config.toolbar); 
+        }, editor => {
+            console.log(editor);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+
+        $('.hoverable').mouseenter(function(){
+            //$('[data-toggle="popover"]').popover();
+            $(this).popover('show');                    
+        }); 
+
+        $('.hoverable').mouseleave(function(){
+            $(this).popover('hide');
+        });
+
+        function convertToSlug(Text) {
+    return Text.toLowerCase()
+             .replace(/[^\w ]+/g, '')
+             .replace(/ +/g, '-');
+    }
+
+    $('.body').on('change','.menu_id',function(){
+    debugger;
+    var menu_id =$(this).val();
+    $.ajax({
+        type:"POST",
+        // url:"<?php echo base_url("home/get_submenulist");?>",
+        data:{menu_id :menu_id},
+        type:"json",
+        success:function(data){
+            alert(data);
+        }
+
+    });
+    });
+
+    $('.duplicate').click(function(){
+        var dupid = $(this).data('dupid');
+        $.ajax({
+            url:"<?php echo base_url('home/ajax_sidebar') ;?>",
+            method:"POST",
+            data:{dupid:dupid},
+            success:function(data){
+                //console.log(data);
+                var setdata = JSON.parse(data);
+                //console.log(setdata);
+                $('#activate_menu').val(setdata.activate_menu);
+                $('#activate_not').val(setdata.activate_not);
+                $('#base_url').val(setdata.base_url);
+                $('#icon').val(setdata.icon);
+                $('#parent_id').val(setdata.parent).trigger('change');
+                $('#position').val(setdata.position);
+                var role_text = setdata.role_id;                    
+                $('#roles').val(role_text);
+                $('#status').val(setdata.status);
+            }
+        });
+    });
+        
+    $('body').on('change','#parent_id',function(){
+        var parent_id=$(this).val();
+        var option="<select name='position' id='position' class='form-control' required>";
+        option+="<option value=''>Select </option>";
+        option+="<option value='0'>Top</option>";
+        $.ajax({
+            type:"POST",
+            url:"<?php echo base_url("home/getOrderList"); ?>",
+            data:{parent_id:parent_id},
+            dataType:"json",
+            beforeSend: function(){
+                //$(".box-overlay").show();
+            },
+            success: function(data){
+                $(data).each(function(i, val) {
+                    option+="<option value='"+val['position']+"'>After "+val['name']+"</option>";
+                });
+                option+='</select>';
+                $('#position').replaceWith(option);
+                $('.box-overlay').hide();
+            }
+        });
+    });
+    $('#parent_id').trigger('change');
+    });
+</script>
+
+    <script type="text/javascript">
+
+         function getsubmenulist(id){
+            // debugger;
+    $.ajax({
+            type:'POST',
+            url:"<?PHP echo base_url('home/get_submenulist'); ?>",
+            data: {id:id},
+            dataType: 'json',
+            success: function(result){
+                 $('.submenus').append('<option value="">---SELECT---</option>');
+             $.each(result,function(ind,val){
+                            $('.submenus').append('<option value="'+val.id+'">'+val.submenu+'</option>');
+                          });
+                          
+                },
+                // 
+                error: function(){
+                alert("error");
+                }
+        });
+        $('.submenus').html(''); 
+       } 
 
 
     $('.delete').click(function(e){
@@ -113,8 +231,28 @@
     return false;
     });
 
+     $('.published').click(function(e){
+        debugger;
+        var id=$(this).closest('tr').find('.published').val();
+        if(confirm('Are You Want To Change ?')){
+        $.ajax({
+                type:'GET',
+                url:"<?PHP echo base_url('home/published_news'); ?>",
+                data: {id:id},
+                success: function(result){
+                    // alert(result);
+                    console.log(result);
+                    location.reload();
+                    },
+                    error: function(){
+                    alert("error");
+                    }
+        });
+    }
+    return false;
+    });
 
-$('.updt').click(function(e){
+       $('.updt').click(function(e){
     var id = $(this).data('id');
     var menu_id = $(this).data('menu_id');
     var submenu_id = $(this).data('submenu_id');
@@ -135,7 +273,21 @@ $('.updt').click(function(e){
     $('#image').val(image);
     $('#img_caption').val(img_caption);
     $('#topnews').val(topnews);
-});
+
+  
+
+    
+})
        $('#amount').hide();
     $('#amtlable').hide();
+
+ $('#pay').click(function(e){
+    debugger;
+    $('#amount').show();
+    $('#amtlable').show();
+});
+
+
+
+
     </script>  
