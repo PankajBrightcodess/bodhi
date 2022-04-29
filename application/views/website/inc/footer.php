@@ -6,7 +6,7 @@
                 <div class="col-md-3">
                     <div class="footer-newsletter">
                         <h2>Bodhiwire</h2>
-                        <p style="text-align:justify">An online newspaper (or electronic news or electronic news publication) is the online version of a newspaper, either as a stand-alone publication or as the online version of a printed periodical.</p>
+                        <p style="text-align:justify">Bodhi Wire, the media division of Vanman Communications, is a global multi-media news provider covering events that are shaping the world and affecting our daily lives. Bodhi Wire provides business, financial, national and international news to media organizations in several countries and directly to consumers.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -22,9 +22,14 @@
                 <div class="col-md-3">
                     <div class="footer-contact">
                         <h2>Our Address</h2>
-                        <p><i class="fas fa-map-marker-alt"></i>Bodhiwire, Near Bank Of India, Tagore Hill Road, Morabadi, Ranchi.</p>
-                        <p><i class="fas fa-phone"></i>+91-9977869876</p>
-                        <p><i class="fa fa-envelope"></i>bodhiwire@gmail.com</p>
+                        <p style="text-align:left;"><i class="fas fa-map-marker-alt"></i>Bodhi Wire
+                            c/o Vanman Communications Pvt Ltd
+                            D-202, Vaishnavi Hills, Waxpol Road,
+                            Booty More, Ranchi - 835217
+                            Jharkhand, India.
+                        </p>
+                        <p style="text-align:left;"><i class="fas fa-phone"></i>+91-8969508881</p>
+                        <p style="text-align:left;"><i class="fa fa-envelope"></i>office@bodhiwire.com</p>
                     </div>
                 </div>
                 <div class="col-md-3 footer-newsletter">

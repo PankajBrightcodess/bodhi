@@ -7,7 +7,7 @@
                     	<h3 class="card-title"><?php echo $title; ?></h3>
                     </div> -->
                     <!-- /.card-header -->
-                    <div class="card-body" sty>
+                    <div class="card-body">
                     <div class="row ">
                         	<div class="col-md-12 col-lg-12">
                                 <?php echo form_open_multipart('home/savenews');?>
@@ -121,7 +121,7 @@
             <div class="form-group row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
-                    <?php echo form_submit(array('name'=>'save_news','id'=>'save_cat','value'=>'Upload News','class'=>'form-control btn btn-success'));?>
+                    <?php echo form_submit(array('name'=>'save_news','id'=>'save_cat','value'=>'Add News','class'=>'form-control btn btn-success'));?>
                 </div>
                 <div class="col-md-4"></div>                                    
                 </div>

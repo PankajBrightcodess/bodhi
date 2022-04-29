@@ -843,6 +843,7 @@ Projects
     margin-bottom: 10px;
     color: #fff;
     transition: .3s;
+    text-align: center;
 }
 
 .footer .footer-link a::before {
@@ -2520,6 +2521,12 @@ transition: opacity 300ms ease-out 0s;
 
 /*-------------------------------------------------- RESPONSIVE START ---------------------------------------------------------- */
 @media (max-width: 2560px) {
+  .input-search:focus{
+    width: 210px;
+  }
+  .btn-search:focus ~ .input-search{
+    width: 210px;
+  }
     .abcd .search .search-box {
     margin-top: 44px;
 }
@@ -2532,11 +2539,17 @@ transition: opacity 300ms ease-out 0s;
     text-align: center;
     margin-top: 9px;
     padding-right: 0px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 } 
 
 }
 @media (max-width: 1560px) {
+  .input-search:focus{
+    width: 210px;
+  }
+  .btn-search:focus ~ .input-search{
+    width: 210px;
+  }
   .col_1 {width:130px; padding-left: 30px;}
   .col_2 {width:270px;}
   .col_3 {width:410px;}
@@ -2559,7 +2572,7 @@ transition: opacity 300ms ease-out 0s;
     pointer-events: painted;  
   }
   .btn-search:focus ~ .input-search{
-    width: 220px;
+    width: 160px;
     border-radius: 0px;
     background-color: #DBE1E4;
     border-radius: 25px;
@@ -2568,7 +2581,7 @@ transition: opacity 300ms ease-out 0s;
     /*cubic-bezier(0, 0.110, 0.35, 2)*/
   }
   .input-search:focus{
-    width: 220px;
+    width: 160px;
     border-radius: 0px;
     background-color: #DBE1E4;
     color: black;
@@ -2576,12 +2589,13 @@ transition: opacity 300ms ease-out 0s;
     transition: all 600ms cubic-bezier(.33,.34,.33,.35);
   }
 }
+
 @media (min-width: 1440px) {
-  .input-search:focus{
-    width: 215px;
+.input-search:focus{
+    width: 140px;
   }
   .btn-search:focus ~ .input-search{
-    width: 215px;
+    width: 140px;
   }
   .abcd .logo img {
     /* height: 69%; */
@@ -2598,6 +2612,14 @@ transition: opacity 300ms ease-out 0s;
   }
   .cardsec{
     height: 415px;
+  }
+}
+@media(max-width:  1440px){
+  .input-search:focus{
+    width: 140px;
+  }
+  .btn-search:focus ~ .input-search{
+    width: 140px;
   }
 }
 /*@media (max-width: 1024px) {
@@ -2698,7 +2720,7 @@ transition: opacity 300ms ease-out 0s;
     pointer-events: painted;  
   }
   .btn-search:focus ~ .input-search{
-    width: 250px;
+    width:1400px;
     border-radius: 0px;
     background-color: #DBE1E4;
     border-radius: 25px;
@@ -2706,7 +2728,7 @@ transition: opacity 300ms ease-out 0s;
     transition: all 600ms cubic-bezier(.33,.34,.33,.35);
   }
   .input-search:focus{
-    width: 250px;
+    width:1400px;
     border-radius: 0px;
     background-color: #DBE1E4;
     color: black;
@@ -2724,12 +2746,24 @@ transition: opacity 300ms ease-out 0s;
   }
 }
 @media (max-width: 992px) {
+  .input-search:focus{
+    width: 100px;
+  }
+  .btn-search:focus ~ .input-search{
+    width: 100px;
+  }
   .alert-validate::before {
     visibility: visible;
     opacity: 1
   }
 }
 @media screen and (max-width: 920px) {
+  .input-search:focus{
+    width: 140px;
+  }
+  .btn-search:focus ~ .input-search{
+    width: 140px;
+  }
   #st-2{
     hide: true;
     top: 400px;
@@ -3128,10 +3162,10 @@ transition: opacity 300ms ease-out 0s;
 }
 @media (max-width: 320px){
   .input-search:focus{
-    width: 120px;
+    width: 110px;
   }
   .btn-search:focus ~ .input-search{
-    width: 120px;
+    width: 110px;
   }
   .abcd .main-heading h5 {
     /* font-family: 'Abel', sans-serif; */

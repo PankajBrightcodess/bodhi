@@ -138,7 +138,7 @@
     				</h2>
     				<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       				<div class="accordion-body" style="border:1px solid #69c9ff">
-        				<p>The founding premise of The Wire is this: if good journalism is to survive and thrive, it can only do so by being both editorially and financially independent.This means relying principally on contributions from readers and concerned citizens who have no interest other than to sustain a space for quality journalism. For any query or help write to us at <u>bodhiwire@gmail.com</u>
+        				<p>Support Bodhi Wire with one time or regular contributions to protect independent journalism in the interest of society and the world at large. Contributions from responsible readers like you enable us in covering the world events following the highest standards of journalism. Write to us at office@bodhiwire.com</u>
   			    		<p style="font-weight: 700;">I would like to contribute.</p>
   			    		<div class="row justify-content-center">
   			    			<div class="col-md-4">
@@ -152,13 +152,13 @@
   			    			</div>
   			    			<p style="font-weight: 700;">Select Amount</p>
   			    			<div class="col-md-3">
-  			    				<p class="btn btn-transparent btn-block" style="background:#e7f1ff;">₹200</p>
+  			    				<p class="btn btn-transparent btn-block" style="background:#e7f1ff;">₹100</p>
+  			    			</div>
+  			    			<div class="col-md-3">
+  			    				<p class="btn btn-transparent btn-block" style="background:#e7f1ff;">₹500</p>
   			    			</div>
   			    			<div class="col-md-3">
   			    				<p class="btn btn-transparent btn-block" style="background:#e7f1ff;">₹1000</p>
-  			    			</div>
-  			    			<div class="col-md-3">
-  			    				<p class="btn btn-transparent btn-block" style="background:#e7f1ff;">₹2400</p>
   			    			</div>
   			    			<div class="col-md-3">
   			    				<input type="" name="" placeholder="Enter Your Amount"class="form-control">

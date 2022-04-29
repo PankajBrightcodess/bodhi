@@ -178,6 +178,19 @@ class Home extends CI_Controller {
 		}
 		redirect('home/createsubmenu');
 	}
+
+	public function publish_news(){
+		$data['title']="Published News";
+		$data['datatable']=true;
+		$data['result']=$this->Account_model->get_publishednews(array('published'=>'1','status'=>'0'));
+		$this->template->load('pages/admin','published_news',$data);
+	}
+	public function desk_basket(){
+		$data['title']="Un-Published News";
+		$data['datatable']=true;
+		$data['result']=$this->Account_model->get_publishednews(array('published'=>'0','status'=>'0'));
+		$this->template->load('pages/admin','unpublished_news',$data);
+	}
 	public function addnews(){
 		
 		$data['title'] = "Add news";
