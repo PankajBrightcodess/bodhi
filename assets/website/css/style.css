@@ -2667,10 +2667,12 @@ transition: opacity 300ms ease-out 0s;
     height: 305px;
   }
   .topnews1{
-    height: 880px;
+    /*height: 880px;*/
+    height: 1336px;
   }
   .top-news .topnews2{
-    height: 880px;
+    /*height: 880px;*/
+    height: 1336px;
   }
 }
 /*@media (max-width: 1024px) {
