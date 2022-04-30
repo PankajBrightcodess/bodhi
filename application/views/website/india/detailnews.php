@@ -214,7 +214,7 @@
       				<div class="accordion-body" style="border:1px solid #69c9ff">
         				<div class="row">
         					<div class="col-md-6">
-  			    				<p>Thank you for supporting us with ₹2400.</p>
+  			    				<p>Thank you for supporting us with ₹1000.</p>
   			    				<p>This amount will be charged once from your payment method. Your invoice will be sent to info@bodhiwire.com.</p>
   			    			</div>
   			    			<div class="col-md-6">
