@@ -2658,7 +2658,8 @@ transition: opacity 300ms ease-out 0s;
     margin-bottom: -62px;
   }
   .top-news .main-topnews{
-    height: 1259px;
+    /*height: 1259px;*/
+    height: 1336px;
   }
   .recent-news{
     height: 1259px;
@@ -2667,12 +2668,10 @@ transition: opacity 300ms ease-out 0s;
     height: 305px;
   }
   .topnews1{
-    /*height: 880px;*/
-    height: 1336px;
+    height: 880px;
   }
   .top-news .topnews2{
-    /*height: 880px;*/
-    height: 1336px;
+    height: 880px;
   }
 }
 /*@media (max-width: 1024px) {
