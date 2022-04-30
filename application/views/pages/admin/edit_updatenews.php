@@ -108,7 +108,7 @@
 
 
                                  <div class="form-group row">
-                                    <div class="col-sm-12 col-md-12 mb-2">
+                                    <div class="col-sm-12 col-md-2 mb-2">
                                     <lable style="font-size: 15px; font-weight:600">Top News :</lable>
                                     <?php 
                                         if($result['top_news_status']==0){
@@ -119,6 +119,25 @@
                                     elseif($result['top_news_status']==1){
                                         ?>
                                             <?php echo form_input(array('type'=>'checkbox','name'=>'top_news_status','id'=>'activate_not','value'=>'1','checked'=>'true'));?>
+                                            <?php
+                                        }
+
+
+
+                                    ?>
+                                        
+                                    </div>   
+                                    <div class="col-sm-12 col-md-2 mb-2">
+                                    <lable style="font-size: 15px; font-weight:600">Big News :</lable>
+                                    <?php 
+                                        if($result['big_news_status']==0){
+                                            ?>
+                                            <?php echo form_input(array('type'=>'checkbox','name'=>'big_news_status','id'=>'activate_not','value'=>'0'));?>
+                                            <?php
+                                        }
+                                    elseif($result['big_news_status']==1){
+                                        ?>
+                                            <?php echo form_input(array('type'=>'checkbox','name'=>'big_news_status','id'=>'activate_not','value'=>'1','checked'=>'true'));?>
                                             <?php
                                         }
 

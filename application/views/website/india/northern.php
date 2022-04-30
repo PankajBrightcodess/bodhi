@@ -18,8 +18,10 @@
 				<!--   <h3>Economy</h3> -->
 				  <div class="row top-news topnews1">
 				  	<div class="col-md-7 main-topnews topnews2" >
-					  <?php $j=0; if(!empty($result)){                  
-                         foreach($result as $val){  $j++;if($j==1){?>
+					  <?php $j=0; if(!empty($result)){      $jcount=0;            
+                         foreach($result as $val){ $j++;if($val['big_news_status'] == 1){ $jcount++;
+                         		if($jcount==1){
+                          ?>
 				  		<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black;" class="img-hover"><img src="<?php echo base_url();?><?php echo $val['image'] ?>" style="margin-top: 10px;" class="img-fluid"></a><hr>
 				  		<div class="col-md-12 slug">
 							<label><?php if(!empty($val['submenu'])){
@@ -51,14 +53,15 @@
 								    </ul>
 								</div> 
 						</div> -->
-				  	<?php }} }?>
+				  	<?php }} }}?>
 					</div>
 				  	<div class="col-md-5">
 				  		<div class="text-center other-topnews">
 				  		<div class="row">
 						  <?php if(!empty($result)){
                               $i=0;
-                              foreach($result as $val){ $i++;if($i>1 && $i<6){ ?>
+                              foreach($result as $val){ $i++;if(($i<6) && ($val['big_news_status'] != 1)){ 
+                              	?>
                       <div class="col-md-12">
 													<label style="float:left; color: #5E6563; font-weight: 500; font-size:10px; margin-top: 3px;"><?php if(!empty($val['submenu'])){
 												echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?></label>

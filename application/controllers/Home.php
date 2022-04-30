@@ -339,7 +339,7 @@ class Home extends CI_Controller {
 
 	public function updatenews(){
 		$data=$this->input->post();
-		echo PRE;
+		// echo PRE;
 		
 		
 		if($_FILES['image']['size']!=0){

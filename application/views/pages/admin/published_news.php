@@ -23,6 +23,7 @@
                                                 <th>IMAGE</th>   
                                                 <th width="20%">TITTLE</th>  
                                                 <th>By Line</th>
+                                                <th>News Type</th>
                                                 <!-- <th>SLUG</th>  -->
                                                 <th>Published</th>                                         
                                                 <th>Action</th>                                            
@@ -40,7 +41,18 @@
                                                 <!-- <td ><= $val['submenu_id']?></td> -->
                                                 <td><img src="<?php echo file_url($val['image']); ?>" alt="Image" class="img-thumbnail" alt="Responsive image"></td>
                                                 <td width="20%"><?= $val['tittle']?></td>
-                                                
+                                                <td>
+                                                    <?php if($val['top_news_status'] == '1'){
+                                                        echo "Top News";
+                                                    }elseif($val['big_news_status'] == '1'){
+                                                        echo "Big News";
+                                                    }elseif(($val['top_news_status'] == '1') && ($val['big_news_status'] == '1')){
+                                                            echo "Top & Big News";
+                                                    }else{
+                                                        echo "News";
+                                                    }
+                                                    ?>
+                                                </td>
                                                 <!-- <td ><?= $val['slug']?></td> -->
                                                 <td ><?= $val['byline']?></td>
                                                 <td style="text-align: center;"> <?php

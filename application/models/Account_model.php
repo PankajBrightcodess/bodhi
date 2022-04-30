@@ -1099,6 +1099,9 @@ class Account_model extends Slugs{
         if(!empty($data['top_news_status'])){
           $final['top_news_status']=$data['top_news_status'];
         }
+        if(!empty($data['big_news_status'])){
+          $final['big_news_status']=$data['big_news_status'];
+        }
         if(!empty($data['chargestatus'])){
           $final['chargestatus']=$data['chargestatus'];
         }
@@ -1152,6 +1155,7 @@ class Account_model extends Slugs{
         if(!empty($data['top_news_status'])){
           $final['top_news_status']=$data['top_news_status'];
         }
+        $final['big_news_status']=$data['big_news_status'];
                $this->db->where('id',$id);
         $qry = $this->db->update('tmp_news',$final);
         if($qry==true){

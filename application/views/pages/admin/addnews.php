@@ -99,17 +99,26 @@
 
 
                                  <div class="form-group row">
-                                    <div class="col-sm-12 col-md-12 mb-2">
+                                    <div class="col-sm-12 col-md-4 mb-2">
                                         <lable style="font-size: 15px; font-weight:600">Top News :</lable>
                                         <?php echo form_input(array('type'=>'checkbox','name'=>'top_news_status','id'=>'activate_not','value'=>'1'));?>
-                                    </div>                                    
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-sm-12 col-md-12 mb-2">
+                                    </div> 
+                                    <div class="col-sm-12 col-md-4 mb-2">
+                                        <lable style="font-size: 15px; font-weight:600">Big News :</lable>
+                                        <?php echo form_input(array('type'=>'checkbox','name'=>'big_news_status','id'=>'activate_not','value'=>'1'));?>
+                                    </div>     
+                                    <div class="col-sm-12 col-md-4 mb-2">
                                       <lable style="font-size: 15px; font-weight:600">Chargable :</lable>
                                       <input type="checkbox" name="chargestatus" id="pay" onchange="" value="1">
 
-                                    </div>   
+                                    </div>                               
+                                </div>
+                                <div class="form-group row">
+                                    <!-- <div class="col-sm-12 col-md-12 mb-2">
+                                      <lable style="font-size: 15px; font-weight:600">Chargable :</lable>
+                                      <input type="checkbox" name="chargestatus" id="pay" onchange="" value="1">
+
+                                    </div>  -->  
                                     <div class="col-sm-12 col-md-12 mb-2" >
                                       <lable style="font-size: 15px; font-weight:600" id="amtlable">Amount :</lable>
                                       <input type="text" name="payment" class="form-control" id="amount">
@@ -424,8 +433,8 @@
 
  $('#pay').click(function(e){
     debugger;
-    $('#amount').show();
-    $('#amtlable').show();
+    $('#amount').toggle();
+    $('#amtlable').toggle();
 });
 
 
