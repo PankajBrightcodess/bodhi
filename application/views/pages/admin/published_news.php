@@ -41,6 +41,8 @@
                                                 <!-- <td ><= $val['submenu_id']?></td> -->
                                                 <td><img src="<?php echo file_url($val['image']); ?>" alt="Image" class="img-thumbnail" alt="Responsive image"></td>
                                                 <td width="20%"><?= $val['tittle']?></td>
+                                                <!-- <td ><?= $val['slug']?></td> -->
+                                                <td ><?= $val['byline']?></td>
                                                 <td>
                                                     <?php if($val['top_news_status'] == '1'){
                                                         echo "Top News";
@@ -53,8 +55,6 @@
                                                     }
                                                     ?>
                                                 </td>
-                                                <!-- <td ><?= $val['slug']?></td> -->
-                                                <td ><?= $val['byline']?></td>
                                                 <td style="text-align: center;"> <?php
                                                         if($val['published']==1){
                                                             ?><button class="btn btn-info btn-xs published" value="<?php echo $val['id'];?>"><i class="fa fa-check"></i></button><?php
