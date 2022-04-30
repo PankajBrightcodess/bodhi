@@ -21,7 +21,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="footer-contact">
-                        <h2>Our Address</h2>
+                        <h2>Address</h2>
                         <p style="text-align:left;"><i class="fas fa-map-marker-alt"></i>Bodhi Wire<br>
                             <span class="ml-4">c/o Vanman Communications Pvt Ltd</span><br>
                             <span class="ml-4">D-202, Vaishnavi Hills, Waxpol Road,</span><br>
