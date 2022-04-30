@@ -6,7 +6,7 @@
                 <div class="col-md-3">
                     <div class="footer-newsletter">
                         <h2>About Bodhi Wire</h2>
-                        <p style="text-align:justify">Bodhi Wire, the media division of Vanman Communications, is a global multi-media news provider covering events that are shaping the world and affecting our daily lives. Bodhi Wire provides business, financial, national and international news to media organizations in several countries and directly to consumers.</p>
+                        <p style="text-align:left;">Bodhi Wire, the media division of Vanman Communications, is a multimedia news agency covering important events that are happening around the world. Bodhi Wire provides general and business news online to media organizations and consumers across the world.</p>
                     </div>
                 </div>
                 <div class="col-md-2">
@@ -19,7 +19,7 @@
                         <a href="website">Europe</a>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="footer-contact">
                         <h2>Our Address</h2>
                         <p style="text-align:left;"><i class="fas fa-map-marker-alt"></i>Bodhi Wire<br>
@@ -32,8 +32,8 @@
                         <p style="text-align:left;"><i class="fa fa-envelope"></i>office@bodhiwire.com</p>
                     </div>
                 </div>
-                <div class="col-md-4 footer-newsletter">
-                    <h2>Social Links</h2>
+                <div class="col-md-3 footer-newsletter">
+                    <h2>Social Media Links</h2>
                     <div class="footer-social" style="margin-bottom: 10px;margin-left: 26px;">
                         <a href=""><i class="fa fa-twitter"></i></a>
                         <a href=""><i class="fa fa-facebook-f"></i></a>
