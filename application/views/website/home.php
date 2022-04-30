@@ -222,7 +222,9 @@
 								        </label> 
 								</div> -->
 								<div class="col-md-12">
-								  <hr style="color:black;">
+									<?php if($i!=12){ ?>
+								  		<hr style="color:black;">
+								  <?php } ?>
 							  </div>
 				<?php }
 					}

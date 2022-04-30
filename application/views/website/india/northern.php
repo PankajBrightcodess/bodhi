@@ -75,7 +75,8 @@
 				  				</a></p></div>
 				  			<div class="col-md-5 mb-3"><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;" class="img-hover"><img src="<?php echo base_url();?><?php echo $val['image'] ?>" class="img-fluid"></a></div>
 				  			<div class="col-md-12 slug-time">
-							    <label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?></label><hr style="color:black;">
+							    <label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?></label><?php if($i!=4){ ?><hr style="color:black;">
+							    <?php } ?>
 					     </div>
                              <?php } } }}?>
 				  			
