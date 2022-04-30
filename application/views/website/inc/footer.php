@@ -19,7 +19,7 @@
                         <a href="website">Europe</a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <!-- <div class="col-md-4">
                     <div class="footer-contact">
                         <h2>Address</h2>
                         <p style="text-align:left;"><i class="fas fa-map-marker-alt"></i>Bodhi Wire<br>
@@ -31,19 +31,27 @@
                         <p style="text-align:left;"><i class="fas fa-phone"></i>+91-8969508881</p>
                         <p style="text-align:left;"><i class="fa fa-envelope"></i>office@bodhiwire.com</p>
                     </div>
-                </div>
-                <div class="col-md-3 footer-newsletter">
+                </div> -->
+                <div class="col-md-4 footer-newsletter">
                     <h2>Social Media Links</h2>
-                    <div class="footer-social" style="margin-bottom: 10px;margin-left: 26px;">
-                        <a href=""><i class="fa fa-twitter"></i></a>
-                        <a href=""><i class="fa fa-facebook-f"></i></a>
-                        <a href=""><i class="fa fa-youtube"></i></a>
-                        <a href=""><i class="fa fa-instagram"></i></a>
-                        <a href=""><i class="fa fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="form">
-                        <input class="form-control" placeholder="Email goes here">
-                        <button class="btn custom-btn" style="background:#69c9ff;border: 2px solid #69c9ff;">Submit</button>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p style="font-size: 16px;font-weight: bold;">Contact Us</p>
+                            <p style="text-align:left;" class="mb-0"><i class="fa fa-envelope"></i>office@bodhiwire.com</p>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="footer-social" style="margin-bottom: 10px;">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook-f"></i></a>
+                                <a href=""><i class="fa fa-youtube"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <input class="form-control" placeholder="Email goes here">
+                            <button class="btn custom-btn" style="background:#69c9ff;border: 2px solid #69c9ff;">Submit</button>
+                        </div>
                     </div>
                 </div>
                 
