@@ -6,7 +6,7 @@
                 <div class="col-md-3">
                     <div class="footer-newsletter">
                         <h2>About Bodhi Wire</h2>
-                        <p style="text-align:left;">Bodhi Wire, the media division of Vanman Communications, is a multimedia news agency covering important events that are happening around the world. Bodhi Wire provides general and business news online to media organizations and consumers across the world.</p>
+                        <p style="text-align:left;">Bodhi Wire, the media division of Vanman Communications, is a multimedia news agency covering important events happening around the world. Bodhi Wire provides general and business news globally to media organizations and consumers.</p>
                     </div>
                 </div>
                 <div class="col-md-2">
@@ -19,43 +19,26 @@
                         <a href="website">Europe</a>
                     </div>
                 </div>
-                <!-- <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="footer-contact">
-                        <h2>Address</h2>
-                        <p style="text-align:left;"><i class="fas fa-map-marker-alt"></i>Bodhi Wire<br>
-                            <span class="ml-4">c/o Vanman Communications Pvt Ltd</span><br>
-                            <span class="ml-4">D-202, Vaishnavi Hills, Waxpol Road,</span><br>
-                            <span class="ml-4">Booty More, Ranchi - 835217</span><br>
-                            <span class="ml-4">Jharkhand, India</span>
-                        </p>
-                        <p style="text-align:left;"><i class="fas fa-phone"></i>+91-8969508881</p>
+                        <h2>Contact Us</h2>
                         <p style="text-align:left;"><i class="fa fa-envelope"></i>office@bodhiwire.com</p>
                     </div>
-                </div> -->
+                </div>
                 <div class="col-md-4 footer-newsletter">
                     <h2>Social Media Links</h2>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p style="font-size: 16px;font-weight: bold;">Contact Us</p>
-                            <p style="text-align:left;" class="mb-0"><i class="fa fa-envelope"></i>office@bodhiwire.com</p>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="footer-social" style="margin-bottom: 10px;">
-                                <a href=""><i class="fa fa-twitter"></i></a>
-                                <a href=""><i class="fa fa-facebook-f"></i></a>
-                                <a href=""><i class="fa fa-youtube"></i></a>
-                                <a href=""><i class="fa fa-instagram"></i></a>
-                                <a href=""><i class="fa fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <div class="form">
-                            <input class="form-control" placeholder="Email goes here">
-                            <button class="btn custom-btn" style="background:#69c9ff;border: 2px solid #69c9ff;">Submit</button>
-                        </div>
+                    <div class="footer-social" style="margin-bottom: 10px;">
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-facebook-f"></i></a>
+                        <a href=""><i class="fa fa-youtube"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="form">
+                        <input class="form-control" placeholder="Email goes here">
+                        <button class="btn custom-btn" style="background:#69c9ff;border: 2px solid #69c9ff;">Submit</button>
                     </div>
                 </div>
-                
-                
             </div>
         </div>
     </div>

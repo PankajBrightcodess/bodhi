@@ -1110,6 +1110,7 @@ class Account_model extends Slugs{
         }
 				$qry = $this->db->insert('news',$final);
 				if($qry==true){
+          $this->db->update('news',array('big_news_status'=>'0'),array('menu_id'=>$final['menu_id'],'submenu_id'=>$final['submenu_id'],'published'=>'0'));
 					return true;
 				}
 				else{
@@ -1155,7 +1156,6 @@ class Account_model extends Slugs{
         if(!empty($data['top_news_status'])){
           $final['top_news_status']=$data['top_news_status'];
         }
-        $final['big_news_status']=$data['big_news_status'];
                $this->db->where('id',$id);
         $qry = $this->db->update('tmp_news',$final);
         if($qry==true){

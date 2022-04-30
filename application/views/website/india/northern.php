@@ -18,9 +18,8 @@
 				<!--   <h3>Economy</h3> -->
 				  <div class="row top-news topnews1">
 				  	<div class="col-md-7 main-topnews topnews2" >
-					  <?php $j=0; if(!empty($result)){      $jcount=0;            
-                         foreach($result as $val){ $j++;if($val['big_news_status'] == 1){ $jcount++;
-                         		if($jcount==1){
+					  <?php $j=0; if(!empty($result)){             
+                         foreach($result as $val){ $j++;if($val['big_news_status'] == 1){ 
                           ?>
 				  		<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black;" class="img-hover"><img src="<?php echo base_url();?><?php echo $val['image'] ?>" style="margin-top: 10px;" class="img-fluid"></a><hr>
 				  		<div class="col-md-12 slug">
@@ -53,14 +52,15 @@
 								    </ul>
 								</div> 
 						</div> -->
-				  	<?php }} }}?>
+				  	<?php }} }?>
 					</div>
 				  	<div class="col-md-5">
 				  		<div class="text-center other-topnews">
 				  		<div class="row">
 						  <?php if(!empty($result)){
                               $i=0;
-                              foreach($result as $val){ $i++;if(($i<6) && ($val['big_news_status'] != 1)){ 
+                              foreach($result as $val){ if($val['big_news_status'] != 1){ 
+																$i++;if($i>=1 && $i<5){
                               	?>
                       <div class="col-md-12">
 													<label style="float:left; color: #5E6563; font-weight: 500; font-size:10px; margin-top: 3px;"><?php if(!empty($val['submenu'])){
@@ -77,7 +77,7 @@
 				  			<div class="col-md-12 slug-time">
 							    <label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?></label><hr style="color:black;">
 					     </div>
-                             <?php } }}?>
+                             <?php } } }}?>
 				  			
 				  	   </div>
 				  	 </div>
@@ -85,7 +85,7 @@
 				  </div><hr>
 				  <div class="row">
 					  <?php $k=0; if(!empty($result)){
-                      foreach($result as $val){ $k++; if($k >= 6){ ?>
+                      foreach($result as $val){ $k++; if($k >= 5){ ?>
 					  <div class="col-md-4 col-lg-3 mb-3">
 				  		<div class="card  home-india cardsec">
 						  <a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;" class="img-hover"><img class="card-img-top" src="<?php echo base_url();?><?php echo $val['image'] ?>" alt="Card image cap"></a>

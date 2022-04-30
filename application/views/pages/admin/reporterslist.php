@@ -14,11 +14,11 @@
                                     <thead>
                                         <tr>    
                                             <th>S.no</th>
-                                            <th>User Name</th>
+                                            <!-- <th>User Name</th> -->
                                             <th>Name</th>   
                                             <th>Mobile No</th>   
                                             <th>Email</th>                                            
-                                            <th>Password</th>                                            
+                                            <th>Address</th>                                            
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -26,12 +26,12 @@
                                          if(!empty($result)){
                                             foreach($result as $val){$i++; $id=$val['id']; ?>
                                         <tr>
-                                            <td ><?php echo $i ?></td>
-                                            <td ><?php echo $val['username'] ?></td>
-                                            <td ><?php echo $val['name'] ?></td>
-                                            <td ><?php echo $val['mobile'] ?></td>
-                                            <td ><?php echo $val['email'] ?></td>
-                                            <td ><?php echo $val['vp'] ?></td>
+                                            <td ><?php echo $i; ?></td>
+                                            <!-- <td ><?php //echo $val['username']; ?></td> -->
+                                            <td ><?php echo $val['name']; ?></td>
+                                            <td ><?php echo $val['mobile']; ?></td>
+                                            <td ><?php echo $val['email']; ?></td>
+                                            <td ><?php echo "Ranchi"; ?></td>
                                             <!-- 
                                             <td><span class="float-right">
                                             <button class="btn btn-danger btn-xs delete" value="<?php echo $val['id'];?>"><i class="fa fa-trash"></i></button> 

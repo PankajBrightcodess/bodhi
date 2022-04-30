@@ -46,7 +46,7 @@
 <!-- ////////////////////////////////////////share//////////////////////////////////////////////// -->
 
     <div class="top-bar abcd" id="navbar" style="position: fixed;transition: top 1s; z-index: 9999;"> 
-        <div class="container">
+        <div class="container logcontainer">
             <div class="row">
                 <div class="col-6 col-md-3 col-lg-3 logo ">
                      <a href="<?php echo base_url('/')?>"><img src="<?php echo base_url('assets/images/bodhi_2.svg') ?>" class="img-fluid"></a>

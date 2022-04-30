@@ -35,12 +35,12 @@
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 col-md-6 mb-2">
-                                        <lable style="font-size: 15px; font-weight:600">Tittle</lable>
-                                        <?php echo form_input(array('type'=>'text','name'=>'tittle','id'=>'activate_not','class'=>'form-control','placeholder'=>'News Tittle','required'=>'required'));?>
+                                        <lable style="font-size: 15px; font-weight:600">News Headline</lable>
+                                        <?php echo form_input(array('type'=>'text','name'=>'tittle','id'=>'activate_not','class'=>'form-control','placeholder'=>'News Headline','required'=>'required'));?>
                                     </div>                                    
                                     <div class="col-sm-6 col-md-6 mb-2">
-                                        <lable style="font-size: 15px; font-weight:600">By Line</lable>
-                                        <?php echo form_input(array('type'=>'text','name'=>'byline','id'=>'activate_not','class'=>'form-control','placeholder'=>'By Line'));?>
+                                        <lable style="font-size: 15px; font-weight:600">Byline</lable>
+                                        <?php echo form_input(array('type'=>'text','name'=>'byline','id'=>'activate_not','class'=>'form-control','placeholder'=>'Byline'));?>
                                     </div> 
                                 </div>
                                  
@@ -60,20 +60,20 @@
                                 <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
                                         <lable style="font-size: 15px; font-weight:600">News Image</lable><span style="color:red;"> (Width: 1024px, Height: 682px)</span>
-                                        <?php echo form_input(array('type'=>'file','name'=>'image','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Image','required'=>'required'));?>
+                                        <?php echo form_input(array('type'=>'file','name'=>'image','id'=>'activate_not','class'=>'form-control','placeholder'=>'Choose News Image','required'=>'required'));?>
                                     </div>                                    
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
                                         <lable style="font-size: 15px; font-weight:600">Vertical Image</lable><span style="color:red;"> (width: 300px, Height: 600px)</span>
-                                        <?php echo form_input(array('type'=>'file','name'=>'other_image','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Other Image'));?>
+                                        <?php echo form_input(array('type'=>'file','name'=>'other_image','id'=>'activate_not','class'=>'form-control','placeholder'=>'Choose Vertical Image'));?>
                                     </div>                                    
                                 </div>
 
                                  <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
                                         <lable style="font-size: 15px; font-weight:600">Horizontal Image</lable><span style="color:red;"> (Width: 930px,Height: 535px)</span>
-                                        <?php echo form_input(array('type'=>'file','name'=>'other_image_one','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Other Image'));?>
+                                        <?php echo form_input(array('type'=>'file','name'=>'other_image_one','id'=>'activate_not','class'=>'form-control','placeholder'=>'Choose Horizontal Image'));?>
                                     </div>                                    
                                 </div>
 
@@ -81,19 +81,19 @@
                                 <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
                                         <lable style="font-size: 15px; font-weight:600">Image Caption</lable>
-                                        <?php echo form_input(array('type'=>'text','name'=>'img_caption','id'=>'activate_not','class'=>'form-control','placeholder'=>'By Line'));?>
+                                        <?php echo form_input(array('type'=>'text','name'=>'img_caption','id'=>'activate_not','class'=>'form-control','placeholder'=>'Image Caption Byline'));?>
                                     </div>                                   
                                 </div>
                                  <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
                                         <lable style="font-size: 15px; font-weight:600">Vertical Image Caption</lable>
-                                        <?php echo form_input(array('type'=>'text','name'=>'other_img_caption','id'=>'activate_not','class'=>'form-control','placeholder'=>'Other Image By Line'));?>
+                                        <?php echo form_input(array('type'=>'text','name'=>'other_img_caption','id'=>'activate_not','class'=>'form-control','placeholder'=>'Vertical Image Caption Byline'));?>
                                     </div>                                   
                                 </div>
                                   <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
                                         <lable style="font-size: 15px; font-weight:600">Horizontal Image Caption</lable>
-                                        <?php echo form_input(array('type'=>'text','name'=>'other_img_caption_one','id'=>'activate_not','class'=>'form-control','placeholder'=>'Other Image By Line'));?>
+                                        <?php echo form_input(array('type'=>'text','name'=>'other_img_caption_one','id'=>'activate_not','class'=>'form-control','placeholder'=>'Horizontal Image Caption By Line'));?>
                                     </div>                                   
                                 </div>
 
@@ -108,7 +108,7 @@
                                         <?php echo form_input(array('type'=>'checkbox','name'=>'big_news_status','id'=>'activate_not','value'=>'1'));?>
                                     </div>     
                                     <div class="col-sm-12 col-md-4 mb-2">
-                                      <lable style="font-size: 15px; font-weight:600">Chargable :</lable>
+                                      <lable style="font-size: 15px; font-weight:600">Chargeable :</lable>
                                       <input type="checkbox" name="chargestatus" id="pay" onchange="" value="1">
 
                                     </div>                               

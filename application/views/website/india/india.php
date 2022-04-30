@@ -13,8 +13,9 @@
 				<!--   <h3>Economy</h3> -->
 				  <div class="row top-news topnews1">
 				  	<div class="col-md-7 main-topnews topnews2" >
-				  		<?php $j=0; if(!empty($result)){                  
-                           foreach($result as $val){  $j++;if($j==1){?>
+				  		<?php $j=0; if(!empty($result)){             
+                         foreach($result as $val){ $j++;if($val['big_news_status'] == 1){ 
+                          ?>
                            	<div class="col-md-12">
 				  		       <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black;" class="img-hover"><img src="<?php echo base_url();?><?php echo $val['image'] ?>" class="card-img-top" style="margin-top: 10px;" alt="Card image cap"></a><hr>
 				  		   </div>
@@ -43,8 +44,10 @@
 				  		<div class="text-center other-topnews">
 				  		<div class="row">
 			  			 <?php if(!empty($result)){
-                          $i=0;
-                          foreach($result as $val){ $i++;if($i>1 && $i<=5){ ?>
+                              $i=0;
+                              foreach($result as $val){ if($val['big_news_status'] != 1){ 
+																$i++;if($i>=1 && $i<5){
+                              	?>
                           <div class="col-md-12 slug">
 								<label><?php if(!empty($val['submenu'])){
 												echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?></label>
@@ -60,14 +63,14 @@
 			  			<div class="col-md-12 slug-time">
 							<label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?></label><hr style="color:black;">
 					   </div>
-                         <?php } }}?>	
+                         <?php } } }}?>
 				  	   </div>
 				  	</div>
 				  	</div>
 				  </div><hr>
 				  <div class="row">
 				  	 <?php $k=0; if(!empty($result)){
-                      foreach($result as $val){ $k++; if($k >= 7){ ?>
+                      foreach($result as $val){ $k++; if($k >= 5){ ?>
 					  <div class="col-md-3 mb-3">
 				  		<div class="card home-india cardsec">
 						  <a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;" class="img-hover"><img style="width:100%;" class="img-fluid" src="<?php echo base_url();?><?php echo $val['image'] ?>" alt="Card image cap"></a>

@@ -16,14 +16,13 @@
                                     <table class="table data-table stripe hover nowrap table-bordered">
                                         <thead>
                                             <tr style="background-color: #23618a !important; color:white;">    
-                                                <th>S.no</th>
+                                                <th>S.No</th>
                                                 <th>ENTRY ID</th> 
                                                 <th>MENU NAME</th> 
                                                 <th>SUBMENU NAME</th> 
                                                 <th>IMAGE</th>   
-                                                <th width="20%">TITTLE</th>  
-                                                <th>By Line</th>
-                                                <th>News Type</th>
+                                                <th width="20%">HEADLINE</th>  
+                                                <th>Byline</th>
                                                 <!-- <th>SLUG</th>  -->
                                                 <th>Published</th>                                         
                                                 <th>Action</th>                                            
@@ -44,18 +43,6 @@
                                                 
                                                 <!-- <td ><?= $val['slug']?></td> -->
                                                 <td ><?= $val['byline']?></td>
-                                                <td>
-                                                    <?php if($val['top_news_status'] == '1'){
-                                                        echo "Top News";
-                                                    }elseif($val['big_news_status'] == '1'){
-                                                        echo "Big News";
-                                                    }elseif(($val['top_news_status'] == '1') && ($val['big_news_status'] == '1')){
-                                                            echo "Top & Big News";
-                                                    }else{
-                                                        echo "News";
-                                                    }
-                                                    ?>
-                                                </td>
                                                 <td style="text-align: center;"> <?php
                                                         if($val['published']==1){
                                                             ?><button class="btn btn-info btn-xs published" value="<?php echo $val['id'];?>"><i class="fa fa-check"></i></button><?php
