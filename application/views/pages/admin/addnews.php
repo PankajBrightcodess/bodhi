@@ -59,20 +59,20 @@
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
-                                        <lable style="font-size: 15px; font-weight:600">News Image</lable><span style="color:red;"> (Max Width: 1200px, Max Height: 600px, Min Width: 320px,Min Height: 180px)</span>
+                                        <lable style="font-size: 15px; font-weight:600">News Image</lable><span style="color:red;"> (Width: 1024px, Height: 682px)</span>
                                         <?php echo form_input(array('type'=>'file','name'=>'image','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Image','required'=>'required'));?>
                                     </div>                                    
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
-                                        <lable style="font-size: 15px; font-weight:600">Vertical Image</lable><span style="color:red;"> (Max Width: 300px, Max Height: 600px, Min Width: 248px,Min Height: 496px)</span>
+                                        <lable style="font-size: 15px; font-weight:600">Vertical Image</lable><span style="color:red;"> (width: 300px, Height: 600px)</span>
                                         <?php echo form_input(array('type'=>'file','name'=>'other_image','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Other Image'));?>
                                     </div>                                    
                                 </div>
 
                                  <div class="form-group row">
                                     <div class="col-sm-12 col-md-12 mb-2">
-                                        <lable style="font-size: 15px; font-weight:600">Horizontal Image</lable><span style="color:red;"> (Max Width: 930px, Max Height: 535px, Min Width: 248px,Min Height: 120px)</span>
+                                        <lable style="font-size: 15px; font-weight:600">Horizontal Image</lable><span style="color:red;"> (Width: 930px,Height: 535px)</span>
                                         <?php echo form_input(array('type'=>'file','name'=>'other_image_one','id'=>'activate_not','class'=>'form-control','placeholder'=>'Enter Other Image'));?>
                                     </div>                                    
                                 </div>

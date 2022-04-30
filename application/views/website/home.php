@@ -111,7 +111,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<!-- <img src="https://tpc.googlesyndication.com/simgad/14973722761020579337" border="0" width="300" height="250" alt="" class="img_ad"> -->
+						<!-- <img src="https://tpc.googlesyndication.com/simgad/14973722761020579337" border="0" width="300" height="240" alt="" class="img_ad"> -->
 						<img src="<?php echo base_url('assets/website/news_image/8724268316456981339.jpg'); ?>" style="margin-top: 25px;" class="img-fluid">
 						 <video class="vid_home" controls>
 						  <source src="<?php echo base_url('assets/website/news_image/start_en.mp4'); ?>" type="video/mp4">
@@ -277,8 +277,8 @@
 							  	<div class="col-md-12 text-slug">
 							    <p class="card-text">
 							    	<a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black; ">
-							    		<?php echo substr(strip_tags($value['tittle']), 0, 90); 
-												if (strlen($value['tittle']) > 90) {
+							    		<?php echo substr(strip_tags($value['tittle']), 0, 40); 
+												if (strlen($value['tittle']) > 40) {
                             				echo '...'; 
                             			}
                             	?>
@@ -338,8 +338,8 @@
 							  	<div class="col-md-12 text-slug">
 							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;">
 						
-							    		<?php echo substr(strip_tags($value['tittle']), 0, 90); 
-												if (strlen($value['tittle']) > 90) {
+							    		<?php echo substr(strip_tags($value['tittle']), 0, 40); 
+												if (strlen($value['tittle']) > 40) {
                             				echo '...'; 
                             			}
                             	?>
@@ -396,8 +396,8 @@
 							  	<div class="col-md-12 text-slug">
 							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;">
 							    	
-							    		<?php echo substr(strip_tags($value['tittle']), 0, 50); 
-												if (strlen($value['tittle']) > 50) {
+							    		<?php echo substr(strip_tags($value['tittle']), 0, 40); 
+												if (strlen($value['tittle']) > 40) {
                             				echo '...'; 
                             			}
                             	?>
@@ -458,8 +458,8 @@
 							  	<div class="col-md-12 text-slug">
 							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;">
 							    	
-							    		<?php echo substr(strip_tags($value['tittle']), 0, 60); 
-												if (strlen($value['tittle']) > 60) {
+							    		<?php echo substr(strip_tags($value['tittle']), 0, 40); 
+												if (strlen($value['tittle']) > 40) {
                             				echo '...'; 
                             			}
                             	?>
@@ -517,8 +517,8 @@
 							  	<div class="col-md-12 text-slug">
 							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;">
 							    	
-							    		<?php echo substr(strip_tags($value['tittle']), 0, 70); 
-												if (strlen($value['tittle']) > 70) {
+							    		<?php echo substr(strip_tags($value['tittle']), 0, 40); 
+												if (strlen($value['tittle']) > 40) {
                             				echo '...'; 
                             			}
                             	?>
@@ -581,8 +581,8 @@
 							  	<div class="col-md-12 text-slug">
 							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;">
 							    	
-							    		<?php echo substr(strip_tags($value['tittle']), 0, 97); 
-												if (strlen($value['tittle']) > 97) {
+							    		<?php echo substr(strip_tags($value['tittle']), 0, 40); 
+												if (strlen($value['tittle']) > 40) {
                             				echo '...'; 
                             			}
                             	?>
@@ -643,8 +643,8 @@
 							  	<div class="col-md-12 text-slug">
 							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;">
 							    	
-							    		<?php echo substr(strip_tags($value['tittle']), 0, 100); 
-												if (strlen($value['tittle']) > 100) {
+							    		<?php echo substr(strip_tags($value['tittle']), 0, 40); 
+												if (strlen($value['tittle']) > 40) {
                             				echo '...'; 
                             			}
                             	?>
@@ -701,8 +701,8 @@
 							  	<div class="col-md-12 text-slug">
 							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;">
 							   
-							    		<?php echo substr(strip_tags($value['tittle']), 0, 100); 
-												if (strlen($value['tittle']) > 100) {
+							    		<?php echo substr(strip_tags($value['tittle']), 0, 40); 
+												if (strlen($value['tittle']) > 40) {
                             				echo '...'; 
                             			}
                             	?>
@@ -760,8 +760,8 @@
 							  	<div class="col-md-12 text-slug">
 							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;">
 							    	
-							    		<?php echo substr(strip_tags($value['tittle']), 0, 90); 
-												if (strlen($value['tittle']) > 90) {
+							    		<?php echo substr(strip_tags($value['tittle']), 0, 40); 
+												if (strlen($value['tittle']) > 40) {
                             				echo '...'; 
                             			}
                             	?>
@@ -819,8 +819,8 @@
 							  	<div class="col-md-12 text-slug">
 							    <p class="card-text"><a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black;">
 							    	
-							    		<?php echo substr(strip_tags($value['tittle']), 0, 90); 
-												if (strlen($value['tittle']) > 90) {
+							    		<?php echo substr(strip_tags($value['tittle']), 0, 40); 
+												if (strlen($value['tittle']) > 40) {
                             				echo '...'; 
                             			}
                             	?>
