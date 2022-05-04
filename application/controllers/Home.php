@@ -294,7 +294,7 @@ class Home extends CI_Controller {
 		
 		$run=$this->Account_model->delete_submenu($id);
 		if($run){
-			$this->session->set_flashdata("msg","Market Deleted Successfully!!");
+			$this->session->set_flashdata("msg","Sub Menu Deleted Successfully!!");
 		}else{
 			$this->session->set_flashdata("err_msg",$run);
 		}
