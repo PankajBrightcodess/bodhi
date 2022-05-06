@@ -111,6 +111,11 @@ if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST']=='localhost'){
 	defined('DB_NAME')		? null : define('DB_NAME','db_bodhiwire');	
 }
 else{
+	// defined('DB_HOST')      ? null : define('DB_HOST', 'localhost');
+	// defined('DB_USER')      ? null : define('DB_USER', 'softwarebss_bodhi');
+	// defined('DB_PASSWORD')  ? null : define('DB_PASSWORD', 'Bodhi@2021');
+	// defined('DB_NAME')      ? null : define('DB_NAME', 'softwarebss_bodhi');
+	
 	defined('DB_HOST')      ? null : define('DB_HOST', 'localhost');
 	defined('DB_USER')      ? null : define('DB_USER', 'bssrauoj_bodhiwire');
 	defined('DB_PASSWORD')  ? null : define('DB_PASSWORD', 'Bodhiwire@123#');
