@@ -15,14 +15,25 @@
                         <a href="website">Home</a>
                         <a href="website">India</a>
                         <a href="website">Asia</a>
-                        <a href="website">America</a>
-                        <a href="website">Europe</a>
+                        <!-- <a href="website">About</a> -->
+                        <a href="<?= base_url('website/privacy_policy');?>">Privacy Policy</a>
+                        <a href="<?= base_url('website/terms_conditions');?>">Terms and Conditions</a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="footer-contact">
                         <h2>Contact Us</h2>
-                        <p style="text-align:left;"><i class="fa fa-envelope"></i>office@bodhiwire.com</p>
+                        <p style="text-align:left;"><i class="fa fa-building"></i>Vanman Communications Pvt Ltd</p>
+                        <p style="text-align:left;">
+                        <i class="fa fa-map-marker"></i>Vanman Communications Pvt. Ltd.
+                        D - 202, Vaishnavi Hills, Waxpol Road,
+                        Near Booty More, Ranchi – 835217
+                        Jharkhand, India
+                        </p>
+                        <p style="text-align:left;"><i class="fa fa-phone"></i>+91 89695 08881</p>
+
+                        <!-- <p style="text-align:left;"><i class="fa fa-envelope"></i>office@bodhiwire.com</p> -->
+                        <p style="text-align:left;"><i class="fa fa-envelope"></i>vanmancommunications@gmail.com</p>
                     </div>
                 </div>
                 <div class="col-md-4 footer-newsletter">

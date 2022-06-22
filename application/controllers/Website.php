@@ -190,7 +190,17 @@ class Website extends CI_Controller {
 	   $this->load->view('website/template',$d);	
 	}
 	// '''''''''''World Sub Menu''''''''''''''''''''''''
-	
+	public function privacy_policy(){
+		 $d['v'] = 'website/privacy_policy';
+	   $d['result4']=$this->Account_model->getmenus();
+	   $this->load->view('website/template',$d);	
+	}
+
+	public function terms_conditions(){
+		 $d['v'] = 'website/terms_conditions';
+	   $d['result4']=$this->Account_model->getmenus();
+	   $this->load->view('website/template',$d);
+	}
 	
 	public function business(){
 		$d['v'] = 'website/business/business';
