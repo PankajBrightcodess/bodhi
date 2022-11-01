@@ -99,6 +99,17 @@
 
 										<h5  style="color:#23618a !important;">Governing Law</h5>
 										<p>The Terms and Conditions are governed by the laws of India and the Courts at Ranchi shall have the exclusive jurisdiction over any dispute arising out of the Terms and Conditions, without giving recourse to any principles of conflicts of laws.<br></p>
+
+										<h4 style="color:#23618a !important;">	REFUND AND CANCELLATION POLICY<hr></h4>
+
+										<h5  style="color:#23618a !important;">Money paid for individual news article</h5>
+										<p>As the product is a news item and once clicked to read the full story, there is no way to unread it, and hence the money paid for reading it is understood to have been utilised and hence there is no provision for refund of money. <br></p>
+
+										<h5  style="color:#23618a !important;">Money paid for subscription</h5>
+										<p>There is no provision for refund of money in case the subscription is cancelled before the expiry of the term. The subscribers, if not interested to continue using the news website, may not renew the subscription at the time of next renewal.<br></p>
+
+										<h5  style="color:#23618a !important;">Donation</h5>
+										<p>Money once donated will not be refunded.<br></p>
 				  		 	  </label>
 				  		 </div>
 				  		 
