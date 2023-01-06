@@ -185,7 +185,7 @@
 					} ?>
 				</div>
 				<div class="col-md-12 col-12 mb-3 add">
-					<img src="https://tpc.googlesyndication.com/simgad/6739417430419784616" alt="" class="img-fluid">
+					<!-- <img src="https://tpc.googlesyndication.com/simgad/6739417430419784616" alt="" class="img-fluid"> -->
 				</div>
 			</div>
 		</div>
