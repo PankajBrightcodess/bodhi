@@ -1607,6 +1607,7 @@ font-family: knowledge-medium,Arial,sans-serif;
   margin-top: 10px;
   color: #23618a;
   float: left !important;
+      word-spacing: -3px;
 }
 .main-topnews .slug label{
   float:left;

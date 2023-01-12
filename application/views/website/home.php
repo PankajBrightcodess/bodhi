@@ -74,7 +74,7 @@
 
 										<h4>Top News</h4>
 			                                     <!-- </div> -->
-			                           <div class="card-body text-slug">
+			                                <div class="card-body text-slug">
 											 	  <a href="<?php echo base_url('website/signin/?slug='.$val['slug'].'&payment='.$val['payment']);?>" style="color: black; text-decoration: none;"><h2 class="card-title"><strong><?php echo $val['tittle'] ?></strong></h2></a>
 												
 											  </div>
@@ -90,7 +90,7 @@
 													
 												<div class="col-md-12 slug">
 													<label style="float:left;"><?php if(!empty($val['submenu'])){
-																	echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?>
+													echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?>
 											      </label>
 												</div>
 												 <div class="card-body text-slug">
@@ -147,7 +147,7 @@
 									
 								</div>
 
-								<div class="col-md-10 img-hover">
+								<div class="col-md-12 img-hover">
 
 									<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" ><img class=" img-fluid" src="<?php echo base_url();?><?php echo $val['image'] ?>" alt="Card image cap"></a>
 								</div>
