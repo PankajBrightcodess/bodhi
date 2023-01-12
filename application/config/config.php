@@ -25,7 +25,7 @@ date_default_timezone_set('Asia/Kolkata');
 |
 */
 if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST']=='localhost'){
-	$config['base_url'] = "http://$_SERVER[HTTP_HOST]/afreen/bodhi";
+	$config['base_url'] = "https://localhost/afreen/bodhi";
 }
 else{
 	$config['base_url'] = "https://bodhiwire.com/";

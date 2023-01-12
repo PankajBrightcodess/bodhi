@@ -112,10 +112,10 @@
 					</div>
 					<div class="row">
 						<!-- <img src="https://tpc.googlesyndication.com/simgad/14973722761020579337" border="0" width="300" height="240" alt="" class="img_ad"> -->
-						<img src="<?php echo base_url('assets/website/news_image/8724268316456981339.jpg'); ?>" style="margin-top: 25px;" class="img-fluid">
-						 <video class="vid_home" controls>
+					<!-- 	<img src="<?php echo base_url('assets/website/news_image/8724268316456981339.jpg'); ?>" style="margin-top: 25px;" class="img-fluid"> -->
+						 <!-- <video class="vid_home" controls>
 						  <source src="<?php echo base_url('assets/website/news_image/start_en.mp4'); ?>" type="video/mp4">
-						</video>
+						</video> -->
 						<!-- <img src="<?php echo base_url('assets/website/news_image/healthimage.jpg'); ?>" style="margin-top:25px;" class="img-fluid"> -->
 						<!-- <img src="<?php echo base_url('assets/website/news_image/tractor.jpg'); ?>" style="margin-top: 25px;" class="img-fluid"> -->
 						
