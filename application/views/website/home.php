@@ -142,7 +142,7 @@
 								</div>
 								<div class="col-md-12 text-slug">
 
-									<!-- style="text-align:justify; font-size: 14px;" --> <p><a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" ><?php echo $val['tittle'] ?></a></p>
+									<!-- style="text-align:justify; font-size: 14px;" --> <p><a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" ><?php echo $val['tittle'] width="100%" ?></a></p>
 									
 								</div>
 
