@@ -52,6 +52,7 @@
 														<label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?></label>
 												        
 												  </div>
+
 												<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;" class="img-hover"><img src="<?php echo base_url();?><?php echo $val['image'] ?>"  class="img-fluid" alt="Card image cap">
 													<label style="font-size: 13px; font-style: italic; font-weight:400;float: left;"><span style="color:black"><?php echo $val['img_caption'] ?></span></label></a>
 												<div class="col-md-12 slug">
@@ -142,11 +143,11 @@
 								</div>
 								<div class="col-md-12 text-slug">
 
-									<!-- style="text-align:justify; font-size: 14px;" --> <p><a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" ><?php echo $val['tittle']  ?></a></p>
+									<!-- style="text-align:justify; font-size: 14px;" --> <p><a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" ><?php echo $val['tittle'];  ?></a></p>
 									
 								</div>
 
-								<div class="col-md-7 img-hover">
+								<div class="col-md-12 img-hover">
 
 									<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" ><img class=" img-fluid" src="<?php echo base_url();?><?php echo $val['image'] ?>" alt="Card image cap"></a>
 								</div>
@@ -163,13 +164,13 @@
 								</div>
 								<div class="col-md-5 text-slug">
 
-									<!-- style="text-align:justify; font-size: 14px;" --> <p><a href="<?php echo base_url('website/signin/?slug='.$val['slug'].'&payment='.$val['payment']);?>" ><?php echo $val['tittle'] ?></a></p>
+									<!-- style="text-align:justify; font-size: 14px;" --> <p><a href="<?php echo base_url('website/signin/?slug='.$val['slug'].'&payment='.$val['payment']);?>" ><?php echo $val['tittle']; ?></a></p>
 									
 								</div>
 
 								<div class="col-md-12 img-hover">
 
-									<a href="<?php echo base_url('website/signin/?slug='.$val['slug'].'&payment='.$val['payment']);?>" ><img class=" img-fluid" src="<?php echo base_url();?><?php echo $val['image'] ?>" alt="Card image cap"></a>
+									<a href="<?php echo base_url('website/signin/?slug='.$val['slug'].'&payment='.$val['payment']);?>" ><img class=" img-fluid" src="<?php echo base_url();?><?php echo $val['image']; ?>" alt="Card image cap"></a>
 								</div>
 								<div class="col-md-12 slug-time">
 										<label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?>
