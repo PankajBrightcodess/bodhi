@@ -191,7 +191,7 @@
 		</div>
 	</div>
 	</div>
-	<div class="col-md-4 col-sm-12 mb-3">
+	<div class="col-md-3 col-sm-12 mb-3">
 		<div class="text-center recent-news">
 			<h4>Recent News</h4>
 			<hr>
