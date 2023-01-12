@@ -31,7 +31,7 @@
                             				echo '...'; 
                             			}
                             	?>
-					 	  	</h2></a>
+					 	  	</h2></a>		
 						
 						  </div>
 						  <div class="col-md-12 slug-time">
