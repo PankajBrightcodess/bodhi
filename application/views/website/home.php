@@ -147,7 +147,7 @@
 									
 								</div>
 
-								<div class="col-md-12 img-hover">
+								<div class="col-md-10 img-hover">
 
 									<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" ><img class=" img-fluid" src="<?php echo base_url();?><?php echo $val['image'] ?>" alt="Card image cap"></a>
 								</div>
