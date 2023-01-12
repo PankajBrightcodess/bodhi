@@ -177,7 +177,7 @@
     				</h2>
     				<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       				<div class="accordion-body" style="border:1px solid #69c9ff">
-        				<p>Invoice will be sent to this email address. If you already have The Wire account, the invoice will also show in your dashboard.</p>
+        				<p>Invoice will be sent to this email address. If you already have The Bodhi Wire account, the invoice will also show in your dashboard.</p>
         				<div class="row">
         					<div class="col-md-6">
         						<input type="text" name="" placeholder="First Name"class="form-control" style="margin-top:10px">
