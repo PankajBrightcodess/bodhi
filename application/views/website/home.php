@@ -22,7 +22,7 @@
 		<div class="col-md-9 col-sm-12">
 		<div class="row top-news">
 			
-		<div class="col-md-8 main-topnews">
+		<div class="col-md-9 main-topnews">
 			<div class="text-center">
 				<div class="col-md-12">
 					
@@ -191,6 +191,18 @@
 		</div>
 	</div>
 	</div>
+
+
+
+
+
+
+
+
+
+
+
+
 	<div class="col-md-3 col-sm-12 mb-3">
 		<div class="text-center recent-news">
 			<h4>Recent News</h4>
