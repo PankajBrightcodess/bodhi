@@ -119,7 +119,6 @@
 						<!-- <img src="<?php echo base_url('assets/website/news_image/healthimage.jpg'); ?>" style="margin-top:25px;" class="img-fluid"> -->
 						<!-- <img src="<?php echo base_url('assets/website/news_image/tractor.jpg'); ?>" style="margin-top: 25px;" class="img-fluid"> -->
 						
-
 					</div>
 				</div>
 			</div>
@@ -202,7 +201,7 @@
 
 
 
-	
+
 	<div class="col-md-3 col-sm-12 mb-3">
 		<div class="text-center recent-news">
 			<h4>Recent News</h4>

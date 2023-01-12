@@ -20,7 +20,7 @@
 				<div class="container">
 				  <div class="row">
 				  	
-				  	<div class="col-md-12 home-india" >
+				  	<div class="col-md-11 home-india" >
 				  		<div class="row">
 				  			<div class="col-md-12 slug mb-3" style="margin-top:10px;">
 								 <label style="float:left; font-weight:400; color:#23618a !important;">
