@@ -3323,7 +3323,7 @@ transition: opacity 300ms ease-out 0s;
     float: left;
     word-spacing: -4px;
     font-family: 'Faustina',sans;
-    font-size: 21px;
+    font-size: 21px!important;
 }
   .input-search:focus{
     width: 110px;
