@@ -2740,7 +2740,10 @@ transition: opacity 300ms ease-out 0s;
   }
 }*/
 @media (max-width: 1024px) {
-
+    .home-india img {
+    height: 10rem;
+    width: 100%;
+}
   .top-news .main-topnews h2 {
     float: left;
     word-spacing: -5px;
@@ -2832,6 +2835,9 @@ transition: opacity 300ms ease-out 0s;
   .top-news .topnews2{
     height: 830px;
   }
+}
+@media (min-width: 1024px){
+
 }
 @media (max-width: 992px) {
   .input-search:focus{
