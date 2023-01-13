@@ -78,7 +78,7 @@
 												echo $result['menu_name'].' | '.$result['submenu'];}else{echo $result['menu_name'];}?></label>
 							</div> -->
 							
-               <div class="col-md-6" style="text-align: justify; padding: 25px;"><p ><?= $result['news'] ?></p></div>
+               <div class="col-md-12" style="text-align: justify; padding: 25px;"><p ><?= $result['news'] ?></p></div>
                <?php
                			if(!empty($result['other_image'])){
                				?>
