@@ -69,7 +69,7 @@
 				  		   <label style="font-size: 13px; font-style: italic; font-weight:500;float: left;"><span style="color:black"><?php echo $result['img_caption'] ?></span></label>
 				  		 </div> 
 				  		 <div class="col-md-12">
-				  		   <span style="float: left; color: black;"><span>	<b>*&nbsp;&nbsp;</b></span><i><?php echo $result['straplines'] ?></i></span>
+				  		   <span style="float: left;"><span>	<b>*&nbsp;&nbsp;</b></span><i style="color: black;"><?php echo $result['straplines'] ?></i></span>
 				  		 </div>
 				  		 
 				  		<!--  <div class="col-md-12 slug" style="margin-top:10px; ">
