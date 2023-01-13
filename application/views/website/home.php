@@ -221,8 +221,8 @@
 								<p>
 									<a href="<?php echo base_url('website/detailnewsview/' . $val['slug']); ?>">
 										<?php //echo $val['tittle'] ?>
-										<?php echo substr(strip_tags($val['tittle']), 0, 30); 
-												if (strlen($val['tittle']) > 30) {
+										<?php echo substr(strip_tags($val['tittle']), 0, 35); 
+												if (strlen($val['tittle']) > 35) {
                             				echo '...'; 
                             			}
                             	?>
