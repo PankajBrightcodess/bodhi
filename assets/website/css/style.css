@@ -3343,6 +3343,15 @@ transition: opacity 300ms ease-out 0s;
     height: auto;
   }
 }
+@media(min-width: 338px){
+   .top-news .main-topnews h2 {
+    float: left;
+    word-spacing: -4px;
+    font-family: 'Faustina',sans;
+    font-size: 20px;
+}
+
+}
 @media (max-width: 320px){
   .home-india img {
     height: 10rem;
