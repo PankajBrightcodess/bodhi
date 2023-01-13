@@ -1585,6 +1585,9 @@ font-family: knowledge-medium,Arial,sans-serif;
 
 .top-news .main-topnews h2{
   float: left;
+  word-spacing: -5px;
+  font-family: 'Faustina',sans;
+  font-size: 31px;
 }
 .top-news .main-topnews a img{
  /* height:25rem;*/
