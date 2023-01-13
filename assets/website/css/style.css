@@ -3152,10 +3152,10 @@ transition: opacity 300ms ease-out 0s;
   .bb-login {
     padding: 77px 15px 33px 15px
   }
-  .home-india img{
-    /*height: 20rem;*/
-    width:100%;
-  }
+  .home-india img {
+    height: 17rem;
+    width: 100%;
+}
   .top-news .other-topnews a img{
     /*height: 10rem;*/
     width: 100%;
