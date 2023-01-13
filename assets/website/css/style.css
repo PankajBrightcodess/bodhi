@@ -3400,9 +3400,9 @@ transition: opacity 300ms ease-out 0s;
     /*height: 970px;*/
     height: auto;
   }
-  .recent-news{
-    height: 1050px;
-  }
+  .recent-news {
+    height: 1208px;
+}
   .cardsec{
     height: 315px;
   }
