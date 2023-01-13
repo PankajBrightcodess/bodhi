@@ -3074,6 +3074,13 @@ transition: opacity 300ms ease-out 0s;
   }
 }*/
 @media (max-width: 576px) {
+
+  .top-news .main-topnews h2 {
+    float: left;
+    word-spacing: -6px;
+    font-family: 'Faustina',sans;
+    font-size: 25px;
+}
    .abcd .search .search-box {
     /*margin-top: 31px;*/
 }
