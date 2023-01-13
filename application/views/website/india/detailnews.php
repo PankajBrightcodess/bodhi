@@ -65,7 +65,7 @@
 						  </div>
 				  			 <div class="col-md-3"></div>
 				  			<div class="col-md-6 mb-3">
-				  		   <img  src="<?php echo base_url();?><?php echo $result['image'] ?>" style="width:100% height="auto;  class="img-fluid">
+				  		   <img  src="<?php echo base_url();?><?php echo $result['image'] ?>" style="width:100%; height=auto";  class="img-fluid">
 				  		   <label style="font-size: 13px; font-style: italic; font-weight:500;float: left;"><span style="color:black"><?php echo $result['img_caption'] ?></span></label>
 				  		 </div>
                 <div class="col-md-3"></div> 
