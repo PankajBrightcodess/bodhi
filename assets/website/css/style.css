@@ -3003,11 +3003,10 @@ transition: opacity 300ms ease-out 0s;
     margin-top: 21px;
     padding-right: 0px;*/
   }
-  .top-news .main-topnews{
-    /*height: 1290px;*/
-    height: 1305px;
-  }
-.recent-news {
+.top-news .main-topnews {
+    /* height: 1290px; */
+    height: 1618px;
+}.recent-news {
     /* height: 1290px; */
     height: 1623px;
 }
