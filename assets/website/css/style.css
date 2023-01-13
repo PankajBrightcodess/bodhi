@@ -1437,6 +1437,7 @@ ul.social-icons {
     top: 0;
     width: 100%;
     /*overflow: hidden;*/
+
 }
 .navbar{
   background: #23618a !important; 
@@ -1744,6 +1745,7 @@ font-family: knowledge-medium,Arial,sans-serif;
 }
 .home-india img{
   /*height: 10rem;*/
+
    width:100%;
 }
 .main-topnews .text-slug a{
@@ -2597,6 +2599,13 @@ transition: opacity 300ms ease-out 0s;
 }
 
 @media (min-width: 1440px) {
+.home-india img{
+  height: 12rem;
+
+   width:100%;
+}
+
+
 .input-search:focus{
     width: 140px;
   }
