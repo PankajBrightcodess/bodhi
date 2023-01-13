@@ -3227,7 +3227,7 @@ transition: opacity 300ms ease-out 0s;
     margin-top: 85px!important;
   }
   /*.search-box{ display: none; }*/
-  marquee .mar1{
+  .marquee .mar1{
     margin-top: 90px!important;
   }
   .abcd .main-heading h5 {
@@ -3275,6 +3275,15 @@ transition: opacity 300ms ease-out 0s;
   .top-news .topnews2{
     height: auto;
   }
+    .home-india img {
+    height: 15rem;
+    width: 100%;
+}
+    .home-india img {
+    height: 17rem;
+    width: 100%;
+}
+  
 }
 @media (max-width: 375px){
   .input-search:focus{
