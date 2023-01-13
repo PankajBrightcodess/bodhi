@@ -64,12 +64,12 @@
 								<label ><?php echo date('h:i A',strtotime($result['entrydate']));?></label>
 						  </div>
 				  			 
-				  			<div class="col-md-10 mb-3">
+				  			<div class="col-md-4 mb-3">
 				  		   <img  src="<?php echo base_url();?><?php echo $result['image'] ?>" style="width:100%;"  class="img-fluid">
 				  		   <label style="font-size: 13px; font-style: italic; font-weight:500;float: left;"><span style="color:black"><?php echo $result['img_caption'] ?></span></label>
 				  		 </div> 
-				  		 <div class="col-md-12">
-				  		   <span style="float: left;"><span>	<b>*&nbsp;&nbsp;</b></span><i><?php echo $result['straplines'] ?></i></span>
+				  		 <div class="col-md-6">
+				  		   <span style="float: left;"><span>	<b>*&nbsp;&nbsp;</b></span><i style="color: black;"><?php echo $result['straplines'] ?></i></span>
 				  		 </div>
 				  		 
 				  		<!--  <div class="col-md-12 slug" style="margin-top:10px; ">
