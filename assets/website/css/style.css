@@ -3010,6 +3010,7 @@ transition: opacity 300ms ease-out 0s;
   .recent-news{
     /*height: 1290px;*/
    height: 1305px;
+   font-size: 12px;
 
   }
   .cardsec{
