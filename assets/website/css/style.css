@@ -3346,6 +3346,10 @@ transition: opacity 300ms ease-out 0s;
   }
 }
 @media (max-width: 320px){
+  .home-india img {
+    height: 10rem;
+    width: 100%;
+}
     .top-news .main-topnews h2 {
     float: left;
     word-spacing: -4px;
