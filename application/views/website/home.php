@@ -221,8 +221,8 @@
 								<p>
 									<a href="<?php echo base_url('website/detailnewsview/' . $val['slug']); ?>">
 										<?php //echo $val['tittle'] ?>
-										<?php echo substr(strip_tags($val['tittle']), 0, 40); 
-												if (strlen($val['tittle']) > 40) {
+										<?php echo substr(strip_tags($val['tittle']), 0, 20); 
+												if (strlen($val['tittle']) > 20) {
                             				echo '...'; 
                             			}
                             	?>
@@ -291,8 +291,8 @@
 							  	<div class="col-md-12 text-slug">
 							    <p class="card-text">
 							    	<a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black; ">
-							    		<?php echo substr(strip_tags($value['tittle']), 0, 40); 
-												if (strlen($value['tittle']) > 40) {
+							    		<?php echo substr(strip_tags($value['tittle']), 0, 20); 
+												if (strlen($value['tittle']) > 20) {
                             				echo '...'; 
                             			}
                             	?>
