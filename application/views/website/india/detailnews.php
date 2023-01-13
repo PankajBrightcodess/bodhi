@@ -49,7 +49,7 @@
        					<div class="col-md-6">
 				  		 	  <label style="font-style: italic; float:left;">By : <?php echo $result['byline']?></label>
 				  		 </div>
-				  		 <div class="col-md-6" style="color: black;">
+				  		 <div class="col-md-6">
 				  		 	<div class="social-links2">
                   <a class="social-links-item twitter-icon" title="Twitter" href="https://twitter.com/">Twitter</a>
                   <a class="social-links-item facebook-icon" title="Facebook" href="https://www.facebook.com/">Facebook</a>

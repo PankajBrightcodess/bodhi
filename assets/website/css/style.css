@@ -2466,7 +2466,7 @@ background: url(https://i.imgur.com/uADHIil.png)no-repeat top center;
 background: url(https://i.imgur.com/u1sFrjn.png)no-repeat top center;
 }
 .rss-icon {
-background: url(https://www.myfamilycinema.com/en/wp-content/uploads/2018/12/instagram_icon.png)no-repeat top center;
+background: url("assets/images/2111463.png")no-repeat top center;
 }
 .mail-icon {
 background: url(https://raw.githubusercontent.com/bipio-server/bip-pod-gmail/master/gmail.png)no-repeat top center;
@@ -2478,7 +2478,7 @@ background: url(https://i.siteapi.org/9KRaMqtb58n_hrElap5zIeMT-y4=/0x0:32x32/3ab
 display: inline-block;
 height: 32px;
 margin-left: 13px;
-opacity: 0.5;
+/*opacity: 0.5;*/
 text-indent: -99999px;
 transition: opacity 300ms ease-out 0s;
 vertical-align: middle;
