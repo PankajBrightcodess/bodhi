@@ -68,7 +68,7 @@
 				  		   <img  src="<?php echo base_url();?><?php echo $result['image'] ?>" style="width:100%;"  class="img-fluid">
 				  		   <label style="font-size: 13px; font-style: italic; font-weight:500;float: left;"><span style="color:black"><?php echo $result['img_caption'] ?></span></label>
 				  		 </div> 
-				  		 <div class="col-md-6">
+				  		 <div class="col-md-8">
 				  		   <span style="float: left;"><span>	<b>*&nbsp;&nbsp;</b></span><i style="color: black;"><?php echo $result['straplines'] ?></i></span>
 				  		 </div>
 				  		 
