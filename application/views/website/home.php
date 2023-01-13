@@ -603,7 +603,7 @@
 							    	</a></p>
 							   </div>
 							   <div class="col-md-12 slug-time">
-								  <label><?php echo date('d-m-Y, h:i A',strtotime($value['entrydate']));?>
+								  <label ><?php echo date('d-m-Y, h:i A',strtotime($value['entrydate']));?>
 						        </label>
 						      </div>
 							   </div>
