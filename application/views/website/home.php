@@ -43,16 +43,15 @@
                                      <div class="col-md-12">
 				                              <br>		
                                      </div> 
-                                     	  <div class="col-md-12 slug-time">
-														<label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?></label>
-												        
-												  </div>
 			                            <div class="card-body text-slug">
 			                               	
 												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><h2 class="card-title"><strong><?php echo $val['tittle'] ?></strong></h2></a>
 													
 												  </div>
-											
+												  <div class="col-md-12 slug-time">
+														<label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?></label>
+												        
+												  </div>
 
 												<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;" class="img-hover"><img src="<?php echo base_url();?><?php echo $val['image'] ?>"  class="img-fluid" alt="Card image cap">
 													<label style="font-size: 13px; font-style: italic; font-weight:400;float: left;"><span style="color:black"><?php echo $val['img_caption'] ?></span></label></a>
