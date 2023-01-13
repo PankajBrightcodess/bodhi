@@ -49,7 +49,7 @@
        					<div class="col-md-6">
 				  		 	  <label style="font-style: italic; float:left;">By : <?php echo $result['byline']?></label>
 				  		 </div>
-				  		 <div class="col-md-6">
+				  		 <div class="col-md-6" style="color: black;">
 				  		 	<div class="social-links2">
                   <a class="social-links-item twitter-icon" title="Twitter" href="https://twitter.com/">Twitter</a>
                   <a class="social-links-item facebook-icon" title="Facebook" href="https://www.facebook.com/">Facebook</a>
@@ -57,7 +57,7 @@
                   <a class="social-links-item rss-icon" title="Instagram" href="#nogo">Instagram</a>
                   <a class="social-links-item mail-icon" title="Gmail" href="#nogo">Email</a>
                   <a class="social-links-item wp-icon" title="Whatapp" href="#nogo">Email</a>
-                      </div>
+                </div>
 				  		 </div>
 				  		 <div class="col-md-12 slug-time">
 								<label><?php echo date('d-m-Y',strtotime($result['entrydate'])).',';?></label>
