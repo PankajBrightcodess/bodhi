@@ -3089,6 +3089,11 @@ transition: opacity 300ms ease-out 0s;
   }
 }*/
 @media (max-width: 576px) {
+  .iframedit {
+    width: 100%;
+    height: 260px;
+    border-radius: 10px;
+}
  .viedo {
     text-align: left;
     font-size: 20px;
