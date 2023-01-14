@@ -210,7 +210,7 @@
 	<div class="col-md-3 col-sm-12 mb-3">
 		<div class="text-center recent-news">
 			<h4>Recent News</h4>
-			  <iframe width="100%" height="200" style="border-radius: 10px;" src="https://www.youtube.com/embed/NDy5ebew7gI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			  <iframe  class="iframedit" src="https://www.youtube.com/embed/NDy5ebew7gI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <p class="viedo" >Security Breach in pm Modi's Karnataka Roadshow</p><hr>
 			
 			<div class="row Re-news">
