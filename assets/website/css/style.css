@@ -1745,7 +1745,8 @@ font-family: knowledge-medium,Arial,sans-serif;
 }
 
 .main-topnews .text-slug a{
-  text-align: justify !important;
+  /*text-align: justify !important;*/
+  text-align: left;
 }
 .slug-time{
   font-weight: 700; 
