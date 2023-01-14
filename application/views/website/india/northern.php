@@ -30,11 +30,12 @@
 					    <div class="card-body text-slug">
 					 	      <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black;"><h2 class="card-title"><strong>
 					 	      	
-					 	      		<?php echo substr(strip_tags($val['tittle']), 0, 50); 
-												if (strlen($val['tittle']) > 50) {
-                            				echo '...'; 
-                            			}
+					 	     //  		<?php //echo substr(strip_tags($val['tittle']), 0, 50); 
+												// if (strlen($val['tittle']) > 50) {
+            //                 				echo '...'; 
+            //                 			}
                             	?>
+                            	<?= $val['tittle']; ?>
 					 	      	</strong></h2></a>
 						  </div>
 						  <div class="col-md-12 slug-time">
