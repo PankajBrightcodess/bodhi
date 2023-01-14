@@ -54,7 +54,7 @@
                   <a class="social-links-item twitter-icon" title="Twitter" href="https://twitter.com/">Twitter</a>
                   <a class="social-links-item facebook-icon" title="Facebook" href="https://www.facebook.com/">Facebook</a>
                   <a class="social-links-item linkedin-icon" title="Linked In" href="https://www.linkedin.com/">LinkedIn</a>
-                  <a class="social-links-item" title="Instagram" href="#nogo"><img src="../../assets/images/2111463.png" style="float: right;width: 33px;height: 33px;">Instagram</a>
+                  <a class="social-links-item" title="Instagram" href="#nogo"><img src="../../assets/images/2111463.png" style="float: right;width: 33px!important;height: 33px!important;">Instagram</a>
                   <a class="social-links-item mail-icon" title="Gmail" href="#nogo">Email</a>
                   <a class="social-links-item wp-icon" title="Whatapp" href="#nogo">Whatsapp</a>
                 </div>
