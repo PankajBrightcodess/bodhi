@@ -57,8 +57,8 @@
                                         <!-- <input type="hidden" name="merchant_surl_id" id="merchant_surl_id" value="<?php echo $surl; ?>"/> -->
                                        <!--  <input type="hidden" name="merchant_furl_id" id="merchant_furl_id" value="<?php echo $furl; ?>"/> -->
                                         <input type="hidden" name="card_holder_name_id" id="card_holder_name_id" value="<?php echo $allrecord['card_holder_name'];?>"/>
-                                        <input type="hidden" name="merchant_total" id="merchant_total" value="<?php echo $allrecord['total']; ?>"/>
-                                        <input type="hidden" name="merchant_amount" id="merchant_amount" value="<?php echo   $allrecord['amount']; ?>"/>
+                                        <input type="hidden" name="merchant_total" id="merchant_total" value="<?php echo '100'; ?>"/>
+                                        <input type="hidden" name="merchant_amount" id="merchant_amount" value="<?php echo '1'; ?>"/>
                                        <!--  <input type="hidden" name="order_id" id="order_id" value="<?php echo $merchant_order_id; ?>"> -->
                                         <input  id="submit-pay" type="button" onclick="razorpaySubmit(this);" value="PAY NOW" class="btn btn-sm btn-success" />
                                         </form>
@@ -108,7 +108,7 @@ function random_number($l){
         debugger;
     var razorpay_options = {
         key: "<?php echo $allrecord['key_id']; ?>",
-        amount: "1",
+        amount: "<?php echo $allrecord['total']; ?>",
         name: "<?php echo $allrecord['name']; ?>",
         description: "Order # <?php echo $allrecord['merchant_order_id']; ?>",
         netbanking: true,
