@@ -238,10 +238,10 @@
 							<div class="col-md-12 text-slug">
 								<p>
 									<a href="<?php echo base_url('website/detailnewsview/' . $val['slug']); ?>">
-										<?php //echo $val['tittle'] ?>
-										<?php echo substr(strip_tags($val['tittle']), 0, 37); 
-												if (strlen($val['tittle']) > 37) {
-                            				echo '...'; 
+										<?php echo $val['tittle'] ?>
+										<?php //echo substr(strip_tags($val['tittle']), 0, 37); 
+												//if (strlen($val['tittle']) > 37) {
+                            				//echo '...'; 
                             			}
                             	?>
 									</a>
