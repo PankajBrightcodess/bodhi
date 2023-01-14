@@ -200,7 +200,7 @@
              <section>
              	<div class="container">
              		<div class="row">
-             			<div class="col-md-12">
+             			<div class="col-md-3">
              			  <div class="card">
              			  	 <iframe  class="iframedit" src="https://www.youtube.com/embed/NDy5ebew7gI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                 <p class="viedo" >Security Breach in pm Modi's Karnataka Roadshow</p><hr>
