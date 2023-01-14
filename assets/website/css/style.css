@@ -2969,7 +2969,10 @@ transition: opacity 300ms ease-out 0s;
   }
 }
 @media (max-width: 768px) {
-
+  .home-india .text-slug a {
+    color: black;
+    font-size: 9px;
+}
   .viedo {
     font-size: 12px;
 }
