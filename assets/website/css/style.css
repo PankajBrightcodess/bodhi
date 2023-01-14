@@ -2577,6 +2577,11 @@ transition: opacity 300ms ease-out 0s;
 }
 
 @media (min-width: 1440px) {
+
+  .viedo {
+    text-align: left;
+    font-size: 14px;
+}
 .home-india img{
   height: 12rem;
 
