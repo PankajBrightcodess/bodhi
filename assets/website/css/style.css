@@ -2766,7 +2766,7 @@ transition: opacity 300ms ease-out 0s;
 }
 
     .home-india img {
-    height: 10rem;
+    height: 10rem!important;
     width: 100%;
 }
   .top-news .main-topnews h2 {
