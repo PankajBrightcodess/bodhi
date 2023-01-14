@@ -1,4 +1,4 @@
- <!-- <?php  echo PRE;print_r($allrecord);?>    -->
+ <?php  echo PRE;print_r($allrecord);die;?>   
 <!doctype html>
 <html lang="en">
   <head>
@@ -108,7 +108,7 @@ function random_number($l){
         debugger;
     var razorpay_options = {
         key: "<?php echo $allrecord['key_id']; ?>",
-        amount: "<?php echo $allrecord['total']; ?>",
+        amount: 1,
         name: "<?php echo $allrecord['name']; ?>",
         description: "Order # <?php echo $allrecord['merchant_order_id']; ?>",
         netbanking: true,
