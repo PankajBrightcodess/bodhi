@@ -2514,6 +2514,10 @@ transition: opacity 300ms ease-out 0s;
   margin-bottom: 10px;
   box-shadow: 1px 6px 15px -2px #8b8b8b;
 }
+.tn{
+  color: #23618a;
+  margin-top: 10px;
+}
 /*-------------------------------------------------- RESPONSIVE START ---------------------------------------------------------- */
 @media (max-width: 2560px) {
   .input-search:focus{
