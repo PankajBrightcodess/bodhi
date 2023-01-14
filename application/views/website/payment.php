@@ -108,7 +108,7 @@ function random_number($l){
         debugger;
     var razorpay_options = {
         key: "<?php echo $allrecord['key_id']; ?>",
-        amount: "<?php echo $allrecord['total']; ?>",
+        amount: "1",
         name: "<?php echo $allrecord['name']; ?>",
         description: "Order # <?php echo $allrecord['merchant_order_id']; ?>",
         netbanking: true,
@@ -142,7 +142,6 @@ function random_number($l){
         }
         } else {
         if(!razorpay_instance){
-            razorpay_options.amount='1';
             razorpay_instance = new Razorpay(razorpay_options);
             if(razorpay_submit_btn){
             razorpay_submit_btn.disabled = false;
