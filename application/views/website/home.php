@@ -22,7 +22,7 @@
 		<div class="col-md-9 col-sm-12">
 		<div class="row top-news">
 			
-		<div class="col-md-8 main-topnews">
+		<v class="col-md-8 main-topnews">
 			<div class="text-center">
 				<div class="col-md-12">
 					
@@ -72,7 +72,8 @@
 									<?php }
 									else{?>
 
-										<h4>Top News</h4>
+										<
+										h4>Top News</h4>
 			                                     <!-- </div> -->
 			                                <div class="card-body text-slug">
 											 	  <a href="<?php echo base_url('website/signin/?slug='.$val['slug'].'&payment='.$val['payment']);?>" style="color: black; text-decoration: none;"><h2 class="card-title"><strong><?php echo $val['tittle'] ?></strong></h2></a>
@@ -227,8 +228,8 @@
 								<p>
 									<a href="<?php echo base_url('website/detailnewsview/' . $val['slug']); ?>">
 										<?php //echo $val['tittle'] ?>
-										<?php echo substr(strip_tags($val['tittle']), 0, 37); 
-												if (strlen($val['tittle']) > 37) {
+										<?php echo substr(strip_tags($val['tittle']), 0, 45); 
+												if (strlen($val['tittle']) > 45) {
                             				echo '...'; 
                             			}
                             	?>
