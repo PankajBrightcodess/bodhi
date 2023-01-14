@@ -2499,7 +2499,7 @@ transition: opacity 300ms ease-out 0s;
 }
 
 .viedo{
-  float: left;
+   text-align: left;
   font-size: 14px;
 }
 
