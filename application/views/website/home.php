@@ -199,18 +199,19 @@
  
 
 
-
+<!-- 
             <div class="col-md-12">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/NDy5ebew7gI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h2 class="text-center">News </h2>
+              
             </div>
-
+ -->
 
 
 
 	<div class="col-md-3 col-sm-12 mb-3">
 		<div class="text-center recent-news">
 			<h4>Recent News</h4>
+			  <iframe width="100%" height="315" src="https://www.youtube.com/embed/NDy5ebew7gI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h2 class="text-center">News </h2>
 			<hr>
 			<div class="row Re-news">
 				<?php $i = 0;
