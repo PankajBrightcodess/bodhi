@@ -2499,7 +2499,8 @@ transition: opacity 300ms ease-out 0s;
 }
 
 .viedo{
-  float: left font-size: 14px;
+  float: left;
+  font-size: 14px;
 }
 
 
