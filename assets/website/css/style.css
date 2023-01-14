@@ -2524,7 +2524,7 @@ transition: opacity 300ms ease-out 0s;
 
   .recent-news {
     /* height: 1315px; */
-    height: 1272px;
+    height: 1272px!important;
 }
 /*-------------------------------------------------- RESPONSIVE START ---------------------------------------------------------- */
 @media (max-width: 2560px) {
