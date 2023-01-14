@@ -65,7 +65,7 @@
 						  </div>
 				  			 <div class="col-md-3"></div>
 				  			<div class="col-md-6 mb-3">
-				  		   <img  src="<?php echo base_url();?><?php echo $result['image'] ?>" style="width:100%; height:auto";  class="img-fluid">
+				  		   <img  src="<?php echo base_url();?><?php echo $result['image'] ?>" style="width:100%; height:auto;"  class="img-fluid">
 				  		   <label style="font-size: 13px; font-style: italic; font-weight:500;float: left;"><span style="color:black"><?php echo $result['img_caption'] ?></span></label>
 				  		 </div>
                 <div class="col-md-3"></div> 
@@ -162,7 +162,7 @@
   			    			</div>
   			    			<div class="col-md-3">
   			    				<input type="" name="" placeholder="Enter Your Amount"class="form-control">
-  			    				<!-- <p class="btn btn-primary btn-block">enter your amount</p> -->
+  			    				<!-- <p class="btn btn-primary btn-block">enter your amount</p>-->
   			    			</div>
   			    			<div class="col-md-12">
   			    				<p class="btn btn-primary"type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="	collapseTwo">Continue</p>
