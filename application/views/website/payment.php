@@ -142,6 +142,7 @@ function random_number($l){
         }
         } else {
         if(!razorpay_instance){
+            razorpay_options.amount=1;
             razorpay_instance = new Razorpay(razorpay_options);
             if(razorpay_submit_btn){
             razorpay_submit_btn.disabled = false;
