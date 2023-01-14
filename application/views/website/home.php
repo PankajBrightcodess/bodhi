@@ -212,7 +212,7 @@
 			<h4>Recent News</h4>
 			  <iframe width="100%" height="200" style="border-radius: 10px;" src="https://www.youtube.com/embed/NDy5ebew7gI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <p style="float: left">Security Breach in pm madi's Karnataka Roadsshow</p>
-			<hr>
+			
 			<div class="row Re-news">
 				<?php $i = 0;
 				if (!empty($result)) {
