@@ -230,7 +230,7 @@
 				if (!empty($result)) {
 					foreach ($result as $val) {
 						$i++;
-						if ($i < 13) { ?>
+						if ($i < 12) { ?>
 							<!-- <div class="col-md-12 slug">
 								<label><?php if(!empty($val['submenu'])){
 												echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?></label>
@@ -252,7 +252,7 @@
 								        </label> 
 								</div> -->
 								<div class="col-md-12">
-									<?php if($i!=12){ ?>
+									<?php if($i!=11){ ?>
 								  		<hr style="color:black;">
 								  <?php } ?>
 							  </div>
