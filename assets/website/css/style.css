@@ -2846,11 +2846,12 @@ transition: opacity 300ms ease-out 0s;
   }
    .top-news .main-topnews{
     /*height: 1163px;*/
-   height: 1394px;
+   height: 1460px;
   }
   .recent-news {
     /* height: 1163px; */
-    height: 1187px;
+    height: 1186px!important;
+    font-size: 13px;
   }
   .cardsec{
     height: 305px;
