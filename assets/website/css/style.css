@@ -3098,7 +3098,10 @@ transition: opacity 300ms ease-out 0s;
   }
 }*/
 @media (max-width: 576px) {
-
+ .viedo {
+    text-align: left;
+    font-size: 20px;
+}
   .top-news .main-topnews h2 {
     float: left;
     word-spacing: -6px;
