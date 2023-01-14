@@ -38,12 +38,12 @@
 													if($val['chargestatus']!=1){
 												?>
 												 <div class="col-md-12">
-				                              <h4>Top News</h4>
-                                     </div>     
-                                     <div class="col-md-12">
-				                              <br>		
-                                     </div> 
-			                            <div class="card-body text-slug">
+				                                   <h4>Top News</h4>
+                                                </div>     
+                                             <div class="col-md-12">
+				                                 <br>		
+                                             </div> 
+			                                 <div class="card-body text-slug">
 			                               	
 												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none;"><h2 class="card-title"><strong><?php echo $val['tittle'] ?></strong></h2></a>
 													
@@ -66,8 +66,7 @@
 												  </div>  
 												  <div class="card-body text-slug">
 												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none; "><span class="card-title"><strong style="float: left !important;">
-												 	  	<?php //echo substr(strip_tags($val['news']), 0, 280);?>
-												 	  	<?php echo $val['news']);?>
+												 	  	<?php echo substr(strip_tags($val['news']), 0, 280); ?>
 												 	  	</strong></span></a>
 												  </div>  
 
