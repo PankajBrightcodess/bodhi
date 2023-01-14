@@ -2506,9 +2506,11 @@ transition: opacity 300ms ease-out 0s;
  .iframedit{
    width: 100%;
    height: 200px;
-   border-radius: 20px;
+   border-radius: 10px;
  }
-
+.aaf .card{
+  border-radius: 10px;
+}
 
 /*-------------------------------------------------- RESPONSIVE START ---------------------------------------------------------- */
 @media (max-width: 2560px) {
