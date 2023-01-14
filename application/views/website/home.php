@@ -65,15 +65,17 @@
 												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none; float: left !important;"><span class="card-title"><strong style="float: left !important;">*&nbsp;<i><?php echo $val['straplines'] ?></i></strong></span></a>
 												  </div>  
 												  <div class="card-body text-slug">
-												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none; "><span class="card-title"><strong style="float: left !important;"><?php echo substr(strip_tags($val['news']), 0, 280);?></strong></span></a>
+												 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black; text-decoration: none; "><span class="card-title"><strong style="float: left !important;">
+												 	  	<?php //echo substr(strip_tags($val['news']), 0, 280);?>
+												 	  	<?php echo $val['news']);?>
+												 	  	</strong></span></a>
 												  </div>  
 
 												  
 									<?php }
 									else{?>
 
-										<
-										h4>Top News</h4>
+										<h4>Top News</h4>
 			                                     <!-- </div> -->
 			                                <div class="card-body text-slug">
 											 	  <a href="<?php echo base_url('website/signin/?slug='.$val['slug'].'&payment='.$val['payment']);?>" style="color: black; text-decoration: none;"><h2 class="card-title"><strong><?php echo $val['tittle'] ?></strong></h2></a>
@@ -113,7 +115,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<!-- <img src="https://tpc.googlesyndication.com/simgad/14973722761020579337" border="0" width="300" height="240" alt="" class="img_ad"> -->
+						<!-- <img src="https://tpc.googlesyndication.com/simgad/14973722761020579337" border="0" width="300" height="240" alt="" class="img_ad">-->
 					<!-- 	<img src="<?php echo base_url('assets/website/news_image/8724268316456981339.jpg'); ?>" style="margin-top: 25px;" class="img-fluid"> -->
 						 <!-- <video class="vid_home" controls>
 						  <source src="<?php echo base_url('assets/website/news_image/start_en.mp4'); ?>" type="video/mp4">
