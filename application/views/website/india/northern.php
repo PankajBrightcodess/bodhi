@@ -67,7 +67,7 @@
 												echo $val['menu_name'].' | '.$val['submenu'];}else{echo $val['menu_name'];}?></label>
 							       </div>
 				  			<div class="col-md-7 mb-3" style="text-align:justify;"><p><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;">
-				  					// <?php //echo substr(strip_tags($val['tittle']), 0, 50); 
+				  					<?php //echo substr(strip_tags($val['tittle']), 0, 50); 
 											// 	if (strlen($val['tittle']) > 50) {
            //                  				echo '...'; 
            //                  			}
