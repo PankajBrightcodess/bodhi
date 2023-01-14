@@ -2524,6 +2524,11 @@ transition: opacity 300ms ease-out 0s;
 
 /*-------------------------------------------------- RESPONSIVE START ---------------------------------------------------------- */
 @media (max-width: 2560px) {
+
+  .recent-news {
+    /* height: 1315px; */
+    height: 1272px;
+}
  .input-search:focus{
     width: 210px;
   }
