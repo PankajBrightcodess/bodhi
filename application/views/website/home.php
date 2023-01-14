@@ -309,8 +309,8 @@
 							  	<div class="col-md-12 text-slug">
 							    <p class="card-text">
 							    	<a href="<?php echo base_url('website/detailnewsview/' . $value['slug']);?>" style="color: black; ">
-							    		<?php echo substr(strip_tags($value['tittle']), 0, 25); 
-												if (strlen($value['tittle']) > 25) {
+							    		<?php echo substr(strip_tags($value['tittle']), 0, 40); 
+												if (strlen($value['tittle']) > 40) {
                             				echo '...'; 
                             			}
                             	?>
