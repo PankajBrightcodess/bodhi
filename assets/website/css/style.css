@@ -2521,6 +2521,10 @@ transition: opacity 300ms ease-out 0s;
   color: #23618a;
   margin-top: 10px;
 }
+.recent-news {
+    /* height: 1315px; */
+    height: 1274px;
+}
 /*-------------------------------------------------- RESPONSIVE START ---------------------------------------------------------- */
 @media (max-width: 2560px) {
   .input-search:focus{
