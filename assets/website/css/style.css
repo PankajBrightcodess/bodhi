@@ -2828,11 +2828,11 @@ transition: opacity 300ms ease-out 0s;
 }
 @media (min-width: 1024px){
 
-  .iframedit {
+/*  .iframedit {
     width: 106%;
     height: 10%;
     border-radius: 10px;
- }
+ }*/
   .viedo {
     text-align: left;
     font-size: 13px;
