@@ -2,7 +2,8 @@
     <div class="login-container" >
         <div class="bb-login" style="border-radius: 20px; margin-right: 10px; margin-left: 10px;">
             <!-- <form class="bb-form validate-form" method="post" action="<?= base_url('website/logincheck')?>">  -->
-            <form class="bb-form validate-form" method="post" action="<?= base_url('website')?>"> 
+            <form class="bb-form validate-form" method="post" action="<?= base_url('website
+            ')?>"> 
                 <span class="bb-form-title p-b-26"> Welcome </span> <span class="bb-form-title p-b-48"> <img src="<?php echo base_url('assets/images/logo.jpg') ?>" height="150px" width="150px" style="float:center;" style="margin:0px;"></span>
                 <div class="wrap-input100 validate-input" data-validate="Valid email is: a@b.c"> <input class="input100" type="text" name="email"> <span class="bbb-input" data-placeholder="Email"></span> </div>
                 <div class="wrap-input100 validate-input" data-validate="Enter password"> <span class="btn-show-pass"> <i class="mdi mdi-eye show_password"></i> </span> <input class="input100" type="password" name="pass"> <span class="bbb-input" data-placeholder="Password"></span> </div>
