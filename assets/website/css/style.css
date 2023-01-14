@@ -2512,7 +2512,7 @@ transition: opacity 300ms ease-out 0s;
 .aaf .card{
   border-radius: 20px;
   margin-bottom: 10px;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%),
+  box-shadow: 4px 9px 10px -3px #8b8b8b;
 }
 
 /*-------------------------------------------------- RESPONSIVE START ---------------------------------------------------------- */
