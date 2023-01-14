@@ -3044,9 +3044,11 @@ transition: opacity 300ms ease-out 0s;
 .top-news .main-topnews {
     /* height: 1290px; */
     height: 1618px;
-}.recent-news {
+}
+.recent-news {
     /* height: 1290px; */
-    height: 1623px;
+    height: 1413px!important;
+    font-size: 12px;
 }
   .cardsec{
     height: 315px;

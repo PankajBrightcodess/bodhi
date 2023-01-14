@@ -68,7 +68,7 @@
 							       </div>
 				  			<div class="col-md-7 mb-3" style="text-align:justify;"><p><a href="<?php echo base_url('website/detailnewsview/' . $val['slug']);?>" style="color: black;">
 				  					<?php //echo substr(strip_tags($val['tittle']), 0, 50); 
-											// 	if (strlen($val['tittle']) > 50) {
+											// 	if (strlen($val['tittle']) > 50){
            //                  				echo '...'; 
            //                  			}
                             	?>
@@ -105,7 +105,7 @@
 												if (strlen($val['tittle']) > 40) {
                             				echo '...'; 
                             			}
-                            	?>
+                            	?
 						    	</a></p></div>
 						    <div class="col-md-12 slug-time">
 							  <label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?>
