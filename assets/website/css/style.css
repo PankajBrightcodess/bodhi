@@ -3127,6 +3127,10 @@ transition: opacity 300ms ease-out 0s;
   }
 }*/
 @media (max-width: 576px) {
+  .home-india .text-slug a {
+    /*color: black;*/
+    font-size: 14px;
+}
   .iframedit {
     width: 100%;
     height: 260px;
