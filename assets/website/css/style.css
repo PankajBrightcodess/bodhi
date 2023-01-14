@@ -2524,11 +2524,7 @@ transition: opacity 300ms ease-out 0s;
 
 /*-------------------------------------------------- RESPONSIVE START ---------------------------------------------------------- */
 @media (max-width: 2560px) {
-  .recent-news {
-    /* height: 1315px; */
-    height: 1274px;
-}
-  .input-search:focus{
+ .input-search:focus{
     width: 210px;
   }
   .btn-search:focus ~ .input-search{
@@ -2642,6 +2638,11 @@ transition: opacity 300ms ease-out 0s;
   }
 }
 @media(max-width:  1440px){
+    .recent-news {
+    /* height: 1315px; */
+    height: 1274px;
+}
+ 
   .input-search:focus{
     width: 140px;
   }
