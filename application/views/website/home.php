@@ -242,7 +242,7 @@
 										<?php //echo substr(strip_tags($val['tittle']), 0, 37); 
 												//if (strlen($val['tittle']) > 37) {
                             				//echo '...'; 
-                            			}
+                            			// }
                             	?>
 									</a>
 								</p>
