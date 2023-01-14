@@ -3452,8 +3452,8 @@ transition: opacity 300ms ease-out 0s;
     /*height: 970px;*/
     height: auto;
   }
- .recent-news {
-    height: 1536px;
+.recent-news {
+    height: 1225px;
 }
   .cardsec{
     height: 315px;
