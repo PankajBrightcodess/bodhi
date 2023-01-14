@@ -2524,16 +2524,13 @@ transition: opacity 300ms ease-out 0s;
 }
 
 .home-india img {
-    height: 9rem;
+    height: 9rem!important;
     width: 100%;
 }
 
 /*-------------------------------------------------- RESPONSIVE START ---------------------------------------------------------- */
 @media (max-width: 2560px) {
-  .home-india img {
-    height: 9rem;
-    width: 100%;
-}  
+  
  .input-search:focus{
     width: 210px;
   }
