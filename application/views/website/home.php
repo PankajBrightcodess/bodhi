@@ -214,9 +214,10 @@
 
 	<div class="col-md-3 col-sm-12 mb-3  aaf">
 			<div class="row">
-	           <h2>Top News</h2>
+
              	<div class="col-md-12">
              	   <div class="card">
+             	   	<h2>Top News</h2>
              		 <iframe  class="iframedit" src="https://www.youtube.com/embed/NDy5ebew7gI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <p class="viedo" >Security Breach in pm Modi's Karnataka Roadshow</p>
              	    </div>
