@@ -3473,7 +3473,7 @@ transition: opacity 300ms ease-out 0s;
     height: auto;
   }
 .recent-news {
-    height: 1225px;
+    height: 1225px!important;
 }
   .cardsec{
     height: 315px;
