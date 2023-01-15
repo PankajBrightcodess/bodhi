@@ -2648,6 +2648,9 @@ transition: opacity 300ms ease-out 0s;
     /* height: 1315px; */
     height: 1330px!important;
 }
+.top-news .main-topnews{
+    height: 1684px;
+  }
  
   .input-search:focus{
     width: 140px;
@@ -2658,7 +2661,7 @@ transition: opacity 300ms ease-out 0s;
 }
 @media(max-width: 1439px){
   .top-news .main-topnews{
-    height: 1364px;
+    height: 1684px;
   }
   .topnews1{
     height: 940px;
@@ -2670,7 +2673,7 @@ transition: opacity 300ms ease-out 0s;
 @media(max-width:  1396px){
   .top-news .main-topnews{
     /*height: 1259px;*/
-    height: 1330px;
+    height: 1545px;
   }
   .recent-news{
     height: 1259px;
