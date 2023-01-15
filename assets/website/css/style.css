@@ -2669,6 +2669,9 @@ transition: opacity 300ms ease-out 0s;
   .top-news .topnews2{
     height: 940px;
   }
+  .recent-news{
+    height: 1355px!important;
+  }
 }
 @media(max-width:  1396px){
   .top-news .main-topnews{
