@@ -3412,6 +3412,9 @@ transition: opacity 300ms ease-out 0s;
     font-family: 'Faustina',sans;
     font-size: 21px;
 }
+.recent-news{
+    height: 1215px!important;
+  }
 
 }
 @media (max-width: 320px){
