@@ -2632,10 +2632,7 @@ transition: opacity 300ms ease-out 0s;
     /*height: 1315px;*/
      height: 1602px;
   }
- .recent-news {
-    /* height: 1315px; */
-    height: 1330px!important;
-}
+ 
   .cardsec{
     height: 335px;
   }
@@ -2649,7 +2646,7 @@ transition: opacity 300ms ease-out 0s;
 @media(max-width:  1440px){
     .recent-news {
     /* height: 1315px; */
-    height: 1274px;
+    height: 1330px!important;
 }
  
   .input-search:focus{
