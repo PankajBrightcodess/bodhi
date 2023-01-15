@@ -2847,7 +2847,7 @@ transition: opacity 300ms ease-out 0s;
   }
    .top-news .main-topnews{
     /*height: 1163px;*/
-   height: 1460px;
+   height: 1459px!important;
   }
   .recent-news {
     /* height: 1163px; */
