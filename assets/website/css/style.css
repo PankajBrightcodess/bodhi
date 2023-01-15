@@ -3393,7 +3393,7 @@ transition: opacity 300ms ease-out 0s;
     height: auto;
   }
   .recent-news{
-    height: auto;
+    height: 1140px!important;
   }
   .cardsec{
     height: 350px;
