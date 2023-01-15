@@ -2634,7 +2634,7 @@ transition: opacity 300ms ease-out 0s;
   }
  .recent-news {
     /* height: 1315px; */
-    height: 1597px;
+    height: 1330px!important;
 }
   .cardsec{
     height: 335px;
