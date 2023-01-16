@@ -13,7 +13,7 @@
     <?php if($title == 'News Description'){ ?>
     <link rel="canonical" href="<?= base_url(); ?>website/detailnewsview/<?= $val['slug']; ?>" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="Choicenext" />
+    <meta property="og:site_name" content="Bodhiwire" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="<?= $val['tittle']; ?>" />
     <meta property="og:description" content="<?= $val['tittle']; ?>" />
@@ -26,7 +26,7 @@
       ?>
     <link rel="canonical" href="<?= base_url(); ?>website/detailnewsview/<?= $val['slug']; ?>" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="Choicenext" />
+    <meta property="og:site_name" content="Bodhiwire" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="<?= $val['tittle']; ?>" />
     <meta property="og:description" content="<?= $val['tittle']; ?>" />
