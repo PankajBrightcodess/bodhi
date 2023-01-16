@@ -4,21 +4,17 @@
 
 <head>
       <!-- thumbnail-->
-
-    <meta property=’og:title’ content='TITLE OF YOUR WEBSITE'/>
-    <meta property=’og:image’ content='https://YOUR_THUMBNAIL_IMAGE_URL’/>
-    <meta property=’og:description’ content='DESCRIPTION OF YOUR SITE/>
-    <meta property=’og:url’ content='URL OF YOUR WEBSITE'/>
-    <meta property='og:image:width' content='1200' />
-    <meta property='og:image:height' content='627' />
-     <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
-    <meta property="og:type" content='website'/>
-
-
-
-
-
-
+    <link rel="canonical" href="<?= base_url(); ?>website/news_details?aswqert=<?= $title; ?>/">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Bodhiwire" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="<?= $news[0]['title']; ?>" />
+    <meta property="og:description" content="<?= $news[0]['title']; ?>" />
+    <meta property="og:url" content="<?= base_url(); ?>website/news_details?aswqert=<?= $title; ?>" />
+    <meta property="og:image" content="<?= file_url($news[0]['image']); ?>" />
+    <meta property="og:image:secure_url" content="<?= file_url($news[0]['image']); ?>" />
+    <meta property="og:image:width" content="120" />
+    <meta property="og:image:height" content="100" />
 
 
      <meta name="theme-color" content="#23618a">
