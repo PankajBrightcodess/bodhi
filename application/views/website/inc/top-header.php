@@ -3,14 +3,14 @@
 <html lang="en">
 
 <head>
-      <!-- thumbnail-->
-    <link rel="canonical" href="<?= base_url(); ?>website/news_details?aswqert=<?= $title; ?>/">
+    <!-- thumbnail-->
+    <link rel="canonical" href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>">
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Bodhiwire" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="<?= $news[0]['title']; ?>" />
     <meta property="og:description" content="<?= $news[0]['title']; ?>" />
-    <meta property="og:url" content="<?= base_url(); ?>website/news_details?aswqert=<?= $title; ?>" />
+    <meta property="og:url" content="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>"/>
     <meta property="og:image" content="<?= file_url($news[0]['image']); ?>" />
     <meta property="og:image:secure_url" content="<?= file_url($news[0]['image']); ?>" />
     <meta property="og:image:width" content="120" />
