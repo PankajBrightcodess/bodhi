@@ -22,7 +22,7 @@
     <meta property="og:image:secure_url" content="<?= file_url($val['image']); ?>" />
     <meta property="og:image:width" content="120" />
     <meta property="og:image:height" content="100" />
-    <?php }else if($title == 'Country'){
+    <?php }elseif($title == 'Country'){
       ?>
     <link rel="canonical" href="<?= base_url(); ?>website/detailnewsview/<?= $val['slug']; ?>" />
     <meta property="og:locale" content="en_US" />
@@ -35,6 +35,7 @@
     <meta property="og:image:secure_url" content="<?= file_url($val['image']); ?>" />
     <meta property="og:image:width" content="120" />
     <meta property="og:image:height" content="100" />
+    <?php 
     } ?>
 <!-- end -->
 
