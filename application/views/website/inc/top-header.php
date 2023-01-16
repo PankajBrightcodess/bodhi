@@ -3,7 +3,6 @@
 <html lang="en">
 
 <head>
-  <p>fihsuihfskdjnc</p>
      <meta name="theme-color" content="#23618a">
 
     <link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/images/logo.png') ?>">
