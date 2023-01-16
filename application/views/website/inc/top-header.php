@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- thumbnail-->
+<!-- thumbnail -->
     <?php if($title == 'News Description'){ ?>
     <link rel="canonical" href="<?= base_url(); ?>website/detailnewsview/'.$val['slug; ?>/">
     <meta property="og:locale" content="en_US" />
@@ -26,7 +26,7 @@
 <!-- end -->
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title style="margin-left: 30%;"><?php if(!empty($title)){ echo $title; }else{ echo 'Bodhiwire'; } ?></title>
+    <title style="margin-left: 30%;"><?php if(!empty($title)){ echo $title."| Bodhiwire"; }else{ echo 'Bodhiwire'; } ?></title>
     <!-- plugins -->
     <link href="<?php echo base_url('assets/website/css/vendors.css')?>" rel="stylesheet">
     <!--icons-->
