@@ -73,6 +73,7 @@ class Website extends CI_Controller {
 	}
 	public function detailnewsview($slug)
     {
+    	$d['title']="News Description";
       $d['result'] = $this->Account_model->getslugresult($slug);
 		$d['result4']=$this->Account_model->getmenus();
 		$d['v'] = 'website/india/detailnews';

@@ -3,28 +3,30 @@
 <html lang="en">
 
 <head>
-    <!-- thumbnail-->
-    <link rel="canonical" href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>">
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="Bodhiwire" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="<?= $news[0]['title']; ?>" />
-    <meta property="og:description" content="<?= $news[0]['title']; ?>" />
-    <meta property="og:url" content="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>"/>
-    <meta property="og:image" content="<?= file_url($news[0]['image']); ?>" />
-    <meta property="og:image:secure_url" content="<?= file_url($news[0]['image']); ?>" />
-    <meta property="og:image:width" content="120" />
-    <meta property="og:image:height" content="100" />
-
-
      <meta name="theme-color" content="#23618a">
 
     <link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/images/logo.png') ?>">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- thumbnail-->
+    <?php if($title == 'News Description'){ ?>
+    <link rel="canonical" href="<?= base_url(); ?>website/detailnewsview/'.$val['slug; ?>/">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Choicenext" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="<?= $val['tittle']; ?>" />
+    <meta property="og:description" content="<?= $val['tittle']; ?>" />
+    <meta property="og:url" content="<?= base_url(); ?>website/detailnewsview/'.$val['slug; ?>" />
+    <meta property="og:image" content="<?= file_url($val['image']); ?>" />
+    <meta property="og:image:secure_url" content="<?= file_url($val['image']); ?>" />
+    <meta property="og:image:width" content="120" />
+    <meta property="og:image:height" content="100" />
+    <?php } ?>
+<!-- end -->
+
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title style="margin-left: 30%;">Bodhiwire</title>
+    <title style="margin-left: 30%;"><?php if(!empty($title)){ echo $title; }else{ echo 'Bodhiwire'; } ?></title>
     <!-- plugins -->
     <link href="<?php echo base_url('assets/website/css/vendors.css')?>" rel="stylesheet">
     <!--icons-->

@@ -29,7 +29,7 @@
 					        </label>
 					       </div>
 					       <div class="card-body text-slug">
-					 	  <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black;"><h2 class="card-title">
+					 	    <a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black;"><h2 class="card-title">
 					 	  		<?php echo substr(strip_tags($val['tittle']), 0, 50); 
 												if (strlen($val['tittle']) > 50) {
                             				echo '...'; 
@@ -41,7 +41,7 @@
 						  <div class="col-md-12 slug-time">
 								<label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?></label>
 						        
-						  </div>
+						 </div>
 				  	<?php }} }?>
 				  	</div>
 				  	<div class="col-md-5 ">
