@@ -3,6 +3,24 @@
 <html lang="en">
 
 <head>
+      <!-- thumbnail-->
+
+    <meta property=’og:title’ content='TITLE OF YOUR WEBSITE'/>
+    <meta property=’og:image’ content='https://YOUR_THUMBNAIL_IMAGE_URL’/>
+    <meta property=’og:description’ content='DESCRIPTION OF YOUR SITE/>
+    <meta property=’og:url’ content='URL OF YOUR WEBSITE'/>
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='627' />
+     <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
+    <meta property="og:type" content='website'/>
+
+
+
+
+
+
+
+
      <meta name="theme-color" content="#23618a">
 
     <link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/images/logo.png') ?>">
@@ -41,26 +59,11 @@
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
           <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.6.3/css/ionicons.min.css" rel="stylesheet"> -->
           <link rel="preconnect" href="https://fonts.googleapis.com">
-<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abel&family=Arvo&family=Cinzel:wght@500&family=Heebo:wght@100;300;400;800&family=Holtwood+One+SC&family=M+PLUS+1p:wght@900&family=Readex+Pro:wght@500;600&display=swap" rel="stylesheet"> -->
+          <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arvo&family=Cinzel:wght@500&family=Heebo:wght@100;300;400;800&family=Holtwood+One+SC&family=M+PLUS+1p:wght@900&family=Readex+Pro:wght@500;600&display=swap" rel="stylesheet"> -->
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arvo&family=Cinzel:wght@500&family=Heebo:wght@100;300;400;800&family=Holtwood+One+SC&family=M+PLUS+1p:wght@900&family=Readex+Pro:wght@500;600&display=swap" rel="stylesheet">
