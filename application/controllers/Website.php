@@ -35,6 +35,8 @@ class Website extends CI_Controller {
 		
 	public function india($id,$menu_name){
 		// print_r($id);die;
+		// $d['title']=$this->uri->segment('4');
+		$d['title']='Country';
 	   $d['v'] = 'website/india/india';
 	    $d['menu']=$menu_name;
 	   $d['result4']=$this->Account_model->getmenus();
