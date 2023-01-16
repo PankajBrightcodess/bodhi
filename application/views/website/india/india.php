@@ -7,9 +7,6 @@
         </div>
         <div class="col-md-12">
         <hr style="color:black;">
-
-
-
         
        </div>
         <div class="col-md-12">
