@@ -64,6 +64,7 @@ class Website extends CI_Controller {
 	}
 	// '''''''''''India Sub Menu'''''''''''''''''''''''''
 	public function north($id,$menu_name,$submenu){
+		$d['title']='Country';
 	    $d['v'] = 'website/india/northern';
 	    $d['result']=$this->Account_model->fetchnews($id);
 	    $d['menu']=$menu_name;
