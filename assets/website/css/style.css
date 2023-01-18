@@ -2758,7 +2758,7 @@ transition: opacity 300ms ease-out 0s;
 }*/
 @media (max-width: 1024px) {
   .video {
-    text-align: left;
+   /* text-align: left;*/
     margin-left: 16px;
     font-size: 18px;
     font-weight: 700;
