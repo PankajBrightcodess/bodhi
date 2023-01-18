@@ -2497,7 +2497,7 @@ transition: opacity 300ms ease-out 0s;
 }
 
 .video{
-   text-align: left;
+   /*text-align: left;*/
    margin-left: 16px;
    font-size: 20px;
    font-weight: 700;
