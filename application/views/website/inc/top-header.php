@@ -10,8 +10,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- thumbnail -->
-    <?php if($title == 'News Description'){ ?>
-    <link rel="canonical" href="<?= base_url(); ?>website/detailnewsview/<?= $val['slug']; ?>" />
+    <?php //if($title == 'News Description'){ ?>
+   <!--  <link rel="canonical" href="<?= base_url(); ?>website/detailnewsview/<?= $val['slug']; ?>" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Choicenext" />
     <meta property="og:type" content="article" />
@@ -36,7 +36,7 @@
     <meta property="og:image:width" content="120" />
     <meta property="og:image:height" content="100" />
     <?php 
-    } ?>
+    } ?> -->
 <!-- end -->
 
 
