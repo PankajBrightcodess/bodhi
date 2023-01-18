@@ -124,8 +124,6 @@
                                                 <ul>
                                                     <?php $result = $this->Account_model->getsubmenuslist(array('menu' => $val['menu_name'])); ?>
                                                     <?php if (!empty($result)) {
-                                                      echo PRE;
-                                                      print_r($result);die;
                                                         foreach ($result as $val) {  ?>
                                                             <li><a href="<?php echo base_url('website/north/' . $val['id'] . '/' . $m . '/' . $val['submenu']) ?>"><h5 style="font-size: 14px;"><?= $val['submenu'] ?></h5></a></li>
                                                     <?php }
