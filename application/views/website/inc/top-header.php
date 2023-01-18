@@ -23,9 +23,9 @@
     <meta property="og:image:width" content="120" />
     <meta property="og:image:height" content="100" />
     <?php }
-    // elseif($title == 'Country'){
+    elseif($title == 'Country'){
       ?>
-    <!-- <link rel="canonical" href="<?= base_url(); ?>website/detailnewsview/<?= $val['slug']; ?>" />
+    <link rel="canonical" href="<?= base_url(); ?>website/detailnewsview/<?= $val['slug']; ?>" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Choicenext" />
     <meta property="og:type" content="article" />
@@ -35,9 +35,9 @@
     <meta property="og:image" content="<?= file_url($val['image']); ?>" />
     <meta property="og:image:secure_url" content="<?= file_url($val['image']); ?>" />
     <meta property="og:image:width" content="120" />
-    <meta property="og:image:height" content="100" /> -->
+    <meta property="og:image:height" content="100" />
     <?php 
-    //} ?>
+    } ?>
 <!-- end -->
 
 
