@@ -219,8 +219,8 @@
              	<div class="col-md-12">
              	   <div class="card">
              	   	<h2 class="tn">Top News</h2>
-             		<iframe width="560" height="315" src="https://www.youtube.com/embed/7gnO9GwkwkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        <center><p >Coming soon...</p></center>
+             		 <iframe  src="https://www.youtube.com/embed/7gnO9GwkwkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <center><p class="video" >Coming soon...</p></center>
              	    </div>
              	</div>
             </div>
