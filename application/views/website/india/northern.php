@@ -18,8 +18,7 @@
 				<!--   <h3>Economy</h3> -->
 				  <div class="row top-news topnews1">
 				  	<div class="col-md-7 main-topnews topnews2" >
-					  <?php $j=0; if(!empty($result)){      
-					  print_r($result);die;       
+					  <?php $j=0; if(!empty($result)){     
                          foreach($result as $val){ $j++;if($val['big_news_status'] == 1){ 
                           ?>
 				  		<a href="<?php echo base_url('website/detailnewsview/'.$val['slug']);?>" style="color: black;" class="img-hover"><img src="<?php echo base_url();?><?php echo $val['image'] ?>" style="margin-top: 10px;" class="img-fluid"></a><hr>
