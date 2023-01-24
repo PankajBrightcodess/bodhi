@@ -78,7 +78,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arvo&family=Cinzel:wght@500&family=Heebo:wght@100;300;400;800&family=Holtwood+One+SC&family=IM+Fell+English+SC&family=M+PLUS+1p:wght@900&family=Playfair+Display+SC&family=Readex+Pro:wght@500;600&display=swap" rel="stylesheet">
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8206923290027988"
+     crossorigin="anonymous"></script>
     
 
 
