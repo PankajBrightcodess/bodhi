@@ -105,7 +105,7 @@
 												if (strlen($val['tittle']) > 40) {
                             				echo '...'; 
                             			}
-                            	?
+                            	?>
 						    	</a></p></div>
 						    <div class="col-md-12 slug-time">
 							  <label><?php echo date('d-m-Y, h:i A',strtotime($val['entrydate']));?>

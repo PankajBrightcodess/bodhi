@@ -72,7 +72,7 @@ class Website extends CI_Controller {
 		$d['result2']=$this->Account_model->fetchnewstwo();
 		$d['result3']=$this->Account_model->fetchnewsthree();
 		$d['result4']=$this->Account_model->getmenus();
-		echo PRE;print_r($d);die;
+		// echo PRE;print_r($d);die;
 		$this->load->view('website/template',$d);	
 	}
 	public function detailnewsview($slug)
