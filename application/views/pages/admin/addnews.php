@@ -29,7 +29,7 @@
                                     <div class="col-sm-6 col-md-6 mb-2">
                                         <lable style="font-size: 15px; font-weight:600">Sub Menu</lable>
                                          <select class="form-control submenus"   name="submenu_id">
-                                                    <option value="">----SELECT----</option>
+                                             <option value="">----SELECT----</option>
                                          </select>
                                     </div>
                                 </div>
@@ -436,8 +436,4 @@
     $('#amount').toggle();
     $('#amtlable').toggle();
 });
-
-
-
-
-    </script>  
+</script>  
