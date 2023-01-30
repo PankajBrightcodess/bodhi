@@ -138,12 +138,8 @@
         
       
     });
-
-
-  
     </script> 
-<script>
-	
+ <script>
 	$(document).ready(function(e) {
         $('.hoverable').mouseenter(function(){
             //$('[data-toggle="popover"]').popover();
@@ -219,4 +215,4 @@
 		});
         $('#parent_id').trigger('change');
     });
-</script>
+ </script>
