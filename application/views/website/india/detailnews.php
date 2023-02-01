@@ -52,6 +52,10 @@
 
 				  		 <div class="col-md-6">
 				  		 	<div class="social-links2">
+
+                  <a target="_blank" href="https://twitter.com/intent/tweet?url=<?= base_url('website/detailnewsview/'.$result['tittle']); ?>" class="social-links-item twitter-icon"></a>
+
+
                   <a class="social-links-item twitter-icon" title="Twitter" href="https://twitter.com/">Twitter</a>
                  
 
