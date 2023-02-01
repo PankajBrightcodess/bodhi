@@ -53,8 +53,16 @@
 				  		 <div class="col-md-6">
 				  		 	<div class="social-links2">
                   <a class="social-links-item twitter-icon" title="Twitter" href="https://twitter.com/">Twitter</a>
-                  <a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[summary]<?= $val['tittle']; ?> ?>&p[url]=<?= base_url('website/detailnewsview/=' .$news[0]['slug']); ?>&p[title]=<?= $news[0]['title']; ?>"></a>
-                  <a class="social-links-item facebook-icon" title="Facebook" href="https://www.facebook.com/">Facebook</a>
+                 
+
+
+                  <a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[summary]=<?= $result['title']; ?>&p[url]=<?= base_url('website/detailnewsview/'.$result['title']); ?>" class="social-links-item facebook-icon"></a>
+
+
+                  <!-- <a class="social-links-item facebook-icon" title="Facebook" href="https://www.facebook.com/">Facebook</a> -->
+
+
+
                   <a class="social-links-item linkedin-icon" title="Linked In" href="https://www.linkedin.com/">LinkedIn</a>
                   <a class="social-links-item" title="Instagram" href="#nogo"><img src="../../assets/images/2111463.png" style="float: right;width: 33px!important;height: 33px!important;">Instagram</a>
                  <!--  <a class="social-links-item mail-icon" title="Gmail" href="#nogo">Email</a> -->
