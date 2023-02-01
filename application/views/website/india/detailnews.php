@@ -38,7 +38,8 @@
 									  	<a href="<?php echo base_url('website/india/'.$result['menu_id'].'/'.$result['menu_name'])?>" style="color: #23618a !important;">
 									  	<?php echo '  |  '.$result['menu_name']  ?>
 									  </a>
-									  	<?php ;}?></label>
+									  	<?php ;}?>
+                  </label>
 				        </div>
 				        <div class="col-md-12 sub-news">
         	          <h4><?= $result['tittle'] ?></h4>
