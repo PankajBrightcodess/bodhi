@@ -54,16 +54,16 @@
 				  		 <div class="col-md-6">
 				  		 	<div class="social-links2">
 
-                 <!--  <a target="_blank" href="https://twitter.com/intent/tweet?url=<?= base_url('website/detailnewsview/'.$result['tittle']); ?>" class="social-links-item twitter-icon"></a> -->
+                  <a target="_blank" href="https://twitter.com/intent/tweet?url=<?= base_url('website/detailnewsview/'.$result['tittle']); ?>" class="social-links-item twitter-icon"></a>
 
-                  <a class="social-links-item twitter-icon" title="Twitter" href="https://twitter.com/">Twitter</a>
+                  <!-- <a class="social-links-item twitter-icon" title="Twitter" href="https://twitter.com/">Twitter</a> -->
                  
 
 
                   <!-- <a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[summary]=<?= $result['news']; ?>&p[url]=<?= base_url('website/detailnewsview/'.$result['tittle']); ?>" class="social-links-item facebook-icon"></a> -->
 
 
-                  <a class="social-links-item facebook-icon" title="Facebook" href="https://www.facebook.com/">Facebook</a>
+                  <!-- <a class="social-links-item facebook-icon" title="Facebook" href="https://www.facebook.com/">Facebook</a> -->
 
 
 
