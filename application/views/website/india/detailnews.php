@@ -56,7 +56,7 @@
                  
 
 
-                  <a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[summary]=<?= $result['tittle']; ?>&p[url]=<?= base_url('website/detailnewsview/'.$result['tittle']); ?>" class="social-links-item facebook-icon"></a>
+                  <a target="_blank" href="http://www.facebook.com/sharer.php?s=100&p[summary]=<?= $result['news']; ?>&p[url]=<?= base_url('website/detailnewsview/'.$result['tittle']); ?>" class="social-links-item facebook-icon"></a>
 
 
                   <!-- <a class="social-links-item facebook-icon" title="Facebook" href="https://www.facebook.com/">Facebook</a> -->
