@@ -84,7 +84,7 @@ class Website extends CI_Controller {
 		$d['v'] = 'website/india/detailnews';
 		// $time = $d['result']['entrydate'];
 		// $this->updatetime($time);
-		echo PRE;print_r($d);die;
+		// echo PRE;print_r($d);die;
 		 $this->load->view('website/template',$d);
     }
     
