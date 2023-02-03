@@ -81,7 +81,7 @@ if(empty($error) && !empty($payment_token_data)){
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>PHP Kit for Layer Payment</title>
+<title>Payment</title>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
@@ -109,12 +109,25 @@ if(empty($error) && !empty($payment_token_data)){
 	}
 </style>
 <body>
-<div class="main">
+
+	<body style="background: #569EEA;">
+<section class="payment-page">  
+    <div class="container">
+    <div class="row" style='background-color:#569EEA;'>
+        <div class="col-md-1"></div>
+        <div class="col-md-10 p-3">   
+            <h3 style="color:#fff;">Make Payment</h3><hr/>   
+            <div class="row">
+                <div class="col-md-12 card p-3">
+                    <div class="row">
+                        <div class="col-6 col-md-6">
+                        	<div class="main">
 	<div class="logo">
 		<img src="logo.png" height="20" alt="Layer Payment" />
+		 <h3><?php echo ucwords($sample_data['name']);?></h3>
 	</div>
 
-	<div class="dv">
+	<!-- <div class="dv">
 		<label>Full Name: <?php echo $sample_data['name']; ?></label>
 	</div>
 	<div class="dv">
@@ -126,9 +139,32 @@ if(empty($error) && !empty($payment_token_data)){
 	<div class="dv">
 		<label>Amount: <?php echo $sample_data['currency'].' '.$sample_data['amount']; ?></label>
 	</div>
-		
+		 -->
 	
-	<div id="layerloader">
+	
+</div>
+                           
+                            <!-- <p class='mb-0' style='font-size:14px'>+91-<?php echo $allrecord['phone'];?></p> -->
+                        </div>
+                        
+                    </div><hr/>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <u><h5>Request Details</h5></u>
+                                <div class="form-row">
+                                    <label for="" class="col-6 col-md-6">Request No :</label>
+                                    <p class='col-6 col-md-6'><?php echo $allrecord['mtx'];?></p>
+                                </div>
+                                <div class="form-row">
+                                    <label for="" class="col-6 col-md-6"> Total Amount:</label>
+                                    <p class='col-6 col-md-6 text-danger' style='font-size:20px;font-weight:600'>Rs.<?php echo $sample_data['amount'];?></p>
+                                    <!-- <?php echo PRE; print_r($allrecord);?> -->
+                                </div>                       
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                    <div id="layerloader">
 		
 		<?php 
 			if(!empty($error)) echo $error;
@@ -138,7 +174,15 @@ if(empty($error) && !empty($payment_token_data)){
 			</div>
 		<?php echo $html;}?>
 	</div>
-</div>
+                </div>
+            </div>                 
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    
+    </div>
+</section>
+
 <script type="text/javascript">
 	function triggerLayer() {
 
