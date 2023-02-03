@@ -115,10 +115,13 @@ try {
         else{
             // echo $status;    
             echo "<h3>".$status."</h3>";  
-            ?>
+        } 
+        if($payment_data['status']=='authorized'){
+        ?>
             <p style="color:green;">Your Payment has been Successfully Recieved !!!</p>
+
             <?php
-            } 
+        }
     ?>
     </div>
               <!-- <h3>Payment Successfull !!!</h3> -->

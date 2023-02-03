@@ -135,7 +135,7 @@ if(empty($error) && !empty($payment_token_data)){
                         <div class="col-6 col-md-6">
                         	<div class="main">
 	<div class="logo">
-		<img src="l<?= base_url('assets/website/logo.png'); ?>" height="20" alt="Payment Logo" />
+		<img src="<?= base_url('assets/website/logo.png'); ?>" height="20" alt="Payment Logo" />
 		 <h3><?php echo ucwords($sample_data['name']);?></h3>
 	</div>
 
