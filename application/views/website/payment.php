@@ -166,7 +166,7 @@ if(empty($error) && !empty($payment_token_data)){
                             <u><h5>Request Details</h5></u>
                                 <div class="form-row">
                                     <label for="" class="col-6 col-md-6">Request No :</label>
-                                    <p class='col-6 col-md-6'><?php echo $allrecord['mtx'];?></p>
+                                    <p class='col-6 col-md-6'><?php echo $tranid;?></p>
                                 </div>
                                 <div class="form-row">
                                     <label for="" class="col-6 col-md-6"> Total Amount:</label>
@@ -182,7 +182,7 @@ if(empty($error) && !empty($payment_token_data)){
 			if(!empty($error)) echo $error;
 			if (isset($html)) { ?>
 			<div class="dv">
-				<input id="submit" name="submit" value="Pay" type="button" onclick="triggerLayer();">
+				<input id="submit" name="submit" value="Pay" type="button" class="btn btn-sm btn-success"  onclick="triggerLayer();">
 			</div>
 		<?php echo $html;}?>
 	</div>
