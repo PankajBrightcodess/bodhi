@@ -353,7 +353,7 @@ class Website extends CI_Controller {
          $lengths = 6;
         $orderno = substr(str_shuffle(str_repeat($y='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz', ceil($lengths/strlen($y)) )),1,$lengths);;
         $custname = $row['name'];
-        $custlast = $row['last'];
+        $custname = $row['last'];
         $productinfo = 'Payment for Read News';
         $txnid = time();
         $contect = $row['phone'];
@@ -367,7 +367,7 @@ class Website extends CI_Controller {
         $merchant_order_id=substr(str_shuffle(str_repeat($x='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz', ceil($length/strlen($x)) )),1,$length);
         $card_holder_name = $row['name'];
         $custname = $row['name'];
-        $custlast = $row['last'];
+        $custname = $row['last'];
         $email =  $row['email'];
         $phone = $row['phone'];
         $name = "Customer of $custname - $orderno";
@@ -401,7 +401,7 @@ class Website extends CI_Controller {
         $paisaprice = $someprice*100;
         $orderno = $row['request_no'];
         $custname = $row['name'];
-        $custlast = $row['last'];
+        $custname = $row['last'];
         $productinfo = 'Payment for Read News';
         $txnid = time();
         // $contect = $row['contect'];
