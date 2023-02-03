@@ -426,8 +426,6 @@ class Website extends CI_Controller {
         $payrecord['merchant_trans_id'] = $txnid;
         // $payrecord['phone'] = $contect;
         $data['allrecord'] =$payrecord;
-        // echo PRE;
-        // print_r($payrecord);die;
          $this->load->view('website/payment',$data);
         // echo PRE;
         // print_r($result);die;
