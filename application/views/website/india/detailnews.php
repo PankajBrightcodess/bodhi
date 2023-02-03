@@ -160,9 +160,9 @@
   			    		<p style="font-weight: 700;">I would like to contribute.</p>
   			    		<div class="row justify-content-center">
   			    			<div class="col-md-4">
-                     <input type="radio" id="once" name="fav_language" value="once">
+                     <input  class="btn btn-transparent btn-block" style="background:#e7f1ff;" type="radio" id="once" name="fav_language" value="once">
                         <label for="once">Once</label>
-  			    				<p class="btn btn-transparent btn-block" style="background:#e7f1ff;">Once</p>
+  			    				<p >Once</p>
   			    			</div>
   			    			<div class="col-md-4">
   			    				<p class="btn btn-transparent btn-block" style="background:#e7f1ff;">Monthly</p>
