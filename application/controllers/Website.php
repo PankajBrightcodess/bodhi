@@ -396,7 +396,7 @@ class Website extends CI_Controller {
         $_SESSION['last_inst_id'] = $id;
         $row=$this->Account_model->fatchregisteredrecord($id);
        
-         $content =define("API_KEY","rzp_test_KVV2yNPLssjS3jUvH171bc3x");
+        $content =define("API_KEY","rzp_test_KVV2yNPLssjS3jUvH171bc3x");
         $someprice = $row['amount'];
         $paisaprice = $someprice*100;
         $orderno = $row['request_no'];
