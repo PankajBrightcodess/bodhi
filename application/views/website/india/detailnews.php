@@ -159,11 +159,9 @@
         				<p>Support Bodhi Wire with one time or regular contributions to protect independent journalism in the interest of society and the world at large. Contributions from responsible readers like you enable us in covering the world events following the highest standards of journalism. Write to us at office@bodhiwire.com</u>
   			    		<p style="font-weight: 700;">I would like to contribute.</p>
   			    		<div class="row justify-content-center">
-                  <div class="col-md-1">
-                    <input  type="radio" id="once" name="fav_language" value="once">
-                  </div>
-  			    			<div class="col-md-3">
-                   <label class="btn btn-transparent btn-block" style="background:#e7f1ff;" for="once">Once</label>
+  			    			<div class="col-md-4">
+                     <input  type="radio" id="once" name="fav_language" value="once">
+                   <label  style="background:#e7f1ff;" for="once">Once</label>
   			    			</div>
   			    			<div class="col-md-4">
   			    				<p class="btn btn-transparent btn-block" style="background:#e7f1ff;">Monthly</p>
