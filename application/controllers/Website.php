@@ -346,6 +346,12 @@ class Website extends CI_Controller {
 
 	public function payments(){
 		$row = $this->input->post();
+		if($row['amount1']== ''){
+			$row['amount']= $row['amount'];
+		}
+		if($row['amount']== ''){
+			$row['amount']= $row['amount1'];
+		}
         // $content =define("API_KEY","rzp_test_KVV2yNPLssjS3jUvH171bc3x");
         $content =define("API_KEY","5fd77d30-a37c-11ed-a776-adcf2ed2e9b6");
         $someprice = $row['amount'];

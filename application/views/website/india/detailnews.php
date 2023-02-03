@@ -185,7 +185,7 @@
                     <label  style="background:#e7f1ff; padding-left: 20px; padding-right: 50px; padding-left: 50px; padding-top: 7px;                       padding-bottom: 6px;" for="number">₹1000</label>
                   </div>
   			    			<div class="col-md-3">
-  			    				<input type="number" name="amount" placeholder="Enter Your Amount" class="form-control">
+  			    				<input type="number" name="amount1" placeholder="Enter Your Amount" class="form-control">
   			    				<!-- <p class="btn btn-primary btn-block">enter your amount</p>-->
   			    			</div>
   			    			<div class="col-md-12">
