@@ -460,11 +460,11 @@ class Website extends CI_Controller {
   }
 
   public function payments(){
-  	$this->load->view('website/pages/payment');
+  	$this->load->view('website/payment');
   }
 
   public function response(){
-  	$this->load->view('website/pages/response');
+  	$this->load->view('website/response');
   }
 
   public function search(){
