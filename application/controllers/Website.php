@@ -346,20 +346,17 @@ class Website extends CI_Controller {
 
 	public function payments(){
 		$row = $this->input->post();
-		echo PRE;
-		print_r($row);die;
-
         $content =define("API_KEY","rzp_test_KVV2yNPLssjS3jUvH171bc3x");
         $someprice = $row['amount'];
         $paisaprice = $someprice*100;
          $lengths = 6;
         $orderno = substr(str_shuffle(str_repeat($y='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz', ceil($lengths/strlen($y)) )),1,$lengths);;
-        // $custname = $row['name'];
+        $custname = $row['name'];
         $productinfo = 'Payment for Read News';
         $txnid = time();
-        // $contect = $row['contect'];
-        // $surl = "payment-success.php";
-        // $furl ="payment-success.php" ;
+        $contect = $row['phone'];
+        $surl = "payment-success.php";
+        $furl ="payment-success.php" ;
         $key_id = API_KEY;
         $currency_code = 'INR';
         $total = $paisaprice; 
@@ -368,8 +365,8 @@ class Website extends CI_Controller {
         $merchant_order_id=substr(str_shuffle(str_repeat($x='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz', ceil($length/strlen($x)) )),1,$length);
         $card_holder_name = "afreen";
         $custname = "afreen";
-        // $email =  $row['email'];
-        // $phone = $row['mobileno'];
+        $email =  $row['email'];
+        $phone = $row['phone'];
         $name = "Customer of $custname - $orderno";
         $payrecord = array();
         $payrecord['orderno'] = $orderno;

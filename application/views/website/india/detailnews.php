@@ -198,7 +198,7 @@
         				<p>Invoice will be sent to this email address. If you already have Bodhi Wire account, the invoice will also show in your dashboard.</p>
         				<div class="row">
         					<div class="col-md-6">
-        						<input type="text" name="first" placeholder="First Name"class="form-control" style="margin-top:10px">
+        						<input type="text" name="name" placeholder="First Name"class="form-control" style="margin-top:10px">
         					</div>
         					<div class="col-md-6">
         						<input type="text" name="last" placeholder="Last Name"class="form-control" style="margin-top:10px">
