@@ -122,10 +122,10 @@ if(empty($error) && !empty($payment_token_data)){
 </style>
 <body>
 
-	<body style="background: #133a647a;">
+	<body style="background: #23618a;">
 <section class="payment-page">  
     <div class="container">
-    <div class="row" style='background-color:#133a647a;'>
+    <div class="row" style='background-color:#23618a;'>
         <div class="col-md-1"></div>
         <div class="col-md-10 p-3">   
             <h3 style="color:#fff;">Make Payment</h3><hr/>   
