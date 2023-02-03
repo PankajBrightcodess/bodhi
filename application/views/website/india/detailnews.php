@@ -160,28 +160,28 @@
   			    		<p style="font-weight: 700;">I would like to contribute.</p>
   			    		<div class="row justify-content-center">
   			    			<div class="col-md-4">
-                    <input  type="radio" id="once" name="fav_language" value="once">
+                    <input  type="radio" id="once" name="type" value="once">
                     <label  style="background:#e7f1ff; padding-left: 20px; padding-right: 50px; padding-left: 50px; padding-top: 7px;                       padding-bottom: 6px;" for="once">Once</label>
   			    			</div>
   			    			<div class="col-md-4">
-                    <input  type="radio" id="Monthly" name="fav_language" value="Monthly">
+                    <input  type="radio" id="Monthly" name="type" value="Monthly">
                     <label  style="background:#e7f1ff; padding-left: 20px; padding-right: 50px; padding-left: 50px; padding-top: 7px;                       padding-bottom: 6px;" for="Monthly">Monthly</label>
   			    			</div>
                   <div class="col-md-4">
-                    <input  type="radio" id="Yearly" name="fav_language" value="Yearly">
+                    <input  type="radio" id="Yearly" name="type" value="Yearly">
                     <label  style="background:#e7f1ff; padding-left: 20px; padding-right: 50px; padding-left: 50px; padding-top: 7px;                       padding-bottom: 6px;" for="Yearly">Yearly</label>
                   </div>
   			    			<p style="font-weight: 700;">Select Amount</p>
   			    			<div class="col-md-3">
-                    <input  type="radio" id="number" name="fav_language" value="once">
+                    <input  type="radio" id="number" name="amount" value="once">
                     <label  style="background:#e7f1ff; padding-left: 20px; padding-right: 50px; padding-left: 50px; padding-top: 7px;                       padding-bottom: 6px;" for="number">₹100</label>
   			    			</div>
                   <div class="col-md-3">
-                    <input  type="radio" id="number" name="fav_language" value="Monthly">
+                    <input  type="radio" id="number" name="amount" value="Monthly">
                     <label  style="background:#e7f1ff; padding-left: 20px; padding-right: 50px; padding-left: 50px; padding-top: 7px;                       padding-bottom: 6px;" for="number">₹500</label>
                   </div>
                   <div class="col-md-3">
-                    <input  type="radio" id="number" name="fav_language" value="yearly">
+                    <input  type="radio" id="number" name="amount" value="yearly">
                     <label  style="background:#e7f1ff; padding-left: 20px; padding-right: 50px; padding-left: 50px; padding-top: 7px;                       padding-bottom: 6px;" for="number">₹1000</label>
                   </div>
   			    			<div class="col-md-3">
