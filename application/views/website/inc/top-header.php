@@ -10,17 +10,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
-
-
-
-
-
-
-
-
-
+    <?php if (isset($title1) && $title1 == 'News Descriptions') {
+    //   print_r($news);
+  ?>
+    <link rel="canonical" href="<?= base_url(); ?>website/news_details?aswqert=<?= $title; ?>/">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Choicenext" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="<?= $news[0]['title']; ?>" />
+    <meta property="og:description" content="<?= $news[0]['title']; ?>" />
+    <meta property="og:url" content="<?= base_url(); ?>website/news_details?aswqert=<?= $title; ?>" />
+    <meta property="og:image" content="<?= file_url($news[0]['image']); ?>" />
+    <meta property="og:image:secure_url" content="<?= file_url($news[0]['image']); ?>" />
+    <meta property="og:image:width" content="120" />
+    <meta property="og:image:height" content="100" />
+  <?php } else {
+    $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  ?>
+    <link rel="canonical" href="<?= $actual_link; ?>">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Choicenext" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="<?= $title; ?>" />
+    <meta property="og:description" content="Choicenext" />
+    <meta property="og:url" content="<?= $actual_link; ?>" />
+    <meta property="og:image" content="<?php echo base_url($image); ?>" />
+    <meta property="og:image:secure_url" content="<?php echo base_url($image); ?>" />
+    <meta property="og:image:width" content="120" />
+    <meta property="og:image:height" content="100" />
+  <?php
+  } ?>
 
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->

@@ -344,6 +344,50 @@ class Website extends CI_Controller {
         $this->load->view('website/signup');	
 	}
 
+	public function payments(){
+
+        $content =define("API_KEY","rzp_test_KVV2yNPLssjS3jUvH171bc3x");
+        $someprice = $row['amount'];
+        $paisaprice = $someprice*100;
+         $lengths = 6;
+        $orderno = substr(str_shuffle(str_repeat($y='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz', ceil($lengths/strlen($y)) )),1,$lengths);;
+        // $custname = $row['name'];
+        $productinfo = 'Payment for Read News';
+        $txnid = time();
+        // $contect = $row['contect'];
+        // $surl = "payment-success.php";
+        // $furl ="payment-success.php" ;
+        $key_id = API_KEY;
+        $currency_code = 'INR';
+        $total = $paisaprice; 
+        $amount = $someprice;
+        $length = 18;
+        $merchant_order_id=substr(str_shuffle(str_repeat($x='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz', ceil($length/strlen($x)) )),1,$length);
+        $card_holder_name = "afreen";
+        $custname = "afreen";
+        // $email =  $row['email'];
+        // $phone = $row['mobileno'];
+        $name = "Customer of $custname - $orderno";
+        $payrecord = array();
+        $payrecord['orderno'] = $orderno;
+        $payrecord['name'] = $custname;
+        $payrecord['productinfo'] = $productinfo;
+        $payrecord['currency_code'] = $currency_code;
+        $payrecord['total'] = $total;
+        $payrecord['amount'] = $amount;
+        $payrecord['key_id'] = $key_id;
+        $payrecord['card_holder_name'] = $card_holder_name;
+        $payrecord['merchant_order_id'] = $merchant_order_id;
+        $payrecord['merchant_trans_id'] = $txnid;
+        // $payrecord['phone'] = $contect;
+        $data['allrecord'] =$payrecord;
+        // echo PRE;
+        // print_r($payrecord);die;
+         $this->load->view('website/payment',$data);
+        // echo PRE;
+        // print_r($result);die;
+	}
+
 	public function payment_start($id){
         $length = 20;
         $_SESSION['last_inst_id'] = $id;
