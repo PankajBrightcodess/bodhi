@@ -236,7 +236,8 @@
   			    				<p>This amount will be charged once from your payment method. Your invoice will be sent to info@bodhiwire.com.</p>
   			    			</div>
   			    			<div class="col-md-6">
-  			    			<p class="btn btn-primary" type="submit">Continue</p>
+                    <button type="submit" class="btn btn-primary">Continue</button>
+  			    		<!-- 	<p  type="submit"></p> -->
   			    		</div>
         				</div>
 								
