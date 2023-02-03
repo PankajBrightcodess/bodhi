@@ -161,7 +161,7 @@
   			    		<div class="row justify-content-center">
   			    			<div class="col-md-4">
                      <input  type="radio" id="once" name="fav_language" value="once">
-                   <label  style="background:#e7f1ff;" for="once">Once</label>
+                   <label  style="background:#e7f1ff; padding-left: 20px; padding-right: 20px;" for="once">Once</label>
   			    			</div>
   			    			<div class="col-md-4">
   			    				<p class="btn btn-transparent btn-block" style="background:#e7f1ff;">Monthly</p>
