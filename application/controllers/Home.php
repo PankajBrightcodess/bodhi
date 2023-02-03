@@ -405,7 +405,7 @@ class Home extends CI_Controller {
     public function donation_list(){
        	$data['title'] = "Donation List";
 		$data['datatable'] = true;
-		// $data['result']=$this->Account_model->getreporterslist();
+		$data['result']=$this->Account_model->donation_list();
 		// echo '<pre>';
 		// print_r($data['result']);die;
 		$this->template->load('pages/admin','donation_list',$data);

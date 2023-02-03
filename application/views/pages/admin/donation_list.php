@@ -27,7 +27,7 @@
                                     <tbody>
                                         <?php $i=0;
                                          if(!empty($result)){
-                                            foreach($result as $val){$i++; $id=$val['id']; ?>
+                                            foreach($result as $val){$i++; ?>
                                         <tr>
                                             <td ><?php echo $i; ?></td>
                                             <!-- <td ><?php //echo $val['username']; ?></td> -->
@@ -38,11 +38,7 @@
                                             <td ><?php echo $val['phone']; ?></td>
                                             <td ><?php echo $val['pan']; ?></td>
                                             <td ><?php echo $val['checkvalue']; ?></td>
-                                            <!-- 
-                                            <td><span class="float-right">
-                                            <button class="btn btn-danger btn-xs delete" value="<?php echo $val['id'];?>"><i class="fa fa-trash"></i></button> 
-                                           <button type="button" class="btn btn-success btn-xs updt" data-toggle="modal" data-target="#exampleModal" data-id="<?php echo $val['id'];?>" data-username="<?php echo $val['username'];?>" data-name="<?php echo $val['name'];?>" data-mobile="<?php echo $val['mobile'];?>"><i class="fa fa-edit"></i></button>
-                                            </span></td> -->
+                                            
                                         </tr>
                                        
                                        
