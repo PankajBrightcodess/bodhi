@@ -16,7 +16,7 @@
                                             <th>S.no</th>
                                             <!-- <th>User Name</th> -->
                                             <th>Type</th>
-                                            <th>Ammount</th>
+                                            <th>Amount</th>
                                             <th>Name</th>   
                                             <th>Email</th>
                                             <th>phone</th>                                          
@@ -32,7 +32,7 @@
                                             <td ><?php echo $i; ?></td>
                                             <!-- <td ><?php //echo $val['username']; ?></td> -->
                                             <td ><?php echo $val['type']; ?></td>
-                                            <td ><?php echo $val['ammount']; ?></td>
+                                            <td ><?php echo $val['amount']; ?></td>
                                             <td ><?php echo $val['name']; ?></td>
                                             <td ><?php echo $val['email']; ?></td>
                                             <td ><?php echo $val['phone']; ?></td>
