@@ -153,6 +153,7 @@
         				Support Bodhi Wire
       				</button>
     				</h2>
+            <form action="<?php echo base_url('website/payments'); ?>" method="POST">
     				<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       				<div class="accordion-body" style="border:1px solid #69c9ff">
         				<p>Support Bodhi Wire with one time or regular contributions to protect independent journalism in the interest of society and the world at large. Contributions from responsible readers like you enable us in covering the world events following the highest standards of journalism. Write to us at office@bodhiwire.com</u>
@@ -235,13 +236,14 @@
   			    				<p>This amount will be charged once from your payment method. Your invoice will be sent to info@bodhiwire.com.</p>
   			    			</div>
   			    			<div class="col-md-6">
-  			    			<p class="btn btn-primary"type="button"><a href="<?php echo base_url('website/payments'); ?>">Continue</a></p>
+  			    			<p class="btn btn-primary" type="submit">Continue</p>
   			    		</div>
         				</div>
 								
       				</div>
     				</div>
   				</div>
+          </form>
 				</div>
 			</div>
 		</div>

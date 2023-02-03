@@ -345,6 +345,9 @@ class Website extends CI_Controller {
 	}
 
 	public function payments(){
+		$row = $this->input->post();
+		echo PRE;
+		print_r($row);die;
 
         $content =define("API_KEY","rzp_test_KVV2yNPLssjS3jUvH171bc3x");
         $someprice = $row['amount'];
