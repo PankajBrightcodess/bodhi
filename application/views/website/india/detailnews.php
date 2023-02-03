@@ -179,7 +179,7 @@
   			    				<p class="btn btn-transparent btn-block" style="background:#e7f1ff;">₹1000</p>
   			    			</div>
   			    			<div class="col-md-3">
-  			    				<input type="" name="" placeholder="Enter Your Amount"class="form-control">
+  			    				<input type="" name="amount" placeholder="Enter Your Amount"class="form-control">
   			    				<!-- <p class="btn btn-primary btn-block">enter your amount</p>-->
   			    			</div>
   			    			<div class="col-md-12">
