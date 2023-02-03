@@ -210,7 +210,7 @@
         						<input type="number" name="phone" placeholder="Phone"class="form-control" style="margin-top:10px">
         					</div>
         					<div class="col-md-12">
-        						<input type="number" name="pan" placeholder="Pan No"class="form-control" style="margin-top:10px">
+        						<input type="text" name="pan" placeholder="Pan No"class="form-control" style="margin-top:10px">
         					</div>
         					<div class="col-md-12">
         						<input type="checkbox" id="vehicle1" name="checkvalue" value="Bike">
