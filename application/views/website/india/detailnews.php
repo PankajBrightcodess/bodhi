@@ -160,11 +160,12 @@
   			    		<p style="font-weight: 700;">I would like to contribute.</p>
   			    		<div class="row justify-content-center">
   			    			<div class="col-md-4">
-                     <input  type="radio" id="once" name="fav_language" value="once">
-                   <label  style="background:#e7f1ff; padding-left: 20px; padding-right: 50px; padding-left: 50px; padding-top: 7px;                       padding-bottom: 6px;" for="once">Once</label>
+                    <input  type="radio" id="once" name="fav_language" value="once">
+                    <label  style="background:#e7f1ff; padding-left: 20px; padding-right: 50px; padding-left: 50px; padding-top: 7px;                       padding-bottom: 6px;" for="once">Once</label>
   			    			</div>
   			    			<div class="col-md-4">
-  			    				<p class="btn btn-transparent btn-block" style="background:#e7f1ff;">Monthly</p>
+                    <input  type="radio" id="Monthly" name="fav_language" value="Monthly">
+                    <label  style="background:#e7f1ff; padding-left: 20px; padding-right: 50px; padding-left: 50px; padding-top: 7px;                       padding-bottom: 6px;" for="Monthly">Monthly</label>
   			    			</div>
   			    			<div class="col-md-4">
   			    				<p class="btn btn-transparent btn-block" style="background:#e7f1ff;">Yearly</p>
