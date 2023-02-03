@@ -60,7 +60,7 @@ if(empty($error) && !empty($payment_token_data)){
         'tranid'    => $tranid,
     ),$accesskey,$secretkey);
         
-    $html =  "<form action='".echo base_url('website/response')."'". "method='post' style='display: none' name='layer_payment_int_form'>
+    $html =  "<form action='".base_url('website/response')."'". "method='post' style='display: none' name='layer_payment_int_form'>
 		<input type='hidden' name='layer_pay_token_id' value='".$payment_token_data['id']."'>
         <input type='hidden' name='tranid' value='".$tranid."'>
         <input type='hidden' name='layer_order_amount' value='".$payment_token_data['amount']."'>
