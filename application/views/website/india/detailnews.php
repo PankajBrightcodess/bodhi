@@ -198,22 +198,22 @@
         				<p>Invoice will be sent to this email address. If you already have Bodhi Wire account, the invoice will also show in your dashboard.</p>
         				<div class="row">
         					<div class="col-md-6">
-        						<input type="text" name="" placeholder="First Name"class="form-control" style="margin-top:10px">
+        						<input type="text" name="first" placeholder="First Name"class="form-control" style="margin-top:10px">
         					</div>
         					<div class="col-md-6">
-        						<input type="text" name="" placeholder="Last Name"class="form-control" style="margin-top:10px">
+        						<input type="text" name="last" placeholder="Last Name"class="form-control" style="margin-top:10px">
         					</div>
         					<div class="col-md-12">
-        						<input type="email" name="" placeholder="Email"class="form-control" style="margin-top:10px">
+        						<input type="email" name="email" placeholder="Email"class="form-control" style="margin-top:10px">
         					</div>
         					<div class="col-md-12">
-        						<input type="number" name="" placeholder="Phone"class="form-control" style="margin-top:10px">
+        						<input type="number" name="phone" placeholder="Phone"class="form-control" style="margin-top:10px">
         					</div>
         					<div class="col-md-12">
-        						<input type="text" name="" placeholder="Pan No"class="form-control" style="margin-top:10px">
+        						<input type="text" name="pan" placeholder="Pan No"class="form-control" style="margin-top:10px">
         					</div>
         					<div class="col-md-12">
-        						<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        						<input type="checkbox" id="vehicle1" name="checkvalue" value="Bike">
   									<label for="vehicle1"> I declare that I am a citizen of India</label>
         					</div>
         					<div class="col-md-12">
