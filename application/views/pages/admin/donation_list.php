@@ -58,7 +58,7 @@
     </section>    
 
     <!-- '''''''''''''''''''''''''''''''model'''''''''''''''''''''''''''''''''''''''' -->
-     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <!--   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -100,7 +100,7 @@
           <?php echo form_close();?>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- '''''''''''''''''''''''''''''''''model end................................... -->
 <script type="text/javascript">
         $('.updt').click(function(e){
