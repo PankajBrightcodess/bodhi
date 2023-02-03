@@ -167,9 +167,10 @@
                     <input  type="radio" id="Monthly" name="fav_language" value="Monthly">
                     <label  style="background:#e7f1ff; padding-left: 20px; padding-right: 50px; padding-left: 50px; padding-top: 7px;                       padding-bottom: 6px;" for="Monthly">Monthly</label>
   			    			</div>
-  			    			<div class="col-md-4">
-  			    				<p class="btn btn-transparent btn-block" style="background:#e7f1ff;">Yearly</p>
-  			    			</div>
+                  <div class="col-md-4">
+                    <input  type="radio" id="Yearly" name="fav_language" value="Yearly">
+                    <label  style="background:#e7f1ff; padding-left: 20px; padding-right: 50px; padding-left: 50px; padding-top: 7px;                       padding-bottom: 6px;" for="Yearly">Yearly</label>
+                  </div>
   			    			<p style="font-weight: 700;">Select Amount</p>
   			    			<div class="col-md-3">
   			    				<p class="btn btn-transparent btn-block" style="background:#e7f1ff;">₹100</p>
