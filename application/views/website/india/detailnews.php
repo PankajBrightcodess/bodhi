@@ -173,14 +173,17 @@
                   </div>
   			    			<p style="font-weight: 700;">Select Amount</p>
   			    			<div class="col-md-3">
-  			    				<p class="btn btn-transparent btn-block" style="background:#e7f1ff;">₹100</p>
+                    <input  type="radio" id="number" name="fav_language" value="once">
+                    <label  style="background:#e7f1ff; padding-left: 20px; padding-right: 50px; padding-left: 50px; padding-top: 7px;                       padding-bottom: 6px;" for="number">₹100</label>
   			    			</div>
-  			    			<div class="col-md-3">
-  			    				<p class="btn btn-transparent btn-block" style="background:#e7f1ff;">₹500</p>
-  			    			</div>
-  			    			<div class="col-md-3">
-  			    				<p class="btn btn-transparent btn-block" style="background:#e7f1ff;">₹1000</p>
-  			    			</div>
+                  <div class="col-md-3">
+                    <input  type="radio" id="number" name="fav_language" value="Monthly">
+                    <label  style="background:#e7f1ff; padding-left: 20px; padding-right: 50px; padding-left: 50px; padding-top: 7px;                       padding-bottom: 6px;" for="number">₹500</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input  type="radio" id="number" name="fav_language" value="yearly">
+                    <label  style="background:#e7f1ff; padding-left: 20px; padding-right: 50px; padding-left: 50px; padding-top: 7px;                       padding-bottom: 6px;" for="number">₹1000</label>
+                  </div>
   			    			<div class="col-md-3">
   			    				<input type="number" name="amount" placeholder="Enter Your Amount"class="form-control">
   			    				<!-- <p class="btn btn-primary btn-block">enter your amount</p>-->
