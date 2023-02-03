@@ -135,7 +135,7 @@ if(empty($error) && !empty($payment_token_data)){
                         <div class="col-6 col-md-6">
                         	<div class="main">
 	<div class="logo">
-		<img src="logo.png" height="20" alt="Layer Payment" />
+		<img src="l<?= base_url('assets/website/logo.png'); ?>" height="20" alt="Payment Logo" />
 		 <h3><?php echo ucwords($sample_data['name']);?></h3>
 	</div>
 
@@ -181,8 +181,8 @@ if(empty($error) && !empty($payment_token_data)){
 		<?php 
 			if(!empty($error)) echo $error;
 			if (isset($html)) { ?>
-			<div class="dv">
-				<input id="submit" name="submit" value="Pay" type="button" class="btn btn-sm btn-success"  onclick="triggerLayer();">
+			<div class="dv text-center">
+				<input id="submit" name="submit" value="Pay Now" type="button" class="btn btn-md btn-success"  onclick="triggerLayer();">
 			</div>
 		<?php echo $html;}?>
 	</div>
