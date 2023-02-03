@@ -363,8 +363,8 @@ class Website extends CI_Controller {
         $amount = $someprice;
         $length = 18;
         $merchant_order_id=substr(str_shuffle(str_repeat($x='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz', ceil($length/strlen($x)) )),1,$length);
-        $card_holder_name = "afreen";
-        $custname = "afreen";
+        $card_holder_name = $row['name'];
+        $custname = $row['name'];
         $email =  $row['email'];
         $phone = $row['phone'];
         $name = "Customer of $custname - $orderno";
