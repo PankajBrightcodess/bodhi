@@ -1,7 +1,3 @@
- <?php  
- $allrecord['total']=100;
- $allrecord['amount']=1;
- ?>   
 <!doctype html>
 <html lang="en">
   <head>
@@ -31,8 +27,8 @@
                 <div class="col-md-12 card p-3">
                     <div class="row">
                         <div class="col-6 col-md-6">
-                            <h3><?php echo ucwords($allrecord['name']);?></h3>
-                            <!-- <p class='mb-0' style='font-size:14px'>+91-<?php echo $allrecord['phone'];?></p> -->
+                            <h3><?php echo ucwords($data['name']);?></h3>
+                            <!-- <p class='mb-0' style='font-size:14px'>+91-<?php echo $data['phone'];?></p> -->
                         </div>
                         
                     </div><hr/>
@@ -42,26 +38,26 @@
                             <u><h5>Request Details</h5></u>
                                 <div class="form-row">
                                     <label for="" class="col-6 col-md-6">Request No :</label>
-                                    <p class='col-6 col-md-6'><?php echo $allrecord['orderno'];?></p>
+                                    <p class='col-6 col-md-6'><?php echo $data['orderno'];?></p>
                                 </div>
                                 <div class="form-row">
                                     <label for="" class="col-6 col-md-6"> Total Amount:</label>
-                                    <p class='col-6 col-md-6 text-danger' style='font-size:20px;font-weight:600'>Rs.<?php echo $allrecord['amount'];?></p>
-                                    <!-- <?php echo PRE; print_r($allrecord);?> -->
+                                    <p class='col-6 col-md-6 text-danger' style='font-size:20px;font-weight:600'>Rs.<?php echo $data['amount'];?></p>
+                                    <!-- <?php echo PRE; print_r($data);?> -->
                                 </div>
                                 <div class="form-row p-2">
                                     <div class="col-1 col-md-2"></div>
                                     <div class="col-10 col-md-8 text-center">
                                         <form action='<?php echo base_url('website/payment_success')?>' id="razorpay-form" method="post">
                                         <input type="hidden" name="razorpay_payment_id" id="razorpay_payment_id" />
-                                        <input type="hidden" name="merchant_order_id" id="merchant_order_id" value="<?php echo $allrecord['merchant_order_id']; ?>"/>
-                                        <input type="hidden" name="merchant_trans_id" id="merchant_trans_id" value="<?php echo $allrecord['merchant_trans_id']; ?>"/>
-                                        <input type="hidden" name="merchant_product_info_id" id="merchant_product_info_id" value="<?php echo  $allrecord['productinfo']; ?>"/>
+                                        <input type="hidden" name="merchant_order_id" id="merchant_order_id" value="<?php echo $data['merchant_order_id']; ?>"/>
+                                        <input type="hidden" name="merchant_trans_id" id="merchant_trans_id" value="<?php echo $data['merchant_trans_id']; ?>"/>
+                                        <input type="hidden" name="merchant_product_info_id" id="merchant_product_info_id" value="<?php echo  $data['productinfo']; ?>"/>
                                         <!-- <input type="hidden" name="merchant_surl_id" id="merchant_surl_id" value="<?php echo $surl; ?>"/> -->
                                        <!--  <input type="hidden" name="merchant_furl_id" id="merchant_furl_id" value="<?php echo $furl; ?>"/> -->
-                                        <input type="hidden" name="card_holder_name_id" id="card_holder_name_id" value="<?php echo $allrecord['card_holder_name'];?>"/>
-                                        <input type="hidden" name="merchant_total" id="merchant_total" value="<?php echo $allrecord['total']; ?>"/>
-                                        <input type="hidden" name="merchant_amount" id="merchant_amount" value="<?php echo   $allrecord['amount']; ?>"/>
+                                        <input type="hidden" name="card_holder_name_id" id="card_holder_name_id" value="<?php echo $data['card_holder_name'];?>"/>
+                                        <input type="hidden" name="merchant_total" id="merchant_total" value="<?php echo $data['total']; ?>"/>
+                                        <input type="hidden" name="merchant_amount" id="merchant_amount" value="<?php echo   $data['amount']; ?>"/>
                                        <!--  <input type="hidden" name="order_id" id="order_id" value="<?php echo $merchant_order_id; ?>"> -->
                                         <input  id="submit-pay" type="button" onclick="razorpaySubmit(this);" value="PAY NOW" class="btn btn-sm btn-success" />
                                         </form>
@@ -110,18 +106,18 @@ function random_number($l){
      <script>
         debugger;
     var razorpay_options = {
-        key: "<?php echo $allrecord['key_id']; ?>",
-        amount: "<?php echo $allrecord['total']; ?>",
-        name: "<?php echo $allrecord['name']; ?>",
-        description: "Order # <?php echo $allrecord['merchant_order_id']; ?>",
+        key: "<?php echo $data['key_id']; ?>",
+        amount: "<?php echo $data['total']; ?>",
+        name: "<?php echo $data['name']; ?>",
+        description: "Order # <?php echo $data['merchant_order_id']; ?>",
         netbanking: true,
-        currency: "<?php echo $allrecord['currency_code']; ?>",
+        currency: "<?php echo $data['currency_code']; ?>",
         prefill: {
-        name:"<?php echo $allrecord['card_holder_name']; ?>",
-        contact: "<?php echo $allrecord['phone']; ?>"
+        name:"<?php echo $data['card_holder_name']; ?>",
+        contact: "<?php echo $data['phone']; ?>"
         },
         notes: {
-        soolegal_order_id: "<?php echo $allrecord['merchant_order_id'];?>",
+        soolegal_order_id: "<?php echo $data['merchant_order_id'];?>",
         },
         handler: function (transaction) {
             document.getElementById('razorpay_payment_id').value = transaction.razorpay_payment_id;
