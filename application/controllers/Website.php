@@ -344,7 +344,7 @@ class Website extends CI_Controller {
         $this->load->view('website/signup');	
 	}
 
-	public function payments(){
+	public function payments_old(){
 		$row = $this->input->post();
 		if($row['amount1']== ''){
 			$row['amount']= $row['amount'];
@@ -457,6 +457,14 @@ class Website extends CI_Controller {
           
           
        }
+  }
+
+  public function payments(){
+  	$this->load->view('website/pages/payment');
+  }
+
+  public function response(){
+  	$this->load->view('website/pages/response');
   }
 
   public function search(){
