@@ -10,8 +10,8 @@ $environment = 'test';
 $sample_data = [
                 'amount' => 1.00,
                 'currency' => 'INR',
-                'name'  => 'John Doe',
-                'email_id' => 'john.doe@dummydomain.com',
+                'name'  => 'Bodhiwire',
+                'email_id' => 'bodhi@gmail.com',
                 'contact_number' => '9831111111',
 				'mtx' => ''
             ];
