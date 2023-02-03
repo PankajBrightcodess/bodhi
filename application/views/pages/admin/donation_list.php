@@ -15,10 +15,13 @@
                                         <tr>    
                                             <th>S.no</th>
                                             <!-- <th>User Name</th> -->
+                                            <th>Type</th>
+                                            <th>Ammount</th>
                                             <th>Name</th>   
-                                            <th>Mobile No</th>   
-                                            <th>Email</th>                                            
-                                            <th>Address</th>                                            
+                                            <th>Email</th>
+                                            <th>phone</th>                                          
+                                            <th>pan</th>
+                                            <th>Checkvalue</th>                                            
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -28,10 +31,13 @@
                                         <tr>
                                             <td ><?php echo $i; ?></td>
                                             <!-- <td ><?php //echo $val['username']; ?></td> -->
+                                            <td ><?php echo $val['type']; ?></td>
+                                            <td ><?php echo $val['ammount']; ?></td>
                                             <td ><?php echo $val['name']; ?></td>
-                                            <td ><?php echo $val['mobile']; ?></td>
                                             <td ><?php echo $val['email']; ?></td>
-                                            <td ><?php echo "Ranchi"; ?></td>
+                                            <td ><?php echo $val['phone']; ?></td>
+                                            <td ><?php echo $val['pan']; ?></td>
+                                            <td ><?php echo $val['checkvalue']; ?></td>
                                             <!-- 
                                             <td><span class="float-right">
                                             <button class="btn btn-danger btn-xs delete" value="<?php echo $val['id'];?>"><i class="fa fa-trash"></i></button> 
