@@ -7,20 +7,20 @@ $secretkey = '9039857bdec14bc5b4fc6e383938611bf37e5e11';
 //Changing environment to live requires remote_script also to be used for live and change accesskey,secretkey too
 $environment = 'test';
 }else{
-    $accesskey = '5fd77d30-a37c-11ed-a776-adcf2ed2e9b6';
-    $secretkey = '9039857bdec14bc5b4fc6e383938611bf37e5e11';
+    $accesskey = '493e67e0-a3e2-11ed-a945-ef6968ef9aba';
+    $secretkey = '0aa2ce669c011950656221c42a14a81f1a1ffed7';
 
 //Changing environment to live requires remote_script also to be used for live and change accesskey,secretkey too
-$environment = 'test';
+$environment = 'live';
 }
 
 if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST']=='localhost'){
 $remote_script = "https://sandbox-payments.open.money/layer";
 }else{
 //for production
-//$remote_script = "https://payments.open.money/layer";
+$remote_script = "https://payments.open.money/layer";
 // for test
-    $remote_script = "https://sandbox-payments.open.money/layer";
+    // $remote_script = "https://sandbox-payments.open.money/layer";
 }
 
 //Hash functions requried in both request and response
