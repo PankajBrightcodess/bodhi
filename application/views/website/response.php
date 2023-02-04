@@ -21,6 +21,12 @@ try {
     if(empty($error) && verify_hash($data,$_POST['hash'],$accesskey,$secretkey) && !empty($data['tranid'])){
         $layer_api = new LayerApi($environment,$accesskey,$secretkey);
         $payment_data = $layer_api->get_payment_details($_POST['layer_payment_id']);
+        $data1['amount']=$amount;
+        $data1['tranid']=$tranid;
+        $data1['pay_token_id']=$pay_token_id;
+        $data1['payment_id']=$payment_id;
+        $data1['full_name']=$full_name;
+        $data1['email']=$email;
         $data1['currency']=$payment_data['currency'];
         $data1['vpa']=$payment_data['vpa'];
         $data1['payment_status']=$payment_data['status'];

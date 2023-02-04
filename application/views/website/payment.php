@@ -26,10 +26,7 @@ $data['type']=$type;
 $data['phone']=$phone;
 $data['pan']=$pan;
 $data['checkvalue']=$checkvalue;
-print_r($data);die;
 $res=$this->db->insert('donation',$data);
-echo $this->db->last_query();
-echo $res;die;
 // echo $amount;die;
 //Sample data
 $sample_data = [
