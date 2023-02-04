@@ -467,6 +467,7 @@ class Website extends CI_Controller {
 	if($data['amount']== ''){
 		$data['amount']= $data['amount1'];
 	}
+	echo PRE;print_r($data);die;
   	$this->load->view('website/payment',$data);
   }
 
