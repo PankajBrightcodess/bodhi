@@ -19,7 +19,7 @@ try {
     );
     echo $accesskey;
     echo $secretkey;
-    $_POST['hash'];die;
+    echo $_POST['hash'];die;
     if(empty($error) && verify_hash($data,$_POST['hash'],$accesskey,$secretkey) && !empty($data['tranid'])){
         $layer_api = new LayerApi($environment,$accesskey,$secretkey);
         $payment_data = $layer_api->get_payment_details($_POST['layer_payment_id']);
