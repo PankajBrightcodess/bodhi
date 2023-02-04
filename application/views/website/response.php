@@ -21,7 +21,7 @@ try {
     if(empty($error) && verify_hash($data,$_POST['hash'],$accesskey,$secretkey) && !empty($data['tranid'])){
         $layer_api = new LayerApi($environment,$accesskey,$secretkey);
         $payment_data = $layer_api->get_payment_details($_POST['layer_payment_id']);
-
+echo PRE;print_r($payment_data);die;
 
         if(isset($payment_data['error'])){
             $error = "Layer: an error occurred E14".$payment_data['error'];
