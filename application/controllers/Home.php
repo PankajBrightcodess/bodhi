@@ -407,7 +407,7 @@ class Home extends CI_Controller {
 		$data['datatable'] = true;
 		$data['result']=$this->Account_model->donation_list();
 		// echo '<pre>';
-		// print_r($data['result']);die; // table impor hua rukoiye puchte h
+		// print_r($data['result']);die; // 
 		$this->template->load('pages/admin','donation_list',$data);
     }
 	

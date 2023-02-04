@@ -23,6 +23,7 @@ $sample_data = [
     'amount' => $amount,
     'currency' => 'INR',
     'name'  => $name." ".$last,
+    'full_name'=>$name,
     'email_id' => $email,
     'contact_number' => $phone,
     'mtx' => ''
@@ -47,6 +48,7 @@ if(empty($error) && (!isset($layer_payment_token_data["id"]) || empty($layer_pay
 
 if(!empty($layer_payment_token_data["id"]))
     $payment_token_data = $layer_api->get_payment_token($layer_payment_token_data["id"]);
+echo PRE;print_r($payment_token_data);die;
     
 if(empty($error) && !empty($payment_token_data)){
     if(isset($layer_payment_token_data['error'])){
@@ -77,6 +79,8 @@ if(empty($error) && !empty($payment_token_data)){
         <input type='hidden' id='layer_payment_id' name='layer_payment_id' value=''>
         <input type='hidden' id='fallback_url' name='fallback_url' value=''>
         <input type='hidden' name='hash' value='".$hash."'>
+        <input type='hidden' name='full_name' value='".$sample_data['full_name']."'>
+        <input type='hidden' name='email' value='".$sample_data['email_id']."'>
         </form>";
     $html .= "<script>";
     $html .= "var layer_params = " . json_encode( $jsdata ) . ';'; 

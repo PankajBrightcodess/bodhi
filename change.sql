@@ -1,0 +1,2 @@
+ALTER TABLE `tmp_donation` ADD `last` VARCHAR(255) NOT NULL AFTER `name`;
+ALTER TABLE `tmp_donation` ADD `added_on` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP AFTER `checkvalue`;

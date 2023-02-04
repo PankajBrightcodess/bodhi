@@ -116,7 +116,7 @@ try {
             // echo $status;    
             echo "<h3>".$status."</h3>";  
         } 
-        if($payment_data['status']=='authorized'){
+        if($payment_data['status']=='captured'){
         ?>
             <p style="color:green;">Your Payment has been Successfully Recieved !!!</p>
 

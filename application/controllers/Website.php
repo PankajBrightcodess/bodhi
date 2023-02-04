@@ -463,15 +463,20 @@ class Website extends CI_Controller {
   	$data=$this->input->post();
   	if($data['amount1']== ''){
 		$data['amount']= $data['amount'];
+		unset($data['amount1']);
 	}
 	if($data['amount']== ''){
 		$data['amount']= $data['amount1'];
+		unset($data['amount1']);
 	}
-	echo PRE;print_r($data);die;
+	// $res=$this->db->insert('donation',$data);
+	// echo PRE;print_r($data);die;
   	$this->load->view('website/payment',$data);
   }
 
   public function response(){
+  	$data=$this->input->post();
+  	echo PRE;print_r($data);die;
   	$this->load->view('website/response');
   }
 
