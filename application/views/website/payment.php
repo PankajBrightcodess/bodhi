@@ -19,6 +19,8 @@ $error = '';
 $tranid=date("ymd").'-'.rand(1,100000);
 $data['tranid']=$tranid;
 $res=$this->db->insert('donation',$data);
+echo $this->db->last_query();
+echo $res;die;
 // echo $amount;die;
 //Sample data
 $sample_data = [
