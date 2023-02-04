@@ -18,7 +18,7 @@ try {
         'tranid'     			=> $_POST['tranid'],
     );
     echo $accesskey."....";
-    echo $secretkey;."----";
+    echo $secretkey."----";
     echo $_POST['hash'];die;
     if(empty($error) && verify_hash($data,$_POST['hash'],$accesskey,$secretkey) && !empty($data['tranid'])){
         $layer_api = new LayerApi($environment,$accesskey,$secretkey);
