@@ -473,6 +473,14 @@ class Website extends CI_Controller {
   public function response(){
   	$this->load->view('website/response');
   }
+
+  
+      public function donation_list(){
+        $this->db->select('*')->from('donation');
+        $query=$this->db->get();
+        $result=$query->result_array();
+        return $result;
+      }
   
   
   public function search(){
