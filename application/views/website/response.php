@@ -19,7 +19,8 @@ try {
     );
     echo $accesskey."....";
     echo $secretkey."----";
-    echo $_POST['hash'];echo PRE;
+    echo $_POST['hash']."---";
+    echo $_POST['layer_payment_id'];echo PRE;
     echo $error;
     print_r($data);die;
     if(empty($error) && verify_hash($data,$_POST['hash'],$accesskey,$secretkey) && !empty($data['tranid'])){
