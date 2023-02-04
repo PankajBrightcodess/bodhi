@@ -86,7 +86,7 @@ if(empty($error) && !empty($payment_token_data)){
 		<input type='hidden' name='layer_pay_token_id' value='".$payment_token_data['id']."'>
         <input type='hidden' name='tranid' value='".$tranid."'>
         <input type='hidden' name='layer_order_amount' value='".$payment_token_data['amount']."'>
-        <input type='hidden' id='layer_payment_id' name='layer_payment_id' value=''>
+        <input type='hidden' id='layer_payment_id' name='layer_payment_id' value='".$payment_token_data['id']."'> 
         <input type='hidden' id='fallback_url' name='fallback_url' value=''>
         <input type='hidden' name='hash' value='".$hash."'>
         <input type='hidden' name='full_name' value='".$sample_data['full_name']."'>
