@@ -21,8 +21,12 @@ try {
     if(empty($error) && verify_hash($data,$_POST['hash'],$accesskey,$secretkey) && !empty($data['tranid'])){
         $layer_api = new LayerApi($environment,$accesskey,$secretkey);
         $payment_data = $layer_api->get_payment_details($_POST['layer_payment_id']);
-echo PRE;print_r($payment_data);die;
-
+        $data1['currency']=$payment_data['currency'];
+        $data1['vpa']=$payment_data['vpa'];
+        $data1['payment_status']=$payment_data['status'];
+        $data1['error_desc']=$payment_data['error_description'];
+        $data1['phone']=$payment_data['customer']['contact_number'];
+        $res=$this->db->insert('payment',$data1);
         if(isset($payment_data['error'])){
             $error = "Layer: an error occurred E14".$payment_data['error'];
         }
