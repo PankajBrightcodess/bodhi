@@ -36,7 +36,8 @@
                                             <td ><?php echo $val['email']; ?></td>
                                             <td ><?php echo $val['phone']; ?></td>
                                             <td ><?php echo $val['pan']; ?></td>
-                                            <td><?= $val['payment_status']; ?></td>
+                                            <?php $res=$this->Account_model->payment_list(array('tranid'=>$val['tranid'])); ?>
+                                            <td><?= $res['payment_status']; ?></td>
                                         </tr>
                                        <?php 
                                         }

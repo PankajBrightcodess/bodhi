@@ -1481,11 +1481,19 @@ class Account_model extends Slugs{
 
 
       public function donation_list(){
-        $this->db->select('t1.*,t2.tranid,t2.payment_status');
-        $this->db->from('donation as t1');
-        $this->db->join('payment as t2','t1.tranid=t2.tranid');
+        $this->db->select('*');
+        $this->db->from('donation');
         $query=$this->db->get();
         $result=$query->result_array();
+        return $result;
+      } 
+
+      public function payment_list($where=array()){
+        $this->db->select('*');
+        $this->db->from('payment');
+        $this->db->where($where);
+        $query=$this->db->get();
+        $result=$query->row_array();
         return $result;
       } 
 				
