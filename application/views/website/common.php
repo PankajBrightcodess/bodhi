@@ -7,8 +7,8 @@ $secretkey = '9039857bdec14bc5b4fc6e383938611bf37e5e11';
 //Changing environment to live requires remote_script also to be used for live and change accesskey,secretkey too
 $environment = 'test';
 }else{
-    $accesskey = '493e67e0-a3e2-11ed-a945-ef6968ef9aba';
-    $secretkey = '0aa2ce669c011950656221c42a14a81f1a1ffed7';
+    $accesskey = '40ac4390-a477-11ed-be76-8ff4f19947fb';
+    $secretkey = '0eb47814d7252721777906092824a4d83bdedd01';
 
 //Changing environment to live requires remote_script also to be used for live and change accesskey,secretkey too
 $environment = 'live';
