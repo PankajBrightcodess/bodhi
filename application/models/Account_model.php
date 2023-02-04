@@ -1488,14 +1488,5 @@ class Account_model extends Slugs{
         $result=$query->result_array();
         return $result;
       } 
-
-      // public function donation_list(){
-      //   $this->db->select('t1.*,t2.tranid,t2.payment_status,t2.currency');
-      //   $this->db->from('donation as t1');
-      //   $this->db->join('payment as t2','t1.tranid=t2.tranid');
-      //   $query=$this->db->get();
-      //   $result=$query->result_array();
-      //   return $result;
-      // }	
 				
 }

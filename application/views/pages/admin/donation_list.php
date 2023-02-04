@@ -20,8 +20,7 @@
                                             <th>Email</th>
                                             <th>phone</th>                                          
                                             <th>pan</th>
-                                            <th>Payment Status</th>
-                                            <th>Checkvalue</th>                                            
+                                            <th>Payment Status</th>                                      
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -38,7 +37,6 @@
                                             <td ><?php echo $val['phone']; ?></td>
                                             <td ><?php echo $val['pan']; ?></td>
                                             <td><?= $val['payment_status']; ?></td>
-                                            <td ><?php echo $val['checkvalue']; ?></td>
                                         </tr>
                                        <?php 
                                         }
