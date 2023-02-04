@@ -17,7 +17,7 @@ require_once 'common.php';
 //main logic
 $error = '';
 $tranid=date("ymd").'-'.rand(1,100000);
-echo $amount;die;
+// echo $amount;die;
 //Sample data
 $sample_data = [
     'amount' => $amount,
