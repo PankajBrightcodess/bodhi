@@ -6,7 +6,7 @@ ALTER TABLE `tmp_donation` ADD `tranid` VARCHAR(255) NOT NULL AFTER `pan`;
 
 
 
--------not done---------
+------- done---------
 ALTER TABLE `tmp_donation` CHANGE `pan` `pan` VARCHAR(255) NOT NULL;
 ALTER TABLE `tmp_payment` DROP `email`;
 ALTER TABLE `tmp_payment` DROP `currency`, DROP `error_desc`;
