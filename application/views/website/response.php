@@ -26,14 +26,13 @@ try {
         $data1['pay_token_id']=$pay_token_id;
         $data1['payment_id']=$payment_id;
         $data1['full_name']=$full_name;
-        $data1['email']=$email;
-        $data1['currency']=$payment_data['currency'];
+        // $data1['email']=$email;
+        // $data1['currency']=$payment_data['currency'];
         $data1['vpa']=$payment_data['vpa'];
         $data1['payment_status']=$payment_data['status'];
-        $data1['error_desc']=$payment_data['error_description'];
+        // $data1['error_desc']=$payment_data['error_description'];
         $data1['phone']=$payment_data['customer']['contact_number'];
         $res=$this->db->insert('payment',$data1);
-        echo $this->db->last_query();die;
         if(isset($payment_data['error'])){
             $error = "Layer: an error occurred E14".$payment_data['error'];
         }

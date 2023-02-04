@@ -481,7 +481,7 @@ class Website extends CI_Controller {
   	$data1['pay_token_id']=$data['layer_pay_token_id'];
   	$data1['payment_id']=$data['layer_payment_id'];
   	$data1['full_name']=$data['full_name'];
-  	$data1['email']=$data['email_id'];
+  	// $data1['email']=$data['email_id'];
   	// $res=$this->db->insert('payment',$data1);
   	// echo PRE;print_r($data);die;
   	$this->load->view('website/response',$data1);
