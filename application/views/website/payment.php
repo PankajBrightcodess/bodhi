@@ -18,6 +18,17 @@ require_once 'common.php';
 $error = '';
 $tranid=date("ymd").'-'.rand(1,100000);
 
+$
+//Sample data
+$sample_data = [
+    'amount' => $amount,
+    'currency' => 'INR',
+    'name'  => $name,
+    'email_id' => $email,
+    'contact_number' => $phone,
+    'mtx' => ''
+];
+
 $sample_data['mtx']=$tranid; //unique transaction id to be passed for each transaction 
 $layer_api = new LayerApi($environment,$accesskey,$secretkey);
 $layer_payment_token_data = $layer_api->create_payment_token($sample_data);
@@ -138,20 +149,6 @@ if(empty($error) && !empty($payment_token_data)){
 		<img src="<?= base_url('assets/website/logo.png'); ?>" height="20" alt="Payment Logo" />
 		 <h3><?php echo ucwords($sample_data['name']);?></h3>
 	</div>
-
-	<!-- <div class="dv">
-		<label>Full Name: <?php echo $sample_data['name']; ?></label>
-	</div>
-	<div class="dv">
-		<label>E-mail: <?php echo $sample_data['email_id']; ?></label>
-	</div>
-	<div class="dv">
-		<label>Mobile Number: <?php echo $sample_data['contact_number']; ?></label>
-	</div>
-	<div class="dv">
-		<label>Amount: <?php echo $sample_data['currency'].' '.$sample_data['amount']; ?></label>
-	</div>
-		 -->
 	
 	
 </div>

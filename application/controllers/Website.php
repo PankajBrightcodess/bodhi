@@ -460,7 +460,14 @@ class Website extends CI_Controller {
   }
 
   public function payments(){
-  	$this->load->view('website/payment');
+  	$data=$this->input->post();
+  	if($data['amount1']== ''){
+		$data['amount']= $data['amount'];
+	}
+	if($data['amount']== ''){
+		$data['amount']= $data['amount1'];
+	}
+  	$this->load->view('website/payment',$data);
   }
 
   public function response(){
