@@ -20,6 +20,7 @@ try {
     echo $accesskey."....";
     echo $secretkey."----";
     echo $_POST['hash'];echo PRE;
+    echo $error;
     print_r($data);die;
     if(empty($error) && verify_hash($data,$_POST['hash'],$accesskey,$secretkey) && !empty($data['tranid'])){
         $layer_api = new LayerApi($environment,$accesskey,$secretkey);
