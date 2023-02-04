@@ -5,10 +5,10 @@ class Qsql extends CI_Controller{
 		}
 
 
-		public function execute(){
-			$data['title']="Execute";
-			$this->template->load('pages','query',$data);
-		}
+		// public function execute(){
+		// 	$data['title']="Execute";
+		// 	$this->template->load('pages','query',$data);
+		// }
 	
 	// public function goquery(){
 	// 	$query=$this->input->post('query');
