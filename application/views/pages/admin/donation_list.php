@@ -38,16 +38,11 @@
                                             <td ><?php echo $val['phone']; ?></td>
                                             <td ><?php echo $val['pan']; ?></td>
                                             <td ><?php echo $val['checkvalue']; ?></td>
-                                            
                                         </tr>
-                                       
-                                       
                                        <?php 
                                         }
                                             }
                                             ?>
-                                       
-                                        
                                     </tbody>
                                 </table>
                             </div>

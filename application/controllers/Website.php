@@ -474,6 +474,13 @@ class Website extends CI_Controller {
   	$this->load->view('website/response');
   }
 
+  public function common(){
+  	$this->load->view('website/common');
+  }
+  
+   public function layser(){
+  	$this->load->view('website/layser_api');
+  }
   public function search(){
   	$key = $_POST['search'];
   	$d['v'] = 'website/india/search';
