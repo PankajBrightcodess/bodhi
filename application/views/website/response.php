@@ -17,12 +17,7 @@ try {
         'layer_order_amount'    => $_POST['layer_order_amount'],
         'tranid'     			=> $_POST['tranid'],
     );
-    echo $accesskey."....";
-    echo $secretkey."----";
-    echo $_POST['hash']."---";
-    echo $_POST['layer_payment_id'];echo PRE;
-    echo $error;
-    print_r($data);die;
+    $err='';
     if(empty($error) && verify_hash($data,$_POST['hash'],$accesskey,$secretkey) && !empty($data['tranid'])){
         $layer_api = new LayerApi($environment,$accesskey,$secretkey);
         $payment_data = $layer_api->get_payment_details($_POST['layer_payment_id']);
