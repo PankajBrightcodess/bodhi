@@ -37,10 +37,10 @@
                                             <td ><?php echo $val['phone']; ?></td>
                                             <td ><?php echo $val['pan']; ?></td>
                                             <?php $res=$this->Account_model->payment_list(array('tranid'=>$val['tranid'])); ?>
-                                            <td><?php if(!empty($res['payment_status'])){ echo $res['payment_status']; }else{ echo "failed"; } ?></td>
+                                            <td><?php if(!empty($res)){ echo $res['payment_status']; }else{ echo "failed"; } ?></td>
                                         </tr>
                                        <?php 
-                                        }h
+                                        }
                                             }
                                             ?>
                                     </tbody>
