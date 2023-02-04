@@ -1482,7 +1482,7 @@ class Account_model extends Slugs{
       public function donation_list(){
         $this->db->select('*')->from('donation');
         $query=$this->db->get();
-        $result=$query->result_array();
+        $result=$query->result();
         return $result;
       }		
 				

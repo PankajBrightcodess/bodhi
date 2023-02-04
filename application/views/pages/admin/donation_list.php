@@ -6,7 +6,7 @@
                     <!-- <div class="card-header">
                     	<h3 class="card-title"><?php echo $title; ?></h3>
                     </div> -->
-                    <!-- /.card-header -->
+                    <!-- /.card-header  -->
                     <div class="card-body">
                     <div class="row">
                         	<div class="col-md-12 col-lg-12 col-12 table-responsive">
