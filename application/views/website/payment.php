@@ -18,6 +18,7 @@ require_once 'common.php';
 $error = '';
 $tranid=date("ymd").'-'.rand(1,100000);
 $data['tranid']=$tranid;
+echo $data1['email'];die;
 print_r($data1);die;
 $res=$this->db->insert('donation',$data);
 echo $this->db->last_query();
