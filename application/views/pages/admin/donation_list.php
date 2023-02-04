@@ -14,7 +14,6 @@
                                     <thead>
                                         <tr>    
                                             <th>S.no</th>
-                                            <!-- <th>User Name</th> -->
                                             <th>Type</th>
                                             <th>Amount</th>
                                             <th>Name</th>   
@@ -51,8 +50,8 @@
                 </div>
             </div>
         </div>
-        </div>
-    </section>    
+     </div>
+</section>    
 
     <!-- '''''''''''''''''''''''''''''''model'''''''''''''''''''''''''''''''''''''''' -->
    <!--   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

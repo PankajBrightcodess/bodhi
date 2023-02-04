@@ -133,9 +133,7 @@
                 // Replace the <textarea id="editor1"> with a CKEditor 
                 // instance, using default configuration. 
                 CKEDITOR.replace( 'editor1' ); 
-            </script> 
-                               
-                               
+            </script>                
             <div class="form-group row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
