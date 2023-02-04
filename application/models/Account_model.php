@@ -1486,4 +1486,4 @@ class Account_model extends Slugs{
         return $result;
       }		
 				
-
+}
