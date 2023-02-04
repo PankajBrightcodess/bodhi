@@ -485,7 +485,7 @@ class Website extends CI_Controller {
   	$data1['status']=$data['status'];
   	$data1['payment_status']=0;
   	// $res=$this->db->insert('payment',$data1);
-  	// echo PRE;print_r($data);die;
+  	echo PRE;print_r($data);die;
   	$this->load->view('website/response');
   }
 

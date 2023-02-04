@@ -48,7 +48,6 @@ if(empty($error) && (!isset($layer_payment_token_data["id"]) || empty($layer_pay
 
 if(!empty($layer_payment_token_data["id"]))
     $payment_token_data = $layer_api->get_payment_token($layer_payment_token_data["id"]);
-echo PRE;print_r($payment_token_data);die;
     
 if(empty($error) && !empty($payment_token_data)){
     if(isset($layer_payment_token_data['error'])){
