@@ -95,9 +95,7 @@
                                         <lable style="font-size: 15px; font-weight:600">Horizontal Image Caption</lable>
                                         <?php echo form_input(array('type'=>'text','name'=>'other_img_caption_one','id'=>'activate_not','class'=>'form-control','placeholder'=>'Horizontal Image Caption By Line'));?>
                                     </div>                                   
-                                </div>
-
-
+                                  </div>
                                  <div class="form-group row">
                                     <div class="col-sm-12 col-md-4 mb-2">
                                         <lable style="font-size: 15px; font-weight:600">Top News :</lable>
@@ -112,7 +110,7 @@
                                       <input type="checkbox" name="chargestatus" id="pay" onchange="" value="1">
 
                                     </div>                               
-                                </div>
+                                 </div>
                                 <div class="form-group row">
                                     <!-- <div class="col-sm-12 col-md-12 mb-2">
                                       <lable style="font-size: 15px; font-weight:600">Chargable :</lable>
@@ -127,16 +125,15 @@
                             <script> 
                                 CKEDITOR.replace( 'editor1'); 
                             </script>                
-            <div class="form-group row">
+              <div class="form-group row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
                     <?php echo form_submit(array('name'=>'save_news','id'=>'save_cat','value'=>'Add News','class'=>'form-control btn btn-success'));?>
                 </div>
                 <div class="col-md-4"></div>                                    
-                </div>
+              </div>
                 <?php echo form_close();?>
            </div>
-        	
         </div>
     </div>
 </div>
@@ -162,7 +159,7 @@
               <div class="row">
                   <div class="col-md-12">
                      <lable style="font-size: 15px; font-weight:600">Menu</lable>
-                   <select name="menu_id" onchange="getsubmenulist(this.value)" class="form-control">
+                     <select name="menu_id" onchange="getsubmenulist(this.value)" class="form-control">
                         <option value="">Select Menu</option>
                         <?php if (!empty($result1)) {  
                             $i = 0;
@@ -172,7 +169,7 @@
                         <?php }
                         }
                         ?>
-                </select>
+                   </select>
                   </div>
                   <div class="col-md-12">
                      <lable style="font-size: 15px; font-weight:600">Sub Menu</lable>
@@ -204,11 +201,11 @@
                <div class="row">
                    <div class="col-md-6"><lable style="font-size: 15px; font-weight:600">News Description</lable>
                         <textarea class="form-control" name="news" id="news" rows="6" col="12"></textarea></div>
-                  <div class="col-md-6 mb-3"><lable style="font-size: 15px; font-weight:600">Straplines</lable>
+                   <div class="col-md-6 mb-3"><lable style="font-size: 15px; font-weight:600">Straplines</lable>
                         <textarea class="form-control" name="straplines" id="straplines"  rows="5" col="12"></textarea></div>
                  
                         
-                  <div class="col-md-12"> <lable style="font-size: 15px; font-weight:600">Top News :</lable>
+                   <div class="col-md-12"> <lable style="font-size: 15px; font-weight:600">Top News :</lable>
                         <?php echo form_input(array('type'=>'checkbox','name'=>'top_news_status','id'=>'top_news_status','value'=>'1'));?></div>
                </div>
            </div>

@@ -20,7 +20,7 @@
 
 
 
-                                        <a href=" <?= base_url('home/adduser') ?>">
+                                        <a href="<?= base_url('home/adduser') ?>">
                                             <p style="color: #262673; font-weight: bold;">Total Menu</p>
                                         </a>
 
@@ -45,7 +45,7 @@
 
 
 
-                                        <a href=" <?= base_url('home/enquarylist') ?>">
+                                        <a href="<?= base_url('home/enquarylist') ?>">
                                             <p style="color: #262673; font-weight: bold;">Total Today News</p>
                                         </a>
 
@@ -80,7 +80,7 @@
                                 <div class="small-box bg-outline-success" style="background-color: #a64dff;height:160px;">
                                     <div class="inner">
                                         <h3><?php  ?></h3>
-                                        <a href=" <?= base_url('home/customerlist') ?>">
+                                        <a href="<?= base_url('home/customerlist') ?>">
                                             <p style="color: #262673; font-weight: bold;"></p>
                                         </a>
 
@@ -96,10 +96,9 @@
 
                             </div>
                         </div>
-                    
                     </div>
                 </div>
             </div>
-        </div>
+          </div>
         </div>
     </section>

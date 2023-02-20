@@ -278,9 +278,5 @@
     $('#amount').show();
     $('#amtlable').show();
 });
-
-
-
-
-    </script>  
+ </script>  
 

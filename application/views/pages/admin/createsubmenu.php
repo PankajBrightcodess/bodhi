@@ -51,15 +51,14 @@
                                         <tr>    
                                             <th>S.no</th>
                                             <th>Menu Name</th> 
-                                            <th>Submenu Name</th>                                            
-                                                                                        
+                                            <th>Submenu Name</th>                                                                                       
                                             <th>Action</th>                                            
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                      <tbody>
                                         <?php $i=0; if(!empty($result)){
                                             foreach($result as $val){ $i++;$id=$val['id']; ?>
-                                        <tr>
+                                         <tr>
                                             <td ><?= $i?></td>
                                             <td ><?= $val['menu']?></td>
                                             <td ><?= $val['submenu']?></td>
@@ -70,9 +69,6 @@
                                             </span></td>
                                         </tr>
                                         <?php } } ?>
-                                        
-                                       
-                                        
                                     </tbody>
                                 </table>
                             </div>
@@ -81,8 +77,8 @@
                 </div>
             </div>
         </div>
-        </div>
-    </section>   
+     </div>
+</section>   
     <!-- '''''''''''''''''''''''''''''''model'''''''''''''''''''''''''''''''''''''''' -->
      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -113,8 +109,8 @@
                         <?php echo form_input(array('type'=>'text','name'=>'submenu','id'=>'submenu','class'=>'form-control','placeholder'=>'Enter Submenu name','required'=>'required'));?>
                         <input type="hidden" name="id" id="id">
                     </div> 
+               </div>
             </div>
-          </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="submit" class="btn btn-success">Update</button>
@@ -135,10 +131,10 @@
         $('#id').val(id);
         $('#menu').val(menu_id);
         $('#submenu').val(submenu);
-        
-      
+     
     });
     </script> 
+
  <script>
 	$(document).ready(function(e) {
         $('.hoverable').mouseenter(function(){
@@ -149,9 +145,6 @@
         $('.hoverable').mouseleave(function(){
             $(this).popover('hide');
         });
-
-        
-
         $('.duplicate').click(function(){
             var dupid = $(this).data('dupid');
             $.ajax({

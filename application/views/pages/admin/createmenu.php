@@ -63,7 +63,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+          </div>
         </div>
     </section>  
       <!-- '''''''''''''''''''''''''''''''model'''''''''''''''''''''''''''''''''''''''' -->
@@ -112,8 +112,6 @@
     </script>
 
 <script>
-
-	
 	$(document).ready(function(e) {
         $('.hoverable').mouseenter(function(){
             //$('[data-toggle="popover"]').popover();
@@ -211,11 +209,4 @@ $('.delete').click(function(e){
 }
 return false;
 })
-
-
-
-
-
-
-
 </script>
