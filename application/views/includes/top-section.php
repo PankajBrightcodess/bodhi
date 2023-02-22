@@ -46,9 +46,6 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
         <script src="https://kit.fontawesome.com/512e5abe13.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8206923290027988"
-     crossorigin="anonymous">
-     </script>
 		<?php
             if(!empty($top_script)){
                 foreach($top_script as $key=>$script){
@@ -80,7 +77,3 @@
     	<?php if(empty($body_class)){?>
         <div class="wrapper">
         <?php } ?>
-     <!--   </div>
-   </body>
-   </html> -->
-

@@ -98,4 +98,4 @@
     	$this->load->view('includes/breadcrumb');
 	?>
     <!-- Main content -->
-</div>
+    
